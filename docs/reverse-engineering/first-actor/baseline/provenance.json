@@ -1,0 +1,140 @@
+{
+  "tool": "FFDec 26.0.0 Java PNG sprite exporter",
+  "command": "ffdec-cli -onerror abort -selectid 2986,3007,3031 -format sprite:png -export sprite <new-empty-directory> 魔域2.4.swf",
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "scope": "Static visual reference only; does not execute frame actions",
+  "files": [
+    {
+      "file": "idle-1.png",
+      "spriteId": 2986,
+      "frame": 1,
+      "sha256": "30442c91962dd3e02375b2864b17527d256ef08275257c1b5363da76866a291e"
+    },
+    {
+      "file": "run-1.png",
+      "spriteId": 3007,
+      "frame": 1,
+      "sha256": "256646d8d185e47af5e87f52314a737e212078c8a57a5fe018072a085c2a09f7"
+    },
+    {
+      "file": "run-2.png",
+      "spriteId": 3007,
+      "frame": 2,
+      "sha256": "c8b0bf36a6d1bb716b16e42c221ed580957787cfc26633d5302f1d83bc8c276e"
+    },
+    {
+      "file": "run-3.png",
+      "spriteId": 3007,
+      "frame": 3,
+      "sha256": "ea6fa277fea8927d16172534f8901f2d6d3011dfb67e4161df5eb43d72ce115c"
+    },
+    {
+      "file": "run-4.png",
+      "spriteId": 3007,
+      "frame": 4,
+      "sha256": "331afdd518dfe6943f5d1d1b9d3d560879a565004ff4fda2ac73625022f44e61"
+    },
+    {
+      "file": "run-5.png",
+      "spriteId": 3007,
+      "frame": 5,
+      "sha256": "484fe9acb0fecdac5118edc1542fdb8321f8f176cf60eb99ef4c54896faf006d"
+    },
+    {
+      "file": "run-6.png",
+      "spriteId": 3007,
+      "frame": 6,
+      "sha256": "48ef79d9f2d04a07f8ad93e0bd7400b19a8db8d0cf0032529266e2fa998cb5ab"
+    },
+    {
+      "file": "run-7.png",
+      "spriteId": 3007,
+      "frame": 7,
+      "sha256": "bb9f5b178610bc284d45161b01acfa9669e970dbbba6229c896247d1c8f51da7"
+    },
+    {
+      "file": "run-8.png",
+      "spriteId": 3007,
+      "frame": 8,
+      "sha256": "0bdfbabcd29a9a2d001ca81ecf398940594bfcbe6d85c3425990653c6a5b8fe0"
+    },
+    {
+      "file": "run-9.png",
+      "spriteId": 3007,
+      "frame": 9,
+      "sha256": "46b3fce341b87aaef94643f4303a3979dba44b926b7f001b81bd446a86a1fb4e"
+    },
+    {
+      "file": "run-10.png",
+      "spriteId": 3007,
+      "frame": 10,
+      "sha256": "f48f2750a188edfb92f8c98590673fc4056dfba055407773568bc3776b5a0421"
+    },
+    {
+      "file": "attack-1.png",
+      "spriteId": 3031,
+      "frame": 1,
+      "sha256": "f8147402250f3361e3173d334121168f99fae2a4a9d85e94cf8242d52af670b8"
+    },
+    {
+      "file": "attack-2.png",
+      "spriteId": 3031,
+      "frame": 2,
+      "sha256": "254389943d018ae292c7d536e9db22aacf3db947cf35a7ebcef667dbc6c4402e"
+    },
+    {
+      "file": "attack-3.png",
+      "spriteId": 3031,
+      "frame": 3,
+      "sha256": "c32a53067b4befb639324753cba0d926d29ab69e64214a107ddcacf4c60b358e"
+    },
+    {
+      "file": "attack-4.png",
+      "spriteId": 3031,
+      "frame": 4,
+      "sha256": "e499d2fc2dda4532f840f0cbd4f13771bdc4ed53a55f506d873e760b523bd332"
+    },
+    {
+      "file": "attack-5.png",
+      "spriteId": 3031,
+      "frame": 5,
+      "sha256": "734f81e9f9abb04d6fd23d7d1f0c56148a23a82da93c56c2aaca156cd822e598"
+    },
+    {
+      "file": "attack-6.png",
+      "spriteId": 3031,
+      "frame": 6,
+      "sha256": "4d2ed60a2a864453b17341393c7a7de62c94ccd25d2d8674d398b631a617cb5a"
+    },
+    {
+      "file": "attack-7.png",
+      "spriteId": 3031,
+      "frame": 7,
+      "sha256": "0544ea9d9a19d15b5d466f722929573bb05df9bb732c23bc6d5354044800f107"
+    },
+    {
+      "file": "attack-8.png",
+      "spriteId": 3031,
+      "frame": 8,
+      "sha256": "4043c81a631aa1fbd6413010e868e32128f26cd65f431af718bb2e4146555ec8"
+    },
+    {
+      "file": "attack-9.png",
+      "spriteId": 3031,
+      "frame": 9,
+      "sha256": "4bd54d80628acc1845592909c2c4acdbd0f19a55212fb4cedb5648ffe1aa7241"
+    },
+    {
+      "file": "attack-10.png",
+      "spriteId": 3031,
+      "frame": 10,
+      "sha256": "fe3ab2f92e801f83c81c1d4f8da79398eb630cb7a9beda6603bdec1645041da4"
+    },
+    {
+      "file": "attack-11.png",
+      "spriteId": 3031,
+      "frame": 11,
+      "sha256": "eeadab09724e633f88078d2ad88a10fb046a4e6241e58d57f0e9f225c3bc40a2"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "featureLines": [
+    {
+      "id": "LINE-FOUNDATION",
+      "title": "源证据到单角色动作验收",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-FOUNDATION.md"
+    },
+    {
+      "id": "LINE-FIRST-PLAYABLE",
+      "title": "首个可玩闭环",
+      "status": "Active",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-FIRST-PLAYABLE.md"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-RE-001",
+      "title": "原文件索引与启动链确认",
+      "line": "LINE-FOUNDATION",
+      "status": "Done",
+      "type": "reverse",
+      "dependsOn": [],
+      "definition": "docs/tasks/task-definitions/TASK-RE-001.md",
+      "completion": {
+        "summary": "完成原 SWF 离线脚本/结构索引，定位新游戏启动链、男战士实例与三组动作资源，记录外部调用和运行未知项；独立原始标签检查通过。",
+        "checks": [
+          {
+            "result": "passed",
+            "command": "npm run check:source"
+          },
+          {
+            "result": "passed",
+            "command": "node tools/check-source-index.mjs"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:harness"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/source-index.md",
+          "docs/reverse-engineering/source-index.json",
+          "tools/check-source-index.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-RE-002",
+      "title": "单角色动作端到端交付（取证、转换、工程与验收）",
+      "line": "LINE-FOUNDATION",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-RE-001"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-RE-002.md",
+      "completion": {
+        "summary": "完成男战士待机/跑动/斩魂的源标签与AS2时序取证、22帧可重复资源转换及Phaser验收工程；44组双向源画面对比、独立时钟/暂停/掉帧与冷启动检查通过。原游戏完整运行和伤害不在本任务范围。",
+        "checks": [
+          {
+            "result": "passed",
+            "command": "npm run typecheck"
+          },
+          {
+            "result": "passed",
+            "command": "npm test"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:first-actor"
+          },
+          {
+            "result": "passed",
+            "command": "npm run build"
+          },
+          {
+            "result": "passed",
+            "command": "npm run test:browser"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:source"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:harness"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/first-actor/action-contract.md",
+          "docs/reverse-engineering/first-actor/validation.md",
+          "docs/reverse-engineering/first-actor/source-fixture.json",
+          "docs/reverse-engineering/first-actor/baseline/provenance.json",
+          "public/assets/first-actor/manifest.json",
+          "tests/actor.test.ts",
+          "tests/browser/actor.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-SLICE-004",
+      "title": "首个可玩闭环",
+      "line": "LINE-FIRST-PLAYABLE",
+      "status": "Active",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-RE-002"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-SLICE-004.md",
+      "completion": null,
+      "blocker": null
+    }
+  ],
+  "governance": []
+}

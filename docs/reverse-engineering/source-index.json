@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "scope": "TASK-RE-001 bounded static structure and script index; NOT full-game behavior truth",
+  "source": {"path":"魔域2.4.swf","sha256":"f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9","vm":"AVM1","version":8},
+  "extraction": {"tool":"JPEXS Free Flash Decompiler 26.0.0","directory":"local-resources/moyu/source-index","scripts":"as/scripts","pcode":"pcode/scripts","structure":"source.xml","tagDump":"tags.txt","manifest":"extraction-manifest.json"},
+  "structureEvidenceLevel":"verified",
+  "structureVerification":"node tools/check-source-index.mjs",
+  "sprites":[
+    {"characterId":4536,"declaredFrames":167,"role":"map"},
+    {"characterId":3106,"declaredFrames":1,"role":"role; ExportAssets 角色; DoInitAction Object.registerClass with RoleMC"},
+    {"characterId":3101,"declaredFrames":30,"role":"playAction selector"},
+    {"characterId":2986,"declaredFrames":1,"role":"male warrior ground idle"},
+    {"characterId":3007,"declaredFrames":10,"role":"male warrior run"},
+    {"characterId":3031,"declaredFrames":11,"role":"male warrior 斩魂"}
+  ],
+  "labels":[
+    {"timeline":0,"frame":2,"label":"加载页面"},
+    {"timeline":0,"frame":3,"label":"开始"},
+    {"timeline":0,"frame":4,"label":"选择角色"},
+    {"timeline":0,"frame":5,"label":"战士信息"},
+    {"timeline":0,"frame":6,"label":"法师信息"},
+    {"timeline":0,"frame":7,"label":"读取存档"},
+    {"timeline":0,"frame":8,"label":"读数据"},
+    {"timeline":0,"frame":9,"label":"游戏"},
+    {"timeline":4536,"frame":8,"label":"卡萨诺城郊区"},
+    {"timeline":3101,"frame":15,"label":"男战士地上左"},
+    {"timeline":3101,"frame":16,"label":"男战士地上右"},
+    {"timeline":3101,"frame":17,"label":"男战士向左跑"},
+    {"timeline":3101,"frame":18,"label":"男战士向右跑"},
+    {"timeline":3101,"frame":19,"label":"男战士左斩魂"},
+    {"timeline":3101,"frame":20,"label":"男战士右斩魂"}
+  ],
+  "placements":[
+    {"timeline":0,"frame":3,"depth":4,"characterId":4181,"instance":"newBtn"},
+    {"timeline":0,"frame":4,"depth":3,"characterId":4198,"instance":"b"},
+    {"timeline":0,"frame":5,"depth":9,"characterId":4217,"instance":"selectBtn"},
+    {"timeline":0,"frame":9,"depth":1,"characterId":4536,"instance":"map"},
+    {"timeline":4536,"frame":1,"depth":202,"characterId":3106,"instance":"role"},
+    {"timeline":4536,"frame":8,"depth":2,"characterId":2807,"instance":"ground"},
+    {"timeline":4536,"frame":8,"depth":21,"characterId":4247,"instance":"entry3"},
+    {"timeline":3106,"frame":1,"depth":1,"characterId":3101,"instance":"playAction"},
+    {"timeline":3101,"frame":15,"depth":1,"characterId":2986},
+    {"timeline":3101,"frame":17,"depth":1,"characterId":3007},
+    {"timeline":3101,"frame":19,"depth":1,"characterId":3031}
+  ],
+  "scriptEvidence":[
+    {"level":"verified","path":"frame_1/DoAction.as","anchor":"AS2_4399_API.Bridge.getInstance","claim":"root bridge initialization"},
+    {"level":"verified","path":"frame_2/DoAction.as","anchor":"__com_mochibot__","claim":"external tracking loader, followed by unconditional canBeginGame and nextFrame"},
+    {"level":"verified","path":"frame_3/DoAction.as","anchor":"newBtn.onRelease","claim":"new game to 选择角色"},
+    {"level":"verified","path":"frame_4/DoAction.as","anchor":"b.onRelease","claim":"warrior selection to 战士信息"},
+    {"level":"verified","path":"frame_5/DoAction.as","anchor":"selectBtn.onRelease","claim":"nonempty name sets begingVocational 战士 and goes to 游戏"},
+    {"level":"verified","path":"frame_9/DoAction_2.as","anchor":"this.map.gotoAndPlay(1)","claim":"initialize map timeline"},
+    {"level":"verified","path":"DefineSprite_4536/frame_1/DoAction.as","anchor":"role.Activities = function()","claim":"arrow/WASD and mouse direction dispatch; map onEnterFrame calls Activities"},
+    {"level":"verified","path":"DefineSprite_4536/frame_2/DoAction.as","anchor":"initNewGame = function()","claim":"nextMap 卡萨诺城郊区 and nextEntry entry3; adds 斩魂 for warrior; gotoAndStop(nextMap)"},
+    {"level":"verified","path":"DefineSprite_4536/frame_8/DoAction.as","anchor":"this.allowJumpMap","claim":"destination scene action"},
+    {"level":"verified","path":"角色.as","anchor":"Object.registerClass","claim":"角色 registered to RoleMC"},
+    {"level":"verified","path":"__Packages/RoleMC.as","anchor":"function autoAttack(target)","claim":"warrior in-range basic target attack dispatches 斩魂; idle/run select playAction labels"},
+    {"level":"verified","path":"__Packages/MonsterMC.as","anchor":"function onPress()","claim":"target click calls parent.role.autoAttack(this)"},
+    {"level":"verified","path":"__Packages/groundMC.as","anchor":"function onPress()","claim":"sets parent.catchMouseDown"},
+    {"level":"verified","path":"DefineSprite_3031/frame_11/DoAction.as","anchor":"使用技能结束","claim":"nested action writes parent.parent.motion; runtime timing not verified"},
+    {"level":"verified","path":"__Packages/AS2_4399_API/Bridge.as","anchor":"static function a5ce41e255a608030c","claim":"numeric character decoder, LocalConnection bridge and polling; see report limitations"}
+  ],
+  "selectedActor":{"instance":"_root.map.role","sex":"男","vocational":"战士","selectionLevel":"design","sourceAssignmentLevel":"verified","firstNewGameScene":"卡萨诺城郊区","runtimeArrival":"unknown"},
+  "externalDependencies":{"explicitMovieLoader":"Mochibot core.swf","bridge":"4399 LocalConnection; host behavior unknown","forum":"getURL user-triggered forum link","importAssetsTags":0,"blockingOfflineActionResearch":"inferred: no blocker identified; selected symbols are embedded","completeOfflinePlayability":"unknown"},
+  "unresolved":[
+    {"level":"unknown","question":"effective hold durations, matrix composition/pivots, full child geometry, skill event timing and pauses","next":"TASK-RE-002"},
+    {"level":"unknown","question":"original runtime arrival, external host absence and complete playability","next":"runtime baseline work; not asserted by static source index"}
+  ],
+  "notApplicable":{"runtimeAssetPaths":"no game project created","animationTimingAndCollision":"structural index only; TASK-RE-002 supplies action truth"}
+}

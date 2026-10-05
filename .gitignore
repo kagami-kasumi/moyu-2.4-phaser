@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.tmp/
+.evidence/
+local-resources/
+*.swf
+*.log
+.DS_Store

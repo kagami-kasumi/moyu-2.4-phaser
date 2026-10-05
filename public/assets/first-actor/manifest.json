@@ -1,0 +1,538 @@
+{
+  "version": 1,
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "stage": {
+    "width": 580,
+    "height": 500
+  },
+  "fps": 15,
+  "parentMatrix": [
+    0.79998779296875,
+    0,
+    0,
+    0.79998779296875,
+    -44.45,
+    -101.5
+  ],
+  "timing": {
+    "basis": "source frame ticks; nominal 1000/15 ms, not measured wall time",
+    "phaseOrder": [
+      "Activities",
+      "timeline-frame-action",
+      "render"
+    ],
+    "attackEndFrame": 11,
+    "effect": "next Activities after end marker; no damage simulation"
+  },
+  "crop": "untrimmed source bitmap rectangle; offset [0,0]; registration follows matrix chain",
+  "collision": null,
+  "actions": {
+    "idle": {
+      "spriteId": 2986,
+      "selectorFrames": {
+        "left": 15,
+        "right": 16
+      },
+      "matrices": {
+        "left": [
+          1,
+          0,
+          0,
+          1,
+          -49.55,
+          0.45
+        ],
+        "right": [
+          -1,
+          0,
+          0,
+          1,
+          167.45,
+          0.45
+        ]
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "file": "idle-1.png",
+          "width": 148,
+          "height": 153,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2985
+            }
+          ],
+          "bitmapId": 2984,
+          "endMarker": false
+        }
+      ]
+    },
+    "run": {
+      "spriteId": 3007,
+      "selectorFrames": {
+        "left": 17,
+        "right": 18
+      },
+      "matrices": {
+        "left": [
+          1,
+          0,
+          0,
+          1,
+          -69.55,
+          4
+        ],
+        "right": [
+          -1,
+          0,
+          0,
+          1,
+          180.45,
+          4
+        ]
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "file": "run-1.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2988
+            }
+          ],
+          "bitmapId": 2987,
+          "endMarker": false
+        },
+        {
+          "frame": 2,
+          "file": "run-2.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2990
+            }
+          ],
+          "bitmapId": 2989,
+          "endMarker": false
+        },
+        {
+          "frame": 3,
+          "file": "run-3.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2992
+            }
+          ],
+          "bitmapId": 2991,
+          "endMarker": false
+        },
+        {
+          "frame": 4,
+          "file": "run-4.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2994
+            }
+          ],
+          "bitmapId": 2993,
+          "endMarker": false
+        },
+        {
+          "frame": 5,
+          "file": "run-5.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2996
+            }
+          ],
+          "bitmapId": 2995,
+          "endMarker": false
+        },
+        {
+          "frame": 6,
+          "file": "run-6.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2998
+            }
+          ],
+          "bitmapId": 2997,
+          "endMarker": false
+        },
+        {
+          "frame": 7,
+          "file": "run-7.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3000
+            }
+          ],
+          "bitmapId": 2999,
+          "endMarker": false
+        },
+        {
+          "frame": 8,
+          "file": "run-8.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3002
+            }
+          ],
+          "bitmapId": 3001,
+          "endMarker": false
+        },
+        {
+          "frame": 9,
+          "file": "run-9.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3004
+            }
+          ],
+          "bitmapId": 3003,
+          "endMarker": false
+        },
+        {
+          "frame": 10,
+          "file": "run-10.png",
+          "width": 250,
+          "height": 150,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3006
+            }
+          ],
+          "bitmapId": 3005,
+          "endMarker": false
+        }
+      ]
+    },
+    "attack": {
+      "spriteId": 3031,
+      "selectorFrames": {
+        "left": 19,
+        "right": 20
+      },
+      "matrices": {
+        "left": [
+          1,
+          0,
+          0,
+          1,
+          -93.7,
+          -49.65
+        ],
+        "right": [
+          -1,
+          0,
+          0,
+          1,
+          206.3,
+          -49.65
+        ]
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "file": "attack-1.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3009
+            }
+          ],
+          "bitmapId": 3008,
+          "endMarker": false
+        },
+        {
+          "frame": 2,
+          "file": "attack-2.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3011
+            }
+          ],
+          "bitmapId": 3010,
+          "endMarker": false
+        },
+        {
+          "frame": 3,
+          "file": "attack-3.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3013
+            }
+          ],
+          "bitmapId": 3012,
+          "endMarker": false
+        },
+        {
+          "frame": 4,
+          "file": "attack-4.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3015
+            }
+          ],
+          "bitmapId": 3014,
+          "endMarker": false
+        },
+        {
+          "frame": 5,
+          "file": "attack-5.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3017
+            }
+          ],
+          "bitmapId": 3016,
+          "endMarker": false
+        },
+        {
+          "frame": 6,
+          "file": "attack-6.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3019
+            }
+          ],
+          "bitmapId": 3018,
+          "endMarker": false
+        },
+        {
+          "frame": 7,
+          "file": "attack-7.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3021
+            }
+          ],
+          "bitmapId": 3020,
+          "endMarker": false
+        },
+        {
+          "frame": 8,
+          "file": "attack-8.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3023
+            },
+            {
+              "depth": 2,
+              "shapeId": 3024
+            }
+          ],
+          "bitmapId": 3022,
+          "endMarker": false
+        },
+        {
+          "frame": 9,
+          "file": "attack-9.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3026
+            },
+            {
+              "depth": 2,
+              "shapeId": 3024
+            }
+          ],
+          "bitmapId": 3025,
+          "endMarker": false
+        },
+        {
+          "frame": 10,
+          "file": "attack-10.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3028
+            }
+          ],
+          "bitmapId": 3027,
+          "endMarker": false
+        },
+        {
+          "frame": 11,
+          "file": "attack-11.png",
+          "width": 310,
+          "height": 230,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 3030
+            }
+          ],
+          "bitmapId": 3029,
+          "endMarker": true
+        }
+      ]
+    }
+  }
+}

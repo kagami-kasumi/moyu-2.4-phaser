@@ -1,0 +1,82 @@
+{
+  "format": "SWF",
+  "signature": "CWS",
+  "version": 8,
+  "declaredUncompressedLength": 16244841,
+  "compressedLength": 14088083,
+  "compressedBodyLength": 14088075,
+  "uncompressedBodyLength": 16244833,
+  "hashes": {
+    "compressedSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+    "uncompressedSha256": "50c3bea5f8e78c9ff88b03177166131e8a49a30658dd4f77f60a659135097135"
+  },
+  "stage": {
+    "rect": {
+      "bytes": 9,
+      "nbits": 15,
+      "xmin": 0,
+      "xmax": 11600,
+      "ymin": 0,
+      "ymax": 10000,
+      "widthTwips": 11600,
+      "heightTwips": 10000
+    },
+    "widthPx": 580,
+    "heightPx": 500
+  },
+  "frameRate": 15,
+  "frameRateRaw": 3840,
+  "frameCount": 9,
+  "tags": {
+    "total": 17647,
+    "topLevel": 5484,
+    "counts": {
+      "FileAttributes": 1,
+      "SetBackgroundColor": 1,
+      "SoundStreamHead2": 432,
+      "DoAction": 467,
+      "DefineBitsJPEG3": 25,
+      "Unknown": 342,
+      "DefineBits": 486,
+      "DefineShape2": 21,
+      "PlaceObject2": 4413,
+      "DefineSound": 41,
+      "ExportAssets": 242,
+      "DefineShape": 1836,
+      "DefineSprite": 491,
+      "FrameLabel": 1385,
+      "ShowFrame": 4538,
+      "End": 492,
+      "DefineFontName": 10,
+      "RemoveObject2": 601,
+      "DefineShape4": 158,
+      "DefineBitsJPEG2": 1013,
+      "DefineText": 200,
+      "DefineBitsLossless2": 239,
+      "DefineBitsLossless": 3,
+      "PlaceObject3": 1,
+      "DefineShape3": 21,
+      "DoInitAction": 188
+    }
+  },
+  "actionScript": {
+    "doAction": 467,
+    "doInitAction": 188,
+    "doABC": 0,
+    "vmIndicators": {
+      "avm1": true,
+      "avm2": false
+    }
+  },
+  "symbols": {
+    "symbolClass": 0,
+    "exportAssets": 242
+  },
+  "externalUrls": [
+    "http://ns.adobe.com/xap/1.0/",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "http://ns.adobe.com/iX/1.0/",
+    "http://ns.adobe.com/xap/1.0/mm/",
+    "http://moyu2.5d6d.com/bbs.php"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "requiredFiles": [
+    "package.json",
+    ".agents/harness.json",
+    "docs/tasks/state.json",
+    "tools/harness.mjs",
+    "tools/harness.test.mjs",
+    "tools/inspect-swf.mjs",
+    "tools/inspect-swf.test.mjs",
+    "tools/lib/swf.mjs",
+    "docs/reference/swf-inventory.json",
+    "tools/check-source-index.mjs",
+    "docs/reverse-engineering/source-index.json",
+    "package-lock.json",
+    "src/domain/actor.ts",
+    "src/content/manifest.ts",
+    "tools/convert-first-actor.mjs",
+    "tools/check-first-actor.mjs",
+    "docs/reverse-engineering/first-actor/source-fixture.json",
+    "docs/reverse-engineering/first-actor/baseline/provenance.json",
+    "public/assets/first-actor/manifest.json"
+  ],
+  "entrypoints": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "documents": [
+    "README.md",
+    "TASK_OUTLINE.md",
+    "docs/architecture/technology-decision.md",
+    "docs/architecture/src-boundaries.md",
+    "docs/reference/source-summary.md",
+    "docs/reverse-engineering/mechanics-index.md",
+    "docs/workflow/README.md",
+    "docs/workflow/document-map.md",
+    "docs/workflow/agent-protocol.md",
+    "docs/workflow/task-generation.md",
+    "docs/workflow/reverse-engineering-protocol.md",
+    "docs/workflow/quality-gates.md",
+    "docs/workflow/review-protocol.md",
+    "docs/workflow/governance-log.md",
+    ".claude/agents/source-researcher.md",
+    ".claude/agents/implementation-engineer.md",
+    ".claude/agents/reviewer.md",
+    ".claude/agents/workflow-steward.md",
+    "docs/reverse-engineering/source-index.md",
+    "docs/reverse-engineering/first-actor/action-contract.md",
+    "docs/reverse-engineering/first-actor/validation.md"
+  ]
+}

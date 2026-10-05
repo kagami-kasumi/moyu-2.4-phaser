@@ -1,0 +1,37 @@
+{
+  "name": "moyu-modernization-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "魔域现代化 · 单角色动作验收工程与协作 harness",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "task:next": "node tools/harness.mjs next",
+    "generate:harness": "node tools/harness.mjs render",
+    "test:harness": "node --test tools/harness.test.mjs",
+    "check:harness": "npm run test:harness && node tools/harness.mjs check",
+    "check:workflow": "npm run check:harness",
+    "inspect:swf": "node tools/inspect-swf.mjs",
+    "check:source": "node --test tools/inspect-swf.test.mjs && node tools/inspect-swf.mjs --check",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-transform-types --test tests/actor.test.ts",
+    "convert:first-actor": "node tools/convert-first-actor.mjs",
+    "check:first-actor": "node tools/check-first-actor.mjs",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "phaser": "4.2.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.4",
+    "sharp": "0.35.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.2"
+  }
+}

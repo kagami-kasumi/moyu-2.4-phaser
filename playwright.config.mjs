@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/browser',workers:1,reporter:'list',use:{baseURL:'http://127.0.0.1:4173',viewport:{width:1100,height:850},deviceScaleFactor:1,launchOptions:{channel:'msedge'}},webServer:{command:'npm run preview -- --host 127.0.0.1 --port 4173',url:'http://127.0.0.1:4173',reuseExistingServer:false},outputDir:'.evidence/first-actor/browser'});
