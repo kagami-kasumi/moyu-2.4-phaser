@@ -1,0 +1,109 @@
+{
+  "functions": {
+    "站立": "{\r\n      switch(this.faceTo)\r\n      {\r\n         case \"左\":\r\n            this.playAction.gotoAndStop(this.sex + this.vocational + this.place + \"左\");\r\n            break;\r\n         case \"右\":\r\n            this.playAction.gotoAndStop(this.sex + this.vocational + this.place + \"右\");\r\n      }\r\n      this.motion = \"站立\";\r\n      return true;\r\n   }",
+    "向左上跑": "{\r\n      var _loc2_;\r\n      if(\"向左上跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向左移动\" : \"向左跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n         this.motion = \"向左上跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x - this.speedY,this._y,true))\r\n      {\r\n         this._x -= this.speedY;\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x,this._y - this.speedY,true))\r\n      {\r\n         this._y -= this.speedY;\r\n      }\r\n      this.changeDepth();\r\n      return true;\r\n   }",
+    "向左下跑": "{\r\n      var _loc2_;\r\n      if(\"向左下跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向左移动\" : \"向左跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n         this.motion = \"向左下跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x - this.speedY,this._y,true))\r\n      {\r\n         this._x -= this.speedY;\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x,this._y + this.speedY,true))\r\n      {\r\n         this._y += this.speedY;\r\n      }\r\n      this.changeDepth();\r\n      return true;\r\n   }",
+    "向右上跑": "{\r\n      if(true == this._parent.ground.hitTest(this._x + this.speedY,this._y - this.speedY,true))\r\n      {\r\n      }\r\n      var _loc2_;\r\n      if(\"向右上跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向右移动\" : \"向右跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n         this.motion = \"向右上跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x + this.speedY,this._y,true))\r\n      {\r\n         this._x += this.speedY;\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x,this._y - this.speedY,true))\r\n      {\r\n         this._y -= this.speedY;\r\n      }\r\n      this.changeDepth();\r\n      return true;\r\n   }",
+    "向右下跑": "{\r\n      if(true == this._parent.ground.hitTest(this._x + this.speedY,this._y + this.speedY,true))\r\n      {\r\n      }\r\n      var _loc2_;\r\n      if(\"向右下跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向右移动\" : \"向右跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n         this.motion = \"向右下跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x + this.speedY,this._y,true))\r\n      {\r\n         this._x += this.speedY;\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x,this._y + this.speedY,true))\r\n      {\r\n         this._y += this.speedY;\r\n      }\r\n      this.changeDepth();\r\n      return true;\r\n   }",
+    "向左跑": "{\r\n      var _loc2_;\r\n      if(\"向左跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向左移动\" : \"向左跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n         this.motion = \"向左跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x - this.speedX,this._y,true))\r\n      {\r\n         this._x -= this.speedX;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x - this.speedX,this._y + this.speedY,true))\r\n      {\r\n         this._x -= this.speedX;\r\n         this._y += this.speedY;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x - this.speedX,this._y - this.speedY,true))\r\n      {\r\n         this._x -= this.speedX;\r\n         this._y -= this.speedY;\r\n      }\r\n      return true;\r\n   }",
+    "向右跑": "{\r\n      var _loc2_;\r\n      if(\"向右跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向右移动\" : \"向右跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n         this.motion = \"向右跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x + this.speedX,this._y,true))\r\n      {\r\n         this._x += this.speedX;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x + this.speedX,this._y + this.speedY,true))\r\n      {\r\n         this._x += this.speedX;\r\n         this._y += this.speedY;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x + this.speedX,this._y - this.speedY,true))\r\n      {\r\n         this._x += this.speedX;\r\n         this._y -= this.speedY;\r\n      }\r\n      return true;\r\n   }",
+    "向上跑": "{\r\n      var _loc2_;\r\n      if(\"左\" == this.faceTo && \"向左跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向左移动\" : \"向左跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n      }\r\n      else if(\"右\" == this.faceTo && \"向右跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向右移动\" : \"向右跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n      }\r\n      if(\"向上跑\" != this.motion)\r\n      {\r\n         this.motion = \"向上跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x,this._y - this.speedY,true))\r\n      {\r\n         this._y -= this.speedY;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x + this.speedX,this._y - this.speedY,true))\r\n      {\r\n         this._y -= this.speedY;\r\n         this._x += this.speedX;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x - this.speedX,this._y - this.speedY,true))\r\n      {\r\n         this._y -= this.speedY;\r\n         this._x -= this.speedX;\r\n      }\r\n      this.changeDepth();\r\n      return true;\r\n   }",
+    "向下跑": "{\r\n      var _loc2_;\r\n      if(\"左\" == this.faceTo && \"向左跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向左移动\" : \"向左跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n      }\r\n      else if(\"右\" == this.faceTo && \"向右跑\" != this.motion)\r\n      {\r\n         _loc2_ = \"地上\" != this.place ? \"空中向右移动\" : \"向右跑\";\r\n         this.playAction.gotoAndStop(this.sex + this.vocational + _loc2_);\r\n      }\r\n      if(\"向下跑\" != this.motion)\r\n      {\r\n         this.motion = \"向下跑\";\r\n      }\r\n      if(true == this._parent.ground.hitTest(this._x,this._y + this.speedY,true))\r\n      {\r\n         this._y += this.speedY;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x + this.speedX,this._y + this.speedY,true))\r\n      {\r\n         this._y += this.speedY;\r\n         this._x += this.speedX;\r\n      }\r\n      else if(true == this._parent.ground.hitTest(this._x - this.speedX,this._y + this.speedY,true))\r\n      {\r\n         this._y += this.speedY;\r\n         this._x -= this.speedX;\r\n      }\r\n      this.changeDepth();\r\n      return true;\r\n   }",
+    "Activities": "{\r\n   if(!role.myTarget.isAlive)\r\n   {\r\n      role.myTarget = undefined;\r\n   }\r\n   if(\"使用技能中\" == role.motion || !role.isAlive)\r\n   {\r\n      return undefined;\r\n   }\r\n   if(\"使用技能结束\" == role.motion)\r\n   {\r\n      switch(role.skillEffect)\r\n      {\r\n         case \"斩魂\":\r\n            role.斩魂效果();\r\n            break;\r\n         case \"旋风斩\":\r\n            role.旋风斩效果();\r\n            break;\r\n         case \"刀光斩\":\r\n            role.刀光斩效果();\r\n            break;\r\n         case \"飞天连斩结束\":\r\n            role.飞天连斩结束();\r\n            break;\r\n         case \"狂暴\":\r\n            role.狂暴效果();\r\n            break;\r\n         case \"震\":\r\n            role.震效果();\r\n            break;\r\n         case \"电击术\":\r\n            role.电击术效果();\r\n            break;\r\n         case \"火球术\":\r\n            role.火球术效果();\r\n            break;\r\n         case \"光辉光环\":\r\n            role.光辉光环效果();\r\n            break;\r\n         case \"爆雷术\":\r\n            role.爆雷术效果();\r\n            break;\r\n         case \"雷霆万钧\":\r\n            role.雷霆万钧效果();\r\n            break;\r\n         case \"怒\":\r\n            role.怒效果();\r\n            break;\r\n         case \"飞天一斩\":\r\n         case \"飞天二斩\":\r\n         case \"飞天三斩\":\r\n            role.飞天连斩效果();\r\n            role.motion = \"使用技能中\";\r\n            return undefined;\r\n      }\r\n      role.stopTime = role.attackStopTime;\r\n      role.skillEffect = \"无\";\r\n      role.站立();\r\n   }\r\n   else if(!this._parent.catchMouseDown && !Key.isDown(37) && !Key.isDown(39) && !Key.isDown(38) && !Key.isDown(40) && !Key.isDown(65) && !Key.isDown(68) && !Key.isDown(83) && !Key.isDown(87))\r\n   {\r\n      role.站立();\r\n   }\r\n   if(this.stopTime > 0)\r\n   {\r\n      this.stopTime = this.stopTime - 1;\r\n      return false;\r\n   }\r\n   this.direct = this.turnDirection();\r\n   if(role.cantMove != true)\r\n   {\r\n      if(Key.isDown(37) || Key.isDown(65) || this.direct == \"左\" || this.direct == \"左上\" || this.direct == \"左下\")\r\n      {\r\n         role.faceTo = \"左\";\r\n         if(Key.isDown(38) || Key.isDown(87) || this.direct == \"左上\")\r\n         {\r\n            role.向左上跑();\r\n         }\r\n         else if(Key.isDown(40) || Key.isDown(83) || this.direct == \"左下\")\r\n         {\r\n            role.向左下跑();\r\n         }\r\n         else\r\n         {\r\n            role.向左跑();\r\n         }\r\n      }\r\n      else if(Key.isDown(39) || Key.isDown(68) || this.direct == \"右\" || this.direct == \"右上\" || this.direct == \"右下\")\r\n      {\r\n         role.faceTo = \"右\";\r\n         if(Key.isDown(38) || Key.isDown(87) || this.direct == \"右上\")\r\n         {\r\n            role.向右上跑();\r\n         }\r\n         else if(Key.isDown(40) || Key.isDown(83) || this.direct == \"右下\")\r\n         {\r\n            role.向右下跑();\r\n         }\r\n         else\r\n         {\r\n            role.向右跑();\r\n         }\r\n      }\r\n      else if(Key.isDown(38) || Key.isDown(87) || this.direct == \"上\")\r\n      {\r\n         role.向上跑();\r\n      }\r\n      else if(Key.isDown(40) || Key.isDown(83) || this.direct == \"下\")\r\n      {\r\n         role.向下跑();\r\n      }\r\n   }\r\n}",
+    "turnDirection": "{\r\n   var _loc3_;\r\n   var _loc2_;\r\n   var _loc4_;\r\n   if(this._parent.catchMouseDown)\r\n   {\r\n      _loc3_ = this._parent._xmouse - this._x;\r\n      _loc2_ = this._parent._ymouse - this._y;\r\n      if(Math.abs(_loc3_) > this.speedX || Math.abs(_loc2_) > this.speedY)\r\n      {\r\n         _loc4_ = Math.abs(_loc3_) - Math.abs(_loc2_);\r\n         if(_loc4_ > this.speedX)\r\n         {\r\n            return _loc3_ <= 0 ? \"左\" : \"右\";\r\n         }\r\n         if(_loc4_ < this.speedY)\r\n         {\r\n            return _loc2_ <= 0 ? \"上\" : \"下\";\r\n         }\r\n         if(_loc3_ > 0)\r\n         {\r\n            return _loc2_ <= 0 ? \"右上\" : \"右下\";\r\n         }\r\n         return _loc2_ <= 0 ? \"左上\" : \"左下\";\r\n      }\r\n   }\r\n   return \"\";\r\n}",
+    "jumpMap": "{\r\n   var _loc2_;\r\n   _loc2_ = 1;\r\n   while(_loc2_ <= 6)\r\n   {\r\n      if(this[\"entry\" + _loc2_].hitTest(this.role._x,this.role._y,false) == true && this[\"entry\" + _loc2_]._visible == true)\r\n      {\r\n         this.jumpToMap(this[\"entry\" + _loc2_]);\r\n         return true;\r\n      }\r\n      _loc2_ = _loc2_ + 1;\r\n   }\r\n   return false;\r\n}",
+    "jumpToMap": "{\r\n   if(entry._alpha == 0)\r\n   {\r\n      return false;\r\n   }\r\n   entry1._visible = true;\r\n   entry2._visible = true;\r\n   entry3._visible = true;\r\n   entry4._visible = true;\r\n   entry5._visible = true;\r\n   entry6._visible = true;\r\n   switch(entry.toMap)\r\n   {\r\n      case \"沼泽郊区\":\r\n         if(_parent.task.getTask(\"接应国王\").isComplete != true)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r前方有魔族军团，没有国王命令不能进入\");\r\n            return false;\r\n         }\r\n         break;\r\n      case \"冰封走廊\":\r\n         if(role.levels < 70)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r前方有魔族军团，70级前不能进入\");\r\n            return false;\r\n         }\r\n         break;\r\n      case \"失落高地一\":\r\n         if(role.levels < 100)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r100级前不能进入\");\r\n            return false;\r\n         }\r\n   }\r\n   if(entry)\r\n   {\r\n      this.nextMap = entry.toMap;\r\n      this.nextEntry = entry.toEntry;\r\n      this.role.myTarget = undefined;\r\n      this.huanShou1.myTarget = undefined;\r\n      this.huanShou2.myTarget = undefined;\r\n      this.huanShou3.myTarget = undefined;\r\n      this.gotoAndStop(this.nextMap);\r\n      return true;\r\n   }\r\n   return false;\r\n}",
+    "allowJumpMap": "{\r\n   if(this.nextMap == toMap)\r\n   {\r\n      this.goods.clearGoods();\r\n      this._parent.closeAllPanel();\r\n      this._parent.warning.close();\r\n      this.nowMap = this.nextMap;\r\n      this.afterJumpMap(this.nowMap);\r\n      return true;\r\n   }\r\n   this.nextMap = this.nowMap;\r\n   this.gotoAndStop(this.nowMap);\r\n   return false;\r\n}",
+    "afterJumpMap": "{\r\n   var _loc4_;\r\n   var _loc3_;\r\n   if(nextEntry != undefined)\r\n   {\r\n      _loc4_ = this[nextEntry]._x;\r\n      _loc3_ = this[nextEntry]._y;\r\n      this.role._x = _loc4_;\r\n      this.role._y = _loc3_;\r\n      this.huanShou1._x = _loc4_ - 15;\r\n      this.huanShou1._y = _loc3_ - 15;\r\n      this.huanShou2._x = _loc4_ + 5;\r\n      this.huanShou2._y = _loc3_ + 5;\r\n      this.huanShou3._x = _loc4_ + 20;\r\n      this.huanShou3._y = _loc3_ + 20;\r\n   }\r\n   this.nextMap = \"\";\r\n   this.nextEntry = \"\";\r\n   _global.ownMap = false;\r\n   this.hideMonster();\r\n   this.hideNPC();\r\n   if(nowMap != \"冰宫郊区\")\r\n   {\r\n      this.冰柱._visible = false;\r\n   }\r\n   return true;\r\n}"
+  },
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/RoleMC.pcode",
+      "sha256": "b80c765117ef67690b0e32f9be649cbbda86287c44b3496b3879b5692ce0753c"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/groundMC.as",
+      "sha256": "4bf319b1ddc999d207905d695b40f607758b443f78c643fdc9db37ab05dad245"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/groundMC.pcode",
+      "sha256": "c5c55d16ee271116b0073e9904400ede8b5c913fb3d8eb198fab1ed5349fa4a3"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4247/frame_1/DoAction.as",
+      "sha256": "7e765c40ae74ab82ae422ba62deddf973737b60f43a6c7589945f4e26bf9b495"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4247/frame_1/DoAction.pcode",
+      "sha256": "43f78af821cecade8afebaf0d24a84e8209c5882986296211af15e806c808243"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_2/DoAction.as",
+      "sha256": "d264465931de5e06c416ed5f7e987ee6e282300ea774de2dddea82113a71e7fb"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_2/DoAction.pcode",
+      "sha256": "902632a0b5430104ec2103ddcbc7cb8c6d9fe2b44e8af14b7a818917b0cdf482"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_8/DoAction.as",
+      "sha256": "fb1eb574de71555931c28fdd4b854797bfa863aa7c1f8b85eccf3f52e53db870"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_8/DoAction.pcode",
+      "sha256": "6109f38a8b5d6ce0ec7a965e00df5e4410a3822a746e9419ff73fe81d4e12863"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_9/DoAction.as",
+      "sha256": "7b8e4c303277ccc9b64f2c3e664f5133113e6203ad7d5f8364efaf64a83b19cc"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_9/DoAction.pcode",
+      "sha256": "f8df01a2a88a42b7efcac8b766e4546f21c86233222e3330ef6077b12d706289"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_3/DoAction.as",
+      "sha256": "063a54a1124b4c7c4e35d757fdb12b14560db4f9a10f0fe3d13cf5219b166104"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_3/DoAction.pcode",
+      "sha256": "b05b0791e25f23c02d0fd1e20d895366b91cfc8b8fd7b34dbb4438fb6dfcf9e4"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_4/DoAction.as",
+      "sha256": "6345e43ab283bca7fb582faec3dee47a011742fe0efb8cafa531068650cb4c82"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_4/DoAction.pcode",
+      "sha256": "c961d324335ee62264c0e304ef5d1cf3fd29b75b20078198ba4c535756b8c502"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_5/DoAction.as",
+      "sha256": "ec06b4dcd65039f6ca274a72641be11b39e89b9bc9702f0e5cc4505bba6c2da0"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_5/DoAction.pcode",
+      "sha256": "73727aa2ffbb826d352cb73d799d676f75350067f34767b5eba080063bdf1cb6"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+      "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+    }
+  ]
+}

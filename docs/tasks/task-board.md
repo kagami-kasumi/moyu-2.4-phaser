@@ -8,7 +8,8 @@
 | ID | 目标 | 状态 | 覆盖合同 |
 | --- | --- | --- | --- |
 | LINE-FOUNDATION | 源证据到单角色动作验收 | Done | [覆盖](feature-line-coverage/LINE-FOUNDATION.md) |
-| LINE-FIRST-PLAYABLE | 首个可玩闭环 | Active | [覆盖](feature-line-coverage/LINE-FIRST-PLAYABLE.md) |
+| LINE-FIRST-PLAYABLE | 首个可玩闭环 | Done | [覆盖](feature-line-coverage/LINE-FIRST-PLAYABLE.md) |
+| LINE-NPC-REWARD | NPC首次礼包领取 | Active | [覆盖](feature-line-coverage/LINE-NPC-REWARD.md) |
 
 ## 任务
 
@@ -16,4 +17,5 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | TASK-RE-001 | 原文件索引与启动链确认 | reverse | LINE-FOUNDATION | Done | — | [合同](task-definitions/TASK-RE-001.md) |
 | TASK-RE-002 | 单角色动作端到端交付（取证、转换、工程与验收） | implementation | LINE-FOUNDATION | Done | TASK-RE-001 | [合同](task-definitions/TASK-RE-002.md) |
-| TASK-SLICE-004 | 首个可玩闭环 | implementation | LINE-FIRST-PLAYABLE | Active | TASK-RE-002 | [合同](task-definitions/TASK-SLICE-004.md) |
+| TASK-SLICE-004 | 首个可玩闭环 | implementation | LINE-FIRST-PLAYABLE | Done | TASK-RE-002 | [合同](task-definitions/TASK-SLICE-004.md) |
+| TASK-NPC-005 | 老兵首次礼包领取闭环 | implementation | LINE-NPC-REWARD | Ready | TASK-SLICE-004 | [合同](task-definitions/TASK-NPC-005.md) |

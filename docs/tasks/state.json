@@ -10,8 +10,14 @@
     {
       "id": "LINE-FIRST-PLAYABLE",
       "title": "首个可玩闭环",
-      "status": "Active",
+      "status": "Done",
       "coverage": "docs/tasks/feature-line-coverage/LINE-FIRST-PLAYABLE.md"
+    },
+    {
+      "id": "LINE-NPC-REWARD",
+      "title": "NPC首次礼包领取",
+      "status": "Active",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-NPC-REWARD.md"
     }
   ],
   "tasks": [
@@ -105,12 +111,71 @@
       "id": "TASK-SLICE-004",
       "title": "首个可玩闭环",
       "line": "LINE-FIRST-PLAYABLE",
-      "status": "Active",
+      "status": "Done",
       "type": "implementation",
       "dependsOn": [
         "TASK-RE-002"
       ],
       "definition": "docs/tasks/task-definitions/TASK-SLICE-004.md",
+      "completion": {
+        "summary": "完成新建男战士、城郊地面移动/停步、Q/Ctrl与鼠标入口触发至卡萨诺城一entry1的首个可玩闭环；独立源几何/行为/14图像基准、3处场景和原44组动作回归通过。仅为有界切片，未实现NPC对话、战斗、背包、幻兽和存档。",
+        "checks": [
+          {
+            "result": "passed",
+            "command": "npm run typecheck"
+          },
+          {
+            "result": "passed",
+            "command": "npm test"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:first-slice"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:first-actor"
+          },
+          {
+            "result": "passed",
+            "command": "npm run build"
+          },
+          {
+            "result": "passed",
+            "command": "npm run test:browser"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:source"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:harness"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/first-slice/source-contract.md",
+          "docs/reverse-engineering/first-slice/validation.md",
+          "docs/reverse-engineering/first-slice/source-fixture.json",
+          "docs/reverse-engineering/first-slice/behavior-source.json",
+          "docs/reverse-engineering/first-slice/baseline/provenance.json",
+          "public/assets/first-slice/manifest.json",
+          "tests/journey.test.ts",
+          "tests/browser/journey.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-NPC-005",
+      "title": "老兵首次礼包领取闭环",
+      "line": "LINE-NPC-REWARD",
+      "status": "Ready",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-SLICE-004"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-NPC-005.md",
       "completion": null,
       "blocker": null
     }

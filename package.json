@@ -19,10 +19,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-transform-types --test tests/actor.test.ts",
+    "test": "node --experimental-transform-types --test tests/actor.test.ts tests/journey.test.ts",
     "convert:first-actor": "node tools/convert-first-actor.mjs",
     "check:first-actor": "node tools/check-first-actor.mjs",
-    "test:browser": "playwright test"
+    "test:browser": "npm run build && playwright test",
+    "convert:first-slice": "node tools/convert-first-slice.mjs",
+    "check:first-slice": "node tools/check-first-slice.mjs"
   },
   "dependencies": {
     "phaser": "4.2.1"

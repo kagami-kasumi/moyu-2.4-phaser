@@ -7,4 +7,4 @@
 
 | 当前项 | 标题 | 类型 | 状态 | 定义 | 阻塞原因 |
 | --- | --- | --- | --- | --- | --- |
-| TASK-SLICE-004 | 首个可玩闭环 | game | Active | [合同](task-definitions/TASK-SLICE-004.md) | — |
+| TASK-NPC-005 | 老兵首次礼包领取闭环 | game | Ready | [合同](task-definitions/TASK-NPC-005.md) | — |

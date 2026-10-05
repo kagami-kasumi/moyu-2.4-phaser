@@ -6,7 +6,7 @@ const evidence='.evidence/first-actor';
 
 test('cold standalone build, 44 source-frame projections and controlled lifecycle',async({page})=>{
   const errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!r.url().startsWith('data:'))requests.push(r.url());});
-  await page.goto('/?manual');await expect(page.locator('body')).toHaveAttribute('data-ready','true');
+  await page.goto('/actor.html?manual');await expect(page.locator('body')).toHaveAttribute('data-ready','true');
   // Independent expected projection: frozen FFDec images + reviewed SWF matrix constants.
   const matrices={idle:{left:[1,-49.55,0.45],right:[-1,167.45,0.45]},run:{left:[1,-69.55,4],right:[-1,180.45,4]},attack:{left:[1,-93.7,-49.65],right:[-1,206.3,-49.65]}};
   const comparisons=[];
@@ -37,7 +37,7 @@ test('cold standalone build, 44 source-frame projections and controlled lifecycl
 });
 
 test('visible buttons pause, single-step, resume and reset the running scene',async({page})=>{
-  await page.goto('/');await expect(page.locator('body')).toHaveAttribute('data-ready','true');
+  await page.goto('/actor.html');await expect(page.locator('body')).toHaveAttribute('data-ready','true');
   await page.getByRole('button',{name:'跑动',exact:true}).click();await page.getByRole('button',{name:'右 →',exact:true}).click();
   await page.getByRole('button',{name:'暂停',exact:true}).click();const before=await page.locator('#status').textContent();
   await page.waitForTimeout(200);expect(await page.locator('#status').textContent()).toBe(before);
@@ -46,3 +46,4 @@ test('visible buttons pause, single-step, resume and reset the running scene',as
   await page.getByRole('button',{name:'重置',exact:true}).click();await expect(page.locator('#status')).toContainText('待机 · 左向 · 帧 1/1');
   await page.getByRole('button',{name:'斩魂',exact:true}).click();await expect(page.locator('#events')).toContainText('效果请求');
 });
+

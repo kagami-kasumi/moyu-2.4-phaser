@@ -1,0 +1,71 @@
+{
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "generator": "JPEXS FFDec 26.0.0 shape:png and XML; raw script/P-code function extraction",
+  "command": "ffdec-cli.exe -onerror abort -selectid 2804,2806,4323,4326,4238,4240,4242,4257,4259,4269,4281,4295,4305,4307 -format shape:png -export shape <new-empty-directory> 魔域2.4.swf",
+  "files": [
+    {
+      "file": "source-fixture.json",
+      "sha256": "6e45c3730e353b94e911d590a5a5cf09c826006b7ec41d5064fd0f90bdaba28d"
+    },
+    {
+      "file": "behavior-source.json",
+      "sha256": "05a3fa33725961cca3b03ee8227b28a02026e8d9a2cfdbcc205d314ba4c78511"
+    },
+    {
+      "file": "baseline/2804.png",
+      "sha256": "64bb33517a27099287d4dcbb6678f5222913f3fb29d8f243d3c2a82aa9b68a74"
+    },
+    {
+      "file": "baseline/2806.png",
+      "sha256": "8c30b0806c7752d4f1759e25aece6262aa15ea50cabad8aab6d330b37ac7f0f3"
+    },
+    {
+      "file": "baseline/4238.png",
+      "sha256": "8a5c35f46a3094eb74ad45b40a52735a9351c72ff8a1956c9e7f9fb7dc2ece11"
+    },
+    {
+      "file": "baseline/4240.png",
+      "sha256": "41e13704505bbfbc8f916f9432c185e66ca65083c86e787683ef7aaf9a07a2d1"
+    },
+    {
+      "file": "baseline/4242.png",
+      "sha256": "6196087c140eed566f73b497cba41c3570e4c5e6d3eed9b5a848e01096d98eb1"
+    },
+    {
+      "file": "baseline/4257.png",
+      "sha256": "23c59d8a3f9bc76952a3aa00450824d8c6243a3922f488070acc227738716add"
+    },
+    {
+      "file": "baseline/4259.png",
+      "sha256": "4dd1fd49cb69052163c1f301d883166aede252563b61605bc196dd87756d5047"
+    },
+    {
+      "file": "baseline/4269.png",
+      "sha256": "665354e08691bb3822405a03caa1cb4e47f8e5d9ed18ecd05842d015c2d3f421"
+    },
+    {
+      "file": "baseline/4281.png",
+      "sha256": "ff397b70ac0d3a43a8dbc400e972b47dcc8b5d1ddb297e03fc4597edd05c58d2"
+    },
+    {
+      "file": "baseline/4295.png",
+      "sha256": "ac0369a7357cfcc675aa55dac343b5ae7159a06ede5afaa851217b2175918d8f"
+    },
+    {
+      "file": "baseline/4305.png",
+      "sha256": "1dd5c1e8e725ca3810529f9242a993a52d8e2b9f0788a9862cabc6e7598d8ad3"
+    },
+    {
+      "file": "baseline/4307.png",
+      "sha256": "9be79d4adf771aa782f9247d32a4ec9917129e9504ebc7dd1a816c03275425fe"
+    },
+    {
+      "file": "baseline/4323.png",
+      "sha256": "f238ac9aa6802981b79822742a3551185894c2b263c557e276e9408c913d5a3d"
+    },
+    {
+      "file": "baseline/4326.png",
+      "sha256": "f7d10ceebc5393014ff853e1094c5658bfc990ed56fb96c5185d90765a0a0552"
+    }
+  ]
+}

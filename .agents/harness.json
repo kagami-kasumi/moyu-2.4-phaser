@@ -19,7 +19,15 @@
     "tools/check-first-actor.mjs",
     "docs/reverse-engineering/first-actor/source-fixture.json",
     "docs/reverse-engineering/first-actor/baseline/provenance.json",
-    "public/assets/first-actor/manifest.json"
+    "public/assets/first-actor/manifest.json",
+    "src/domain/journey.ts",
+    "src/content/slice-manifest.ts",
+    "tools/convert-first-slice.mjs",
+    "tools/check-first-slice.mjs",
+    "docs/reverse-engineering/first-slice/source-fixture.json",
+    "docs/reverse-engineering/first-slice/behavior-source.json",
+    "docs/reverse-engineering/first-slice/baseline/provenance.json",
+    "public/assets/first-slice/manifest.json"
   ],
   "entrypoints": [
     "AGENTS.md",
@@ -46,6 +54,8 @@
     ".claude/agents/workflow-steward.md",
     "docs/reverse-engineering/source-index.md",
     "docs/reverse-engineering/first-actor/action-contract.md",
-    "docs/reverse-engineering/first-actor/validation.md"
+    "docs/reverse-engineering/first-actor/validation.md",
+    "docs/reverse-engineering/first-slice/source-contract.md",
+    "docs/reverse-engineering/first-slice/validation.md"
   ]
 }
