@@ -1,0 +1,346 @@
+{
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "rootFrame": 9,
+  "roots": [
+    {
+      "name": "map",
+      "sprite": 4536,
+      "depth": 1
+    },
+    {
+      "name": "fastKey",
+      "sprite": 4546,
+      "depth": 334
+    },
+    {
+      "name": "背包按钮",
+      "sprite": 2655,
+      "depth": 380
+    },
+    {
+      "name": "好友按钮",
+      "sprite": 2649,
+      "depth": 384
+    },
+    {
+      "name": "幻兽按钮",
+      "sprite": 2643,
+      "depth": 388
+    },
+    {
+      "name": "技能按钮",
+      "sprite": 2637,
+      "depth": 392
+    },
+    {
+      "name": "人物属性按钮",
+      "sprite": 2631,
+      "depth": 396
+    },
+    {
+      "name": "任务按钮",
+      "sprite": 2625,
+      "depth": 400
+    },
+    {
+      "name": "系统按钮",
+      "sprite": 2619,
+      "depth": 404
+    },
+    {
+      "name": "battleHuanShouPanel2",
+      "sprite": 4556,
+      "depth": 408
+    },
+    {
+      "name": "battleHuanShouPanel1",
+      "sprite": 4556,
+      "depth": 432
+    },
+    {
+      "name": "mail",
+      "sprite": 4558,
+      "depth": 456
+    },
+    {
+      "name": "relive",
+      "sprite": 4574,
+      "depth": 459
+    },
+    {
+      "name": "skillState",
+      "sprite": 4578,
+      "depth": 464
+    },
+    {
+      "name": "warning",
+      "sprite": 4581,
+      "depth": 471
+    },
+    {
+      "name": "battleHuanShouPanel3",
+      "sprite": 4556,
+      "depth": 474
+    },
+    {
+      "name": "rolePanel",
+      "sprite": 4591,
+      "depth": 498
+    },
+    {
+      "name": "bigMap",
+      "sprite": 2603,
+      "depth": 522
+    },
+    {
+      "name": "readPanel",
+      "sprite": 4234,
+      "depth": 570
+    },
+    {
+      "name": "equipment",
+      "sprite": 2579,
+      "depth": 618
+    },
+    {
+      "name": "roleAtrribute",
+      "sprite": 2493,
+      "depth": 670
+    },
+    {
+      "name": "fireDetail",
+      "sprite": 2487,
+      "depth": 688
+    },
+    {
+      "name": "huanShou",
+      "sprite": 2482,
+      "depth": 703
+    },
+    {
+      "name": "huanShouDetail",
+      "sprite": 2424,
+      "depth": 775
+    },
+    {
+      "name": "huanShouFen",
+      "sprite": 2414,
+      "depth": 799
+    },
+    {
+      "name": "roleSkills",
+      "sprite": 2407,
+      "depth": 814
+    },
+    {
+      "name": "friend",
+      "sprite": 2381,
+      "depth": 856
+    },
+    {
+      "name": "system",
+      "sprite": 2368,
+      "depth": 898
+    },
+    {
+      "name": "huanHua",
+      "sprite": 2356,
+      "depth": 920
+    },
+    {
+      "name": "zsHuanHua",
+      "sprite": 2344,
+      "depth": 965
+    },
+    {
+      "name": "evolve",
+      "sprite": 2335,
+      "depth": 991
+    },
+    {
+      "name": "superEvolve",
+      "sprite": 2327,
+      "depth": 1014
+    },
+    {
+      "name": "makeBell",
+      "sprite": 2321,
+      "depth": 1035
+    },
+    {
+      "name": "mainCastle",
+      "sprite": 2313,
+      "depth": 1064
+    },
+    {
+      "name": "castleStone",
+      "sprite": 2303,
+      "depth": 1119
+    },
+    {
+      "name": "castleHouse",
+      "sprite": 2297,
+      "depth": 1144
+    },
+    {
+      "name": "talking",
+      "sprite": 2293,
+      "depth": 1159
+    },
+    {
+      "name": "task",
+      "sprite": 2210,
+      "depth": 1189
+    },
+    {
+      "name": "make",
+      "sprite": 2195,
+      "depth": 1240
+    },
+    {
+      "name": "successHuanHua",
+      "sprite": 4599,
+      "depth": 1265
+    },
+    {
+      "name": "splitStone",
+      "sprite": 2189,
+      "depth": 1284
+    },
+    {
+      "name": "XPPower",
+      "sprite": 4603,
+      "depth": 1324
+    },
+    {
+      "name": "useExpball",
+      "sprite": 2181,
+      "depth": 1336
+    },
+    {
+      "name": "giveHuanShou",
+      "sprite": 2171,
+      "depth": 1360
+    },
+    {
+      "name": "giveThing",
+      "sprite": 2111,
+      "depth": 1381
+    },
+    {
+      "name": "sendThing",
+      "sprite": 2107,
+      "depth": 1402
+    },
+    {
+      "name": "receiveThing",
+      "sprite": 2102,
+      "depth": 1421
+    },
+    {
+      "name": "legion",
+      "sprite": 2093,
+      "depth": 1437
+    },
+    {
+      "name": "drugShop",
+      "sprite": 2089,
+      "depth": 1448
+    },
+    {
+      "name": "bookShop",
+      "sprite": 2089,
+      "depth": 1699
+    },
+    {
+      "name": "huanShouShop",
+      "sprite": 2089,
+      "depth": 1950
+    },
+    {
+      "name": "shop",
+      "sprite": 2089,
+      "depth": 2201
+    },
+    {
+      "name": "castleHuanShouShop",
+      "sprite": 2084,
+      "depth": 2452
+    },
+    {
+      "name": "castleBoxShop",
+      "sprite": 2084,
+      "depth": 2644
+    },
+    {
+      "name": "castleGemShop",
+      "sprite": 2084,
+      "depth": 2836
+    },
+    {
+      "name": "backPack",
+      "sprite": 2074,
+      "depth": 3028
+    },
+    {
+      "name": "wareHouse",
+      "sprite": 2060,
+      "depth": 3285
+    },
+    {
+      "name": "huanShouItem1",
+      "sprite": 2050,
+      "depth": 3615
+    },
+    {
+      "name": "huanShouItem2",
+      "sprite": 2050,
+      "depth": 3623
+    },
+    {
+      "name": "huanShouItem3",
+      "sprite": 2050,
+      "depth": 3631
+    },
+    {
+      "name": "huanShouShop2",
+      "sprite": 2089,
+      "depth": 3639
+    },
+    {
+      "name": "buyNumber",
+      "sprite": 167,
+      "depth": 3890
+    },
+    {
+      "name": "systemMsg",
+      "sprite": 4608,
+      "depth": 3917
+    },
+    {
+      "name": "msgBox",
+      "sprite": 4613,
+      "depth": 3925
+    },
+    {
+      "name": "mover",
+      "sprite": 4615,
+      "depth": 3936
+    },
+    {
+      "name": "detail",
+      "sprite": 4619,
+      "depth": 3939
+    },
+    {
+      "name": "移动的幻兽蛋",
+      "sprite": 4622,
+      "depth": 3943
+    },
+    {
+      "name": "gameOverMC",
+      "sprite": 4629,
+      "depth": 3946
+    }
+  ]
+}

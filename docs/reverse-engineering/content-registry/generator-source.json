@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "file": "DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    }
+  ],
+  "functions": {
+    "getWeddingRing": {
+      "source": {
+        "file": "DefineSprite_4312/frame_1/DoAction.as",
+        "line": 2
+      },
+      "body": "{\r\n   var _loc3_;\r\n   var _loc2_;\r\n   switch(who)\r\n   {\r\n      case \"约克\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreDefense\";\r\n         break;\r\n      case \"奈奈安\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreDefense\";\r\n         break;\r\n      case \"薇薇安\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreAttack\";\r\n         break;\r\n      case \"麦克\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreAttack\";\r\n         break;\r\n      case \"露西亚\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreLife\";\r\n         break;\r\n      case \"恩多\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreLife\";\r\n         break;\r\n      case \"娜尔莎\":\r\n         _loc3_ = \"moreLife\";\r\n         _loc2_ = \"moreLife\";\r\n         break;\r\n      case \"兰斯\":\r\n         _loc3_ = \"moreLife\";\r\n         _loc2_ = \"moreLife\";\r\n         break;\r\n      case \"海伦娜\":\r\n         _loc3_ = \"moreLife\";\r\n         _loc2_ = \"moreMp\";\r\n         break;\r\n      case \"艾尔\":\r\n         _loc3_ = \"moreLife\";\r\n         _loc2_ = \"moreMp\";\r\n         break;\r\n      case \"迪特\":\r\n         _loc3_ = \"moreLife\";\r\n         _loc2_ = \"moreDefense\";\r\n         break;\r\n      case \"爱丽娜\":\r\n         _loc3_ = \"moreLife\";\r\n         _loc2_ = \"moreDefense\";\r\n         break;\r\n      case \"贝塔\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreMp\";\r\n         break;\r\n      case \"卡迪娜\":\r\n         _loc3_ = \"moreAttack\";\r\n         _loc2_ = \"moreMp\";\r\n   }\r\n   var _loc4_ = new Array(\"attack\",\"defense\",\"maxLife\",\"maxMp\",\"otherFire\",\"reduceDamage\",\"burst\",\"jook\");\r\n   var _loc9_ = _loc4_.splice(random(_loc4_.length),1)[0];\r\n   var _loc8_ = _loc4_.splice(random(_loc4_.length),1)[0];\r\n   var _loc7_ = _loc4_.splice(random(_loc4_.length),1)[0];\r\n   var _loc6_ = _loc4_.splice(random(_loc4_.length),1)[0];\r\n   var _loc5_ = {type:\"戒指\",grade:0,name:\"结婚戒指\",mhdj:0,moreAttack:0,moreDefense:0,moreLife:0,moreMp:0,attack:50 + random(51),defense:20 + random(31),maxLife:400 + random(201),maxMp:400 + random(201),otherFire:5 + random(4),reduceDamage:5 + random(4),burst:8 + random(5),jook:8 + random(5),mainType1:_loc3_,mainType2:_loc2_,pairType1:_loc9_,pairType2:_loc8_,pairType3:_loc7_,pairType4:_loc6_};\r\n   _root.upDataWeapon(_loc5_);\r\n   return _loc5_;\r\n}"
+    }
+  }
+}

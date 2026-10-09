@@ -1,0 +1,69 @@
+{
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "nodes": {
+    "2292": {
+      "label": "女法师",
+      "frame": 5,
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": "2227",
+          "matrix": {
+            "type": "MATRIX",
+            "hasRotate": "false",
+            "hasScale": "false",
+            "nRotateBits": "0",
+            "nScaleBits": "0",
+            "nTranslateBits": "0",
+            "rotateSkew0": "0.0",
+            "rotateSkew1": "0.0",
+            "scaleX": "0.0",
+            "scaleY": "0.0",
+            "translateX": "0",
+            "translateY": "0"
+          }
+        }
+      ]
+    },
+    "2047": {
+      "label": "火球术图标",
+      "frame": 93,
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": "290",
+          "matrix": {
+            "type": "MATRIX",
+            "hasRotate": "false",
+            "hasScale": "false",
+            "nRotateBits": "0",
+            "nScaleBits": "0",
+            "nTranslateBits": "7",
+            "rotateSkew0": "0.0",
+            "rotateSkew1": "0.0",
+            "scaleX": "0.0",
+            "scaleY": "0.0",
+            "translateX": "40",
+            "translateY": "40"
+          }
+        }
+      ]
+    },
+    "2227": {
+      "bounds": [
+        0.0,
+        0.0,
+        48.0,
+        48.0
+      ]
+    },
+    "290": {
+      "bounds": [
+        0.0,
+        0.0,
+        36.0,
+        36.0
+      ]
+    }
+  }
+}

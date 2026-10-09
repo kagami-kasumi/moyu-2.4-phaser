@@ -9,5 +9,7 @@
 | 可控角色、场景、输入路径 | verified（脚本和标签）；运行到达 unknown | [结构 JSON](source-index.json)：map/4536、role/3106、卡萨诺城郊区；方向键/WASD、鼠标方向和目标点击入口 | TASK-SLICE-004 补首场景运行旅程与碰撞/出口 |
 | 动作、注册点、持帧、事件 | verified（源帧、矩阵、AS2语义与现代比对）；完整伤害/实际原运行 unknown | [动作合同](first-actor/action-contract.md)、[验证报告](first-actor/validation.md)：待机/跑动/斩魂，末帧标记与下次Activities分离 | 可玩切片消费现有资源，完整碰撞/伤害另取证 |
 | 完整玩法系统与内容量 | unknown | 用户认为本作动作简单；未做完整盘点 | 首个切片后按需扩展 |
+| 四类装备魔魂强化与品质关联上限 | verified（AS/P-code及独立源函数对照） | [魔魂源合同](equipment-magic/source-contract.md)、[验证报告](equipment-magic/validation.md) | 品质升级/等级/其他打造另按合同推进；完整原运行未知 |
+| 四类装备灵魂晶石品质提升 | verified（AS/P-code及独立源函数对照） | [品质源合同](equipment-quality/source-contract.md)、[验证报告](equipment-quality/validation.md) | 灵魂王/声望、戒指/幸运符分支未扩展 |
 
 后续每行链接正式证据与其未决项，不在这里重复一份数值、坐标或任务状态。实现状态统一见 [调度状态](../tasks/state.json)。

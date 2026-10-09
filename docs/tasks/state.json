@@ -16,8 +16,68 @@
     {
       "id": "LINE-NPC-REWARD",
       "title": "NPC首次礼包领取",
-      "status": "Active",
+      "status": "Done",
       "coverage": "docs/tasks/feature-line-coverage/LINE-NPC-REWARD.md"
+    },
+    {
+      "id": "LINE-GAME-ENTRY",
+      "title": "直接进入游戏",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-GAME-ENTRY.md"
+    },
+    {
+      "id": "LINE-ORIGINAL-UI",
+      "title": "原版游戏主界面",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-ORIGINAL-UI.md"
+    },
+    {
+      "id": "LINE-INVENTORY",
+      "title": "背包使用与装备",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-INVENTORY.md"
+    },
+    {
+      "id": "LINE-GROUND-ITEMS",
+      "title": "地面掉落拾取",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-GROUND-ITEMS.md"
+    },
+    {
+      "id": "LINE-VETERAN-EXCHANGE",
+      "title": "老兵勋章兑换",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-VETERAN-EXCHANGE.md"
+    },
+    {
+      "id": "LINE-EQUIPMENT-SOCKETS",
+      "title": "月光宝盒装备开孔",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-EQUIPMENT-SOCKETS.md"
+    },
+    {
+      "id": "LINE-EQUIPMENT-MAGIC",
+      "title": "装备魔魂强化",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-EQUIPMENT-MAGIC.md"
+    },
+    {
+      "id": "LINE-EQUIPMENT-QUALITY",
+      "title": "灵魂晶石装备品质提升",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-EQUIPMENT-QUALITY.md"
+    },
+    {
+      "id": "LINE-PLAYER-EXPERIENCE",
+      "title": "经验球人物升级",
+      "status": "Active",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-PLAYER-EXPERIENCE.md"
+    },
+    {
+      "id": "LINE-GAME-FOUNDATIONS",
+      "title": "全局数据、角色入口与存档",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-GAME-FOUNDATIONS.md"
     }
   ],
   "tasks": [
@@ -170,12 +230,994 @@
       "id": "TASK-NPC-005",
       "title": "老兵首次礼包领取闭环",
       "line": "LINE-NPC-REWARD",
-      "status": "Ready",
+      "status": "Done",
       "type": "implementation",
       "dependsOn": [
         "TASK-SLICE-004"
       ],
       "definition": "docs/tasks/task-definitions/TASK-NPC-005.md",
+      "completion": {
+        "summary": "完成老兵首次礼包三个互斥分支、原初始物品与凯恩记录、可见背包属性查看、一次性标记/对话生命周期及满包部分入包与掉落。23项逻辑测试和10项Edge浏览器验收通过，16张独立原图及既有移动/切图/44组动作画面回归通过；未实现孵化、装备战斗、存档或后续兑换。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:npc-reward",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:first-slice",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:first-actor",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/npc-reward/source-contract.md",
+          "docs/reverse-engineering/npc-reward/validation.md",
+          "docs/reverse-engineering/npc-reward/source-fixture.json",
+          "docs/reverse-engineering/npc-reward/behavior-source.json",
+          "docs/reverse-engineering/npc-reward/initial-source.json",
+          "docs/reverse-engineering/npc-reward/baseline/provenance.json",
+          "public/assets/npc-reward/manifest.json",
+          "src/domain/npc-reward.ts",
+          "tests/npc-reward.test.ts",
+          "tests/browser/npc-reward.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-UI-006",
+      "title": "首页直接进入可交互游戏",
+      "line": "LINE-GAME-ENTRY",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-NPC-005"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-UI-006.md",
+      "completion": {
+        "summary": "首页移除示范外壳，直接进入可交互城郊；场内对话/背包、Esc关闭与模态输入隔离通过。11项浏览器用例经全量及失败项修复重跑覆盖，完整原版HUD和未实现玩法不在完成声明内。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npx playwright test tests/browser/npc-reward.spec.mjs --grep \"full backpack\"",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/tasks/feature-line-coverage/LINE-GAME-ENTRY.md",
+          "tests/browser/game-entry.spec.mjs",
+          "src/game.css"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-UI-007",
+      "title": "还原原版HUD与已实现功能入口",
+      "line": "LINE-ORIGINAL-UI",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-UI-006"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-UI-007.md",
+      "completion": {
+        "summary": "还原原版HUD、头像状态条/底栏/地图信息、40格背包和老兵对话布局，接入X/C/Esc及真实状态；纠正完整新建wudi奖励。25逻辑与13完整浏览器检查通过，原资源/显示列表独立核对通过；未声称战斗/存档或整屏像素精确。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:original-ui",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:first-actor",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:first-slice",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:npc-reward",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/original-ui/source-contract.md",
+          "docs/reverse-engineering/original-ui/validation.md",
+          "docs/reverse-engineering/original-ui/source-fixture.json",
+          "docs/reverse-engineering/original-ui/behavior-source.json",
+          "docs/reverse-engineering/original-ui/details-source.json",
+          "docs/reverse-engineering/original-ui/baseline/provenance.json",
+          "public/assets/original-ui/manifest.json",
+          "tests/hud.test.ts",
+          "tests/browser/original-ui.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-ITEM-008",
+      "title": "背包物品使用与装备",
+      "line": "LINE-INVENTORY",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-UI-007"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-ITEM-008.md",
+      "completion": {
+        "summary": "完成背包货币/材料礼包、幻兽蛋、英勇书、勋章使用，以及当前四类战士装备与戒指穿戴/替换/卸下和属性反馈；32逻辑、16全量浏览器及最终3项专项复验通过，既有资源源对照通过。未包含战斗、打造、经验分配、地面拾取或存档。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npx playwright test tests/browser/inventory.spec.mjs",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:first-actor",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:first-slice",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:npc-reward",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:original-ui",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/inventory/source-contract.md",
+          "docs/reverse-engineering/inventory/source-functions.json",
+          "docs/reverse-engineering/inventory/validation.md",
+          "src/domain/inventory.ts",
+          "tests/inventory.test.ts",
+          "tests/browser/inventory.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-ITEM-009",
+      "title": "地面掉落拾取闭环",
+      "line": "LINE-GROUND-ITEMS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-ITEM-008"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-ITEM-009.md",
+      "completion": {
+        "summary": "完成源规则地面点击/空格拾取、满包空格门槛、堆叠倒序及标记清理；38逻辑与18全量浏览器检查通过，截图已检查。未覆盖战斗掉落、主动丢弃、商店或存档。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/ground-items/source-contract.md",
+          "docs/reverse-engineering/ground-items/source-functions.json",
+          "docs/reverse-engineering/ground-items/validation.md",
+          "src/domain/ground-items.ts",
+          "tests/ground-items.test.ts",
+          "tests/browser/ground-items.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-NPC-010",
+      "title": "老兵勋章兑换闭环",
+      "line": "LINE-VETERAN-EXCHANGE",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-ITEM-009"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-NPC-010.md",
+      "completion": {
+        "summary": "完成老兵两枚勋章兑换初级月光宝盒、源顺序扣除/发放、满包回收、失败和过期回答防护；42逻辑、21全量浏览器及六张截图验证通过。等级奖励、开孔、战斗与存档不在本次范围。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/veteran-exchange/source-contract.md",
+          "docs/reverse-engineering/veteran-exchange/source-functions.json",
+          "docs/reverse-engineering/veteran-exchange/validation.md",
+          "tests/veteran-exchange.test.ts",
+          "tests/browser/veteran-exchange.spec.mjs",
+          "src/domain/npc-reward.ts"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-ITEM-011",
+      "title": "月光宝盒装备开孔闭环",
+      "line": "LINE-EQUIPMENT-SOCKETS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-NPC-010"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-ITEM-011.md",
+      "completion": {
+        "summary": "完成四类装备三档月光宝盒开孔、售价/穿戴战斗力反馈及双槽持有/取回/满包回收；48逻辑、23全量浏览器及最后2项专项通过，七张截图已检查。其他精炼、镶嵌、战斗与存档未扩展。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npx playwright test tests/browser/equipment-sockets.spec.mjs",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/equipment-sockets/source-contract.md",
+          "docs/reverse-engineering/equipment-sockets/source-functions.json",
+          "docs/reverse-engineering/equipment-sockets/validation.md",
+          "src/domain/equipment-sockets.ts",
+          "tests/equipment-sockets.test.ts",
+          "tests/browser/equipment-sockets.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-ITEM-012",
+      "title": "装备魔魂强化闭环",
+      "line": "LINE-EQUIPMENT-MAGIC",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-ITEM-011"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-ITEM-012.md",
+      "completion": {
+        "summary": "完成四类装备魔魂晶石/之心强化、源品质上限、全属性重算与共享双槽界面；53逻辑、25全量浏览器及最终4项专项通过，10张截图实际检查。高品质为受控边界；品质升级、战斗和存档未包含。",
+        "checks": [
+          {
+            "result": "passed",
+            "command": "npm run typecheck"
+          },
+          {
+            "result": "passed",
+            "command": "npm test"
+          },
+          {
+            "result": "passed",
+            "command": "npm run build"
+          },
+          {
+            "result": "passed",
+            "command": "npm run test:browser"
+          },
+          {
+            "result": "passed",
+            "command": "npx playwright test tests/browser/equipment-magic.spec.mjs tests/browser/equipment-sockets.spec.mjs"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:harness"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/equipment-magic/source-contract.md",
+          "docs/reverse-engineering/equipment-magic/source-functions.json",
+          "docs/reverse-engineering/equipment-magic/validation.md",
+          "src/domain/equipment-magic.ts",
+          "tests/equipment-magic.test.ts",
+          "tests/browser/equipment-magic.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-ITEM-013",
+      "title": "灵魂晶石装备品质提升闭环",
+      "line": "LINE-EQUIPMENT-QUALITY",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-ITEM-012"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-ITEM-013.md",
+      "completion": {
+        "summary": "完成灵魂礼包到四类装备极品提升、材料源消耗、全属性重算、真实品质显示及继续开孔/魔魂/穿戴；58逻辑、27全量浏览器、11张实际截图检查通过。灵魂王、声望、战斗和存档未扩展。",
+        "checks": [
+          {
+            "result": "passed",
+            "command": "npm run typecheck"
+          },
+          {
+            "result": "passed",
+            "command": "npm test"
+          },
+          {
+            "result": "passed",
+            "command": "npm run build"
+          },
+          {
+            "result": "passed",
+            "command": "npm run test:browser"
+          },
+          {
+            "result": "passed",
+            "command": "npm run check:harness"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/equipment-quality/source-contract.md",
+          "docs/reverse-engineering/equipment-quality/source-functions.json",
+          "docs/reverse-engineering/equipment-quality/validation.md",
+          "src/domain/equipment-quality.ts",
+          "src/domain/equipment-attributes.ts",
+          "tests/equipment-quality.test.ts",
+          "tests/source-quality-oracle.mjs",
+          "tests/browser/equipment-quality.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-DATA-015",
+      "title": "全量内容身份与引用注册",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-ITEM-013"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-DATA-015.md",
+      "completion": {
+        "summary": "完成拆分后的全量内容身份与引用注册：13类911条与独立源集合对账，2076候选和72动态域可追溯，新增身份覆盖门禁与差异报告；数值、持久字段和运行时综合验收保留在017—020。",
+        "checks": [
+          {
+            "command": "npm run audit:content-references",
+            "result": "passed"
+          },
+          {
+            "command": "node tools/check-registry-source-survey.mjs",
+            "result": "passed"
+          },
+          {
+            "command": "node --experimental-transform-types --test tests/reference-completion.test.mjs tests/reference-anomalies.test.mjs tests/reference-domain-targets.test.mjs tests/content-registry.test.ts",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:content-identities",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:registry-survey",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run inspect:content",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/content-registry/identity-validation.md",
+          "docs/reverse-engineering/content-registry/identity-coverage.json",
+          "docs/reverse-engineering/content-registry/reference-audit.json",
+          "src/content/registry-data.ts",
+          "tools/check-content-identities.mjs",
+          "tools/lib/identity-coverage.mjs",
+          "tests/identity-coverage.test.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-DATA-017",
+      "title": "角色与物品数值规则包",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-DATA-015"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-DATA-017.md",
+      "completion": {
+        "summary": "完成角色/物品数值规则包：2461条精确索引归属、1939条正式声明记录，补人物派生属性/技能标量、物品数值与五族装备生成纯模块；39项专项、源调查、68逻辑及27浏览器回归通过。声明表达式与可执行模块分开，保留thisallItem源异常，未开放新玩法。",
+        "checks": [
+          {
+            "command": "npm run check:role-item-rules",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:registry-survey",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/content-registry/role-item-validation.md",
+          "docs/reverse-engineering/content-registry/role-item-coverage.json",
+          "src/content/role-item-rule-data.ts",
+          "src/content/role-attribute-rules.ts",
+          "src/content/role-skill-rules.ts",
+          "src/content/item-numeric-rules.ts",
+          "src/content/equipment-generation-rules.ts",
+          "tests/role-item-catalog-source.test.mjs",
+          "tests/role-attributes-source.test.mjs",
+          "tests/role-skills-source.test.mjs",
+          "tests/item-numeric-source.test.mjs",
+          "tests/item-boundaries-source.test.mjs",
+          "tests/equipment-generation-source.test.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-DATA-018",
+      "title": "幻兽与世界数值规则包",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-DATA-017"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-DATA-018.md",
+      "completion": {
+        "summary": "交付幻兽/怪物受击、幻化、掉落、效果计数器及NPC兑换规则；复用既有幻兽/世界模块，7150条与017合并覆盖9611条，逐条排除及927条持久入口交019，独立源与浏览器回归通过。",
+        "checks": [
+          {
+            "command": "npm run check:pet-world-rules",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:registry-survey",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "node --experimental-transform-types --test tests/pet-world-catalog-source.test.mjs tests/world-effect-source.test.mjs tests/role-skills-source.test.mjs",
+            "result": "passed"
+          },
+          {
+            "command": "npm run generate:harness",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/content-registry/pet-world-validation.md",
+          "docs/reverse-engineering/content-registry/pet-world-semantics.md",
+          "docs/reverse-engineering/content-registry/pet-world-coverage.json",
+          "src/content/pet-world-rule-data.ts",
+          "src/content/pet-world-combat-rules.ts",
+          "src/content/pet-fusion-rules.ts",
+          "src/content/world-drop-rules.ts",
+          "src/content/world-effect-rules.ts",
+          "src/content/npc-exchange-rules.ts",
+          "tests/pet-world-catalog-source.test.mjs",
+          "tests/pet-world-combat-source.test.mjs",
+          "tests/pet-fusion-source.test.mjs",
+          "tests/world-drop-source.test.mjs",
+          "tests/world-effect-source.test.mjs",
+          "tests/npc-exchange-source.test.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-DATA-019",
+      "title": "完整持久字段与恢复语义合同",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-DATA-018"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-DATA-019.md",
+      "completion": {
+        "summary": "完成653持久键模板的最终初始化配方、恢复语句/顺序与副作用合同；927移交ID闭合，现代无损source/extensions表示与幻兽三字段设计修复通过42专项和71逻辑回归。未实现存储IO；综合数值/引用集成交020。",
+        "checks": [
+          {
+            "command": "npm run catalog:persistence",
+            "result": "passed"
+          },
+          {
+            "command": "npm run inspect:persistence",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:persistence",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "node tools/check-registry-source-survey.mjs",
+            "result": "passed"
+          },
+          {
+            "command": "npm run generate:harness",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/content-registry/persistence-validation.md",
+          "docs/reverse-engineering/content-registry/persistence-schema.md",
+          "docs/reverse-engineering/content-registry/persistence-survey.json",
+          "docs/reverse-engineering/content-registry/restore-matrix.json",
+          "docs/reverse-engineering/content-registry/persistence-coverage.json",
+          "src/content/persistence-registry-data.ts",
+          "src/content/persistence-schema.ts",
+          "src/content/persistence-repairs.ts",
+          "tests/persistence-schema.test.ts",
+          "tests/persistence-restore-source.test.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-DATA-020",
+      "title": "既有玩法注册迁移与基础集成验收",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-DATA-019"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-DATA-020.md",
+      "completion": {
+        "summary": "完成既有玩法统一目录/规则迁移与综合验收：9611数值ID和927持久移交精确闭合，历史标签保留；73逻辑、27浏览器与10集成正负向检查通过，7张画面实际检查。未新增角色入口、战斗或存储IO。",
+        "checks": [
+          {
+            "command": "npm run check:content-registry",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:content-identities",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:role-item-rules",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:pet-world-rules",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:persistence",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npm run generate:harness",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/content-registry/integration-validation.md",
+          "docs/reverse-engineering/content-registry/integration-coverage.json",
+          "tools/lib/registry-integration.mjs",
+          "tools/check-content-registry.mjs",
+          "tests/registry-integration.test.mjs",
+          "tests/content-registry.test.ts",
+          "src/content/implemented-gameplay-rules.ts",
+          "src/domain/npc-reward.ts",
+          "src/domain/inventory.ts",
+          "src/domain/equipment-attributes.ts"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-ENTRY-021",
+      "title": "开始菜单与全部角色新建入口",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-DATA-020"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-ENTRY-021.md",
+      "completion": {
+        "summary": "交付男战士/女法师开始菜单、选择命名、返回取消、源初始化/debug奖励、原HUD与职业装备；女法师11帧独立基准及22双向投影、79逻辑与32浏览器检查通过，16张截图实际复核。继续入口待016，未实现存储或法师战斗。",
+        "checks": [
+          {
+            "command": "npm run check:character-entry",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:first-actor",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run generate:harness",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/character-entry/source-contract.md",
+          "docs/reverse-engineering/character-entry/validation.md",
+          "docs/reverse-engineering/character-entry/mage-fixture.json",
+          "docs/reverse-engineering/character-entry/ui-fixture.json",
+          "docs/reverse-engineering/character-entry/baseline/provenance.json",
+          "public/assets/mage/manifest.json",
+          "public/assets/character-entry-ui/manifest.json",
+          "src/content/character-entry.ts",
+          "src/domain/journey.ts",
+          "tests/character-entry.test.mjs",
+          "tests/browser/character-entry.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-SAVE-016",
+      "title": "完整进度保存与继续游戏",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-ENTRY-021"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-SAVE-016.md",
+      "completion": {
+        "summary": "交付现代v1单槽完整保存/继续、独立无奖励恢复、653模板映射与未实现raw保留、覆盖确认及异常保护；93逻辑（14保存专项）、36浏览器和综合门禁通过，7张截图复核。封顶货币UI与非封顶领域验收分开；备份迁移交022。",
+        "checks": [
+          {
+            "command": "npm run check:save",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:content-registry",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run generate:harness",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/save-game/source-contract.md",
+          "docs/reverse-engineering/save-game/field-coverage.json",
+          "docs/reverse-engineering/save-game/validation.md",
+          "src/application/save-types.ts",
+          "src/application/save-codec.ts",
+          "src/application/save-game.ts",
+          "src/application/save-source.ts",
+          "src/adapters/save-storage.ts",
+          "src/content/save-field-data.ts",
+          "tests/save-game.test.ts",
+          "tests/browser/save-game.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-SAVE-022",
+      "title": "存档迁移、备份与异常恢复",
+      "line": "LINE-GAME-FOUNDATIONS",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-SAVE-016"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-SAVE-022.md",
+      "completion": {
+        "summary": "完成现代v1旧档到原子存档库的迁移、三份备份管理、真实导入导出及异常恢复；101逻辑、39全量浏览器与4恢复专项通过，基础线关闭。",
+        "checks": [
+          {
+            "command": "npm run check:content-registry",
+            "result": "passed"
+          },
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:save",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run test:browser",
+            "result": "passed"
+          },
+          {
+            "command": "npx playwright test tests/browser/save-recovery.spec.mjs",
+            "result": "passed"
+          },
+          {
+            "command": "npm run generate:harness",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/save-game/recovery-contract.md",
+          "docs/reverse-engineering/save-game/recovery-validation.md",
+          "src/adapters/save-recovery.ts",
+          "src/adapters/save-manager.ts",
+          "tests/save-recovery.test.ts",
+          "tests/browser/save-recovery.spec.mjs",
+          "tests/fixtures/save-recovery/provenance.json",
+          "tests/fixtures/save-recovery/warrior-v1.json",
+          "tests/fixtures/save-recovery/mage-v1.json"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-GROWTH-014",
+      "title": "经验球人物升级闭环",
+      "line": "LINE-PLAYER-EXPERIENCE",
+      "status": "Ready",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-ITEM-013",
+        "TASK-SAVE-022"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-GROWTH-014.md",
       "completion": null,
       "blocker": null
     }

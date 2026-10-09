@@ -1,0 +1,72 @@
+/* Native source coordinates; browser font rasterization and focus outlines are design. */
+.game-page #entry{font-family:system-ui,sans-serif;inset:65px 70px auto;padding:28px;border-radius:12px;background:linear-gradient(145deg,#253b33,#101b18);box-shadow:0 16px 50px #0008}
+.game-page #entry h2{font-size:24px;color:#f2e2b7;margin:0 0 18px}
+.game-page #entry p{color:#b9c9c1;line-height:1.7}
+.game-page #entry button{font:14px system-ui,sans-serif;padding:10px 14px;margin:4px;border:1px solid #6f866f;background:#30483b;color:#f7edcf;border-radius:5px}
+.game-page #entry button:disabled{opacity:.5;cursor:not-allowed}
+.game-page #entry input{box-sizing:border-box;width:100%;margin:8px 0 14px;padding:10px;background:#0a1711;border:1px solid #8b9572;color:white;font:18px system-ui,sans-serif}
+.game-page{background:#080b09;color:#fff;min-height:100dvh;display:grid;place-items:center;font-family:SimSun,"宋体",serif;font-size:12px}
+.game-page main{position:relative;width:580px;height:500px;max-width:none;margin:0;padding:0;isolation:isolate}
+.game-page .workbench{display:block;margin:0}.game-page .viewport{border:0;border-radius:0;overflow:visible;background:#111}.game-page aside{min-width:0}
+.game-page #status,.game-page #guide>h2,.game-page #guide>p:not(#notice),.game-page #completed p,.game-page #bag-count,.game-page #pet-count{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0;padding:0;border:0}
+.game-page #entry{position:absolute;inset:100px 95px auto;padding:24px;background:#172018f5;border:1px solid #8b7951;z-index:5}
+.game-page #guide{position:absolute;top:95px;left:10px;pointer-events:none;min-width:1px;min-height:16px}
+.game-page #notice{color:#ff9;font-size:12px;margin:0;max-width:500px;background:#0008}
+.game-page #completed{margin:0;padding:0;border:0}.game-page #completed h2{color:#ff9;font-size:12px;margin:0}
+.game-page #reward-controls{position:absolute;top:112px;left:10px;pointer-events:none;max-width:550px}
+.game-page #reward-completed,.game-page #reward-message{font-size:12px;line-height:16px;color:#ff9;background:#0008;margin:0}.game-page #reward-message:empty{display:none}
+.source-node{position:absolute;left:0;top:0;width:0;height:0;transform-origin:0 0;pointer-events:none}
+.source-node img{position:absolute;max-width:none;pointer-events:none}.source-text{position:absolute;display:block;overflow:hidden;box-sizing:border-box;padding:2px;white-space:nowrap;font-family:SimSun,"宋体",serif;line-height:1.1}
+#hud{position:absolute;inset:0;pointer-events:none;z-index:1}
+.game-page button.hud-button{position:absolute;padding:0;margin:0;width:36px;height:36px;border:0;border-radius:0;background:transparent;transform-origin:0 0;pointer-events:auto}
+.game-page button.hud-button:hover{background:transparent}.game-page button.hud-button[aria-disabled=true]{cursor:not-allowed}
+.hud-unavailable{position:absolute;pointer-events:auto;cursor:not-allowed}
+.game-page #inventory{position:absolute;left:280px;top:195px;width:295px;height:243px;max-height:none;overflow:visible;margin:0;padding:0;border:0;background:transparent;box-shadow:none;z-index:4}
+.game-page #pet-panel{position:absolute;left:5px;top:115px;width:220px;height:320px;z-index:3}
+.game-page #talk{position:absolute;left:95px;top:135px;width:400px;height:180px;max-height:none;overflow:visible;margin:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;z-index:3}
+.game-page #talk-art{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.game-page #talk-art .source-node{transform-origin:0 0}
+.game-page #talk-head{position:absolute;left:10px;top:10px}.game-page #talk-role{position:absolute;left:10px;top:120px}
+.game-page .talk-heading h2{display:none}
+.game-page #talk-words{position:absolute;left:62px;top:24px;width:307px;height:90px;overflow:auto;margin:0;padding:0;color:#ff0;font-size:12px;line-height:14px;white-space:pre-line}
+.game-page #talk-answers{position:absolute;left:64px;top:120px;display:flex;flex-direction:column;gap:0;align-items:flex-start}
+.game-page #talk-answers button{font:12px SimSun,"宋体",serif;color:white;line-height:20px;min-height:20px;background:transparent;border:0;border-radius:0;padding:0 2px;margin:0}.game-page #talk-answers button:hover{color:#ff0;background:#fff2}
+.game-page #talk-later{position:absolute;top:157px;left:64px;margin:0;font-size:11px;color:#ccc}
+.game-page #close-talk,.game-page #close-inventory,.game-page #close-pets{position:absolute;width:19px;height:19px;padding:0;border:0;border-radius:0;background:transparent;z-index:5}
+.game-page #close-talk{left:380px;top:5px}.game-page #close-inventory{left:269.8px;top:7.85px}.game-page #close-pets{left:196px;top:6px}
+.game-page #bag-items{display:block;position:absolute;inset:0;pointer-events:none}
+.game-page #bag-items .bag-slot{position:absolute;width:32px;height:32px;background:none;border:0;border-radius:0;padding:0;margin:0;pointer-events:auto}
+.game-page #bag-items .item summary{position:relative;display:block;width:32px;height:32px;min-height:0;list-style:none;padding:0;outline-offset:0}
+.game-page .item summary::-webkit-details-marker{display:none}
+.game-page #bag-items summary>span:not(.item-badge){display:none}.game-page #bag-items summary>b{position:absolute;right:0;bottom:0;color:white;font:12px Arial,sans-serif;text-shadow:1px 1px #000;pointer-events:none}
+.game-page .source-icon{width:32px;height:32px;position:relative}
+.game-page #bag-items .item[open] summary{outline:1px solid #ff0}
+.game-page #bag-items .item dl{position:fixed;left:calc(50vw - 280px);top:calc(50dvh - 65px);width:260px;max-height:290px;overflow:auto;display:grid;grid-template-columns:1fr 1fr;background:#101a11f5;border:1px solid #929372;margin:0;padding:10px;font:12px/18px SimSun,"宋体",serif;z-index:20;box-shadow:0 3px 12px #0009}
+.game-page .item dd{color:#ff9}.game-page .item dt{color:#ddd}
+.game-page #ms-value,.game-page #res-value{position:absolute;top:220px;font-size:13px;line-height:17px}.game-page #ms-value{left:51px;color:#b1e279}.game-page #res-value{left:193px;color:white}
+.game-page #pet-items{position:absolute;left:10px;top:43px;width:200px;height:235px;overflow:auto}.game-page .pet-record{background:transparent;border:0;border-bottom:1px solid #9995;border-radius:0;padding:0 2px;color:#ddd}.game-page .pet-record h3{color:white;font-size:13px}.game-page .pet-record p{font-size:12px;line-height:16px;color:#ddd;margin:4px 0}
+.game-page #ground-section{position:absolute;left:-275px;top:130px;width:260px;background:#142217f0;max-height:140px;overflow:auto;z-index:6}.game-page #ground-section h2{margin:5px}.game-page #ground-items{display:block}.game-page #ground-items .item{padding:4px;background:none;border:0}.game-page #ground-items summary{font-size:12px}
+@media(max-width:580px){.game-page{display:block;overflow-x:auto}.game-page main{margin:0}.game-page .viewport{max-width:none}.game-page #bag-items .item dl{left:5px;top:180px}}
+.game-page #talk-art{overflow:visible}
+.hud-footer-block{position:absolute;left:0;top:456px;width:580px;height:44px;pointer-events:auto}
+.game-page button.hud-status-hit{position:absolute;top:2px;height:48px;pointer-events:auto;background:transparent;border:0;border-radius:0;padding:0;cursor:help}
+.game-page button.hud-status-hit:hover{background:transparent}
+
+.game-page #equipment-panel{position:absolute;left:5px;top:150px;width:265px;padding:12px;box-sizing:border-box;background:#142217f5;border:1px solid #9c9972;z-index:8;font-size:12px}.game-page #equipment-panel h2{font-size:16px;margin:0 0 12px;color:#eed89e}.game-page #close-equipment{float:right;padding:2px 6px;font-size:12px}.equipment-slot{display:grid;grid-template-columns:32px 1fr 42px;gap:6px;align-items:center;min-height:34px;border-bottom:1px solid #ffffff20}.equipment-slot button{padding:2px;font-size:12px}.game-page #equipment-stats{white-space:pre-line;line-height:22px;padding-top:10px;color:#e8dda9}.item-action{grid-column:1/-1;position:sticky;top:-10px;padding:4px;background:#101a11}.game-page .item-use{font-size:13px;padding:4px 12px;color:#fff0b5}.game-page #bag-items .item dl{max-height:230px;top:calc(50dvh - 110px)}
+
+.item-badge{display:grid;place-items:center;width:30px;height:30px;border:1px solid #b19b67;background:linear-gradient(135deg,#596657,#182b25);color:#fff0bb;font:12px SimSun,serif;box-sizing:border-box}
+
+.game-page #socket-button{position:absolute;top:-29px;right:2px;padding:4px 12px;font-size:13px;color:#fff0b5;background:#142217}
+.game-page #socket-panel{position:absolute;left:5px;top:90px;width:270px;box-sizing:border-box;padding:12px;background:#142217fa;border:1px solid #aaa17a;z-index:40;color:#eee;font-size:12px;line-height:17px}.game-page #socket-panel h2{font-size:17px;color:#eed89e;margin:0 0 10px}.game-page #close-sockets{float:right}.game-page #socket-panel button{font-size:12px;padding:3px 7px}.game-page #socket-panel p{margin:6px 0}.game-page #socket-panel select{width:100%;font-size:12px;padding:4px;color:#fff;background:#223529;margin:5px 0 10px}.game-page #socket-panel strong{color:#eed89e}.game-page #socket-feedback{color:#fff0b5;min-height:34px}.game-page #socket-panel .socket-detail{color:#a7d7ae}.game-page #forge-sockets[data-eligible=false]{opacity:.6}
+
+.game-page #socket-panel{max-height:405px;overflow-y:auto;scrollbar-width:thin}
+.game-page #magic-button{position:absolute;top:-29px;right:92px;padding:4px 12px;font-size:13px;color:#fff0b5;background:#142217}
+.game-page #socket-item,.game-page #socket-stone{position:relative}.game-page #socket-item>strong,.game-page #socket-stone>strong{display:block;min-height:24px}.game-page #socket-item>button,.game-page #socket-stone>button{position:absolute;right:0;top:0}.game-page #socket-panel p{margin:4px 0}.game-page #socket-panel select{margin:3px 0 5px}.game-page #socket-panel h2{margin-bottom:6px}
+.game-page #quality-button{position:absolute;top:-29px;right:182px;padding:4px 12px;font-size:13px;color:#fff0b5;background:#142217}
+.game-page #system-panel{position:absolute;inset:130px 100px auto;background:#142217fa;border:1px solid #aaa17a;padding:20px;z-index:60;font:14px/1.6 system-ui,sans-serif;border-radius:8px}
+.game-page #system-panel h2{color:#eed89e;font-size:21px}.game-page #close-system{float:right;font-size:12px;padding:4px}
+.game-page #system-panel button{font-family:system-ui,sans-serif}.game-page #save-message{position:absolute;left:12px;right:12px;top:72px;z-index:65;text-align:center;background:#12251eee;color:#f5e6b4;font:13px/1.5 system-ui,sans-serif;margin:0;border-radius:4px;pointer-events:none}.game-page #save-message:empty{display:none}
+.game-page #save-confirm{max-width:350px;background:#172a20;border:1px solid #b2a575;border-radius:8px;color:#fff0ce;font:15px/1.7 system-ui,sans-serif;padding:24px}.game-page #save-confirm::backdrop{background:#0009}.game-page #save-confirm button{margin-right:12px}
+
+
+.game-page #save-manager{width:440px;max-width:85vw;max-height:75vh;overflow:auto;box-sizing:border-box;background:#172a20;color:#fff0ce;border:1px solid #b2a575;border-radius:10px;padding:24px;font:14px/1.7 system-ui,sans-serif}.game-page #save-manager::backdrop{background:#000a}.game-page #close-manager{float:right}.game-page #save-manager h2{font-size:22px}.game-page #save-manager button{font-size:13px;margin:4px;padding:7px 10px}.game-page .import-label{display:block;margin:16px 0}.game-page .import-label input{display:block;max-width:100%;margin-top:8px}.game-page #import-preview{border:1px solid #b2a575;padding:10px}.game-page #backup-list button{display:block;width:100%;text-align:left}.game-page #manager-message{color:#f5d481}

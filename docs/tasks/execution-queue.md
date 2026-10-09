@@ -7,4 +7,4 @@
 
 | 当前项 | 标题 | 类型 | 状态 | 定义 | 阻塞原因 |
 | --- | --- | --- | --- | --- | --- |
-| TASK-NPC-005 | 老兵首次礼包领取闭环 | game | Ready | [合同](task-definitions/TASK-NPC-005.md) | — |
+| TASK-GROWTH-014 | 经验球人物升级闭环 | game | Ready | [合同](task-definitions/TASK-GROWTH-014.md) | — |

@@ -1,0 +1,19 @@
+{
+  "classification": "design fixture from actual TASK-SAVE-016 UI progress",
+  "created": "2026-10-09",
+  "stateSchema": "moyu-state v1 (unchanged)",
+  "migration": "legacy key moyu.progress.v1 -> atomic moyu-vault version 2 container; no Flash .sol support",
+  "derivation": "Freeze captureSave(roundtrip.before) using the existing TASK-SAVE-016 codec. before is recorded by actual UI forging/reward/skill/pet/movement flows; captureSave introduces no clock or random draw. These are materialized modern-v1 fixtures, not raw Flash saves or invented historical v0.",
+  "files": [
+    {
+      "file": "warrior-v1.json",
+      "source": ".evidence/save-game/warrior-roundtrip.json:before",
+      "sha256": "a3839a7476866edd95989e6870a26c55aa65468a942ea89387b5afeb26232e9d"
+    },
+    {
+      "file": "mage-v1.json",
+      "source": ".evidence/save-game/mage-roundtrip.json:before",
+      "sha256": "09f91c031e4c8d0f456389f1a3a3575ea56f11979029c75b3afda13e5055df8d"
+    }
+  ]
+}

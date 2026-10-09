@@ -1,0 +1,1463 @@
+{
+  "RoleMC": [
+    {
+      "property": "cheat",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 103
+      },
+      "conditions": []
+    },
+    {
+      "property": "roleGod",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 104
+      },
+      "conditions": []
+    },
+    {
+      "property": "godFire",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 105
+      },
+      "conditions": []
+    },
+    {
+      "property": "overflowExp",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 106
+      },
+      "conditions": []
+    },
+    {
+      "property": "魔石",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 107
+      },
+      "conditions": []
+    },
+    {
+      "property": "资源",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 108
+      },
+      "conditions": []
+    },
+    {
+      "property": "militaryRankName",
+      "phase": "class-declaration",
+      "value": "无  ",
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 109
+      },
+      "conditions": []
+    },
+    {
+      "property": "chawName",
+      "phase": "class-declaration",
+      "value": "无  ",
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 110
+      },
+      "conditions": []
+    },
+    {
+      "property": "jobName",
+      "phase": "class-declaration",
+      "value": "无  ",
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 111
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillAddFire",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 112
+      },
+      "conditions": []
+    },
+    {
+      "property": "maxRredit",
+      "phase": "class-declaration",
+      "value": 500,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 113
+      },
+      "conditions": []
+    },
+    {
+      "property": "titleName",
+      "phase": "class-declaration",
+      "value": {
+        "expression": "new Array(\"籍籍无名\",\"略有所成\",\"薄有微名\",\"江湖侠少\",\"后起之秀\",\"武林俊杰\",\"名动一方\",\"侠名远播\",\"家喻户晓\",\"如日中天\",\"神一般的存在\")"
+      },
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 114
+      },
+      "conditions": []
+    },
+    {
+      "property": "titleFire",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 115
+      },
+      "conditions": []
+    },
+    {
+      "property": "xxx_maxLevels",
+      "phase": "constructor",
+      "value": 150,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 119
+      },
+      "conditions": []
+    },
+    {
+      "property": "expBallNum",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 120
+      },
+      "conditions": []
+    },
+    {
+      "property": "moreExpFire",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 121
+      },
+      "conditions": []
+    },
+    {
+      "property": "moreExpLife",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 122
+      },
+      "conditions": []
+    },
+    {
+      "property": "moreExpMp",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 123
+      },
+      "conditions": []
+    },
+    {
+      "property": "moreExpAttack",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 124
+      },
+      "conditions": []
+    },
+    {
+      "property": "moreExpDefense",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 125
+      },
+      "conditions": []
+    },
+    {
+      "property": "xxx_nowExp",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 126
+      },
+      "conditions": []
+    },
+    {
+      "property": "maxExp",
+      "phase": "constructor",
+      "value": 9,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 127
+      },
+      "conditions": []
+    },
+    {
+      "property": "xxx_militaryRank",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 128
+      },
+      "conditions": []
+    },
+    {
+      "property": "xxx_chaw",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 129
+      },
+      "conditions": []
+    },
+    {
+      "property": "job",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 130
+      },
+      "conditions": []
+    },
+    {
+      "property": "militaryExploit",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 131
+      },
+      "conditions": []
+    },
+    {
+      "property": "exploit",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 132
+      },
+      "conditions": []
+    },
+    {
+      "property": "xxx_credit",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 133
+      },
+      "conditions": []
+    },
+    {
+      "property": "levels",
+      "phase": "constructor",
+      "value": 1,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 134
+      },
+      "conditions": []
+    },
+    {
+      "property": "speedX",
+      "phase": "constructor",
+      "value": 12,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 135
+      },
+      "conditions": []
+    },
+    {
+      "property": "speedY",
+      "phase": "constructor",
+      "value": 9,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 136
+      },
+      "conditions": []
+    },
+    {
+      "property": "stopTime",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 137
+      },
+      "conditions": []
+    },
+    {
+      "property": "place",
+      "phase": "constructor",
+      "value": "地上",
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 138
+      },
+      "conditions": []
+    },
+    {
+      "property": "cantMove",
+      "phase": "constructor",
+      "value": false,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 139
+      },
+      "conditions": []
+    },
+    {
+      "property": "motion",
+      "phase": "constructor",
+      "value": "站立",
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 140
+      },
+      "conditions": []
+    },
+    {
+      "property": "faceTo",
+      "phase": "constructor",
+      "value": "左",
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 141
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillEffect",
+      "phase": "constructor",
+      "value": "无  ",
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 142
+      },
+      "conditions": []
+    },
+    {
+      "property": "heavyHit",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 143
+      },
+      "conditions": []
+    },
+    {
+      "property": "nonDefense",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 144
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillDefense",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 145
+      },
+      "conditions": []
+    },
+    {
+      "property": "heavyDamage",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 146
+      },
+      "conditions": []
+    },
+    {
+      "property": "frost",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 147
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillAttack",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 148
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillBurst",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 149
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillJook",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 150
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillLife",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 151
+      },
+      "conditions": []
+    },
+    {
+      "property": "skillMp",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 152
+      },
+      "conditions": []
+    },
+    {
+      "property": "lifeSourseLevels",
+      "phase": "constructor",
+      "value": 1,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 153
+      },
+      "conditions": []
+    },
+    {
+      "property": "mpSourseLevels",
+      "phase": "constructor",
+      "value": 1,
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 154
+      },
+      "conditions": []
+    }
+  ],
+  "HuanShouClass": [
+    {
+      "property": "battle",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 65
+      },
+      "conditions": []
+    },
+    {
+      "property": "inOne",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 66
+      },
+      "conditions": []
+    },
+    {
+      "property": "isGod",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 67
+      },
+      "conditions": []
+    },
+    {
+      "property": "faceTo",
+      "phase": "class-declaration",
+      "value": "左",
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 68
+      },
+      "conditions": []
+    },
+    {
+      "property": "motion",
+      "phase": "class-declaration",
+      "value": "站立",
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 69
+      },
+      "conditions": []
+    },
+    {
+      "property": "guardLength",
+      "phase": "class-declaration",
+      "value": -1,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 70
+      },
+      "conditions": []
+    },
+    {
+      "property": "guardHeight",
+      "phase": "class-declaration",
+      "value": -1,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 71
+      },
+      "conditions": []
+    },
+    {
+      "property": "stopTime",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 72
+      },
+      "conditions": []
+    },
+    {
+      "property": "attackStopTime",
+      "phase": "class-declaration",
+      "value": 8,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 73
+      },
+      "conditions": []
+    },
+    {
+      "property": "stopRate",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 74
+      },
+      "conditions": []
+    },
+    {
+      "property": "nextLvRate",
+      "phase": "class-declaration",
+      "value": {
+        "expression": "random(3) * 0.1 + 1.3"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 75
+      },
+      "conditions": []
+    },
+    {
+      "property": "nextLvMain",
+      "phase": "class-declaration",
+      "value": 1.5,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 76
+      },
+      "conditions": []
+    },
+    {
+      "property": "nowLifeLv",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 77
+      },
+      "conditions": []
+    },
+    {
+      "property": "sd",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 78
+      },
+      "conditions": []
+    },
+    {
+      "property": "qyg",
+      "phase": "class-declaration",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 79
+      },
+      "conditions": []
+    },
+    {
+      "property": "sds",
+      "phase": "class-declaration",
+      "value": [
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 80
+      },
+      "conditions": []
+    },
+    {
+      "property": "qygs",
+      "phase": "class-declaration",
+      "value": [
+        50,
+        100,
+        200
+      ],
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 81
+      },
+      "conditions": []
+    },
+    {
+      "property": "battle",
+      "phase": "constructor",
+      "value": false,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 85
+      },
+      "conditions": []
+    },
+    {
+      "property": "type",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.type"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 86
+      },
+      "conditions": []
+    },
+    {
+      "property": "levels",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.levels"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 87
+      },
+      "conditions": []
+    },
+    {
+      "property": "rateLife",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.rateLife"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 88
+      },
+      "conditions": []
+    },
+    {
+      "property": "rateMinAttack",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.rateMinAttack"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 89
+      },
+      "conditions": []
+    },
+    {
+      "property": "rateMaxAttack",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.rateMaxAttack"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 90
+      },
+      "conditions": []
+    },
+    {
+      "property": "rateDefense",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.rateDefense"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 91
+      },
+      "conditions": []
+    },
+    {
+      "property": "zs",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.zs"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 92
+      },
+      "conditions": []
+    },
+    {
+      "property": "maxZs",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.maxZs"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 93
+      },
+      "conditions": []
+    },
+    {
+      "property": "element",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.element"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 94
+      },
+      "conditions": []
+    },
+    {
+      "property": "titleNum",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.titleNum"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 95
+      },
+      "conditions": []
+    },
+    {
+      "property": "isGod",
+      "phase": "constructor",
+      "value": true,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 98
+      },
+      "conditions": [
+        {
+          "header": "if(hs.isGod == true)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 96
+          }
+        }
+      ]
+    },
+    {
+      "property": "isGod",
+      "phase": "constructor",
+      "value": false,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 102
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 100
+          }
+        }
+      ]
+    },
+    {
+      "property": "sd",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.sd"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 106
+      },
+      "conditions": [
+        {
+          "header": "if(hs.sd != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 104
+          }
+        }
+      ]
+    },
+    {
+      "property": "sd",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 110
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 108
+          }
+        }
+      ]
+    },
+    {
+      "property": "qyg",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.qyg"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 114
+      },
+      "conditions": [
+        {
+          "header": "if(hs.qyg != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 112
+          }
+        }
+      ]
+    },
+    {
+      "property": "qyg",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 118
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 116
+          }
+        }
+      ]
+    },
+    {
+      "property": "nowExp",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.nowExp"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 122
+      },
+      "conditions": [
+        {
+          "header": "if(hs.nowExp != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 120
+          }
+        }
+      ]
+    },
+    {
+      "property": "nowExp",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 126
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 124
+          }
+        }
+      ]
+    },
+    {
+      "property": "maxExp",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.maxExp"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 130
+      },
+      "conditions": [
+        {
+          "header": "if(hs.maxExp != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 128
+          }
+        }
+      ]
+    },
+    {
+      "property": "maxExp",
+      "phase": "constructor",
+      "value": {
+        "expression": "Math.floor(this.levels * 9)"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 134
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 132
+          }
+        }
+      ]
+    },
+    {
+      "property": "oldLevels",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.oldLevels"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 138
+      },
+      "conditions": [
+        {
+          "header": "if(hs.oldLevels != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 136
+          }
+        }
+      ]
+    },
+    {
+      "property": "oldLevels",
+      "phase": "constructor",
+      "value": 1,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 142
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 140
+          }
+        }
+      ]
+    },
+    {
+      "property": "oldNowExp",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.oldNowExp"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 146
+      },
+      "conditions": [
+        {
+          "header": "if(hs.oldNowExp != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 144
+          }
+        }
+      ]
+    },
+    {
+      "property": "oldNowExp",
+      "phase": "constructor",
+      "value": 0,
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 150
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 148
+          }
+        }
+      ]
+    },
+    {
+      "property": "oldMaxExp",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.oldMaxExp"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 154
+      },
+      "conditions": [
+        {
+          "header": "if(hs.oldMaxExp != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 152
+          }
+        }
+      ]
+    },
+    {
+      "property": "oldMaxExp",
+      "phase": "constructor",
+      "value": {
+        "expression": "Math.floor(this.levels * 9)"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 158
+      },
+      "conditions": [
+        {
+          "header": "else",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 156
+          }
+        }
+      ]
+    },
+    {
+      "property": "nextLvRate",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.nextLvRate"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 162
+      },
+      "conditions": [
+        {
+          "header": "if(hs.nextLvRate != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 160
+          }
+        }
+      ]
+    },
+    {
+      "property": "nowLifeLv",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.nowLifeLv"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 166
+      },
+      "conditions": [
+        {
+          "header": "if(hs.nowLifeLv != undefined)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 164
+          }
+        }
+      ]
+    },
+    {
+      "property": "rareFen",
+      "phase": "constructor",
+      "value": {
+        "expression": "hs.rareFen"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 171
+      },
+      "conditions": [
+        {
+          "header": "if(hs.rareFen > this.rareFen)",
+          "source": {
+            "file": "__Packages/HuanShouClass.as",
+            "line": 169
+          }
+        }
+      ]
+    },
+    {
+      "property": "life",
+      "phase": "constructor",
+      "value": {
+        "expression": "this.maxLife"
+      },
+      "source": {
+        "file": "__Packages/HuanShouClass.as",
+        "line": 174
+      },
+      "conditions": []
+    }
+  ],
+  "FriendClass": [
+    {
+      "property": "isTask",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 19
+      },
+      "conditions": []
+    },
+    {
+      "property": "isFriend",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 20
+      },
+      "conditions": []
+    },
+    {
+      "property": "isIntimate",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 21
+      },
+      "conditions": []
+    },
+    {
+      "property": "isBest",
+      "phase": "class-declaration",
+      "value": false,
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 22
+      },
+      "conditions": []
+    },
+    {
+      "property": "nTitle",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.nTitle != undefined ? target.nTitle : \"\""
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 26
+      },
+      "conditions": []
+    },
+    {
+      "property": "name",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.name != undefined ? target.name : \"\""
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 27
+      },
+      "conditions": []
+    },
+    {
+      "property": "sex",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.sex != undefined ? target.sex : \"\""
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 28
+      },
+      "conditions": []
+    },
+    {
+      "property": "address",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.address != undefined ? target.address : \"未知\""
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 29
+      },
+      "conditions": []
+    },
+    {
+      "property": "isLover",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.isLover != undefined ? target.isLover : false"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 30
+      },
+      "conditions": []
+    },
+    {
+      "property": "cmd",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.cmd != undefined ? target.cmd : -1"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 31
+      },
+      "conditions": []
+    },
+    {
+      "property": "oldCmd",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.oldCmd != undefined ? target.oldCmd : this.cmd"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 32
+      },
+      "conditions": []
+    },
+    {
+      "property": "jobLevels",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.jobLevels != undefined ? target.jobLevels : this.jobLevels"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 33
+      },
+      "conditions": []
+    },
+    {
+      "property": "jobMaxLevels",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.jobMaxLevels != undefined ? target.jobMaxLevels : 0"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 34
+      },
+      "conditions": []
+    },
+    {
+      "property": "levels",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.levels != undefined ? target.levels : 0"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 35
+      },
+      "conditions": []
+    },
+    {
+      "property": "relationName",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.relationName != undefined ? target.relationName : \"\""
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 36
+      },
+      "conditions": []
+    },
+    {
+      "property": "rejectTimes",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.rejectTimes != undefined ? target.rejectTimes : 0"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 37
+      },
+      "conditions": []
+    },
+    {
+      "property": "relation",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.relation != undefined ? target.relation : 0"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 38
+      },
+      "conditions": []
+    },
+    {
+      "property": "maxRelation",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.maxRelation != undefined ? target.maxRelation : 0"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 39
+      },
+      "conditions": []
+    },
+    {
+      "property": "isFriend",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.isFriend != undefined ? target.isFriend : false"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 40
+      },
+      "conditions": []
+    },
+    {
+      "property": "isIntimate",
+      "phase": "constructor",
+      "value": {
+        "expression": "target.isIntimate != undefined ? target.isIntimate : false"
+      },
+      "source": {
+        "file": "__Packages/FriendClass.as",
+        "line": 41
+      },
+      "conditions": []
+    }
+  ],
+  "ThingMC": [
+    {
+      "property": "type",
+      "phase": "class-declaration",
+      "value": "空格",
+      "source": {
+        "file": "__Packages/ThingMC.as",
+        "line": 49
+      },
+      "conditions": []
+    },
+    {
+      "property": "num",
+      "phase": "class-declaration",
+      "value": "",
+      "source": {
+        "file": "__Packages/ThingMC.as",
+        "line": 50
+      },
+      "conditions": []
+    },
+    {
+      "property": "maxNum",
+      "phase": "class-declaration",
+      "value": 1,
+      "source": {
+        "file": "__Packages/ThingMC.as",
+        "line": 51
+      },
+      "conditions": []
+    },
+    {
+      "property": "MAXNUM",
+      "phase": "class-declaration",
+      "value": 99,
+      "source": {
+        "file": "__Packages/ThingMC.as",
+        "line": 52
+      },
+      "conditions": []
+    }
+  ],
+  "BuildingClass": []
+}

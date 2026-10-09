@@ -1,0 +1,624 @@
+{
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "timelines": {
+    "2893": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2892",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2917": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2898",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2900",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2902",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2904",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2906",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2908",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2910",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2912",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2914",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2916",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    }
+  },
+  "selectors": {
+    "1": [
+      {
+        "depth": 1,
+        "characterId": "2893",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    ],
+    "2": [
+      {
+        "depth": 1,
+        "characterId": "2893",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "true",
+          "nRotateBits": "0",
+          "nScaleBits": "18",
+          "nTranslateBits": "13",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "-1.0",
+          "scaleY": "1.0",
+          "translateX": "2300",
+          "translateY": "0"
+        }
+      }
+    ],
+    "5": [
+      {
+        "depth": 1,
+        "characterId": "2917",
+        "ratio": "4",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "11",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-261",
+          "translateY": "-681"
+        }
+      }
+    ],
+    "6": [
+      {
+        "depth": 1,
+        "characterId": "2917",
+        "ratio": "4",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "true",
+          "nRotateBits": "0",
+          "nScaleBits": "18",
+          "nTranslateBits": "13",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "-1.0",
+          "scaleY": "1.0",
+          "translateX": "2460",
+          "translateY": "-680"
+        }
+      }
+    ]
+  },
+  "labels": {
+    "1": "女法师地上左",
+    "2": "女法师地上右",
+    "3": "女法师空中左",
+    "4": "女法师空中右",
+    "5": "女法师向左跑",
+    "6": "女法师向右跑",
+    "7": "女法师空中向左移动",
+    "8": "女法师空中向右移动",
+    "9": "女法师左电击术",
+    "10": "女法师右电击术",
+    "11": "女法师左雷霆万钧",
+    "12": "女法师右雷霆万钧",
+    "13": "女法师左空中攻击",
+    "14": "女法师右空中攻击",
+    "15": "男战士地上左",
+    "16": "男战士地上右",
+    "17": "男战士向左跑",
+    "18": "男战士向右跑",
+    "19": "男战士左斩魂",
+    "20": "男战士右斩魂",
+    "21": "男战士左旋风斩",
+    "22": "男战士右旋风斩",
+    "23": "男战士左刀光斩",
+    "24": "男战士右刀光斩",
+    "25": "男战士左飞天连斩",
+    "26": "男战士右飞天连斩",
+    "27": "男战士左震",
+    "28": "男战士右震",
+    "29": "男战士死亡",
+    "30": "女法师死亡"
+  },
+  "parent": {
+    "depth": 1,
+    "characterId": "3101",
+    "name": "playAction",
+    "matrix": {
+      "type": "MATRIX",
+      "hasRotate": "false",
+      "hasScale": "true",
+      "nRotateBits": "0",
+      "nScaleBits": "17",
+      "nTranslateBits": "12",
+      "rotateSkew0": "0.0",
+      "rotateSkew1": "0.0",
+      "scaleX": "0.7999878",
+      "scaleY": "0.7999878",
+      "translateX": "-889",
+      "translateY": "-2030"
+    }
+  },
+  "tags": {
+    "2893": [
+      {
+        "type": "SoundStreamHead2Tag",
+        "forceWriteAsLong": "false",
+        "latencySeek": "0",
+        "playBackSoundRate": "1",
+        "playBackSoundSize": "true",
+        "playBackSoundType": "false",
+        "reserved": "2",
+        "streamSoundCompression": "0",
+        "streamSoundRate": "0",
+        "streamSoundSampleCount": "0",
+        "streamSoundSize": "false",
+        "streamSoundType": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2892",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "true",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "false",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      }
+    ],
+    "2917": [
+      {
+        "type": "SoundStreamHead2Tag",
+        "forceWriteAsLong": "false",
+        "latencySeek": "0",
+        "playBackSoundRate": "1",
+        "playBackSoundSize": "true",
+        "playBackSoundType": "false",
+        "reserved": "2",
+        "streamSoundCompression": "0",
+        "streamSoundRate": "0",
+        "streamSoundSampleCount": "0",
+        "streamSoundSize": "false",
+        "streamSoundType": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2898",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "true",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "false",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2900",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2902",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2904",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2906",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2908",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2910",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2912",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2914",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      },
+      {
+        "type": "PlaceObject2Tag",
+        "characterId": "2916",
+        "clipDepth": "0",
+        "depth": "1",
+        "forceWriteAsLong": "false",
+        "placeFlagHasCharacter": "true",
+        "placeFlagHasClipActions": "false",
+        "placeFlagHasClipDepth": "false",
+        "placeFlagHasColorTransform": "false",
+        "placeFlagHasMatrix": "false",
+        "placeFlagHasName": "false",
+        "placeFlagHasRatio": "false",
+        "placeFlagMove": "true",
+        "ratio": "0"
+      },
+      {
+        "type": "ShowFrameTag",
+        "forceWriteAsLong": "false"
+      }
+    ]
+  }
+}

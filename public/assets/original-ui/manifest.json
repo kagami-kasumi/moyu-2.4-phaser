@@ -1,0 +1,6372 @@
+{
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "root": [
+    {
+      "depth": 1,
+      "characterId": 4536,
+      "matrix": [
+        1.00006103515625,
+        0,
+        0,
+        0.999908447265625,
+        0,
+        0
+      ],
+      "ratio": 8,
+      "name": "map"
+    },
+    {
+      "depth": 334,
+      "characterId": 4546,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        456
+      ],
+      "ratio": 8,
+      "name": "fastKey"
+    },
+    {
+      "depth": 379,
+      "characterId": 4538,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1,
+        286,
+        456
+      ]
+    },
+    {
+      "depth": 380,
+      "characterId": 2655,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1.0005645751953125,
+        337.4,
+        460.5
+      ],
+      "ratio": 8,
+      "name": "背包按钮"
+    },
+    {
+      "depth": 384,
+      "characterId": 2649,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1.0005645751953125,
+        457.7,
+        460.5
+      ],
+      "ratio": 8,
+      "name": "好友按钮"
+    },
+    {
+      "depth": 388,
+      "characterId": 2643,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1.0005645751953125,
+        377.8,
+        460.5
+      ],
+      "ratio": 8,
+      "name": "幻兽按钮"
+    },
+    {
+      "depth": 392,
+      "characterId": 2637,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1.0005645751953125,
+        418.2,
+        460.5
+      ],
+      "ratio": 8,
+      "name": "技能按钮"
+    },
+    {
+      "depth": 396,
+      "characterId": 2631,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1.0005645751953125,
+        296.3,
+        460.5
+      ],
+      "ratio": 8,
+      "name": "人物属性按钮"
+    },
+    {
+      "depth": 400,
+      "characterId": 2625,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1.0005645751953125,
+        498.6,
+        460.5
+      ],
+      "ratio": 8,
+      "name": "任务按钮"
+    },
+    {
+      "depth": 404,
+      "characterId": 2619,
+      "matrix": [
+        1.0279693603515625,
+        0,
+        0,
+        1.0005645751953125,
+        539.4,
+        460.5
+      ],
+      "ratio": 8,
+      "name": "系统按钮"
+    },
+    {
+      "depth": 408,
+      "characterId": 4556,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        300,
+        2
+      ],
+      "ratio": 8,
+      "name": "battleHuanShouPanel2"
+    },
+    {
+      "depth": 432,
+      "characterId": 4556,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        160,
+        2
+      ],
+      "ratio": 8,
+      "name": "battleHuanShouPanel1"
+    },
+    {
+      "depth": 456,
+      "characterId": 4558,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        491.75,
+        434.3
+      ],
+      "ratio": 8,
+      "name": "mail"
+    },
+    {
+      "depth": 459,
+      "characterId": 4574,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        522,
+        425
+      ],
+      "ratio": 8,
+      "name": "relive"
+    },
+    {
+      "depth": 464,
+      "characterId": 4578,
+      "matrix": [
+        0.6657562255859375,
+        0,
+        0,
+        0.6666717529296875,
+        130,
+        65
+      ],
+      "ratio": 8,
+      "name": "skillState"
+    },
+    {
+      "depth": 471,
+      "characterId": 4581,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        210,
+        250
+      ],
+      "ratio": 8,
+      "name": "warning"
+    },
+    {
+      "depth": 474,
+      "characterId": 4556,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        440,
+        2
+      ],
+      "ratio": 8,
+      "name": "battleHuanShouPanel3"
+    },
+    {
+      "depth": 498,
+      "characterId": 4591,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "ratio": 8,
+      "name": "rolePanel"
+    },
+    {
+      "depth": 519,
+      "characterId": 4592,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        440
+      ],
+      "ratio": 8
+    },
+    {
+      "depth": 521,
+      "characterId": 4593,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -39.9,
+        442.9
+      ],
+      "ratio": 8
+    },
+    {
+      "depth": 522,
+      "characterId": 2603,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -55,
+        -465
+      ],
+      "ratio": 8,
+      "name": "bigMap"
+    },
+    {
+      "depth": 570,
+      "characterId": 4234,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        5,
+        150
+      ],
+      "ratio": 6,
+      "name": "readPanel"
+    },
+    {
+      "depth": 613,
+      "characterId": 2049,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        544,
+        -41
+      ],
+      "ratio": 8
+    },
+    {
+      "depth": 618,
+      "characterId": 2579,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -237,
+        101
+      ],
+      "ratio": 8,
+      "name": "equipment"
+    },
+    {
+      "depth": 670,
+      "characterId": 2493,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -472,
+        99
+      ],
+      "ratio": 8,
+      "name": "roleAtrribute"
+    },
+    {
+      "depth": 688,
+      "characterId": 2487,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -706,
+        101
+      ],
+      "ratio": 8,
+      "name": "fireDetail"
+    },
+    {
+      "depth": 703,
+      "characterId": 2482,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -229.65,
+        413.8
+      ],
+      "ratio": 8,
+      "name": "huanShou"
+    },
+    {
+      "depth": 775,
+      "characterId": 2424,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -457,
+        409
+      ],
+      "ratio": 8,
+      "name": "huanShouDetail"
+    },
+    {
+      "depth": 799,
+      "characterId": 2414,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -173.35,
+        733.8
+      ],
+      "ratio": 8,
+      "name": "huanShouFen"
+    },
+    {
+      "depth": 814,
+      "characterId": 2407,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        702.95,
+        507
+      ],
+      "ratio": 8,
+      "name": "roleSkills"
+    },
+    {
+      "depth": 856,
+      "characterId": 2381,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        911.8,
+        507
+      ],
+      "ratio": 8,
+      "name": "friend"
+    },
+    {
+      "depth": 898,
+      "characterId": 2368,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        911.8,
+        309
+      ],
+      "ratio": 8,
+      "name": "system"
+    },
+    {
+      "depth": 920,
+      "characterId": 2356,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -457,
+        733.8
+      ],
+      "ratio": 8,
+      "name": "huanHua"
+    },
+    {
+      "depth": 965,
+      "characterId": 2344,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -742.1,
+        405.55
+      ],
+      "ratio": 8,
+      "name": "zsHuanHua"
+    },
+    {
+      "depth": 991,
+      "characterId": 2335,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -766.95,
+        651.05
+      ],
+      "ratio": 8,
+      "name": "evolve"
+    },
+    {
+      "depth": 1014,
+      "characterId": 2327,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -612.1,
+        651.05
+      ],
+      "ratio": 8,
+      "name": "superEvolve"
+    },
+    {
+      "depth": 1035,
+      "characterId": 2321,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        260,
+        929
+      ],
+      "ratio": 8,
+      "name": "makeBell"
+    },
+    {
+      "depth": 1064,
+      "characterId": 2313,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -226,
+        -230
+      ],
+      "ratio": 8,
+      "name": "mainCastle"
+    },
+    {
+      "depth": 1119,
+      "characterId": 2303,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -682,
+        -110
+      ],
+      "ratio": 8,
+      "name": "castleStone"
+    },
+    {
+      "depth": 1144,
+      "characterId": 2297,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -685,
+        -310
+      ],
+      "ratio": 8,
+      "name": "castleHouse"
+    },
+    {
+      "depth": 1159,
+      "characterId": 2293,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        503,
+        -348
+      ],
+      "ratio": 8,
+      "name": "talking"
+    },
+    {
+      "depth": 1189,
+      "characterId": 2210,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        587,
+        -23
+      ],
+      "ratio": 8,
+      "name": "task"
+    },
+    {
+      "depth": 1240,
+      "characterId": 2195,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        245,
+        729
+      ],
+      "ratio": 8,
+      "name": "make"
+    },
+    {
+      "depth": 1265,
+      "characterId": 4599,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -457,
+        979.9
+      ],
+      "ratio": 8,
+      "name": "successHuanHua"
+    },
+    {
+      "depth": 1284,
+      "characterId": 2189,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -162.65,
+        1076.5
+      ],
+      "ratio": 8,
+      "name": "splitStone"
+    },
+    {
+      "depth": 1324,
+      "characterId": 4603,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        70,
+        66
+      ],
+      "ratio": 8,
+      "name": "XPPower"
+    },
+    {
+      "depth": 1336,
+      "characterId": 2181,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -612.1,
+        881.05
+      ],
+      "ratio": 8,
+      "name": "useExpball"
+    },
+    {
+      "depth": 1360,
+      "characterId": 2171,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -766.95,
+        881.05
+      ],
+      "ratio": 8,
+      "name": "giveHuanShou"
+    },
+    {
+      "depth": 1381,
+      "characterId": 2111,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        593.95,
+        295
+      ],
+      "ratio": 8,
+      "name": "giveThing"
+    },
+    {
+      "depth": 1402,
+      "characterId": 2107,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        721,
+        997
+      ],
+      "ratio": 8,
+      "name": "sendThing"
+    },
+    {
+      "depth": 1421,
+      "characterId": 2102,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        721,
+        816
+      ],
+      "ratio": 8,
+      "name": "receiveThing"
+    },
+    {
+      "depth": 1437,
+      "characterId": 2093,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        260,
+        1134.95
+      ],
+      "ratio": 8,
+      "name": "legion"
+    },
+    {
+      "depth": 1448,
+      "characterId": 2089,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        466.95,
+        736.8
+      ],
+      "ratio": 8,
+      "name": "drugShop"
+    },
+    {
+      "depth": 1699,
+      "characterId": 2089,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        467.95,
+        961.8
+      ],
+      "ratio": 8,
+      "name": "bookShop"
+    },
+    {
+      "depth": 1950,
+      "characterId": 2089,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        239.95,
+        513.8
+      ],
+      "ratio": 8,
+      "name": "huanShouShop"
+    },
+    {
+      "depth": 2201,
+      "characterId": 2089,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        467.95,
+        512.8
+      ],
+      "ratio": 8,
+      "name": "shop"
+    },
+    {
+      "depth": 2452,
+      "characterId": 2084,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        250.85,
+        -245
+      ],
+      "ratio": 8,
+      "name": "castleHuanShouShop"
+    },
+    {
+      "depth": 2644,
+      "characterId": 2084,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -482,
+        -150
+      ],
+      "ratio": 8,
+      "name": "castleBoxShop"
+    },
+    {
+      "depth": 2836,
+      "characterId": 2084,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        -245
+      ],
+      "ratio": 8,
+      "name": "castleGemShop"
+    },
+    {
+      "depth": 3028,
+      "characterId": 2074,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        283,
+        200
+      ],
+      "ratio": 8,
+      "name": "backPack"
+    },
+    {
+      "depth": 3285,
+      "characterId": 2060,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        28,
+        90
+      ],
+      "ratio": 8,
+      "name": "wareHouse"
+    },
+    {
+      "depth": 3615,
+      "characterId": 2050,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        160,
+        74
+      ],
+      "ratio": 8,
+      "name": "huanShouItem1"
+    },
+    {
+      "depth": 3623,
+      "characterId": 2050,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        300,
+        74
+      ],
+      "ratio": 8,
+      "name": "huanShouItem2"
+    },
+    {
+      "depth": 3631,
+      "characterId": 2050,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        440,
+        74
+      ],
+      "ratio": 8,
+      "name": "huanShouItem3"
+    },
+    {
+      "depth": 3639,
+      "characterId": 2089,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        920.1,
+        856.5
+      ],
+      "ratio": 8,
+      "name": "huanShouShop2"
+    },
+    {
+      "depth": 3890,
+      "characterId": 167,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        65,
+        613
+      ],
+      "ratio": 8,
+      "name": "buyNumber"
+    },
+    {
+      "depth": 3917,
+      "characterId": 4608,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        75
+      ],
+      "ratio": 8,
+      "name": "systemMsg"
+    },
+    {
+      "depth": 3925,
+      "characterId": 4613,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        -482,
+        -319
+      ],
+      "ratio": 8,
+      "name": "msgBox"
+    },
+    {
+      "depth": 3936,
+      "characterId": 4615,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        481.5,
+        -39
+      ],
+      "ratio": 8,
+      "name": "mover"
+    },
+    {
+      "depth": 3939,
+      "characterId": 4619,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        50.85,
+        744
+      ],
+      "ratio": 8,
+      "name": "detail"
+    },
+    {
+      "depth": 3943,
+      "characterId": 4622,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        529.9,
+        -20
+      ],
+      "ratio": 8,
+      "name": "移动的幻兽蛋"
+    },
+    {
+      "depth": 3945,
+      "characterId": 4623,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "depth": 3946,
+      "characterId": 4629,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "ratio": 8,
+      "name": "gameOverMC"
+    }
+  ],
+  "nodes": {
+    "149": {
+      "id": 149,
+      "code": 2,
+      "sha256": "15778d0156c478c865e6b2912998c0015a6d2d8c0469bc3323b1ff6431716ee4",
+      "bounds": [
+        0,
+        0,
+        200,
+        100
+      ],
+      "width": 200,
+      "height": 100,
+      "file": "149.png"
+    },
+    "150": {
+      "id": 150,
+      "code": 39,
+      "sha256": "b5d765364e0d3d538203c05d272d5c717e50da0c3c3e896ad88d4bddeb0a8666",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 149,
+              "matrix": [
+                0.5,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "151": {
+      "id": 151,
+      "code": 39,
+      "sha256": "bcbaf61afad379568d3f2c81c48179aa0a2038fd7d62035506955a4bc3bca612",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 149,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "161": {
+      "id": 161,
+      "code": 34,
+      "sha256": "a3aa6150e43b59d04687affb5238d1c79405ec325273f05832e73b15f8c1178e",
+      "width": 53,
+      "height": 17,
+      "bounds": [
+        0,
+        0,
+        53,
+        17
+      ],
+      "file": "161.png"
+    },
+    "166": {
+      "id": 166,
+      "code": 34,
+      "sha256": "814e951cde818c4c3ef2a82c2a6822ea586f1341f4dbc849675a20b6d668f957",
+      "width": 23,
+      "height": 23,
+      "bounds": [
+        0,
+        0,
+        23,
+        23
+      ],
+      "file": "166.png"
+    },
+    "188": {
+      "id": 188,
+      "code": 2,
+      "sha256": "81658265d504d166512d21b3e9d7b5e760b23b5206366c0faa6437bb75a6269a",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "188.png"
+    },
+    "189": {
+      "id": 189,
+      "code": 2,
+      "sha256": "217f007066dd4c68a9ebb9c8c9dc0f808406afaf8c60337b2c940b320a8abf8c",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "189.png"
+    },
+    "190": {
+      "id": 190,
+      "code": 2,
+      "sha256": "0783237f7c8ea12c361a8496816a9b414245cd10ad205397691f920a492a63f0",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "190.png"
+    },
+    "216": {
+      "id": 216,
+      "code": 2,
+      "sha256": "813ddafd37f508f12f93cbf81e315d5482a12791ecd3e175012c56a754775f75",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "216.png"
+    },
+    "220": {
+      "id": 220,
+      "code": 2,
+      "sha256": "91983326c9c88dbc590c595a40e4b582b26f8cba18ba8889378fefe4d0ed233a",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "220.png"
+    },
+    "232": {
+      "id": 232,
+      "code": 2,
+      "sha256": "f87c240389d6d79a94da3dd025b43ed240e2ec22ba999a413b0a1b561d4454ba",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "232.png"
+    },
+    "234": {
+      "id": 234,
+      "code": 2,
+      "sha256": "acb12cee3230215915cf67c796535dd18156364256723774b34833bee8f5a11c",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "234.png"
+    },
+    "236": {
+      "id": 236,
+      "code": 2,
+      "sha256": "03cfe76c44d2b7b29cb5d074194c6fe3bfc348cd08a1a3f028b2c67903b9356c",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "236.png"
+    },
+    "238": {
+      "id": 238,
+      "code": 2,
+      "sha256": "2884f28d0e538476c70fd07fb5aa5fb845160685c212c625ddba2fc8f9983768",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "238.png"
+    },
+    "239": {
+      "id": 239,
+      "code": 39,
+      "sha256": "7d092e3c045b952c7f250719104e3c6e25eef173db703974fc1290668aa4420d",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 232,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 232,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 234,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 234,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 4
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 236,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 5
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 236,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 6
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 238,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 7
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 238,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 8
+        }
+      ]
+    },
+    "247": {
+      "id": 247,
+      "code": 2,
+      "sha256": "595c250f918e4ce04f14e445f24c27e66615fac1070af7354b0d70f6213ab864",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "247.png"
+    },
+    "249": {
+      "id": 249,
+      "code": 2,
+      "sha256": "193c0e2c93ed5de6f2941d50666c772fcfe726621044d49f97629c49d61cb904",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "249.png"
+    },
+    "266": {
+      "id": 266,
+      "code": 2,
+      "sha256": "d485cf1ce84aa603189cf5ac66cc6f74b3248ede717d68aa2afdcac890ec18b3",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "266.png"
+    },
+    "276": {
+      "id": 276,
+      "code": 2,
+      "sha256": "1eae13da0ff5c75fc3b3fa4aea0bd8842d707c1f18ba420956a10710a303ff28",
+      "bounds": [
+        0,
+        0,
+        36,
+        36
+      ],
+      "width": 36,
+      "height": 36,
+      "file": "276.png"
+    },
+    "298": {
+      "id": 298,
+      "code": 2,
+      "sha256": "7a97ade88cf9ddea8b1fe28c7b5d46293b4ae802a25a14f6e462e4e8a21e5f48",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "298.png"
+    },
+    "312": {
+      "id": 312,
+      "code": 2,
+      "sha256": "418023de33b5ef2fbdb4636ed60f934f7073df35db54b8645527fbbb007f96a1",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "312.png"
+    },
+    "358": {
+      "id": 358,
+      "code": 2,
+      "sha256": "eb84702965602fab216bc1879f8d3b87cb497c9afd686fe45224236adf0fef15",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "358.png"
+    },
+    "396": {
+      "id": 396,
+      "code": 22,
+      "sha256": "451cf103df1bf53316f75e306388dc9b5568e69d83dd3f6a3c8096c32549eea5",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "396.png"
+    },
+    "398": {
+      "id": 398,
+      "code": 22,
+      "sha256": "78b51cb1a75b898da9032b5d7b9f14602aa28a8f729af2cd05477ff04f5a8879",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "398.png"
+    },
+    "400": {
+      "id": 400,
+      "code": 22,
+      "sha256": "7828d61fec9ebf959ad7730b1e96dde990f24c26de8d72c3220d5268ac47298e",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "400.png"
+    },
+    "402": {
+      "id": 402,
+      "code": 22,
+      "sha256": "8bead7f809206f963e388e6b93384af4fc11674d4f2dbe954fbd2b4ecab71052",
+      "bounds": [
+        2,
+        2,
+        34,
+        34
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "402.png"
+    },
+    "404": {
+      "id": 404,
+      "code": 22,
+      "sha256": "31e57a285a4349c0ffe0ef4068591d189e459fd5a2c67119de7a1da0df1eccb5",
+      "bounds": [
+        2,
+        2,
+        34,
+        34.5
+      ],
+      "width": 32,
+      "height": 33,
+      "file": "404.png"
+    },
+    "2047": {
+      "id": 2047,
+      "code": 39,
+      "sha256": "61d76ae4c999b3e05bfc25b056efc1f92cb76445f790112505a2f8ee9eef3f36",
+      "frames": [
+        {
+          "layers": [],
+          "label": "空格",
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 188,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "灵魂礼包",
+          "frame": 16
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 189,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "幻魔礼包",
+          "frame": 17
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 190,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "魔魂礼包",
+          "frame": 18
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 216,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "9朵玫瑰",
+          "frame": 31
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 220,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "初级月光宝盒",
+          "frame": 33
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 239,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                2,
+                2
+              ],
+              "ratio": 38
+            }
+          ],
+          "label": "高级月光宝盒",
+          "frame": 39
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 247,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "雷元素",
+          "frame": 47
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 249,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "风神兽内丹",
+          "frame": 48
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 249,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "火神兽内丹",
+          "frame": 49
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 249,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "水神兽内丹",
+          "frame": 50
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 249,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "地神兽内丹",
+          "frame": 51
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 249,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "雷神兽内丹",
+          "frame": 52
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 266,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "极品玉石",
+          "frame": 60
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 276,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                2,
+                2
+              ]
+            }
+          ],
+          "label": "斩魂图标",
+          "frame": 86
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 298,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "经验球",
+          "frame": 97
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 312,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "勇士勋章",
+          "frame": 127
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 358,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "中级月光宝盒",
+          "frame": 144
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 396,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "炫舞牛",
+          "frame": 190
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 398,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "霹雳虎",
+          "frame": 191
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 400,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "嘻哈牛",
+          "frame": 192
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 402,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "玲珑虎",
+          "frame": 193
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 404,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "异界精灵",
+          "frame": 194
+        }
+      ]
+    },
+    "2049": {
+      "id": 2049,
+      "code": 39,
+      "sha256": "b4ba85247bb424675ce3cb4c153b410d85246ca15769ea22a35c868b0412a2db",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2047,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "name": "物品"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2057": {
+      "id": 2057,
+      "code": 34,
+      "sha256": "31ed9ab85a153be658ce9e222000b7f9b925df239ba7b024c2f4075dc7cd15d0",
+      "width": 19,
+      "height": 19,
+      "bounds": [
+        0,
+        0,
+        19,
+        19
+      ],
+      "file": "2057.png"
+    },
+    "2063": {
+      "id": 2063,
+      "code": 83,
+      "sha256": "64167fdc458daa5fd6effb706902efe5a85dfda7a9e5504b13fb06075e61413c",
+      "bounds": [
+        -1.5,
+        -1.5,
+        296.5,
+        244.5
+      ],
+      "width": 298,
+      "height": 246,
+      "file": "2063.png"
+    },
+    "2064": {
+      "id": 2064,
+      "code": 11,
+      "sha256": "ebd43d3899d09ef38269286f184f17deb304e0a3feb0df9a3baf45318d65e5cc",
+      "bounds": [
+        0.75,
+        -1.3,
+        73.5,
+        19.3
+      ],
+      "width": 73,
+      "height": 21,
+      "file": "2064.png"
+    },
+    "2065": {
+      "id": 2065,
+      "code": 22,
+      "sha256": "33aa113cc8f6925d4ad0590be561f816ca337406540dd34cc99188d231c8392b",
+      "bounds": [
+        5,
+        36,
+        293,
+        211
+      ],
+      "width": 288,
+      "height": 175,
+      "file": "2065.png"
+    },
+    "2066": {
+      "id": 2066,
+      "code": 37,
+      "sha256": "8932984b0ff73a1534af78e2b30b60df514b586d94728fe149c3e31ec9677ec3",
+      "bounds": [
+        24.4,
+        -2,
+        119.6,
+        15
+      ],
+      "fontId": 89,
+      "fontSize": 13,
+      "color": [
+        177,
+        226,
+        121,
+        255
+      ],
+      "align": 0,
+      "variable": "this._parent.map.role.msText",
+      "text": "99,999,999,999"
+    },
+    "2067": {
+      "id": 2067,
+      "code": 37,
+      "sha256": "07986d287c9ed6ce606d2af4b215a700cac6acc6ccc092a610d357671f955032",
+      "bounds": [
+        24.4,
+        -2,
+        119.6,
+        15
+      ],
+      "fontId": 89,
+      "fontSize": 13,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 0,
+      "variable": "this._parent.map.role.resText",
+      "text": "99,999,999,999"
+    },
+    "2071": {
+      "id": 2071,
+      "code": 34,
+      "sha256": "df05f5a70216ce599b8ec436285756f883e2ed9a3e60763d7c83b736b035cab5",
+      "width": 140,
+      "height": 20,
+      "bounds": [
+        0,
+        0,
+        140,
+        20
+      ],
+      "file": "2071.png"
+    },
+    "2073": {
+      "id": 2073,
+      "code": 34,
+      "sha256": "4049d875ceb6882b7cb2f1e8727ead736205e1d206a1cffedd929c9f6876f6d4",
+      "width": 140,
+      "height": 20,
+      "bounds": [
+        0,
+        0,
+        140,
+        20
+      ],
+      "file": "2073.png"
+    },
+    "2074": {
+      "id": 2074,
+      "code": 39,
+      "sha256": "e23e0ec23fd385213d2345ac84e50259d4a714cdfe034c6fe0cf8b488398e828",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 150,
+              "matrix": [
+                2.95001220703125,
+                0,
+                0,
+                2.42999267578125,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 151,
+              "matrix": [
+                1.4749908447265625,
+                0,
+                0,
+                0.32000732421875,
+                0,
+                0
+              ],
+              "color": {
+                "mult": [
+                  256,
+                  256,
+                  256,
+                  77
+                ],
+                "add": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "depth": 8,
+              "characterId": 2063,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 9,
+              "characterId": 2064,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                118.55,
+                10
+              ]
+            },
+            {
+              "depth": 10,
+              "characterId": 2057,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                269.8,
+                7.85
+              ],
+              "name": "closeButton"
+            },
+            {
+              "depth": 51,
+              "characterId": 2065,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 52,
+              "characterId": 2066,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                24.6,
+                220
+              ],
+              "name": "msGold"
+            },
+            {
+              "depth": 53,
+              "characterId": 2067,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                166.6,
+                220
+              ],
+              "name": "resGold"
+            },
+            {
+              "depth": 54,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                5,
+                35
+              ],
+              "name": "包格1"
+            },
+            {
+              "depth": 59,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                41,
+                35
+              ],
+              "name": "包格2"
+            },
+            {
+              "depth": 64,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                77,
+                35
+              ],
+              "name": "包格3"
+            },
+            {
+              "depth": 69,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                113,
+                35
+              ],
+              "name": "包格4"
+            },
+            {
+              "depth": 74,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                149,
+                35
+              ],
+              "name": "包格5"
+            },
+            {
+              "depth": 79,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                185,
+                35
+              ],
+              "name": "包格6"
+            },
+            {
+              "depth": 84,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                221,
+                35
+              ],
+              "name": "包格7"
+            },
+            {
+              "depth": 89,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                257,
+                35
+              ],
+              "name": "包格8"
+            },
+            {
+              "depth": 94,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                5,
+                70
+              ],
+              "name": "包格9"
+            },
+            {
+              "depth": 99,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                41,
+                70
+              ],
+              "name": "包格10"
+            },
+            {
+              "depth": 104,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                77,
+                70
+              ],
+              "name": "包格11"
+            },
+            {
+              "depth": 109,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                113,
+                70
+              ],
+              "name": "包格12"
+            },
+            {
+              "depth": 114,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                149,
+                70
+              ],
+              "name": "包格13"
+            },
+            {
+              "depth": 119,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                185,
+                70
+              ],
+              "name": "包格14"
+            },
+            {
+              "depth": 124,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                221,
+                70
+              ],
+              "name": "包格15"
+            },
+            {
+              "depth": 129,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                257,
+                70
+              ],
+              "name": "包格16"
+            },
+            {
+              "depth": 134,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                5,
+                105
+              ],
+              "name": "包格17"
+            },
+            {
+              "depth": 139,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                41,
+                105
+              ],
+              "name": "包格18"
+            },
+            {
+              "depth": 144,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                77,
+                105
+              ],
+              "name": "包格19"
+            },
+            {
+              "depth": 149,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                113,
+                105
+              ],
+              "name": "包格20"
+            },
+            {
+              "depth": 154,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                149,
+                105
+              ],
+              "name": "包格21"
+            },
+            {
+              "depth": 159,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                185,
+                105
+              ],
+              "name": "包格22"
+            },
+            {
+              "depth": 164,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                221,
+                105
+              ],
+              "name": "包格23"
+            },
+            {
+              "depth": 169,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                257,
+                105
+              ],
+              "name": "包格24"
+            },
+            {
+              "depth": 174,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                5,
+                140
+              ],
+              "name": "包格25"
+            },
+            {
+              "depth": 179,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                41,
+                140
+              ],
+              "name": "包格26"
+            },
+            {
+              "depth": 184,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                77,
+                140
+              ],
+              "name": "包格27"
+            },
+            {
+              "depth": 189,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                113,
+                140
+              ],
+              "name": "包格28"
+            },
+            {
+              "depth": 194,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                149,
+                140
+              ],
+              "name": "包格29"
+            },
+            {
+              "depth": 199,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                185,
+                140
+              ],
+              "name": "包格30"
+            },
+            {
+              "depth": 204,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                221,
+                140
+              ],
+              "name": "包格31"
+            },
+            {
+              "depth": 209,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                257,
+                140
+              ],
+              "name": "包格32"
+            },
+            {
+              "depth": 214,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                5,
+                175
+              ],
+              "name": "包格33"
+            },
+            {
+              "depth": 219,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                41,
+                175
+              ],
+              "name": "包格34"
+            },
+            {
+              "depth": 224,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                77,
+                175
+              ],
+              "name": "包格35"
+            },
+            {
+              "depth": 229,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                113,
+                175
+              ],
+              "name": "包格36"
+            },
+            {
+              "depth": 234,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                149,
+                175
+              ],
+              "name": "包格37"
+            },
+            {
+              "depth": 239,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                185,
+                175
+              ],
+              "name": "包格38"
+            },
+            {
+              "depth": 244,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                221,
+                175
+              ],
+              "name": "包格39"
+            },
+            {
+              "depth": 249,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                257,
+                175
+              ],
+              "name": "包格40"
+            },
+            {
+              "depth": 254,
+              "characterId": 2071,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                7,
+                216.05
+              ],
+              "name": "mstip"
+            },
+            {
+              "depth": 256,
+              "characterId": 2073,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                148,
+                216
+              ],
+              "name": "restip"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2169": {
+      "id": 2169,
+      "code": 2,
+      "sha256": "d2ff4abf2513c62f906d21cab2d506a5768764a89654ad34ab2e589bc5bc70b3",
+      "bounds": [
+        0,
+        0,
+        580,
+        500
+      ],
+      "width": 580,
+      "height": 500,
+      "file": "2169.png"
+    },
+    "2170": {
+      "id": 2170,
+      "code": 39,
+      "sha256": "97dbb6413a9edb70832563d7c60d8b0f3ab22885aeea1db870c69f98940bf8d6",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2169,
+              "matrix": [
+                0.05517578125,
+                0,
+                0,
+                0.063995361328125,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2211": {
+      "id": 2211,
+      "code": 83,
+      "sha256": "8b27f6c3d0133dba1ccaaf6eba5b518e81eb05509cd5fc91d4a6934697e73ece",
+      "bounds": [
+        -1,
+        -1,
+        401,
+        321
+      ],
+      "width": 402,
+      "height": 322,
+      "file": "2211.png"
+    },
+    "2212": {
+      "id": 2212,
+      "code": 39,
+      "sha256": "4deaf1c8578c5631fe50c61e6f53f28492f25957b2fca908acbc7345a897e96a",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2211,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2213": {
+      "id": 2213,
+      "code": 83,
+      "sha256": "78656dd9a7ee07b0fef120a1ee0fdb6d125d60b18f87ab6d0184f5d79d43bbdd",
+      "bounds": [
+        -1,
+        113,
+        400.95,
+        115
+      ],
+      "width": 402,
+      "height": 2,
+      "file": "2213.png"
+    },
+    "2215": {
+      "id": 2215,
+      "code": 37,
+      "sha256": "450c391ee4ac010462f7a0cc1ac22ac0aa3d72ea103c9dc3bad49b739e8beec6",
+      "bounds": [
+        -2,
+        -2,
+        315.05,
+        112
+      ],
+      "fontId": 2214,
+      "fontSize": 12,
+      "color": [
+        255,
+        255,
+        0,
+        255
+      ],
+      "align": 0,
+      "variable": "",
+      "text": "    当你已经有恋人时对另一个异性进行追求或表白则对方会拒绝你而且你与恋人的关系值会减少50点，少于是低关系值要求时就会导致分手（幸运符也会失效），然而分手后你可以寻找新的恋人。（与一个NPC分手后还可以再次选择与它交往，甚至还可以再次与其成为恋人关系，但分手2次后就不能再与该NPC交往）。\r"
+    },
+    "2216": {
+      "id": 2216,
+      "code": 37,
+      "sha256": "0d94037896cbce636b850794deeea2740725f10e6fcaa47a6bf2d4fde353eb0a",
+      "bounds": [
+        -2,
+        -2,
+        328,
+        14
+      ],
+      "fontId": 2214,
+      "fontSize": 12,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 0,
+      "variable": "",
+      "text": "当你已经有恋人时对另一个异性进行追求或表白则对方会对方"
+    },
+    "2217": {
+      "id": 2217,
+      "code": 39,
+      "sha256": "9331551901b03b5f8dd31ca3b82eec560f51e65e093b68a71de7c78374824c77",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2216,
+              "matrix": [
+                0.999847412109375,
+                0,
+                0,
+                1,
+                2,
+                2
+              ],
+              "name": "words"
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2216,
+              "matrix": [
+                0.999847412109375,
+                0,
+                0,
+                1,
+                2,
+                2
+              ],
+              "name": "words"
+            }
+          ],
+          "frame": 2
+        }
+      ]
+    },
+    "2219": {
+      "id": 2219,
+      "code": 2,
+      "sha256": "48804015feb990ef0597c69b1992fa63a4502985346b0ba1346edaccd680a570",
+      "bounds": [
+        0,
+        0,
+        48,
+        48
+      ],
+      "width": 48,
+      "height": 48,
+      "file": "2219.png"
+    },
+    "2263": {
+      "id": 2263,
+      "code": 2,
+      "sha256": "24e932e3191bc657ddaf31cd8f92a962dfc087e0467ed0357691b4e2afe079cc",
+      "bounds": [
+        0,
+        0,
+        48,
+        48
+      ],
+      "width": 48,
+      "height": 48,
+      "file": "2263.png"
+    },
+    "2292": {
+      "id": 2292,
+      "code": 39,
+      "sha256": "78a6861ae54e6eda667692dc31fb16aa0d3bdb8e27fba89cfb258fc1a506e5cf",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2219,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "男战士",
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2263,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "老兵",
+          "frame": 29
+        }
+      ]
+    },
+    "2293": {
+      "id": 2293,
+      "code": 39,
+      "sha256": "ffb20d172623ec0a46e19cf500ae748c8b0d879464bf23277141a6c851b06a0a",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2212,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "name": "backMC"
+            },
+            {
+              "depth": 3,
+              "characterId": 2213,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 4,
+              "characterId": 2215,
+              "matrix": [
+                0.9996795654296875,
+                0,
+                0,
+                1,
+                62,
+                7
+              ],
+              "name": "words"
+            },
+            {
+              "depth": 5,
+              "characterId": 2217,
+              "matrix": [
+                0.999847412109375,
+                0,
+                0,
+                1,
+                64,
+                120
+              ],
+              "name": "answer0"
+            },
+            {
+              "depth": 7,
+              "characterId": 2217,
+              "matrix": [
+                0.99969482421875,
+                0,
+                0,
+                1,
+                64,
+                140
+              ],
+              "name": "answer1"
+            },
+            {
+              "depth": 9,
+              "characterId": 2217,
+              "matrix": [
+                0.99969482421875,
+                0,
+                0,
+                1,
+                64,
+                160
+              ],
+              "name": "answer2"
+            },
+            {
+              "depth": 11,
+              "characterId": 2217,
+              "matrix": [
+                0.99969482421875,
+                0,
+                0,
+                1,
+                64,
+                180
+              ],
+              "name": "answer3"
+            },
+            {
+              "depth": 13,
+              "characterId": 2217,
+              "matrix": [
+                0.99969482421875,
+                0,
+                0,
+                1,
+                64,
+                200
+              ],
+              "name": "answer4"
+            },
+            {
+              "depth": 15,
+              "characterId": 2217,
+              "matrix": [
+                0.999542236328125,
+                0,
+                0,
+                1,
+                64,
+                220
+              ],
+              "name": "answer5"
+            },
+            {
+              "depth": 17,
+              "characterId": 2217,
+              "matrix": [
+                0.999542236328125,
+                0,
+                0,
+                1,
+                64,
+                240
+              ],
+              "name": "answer6"
+            },
+            {
+              "depth": 19,
+              "characterId": 2217,
+              "matrix": [
+                0.999542236328125,
+                0,
+                0,
+                1,
+                64,
+                260
+              ],
+              "name": "answer7"
+            },
+            {
+              "depth": 21,
+              "characterId": 2217,
+              "matrix": [
+                0.99969482421875,
+                0,
+                0,
+                1,
+                64,
+                280
+              ],
+              "name": "answer8"
+            },
+            {
+              "depth": 23,
+              "characterId": 2217,
+              "matrix": [
+                0.99969482421875,
+                0,
+                0,
+                1,
+                64,
+                300
+              ],
+              "name": "answer9"
+            },
+            {
+              "depth": 25,
+              "characterId": 2292,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                10
+              ],
+              "name": "npcHead"
+            },
+            {
+              "depth": 27,
+              "characterId": 2292,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                120
+              ],
+              "name": "roleHead"
+            },
+            {
+              "depth": 29,
+              "characterId": 2057,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                380,
+                5
+              ],
+              "name": "closeButton"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2333": {
+      "id": 2333,
+      "code": 37,
+      "sha256": "7981f80f5d299d81b4f9ce33b31423700922ba75969215a484bdcb2bec33ad71",
+      "bounds": [
+        -2,
+        -2,
+        22,
+        20.15
+      ],
+      "fontId": 101,
+      "fontSize": 15,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 0,
+      "variable": "",
+      "text": "雷"
+    },
+    "2334": {
+      "id": 2334,
+      "code": 39,
+      "sha256": "83b1fb4a07c94cc83e6981bceea87d84fd8b867d5fd332918bea4f72ecaaf347",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2333,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                2,
+                2
+              ],
+              "name": "element"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2371": {
+      "id": 2371,
+      "code": 37,
+      "sha256": "57d616befce7a9758fae299d7f4e72ff6be089defac114d06e7b9a0deea9f7c7",
+      "bounds": [
+        -0.75,
+        -2,
+        33.45,
+        15
+      ],
+      "fontId": 101,
+      "fontSize": 12,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 2,
+      "variable": "",
+      "text": "99/99"
+    },
+    "2372": {
+      "id": 2372,
+      "code": 39,
+      "sha256": "2c04577311449798ef8214ad567e20a31c5b17fa1fa3dbae1ef8a99b999c6bef",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2371,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                17,
+                3
+              ],
+              "name": "pageText"
+            },
+            {
+              "depth": 2,
+              "characterId": 166,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                54,
+                0
+              ],
+              "name": "nextPage"
+            },
+            {
+              "depth": 5,
+              "characterId": 166,
+              "matrix": [
+                -1,
+                0,
+                0,
+                1,
+                13,
+                0
+              ],
+              "name": "prePage"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2409": {
+      "id": 2409,
+      "code": 83,
+      "sha256": "a125e2d9ddc30e9678c5b57d6ca60a1083f5c8405e13c1ea54a2f5b3dd8a441c",
+      "bounds": [
+        59,
+        5,
+        161,
+        33
+      ],
+      "width": 102,
+      "height": 28,
+      "file": "2409.png"
+    },
+    "2426": {
+      "id": 2426,
+      "code": 2,
+      "sha256": "dd5eac69991971ed01c7902716f7369bb6eb54872ca3936dfd291adb8794b594",
+      "bounds": [
+        0,
+        0,
+        31,
+        20
+      ],
+      "width": 31,
+      "height": 20,
+      "file": "2426.png"
+    },
+    "2428": {
+      "id": 2428,
+      "code": 2,
+      "sha256": "8fb5f7d4b922eff922340fbe397ba08ace81df8a8f86c4e255b51cb0ef07779a",
+      "bounds": [
+        0,
+        0,
+        31,
+        20
+      ],
+      "width": 31,
+      "height": 20,
+      "file": "2428.png"
+    },
+    "2429": {
+      "id": 2429,
+      "code": 39,
+      "sha256": "5c46a2855674e569a1966fc8837a03b95b4775f477cebe40c4d07d6dec074137",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2426,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2428,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 2
+        }
+      ]
+    },
+    "2431": {
+      "id": 2431,
+      "code": 2,
+      "sha256": "31883aead25203bc5e81abf70c67ab459cb5124f2176bfb4d9b102d3804ab149",
+      "bounds": [
+        0,
+        0,
+        31,
+        20
+      ],
+      "width": 31,
+      "height": 20,
+      "file": "2431.png"
+    },
+    "2433": {
+      "id": 2433,
+      "code": 2,
+      "sha256": "3e2d25b52a1227e4a2b86992edd41ac66dd676115cac93160de429c4eb8d9e1f",
+      "bounds": [
+        0,
+        0,
+        31,
+        20
+      ],
+      "width": 31,
+      "height": 20,
+      "file": "2433.png"
+    },
+    "2434": {
+      "id": 2434,
+      "code": 39,
+      "sha256": "2591d5b5413b0fe8017af92bb3b0cfafe02887363c50bdb9b28c191c5dae98f2",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2431,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2433,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 2
+        }
+      ]
+    },
+    "2435": {
+      "id": 2435,
+      "code": 83,
+      "sha256": "cf74921e07fa8ac2601f9e596d151934f52a3870710367661ab59ca23b58daf4",
+      "bounds": [
+        -1.5,
+        -1.5,
+        221.5,
+        321.5
+      ],
+      "width": 223,
+      "height": 323,
+      "file": "2435.png"
+    },
+    "2436": {
+      "id": 2436,
+      "code": 11,
+      "sha256": "e42af0be8a297ce58bf38849af606f40dfe63af652d8878b60c0e3cb7b3d3c57",
+      "bounds": [
+        1,
+        -1.1,
+        92.45,
+        19.35
+      ],
+      "width": 91,
+      "height": 20,
+      "file": "2436.png"
+    },
+    "2437": {
+      "id": 2437,
+      "code": 11,
+      "sha256": "f938cc0e17e3bf8a01fd278ac0228c8a33d911a319553782258a43764a5d98ae",
+      "bounds": [
+        77.9,
+        -1.45,
+        114.5,
+        13.4
+      ],
+      "width": 37,
+      "height": 15,
+      "file": "2437.png"
+    },
+    "2438": {
+      "id": 2438,
+      "code": 11,
+      "sha256": "b648170a0c875954e9df3278a0ae022579977fbd18f3894f782e5112e84787e8",
+      "bounds": [
+        78.05,
+        -1.5,
+        114.5,
+        13.45
+      ],
+      "width": 36,
+      "height": 15,
+      "file": "2438.png"
+    },
+    "2439": {
+      "id": 2439,
+      "code": 83,
+      "sha256": "6deff16a5bec9a36d525fc0dafa1c892c777e9aca583cde308abc273ed430583",
+      "bounds": [
+        -1,
+        -1,
+        201,
+        57
+      ],
+      "width": 202,
+      "height": 58,
+      "file": "2439.png"
+    },
+    "2459": {
+      "id": 2459,
+      "code": 2,
+      "sha256": "74bc0265bf2bcdad99a7eb838cf8f768947f1ce393b0490a07b9c0b367e06f90",
+      "bounds": [
+        0,
+        0,
+        48,
+        48
+      ],
+      "width": 48,
+      "height": 48,
+      "file": "2459.png"
+    },
+    "2477": {
+      "id": 2477,
+      "code": 39,
+      "sha256": "0467e8e6698836ca65bfddd4e259dcd8087403fa80bab47f3a38a8198436594e",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2459,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "label": "凯恩",
+          "frame": 11
+        }
+      ]
+    },
+    "2478": {
+      "id": 2478,
+      "code": 37,
+      "sha256": "a46ea4e977ea106d7783af49eede8080a5e1904f8d7665f1988cd5596644f1bf",
+      "bounds": [
+        -2,
+        -2,
+        137.95,
+        49
+      ],
+      "fontId": 101,
+      "fontSize": 15,
+      "color": [
+        255,
+        150,
+        0,
+        255
+      ],
+      "align": 0,
+      "variable": "",
+      "text": "骑士飞飞\r等级：130\r品质：极品99星"
+    },
+    "2479": {
+      "id": 2479,
+      "code": 39,
+      "sha256": "b0f9a573c864ef4cfdbe8a37b98051a1f4c5ec1c82c95088c0dd108d52d38bb5",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2439,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2170,
+              "matrix": [
+                4.6289520263671875,
+                0,
+                0,
+                1.75,
+                51.9,
+                0
+              ],
+              "color": {
+                "mult": [
+                  256,
+                  256,
+                  256,
+                  0
+                ],
+                "add": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "name": "rect"
+            },
+            {
+              "depth": 4,
+              "characterId": 2477,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                4,
+                4
+              ],
+              "name": "headPic"
+            },
+            {
+              "depth": 6,
+              "characterId": 2478,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                57,
+                4
+              ],
+              "name": "info"
+            },
+            {
+              "depth": 7,
+              "characterId": 2434,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                135,
+                4
+              ],
+              "name": "battleButton"
+            },
+            {
+              "depth": 9,
+              "characterId": 2429,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                166,
+                4
+              ],
+              "name": "inOneButton"
+            },
+            {
+              "depth": 11,
+              "characterId": 2334,
+              "matrix": [
+                1,
+                0,
+                0,
+                0.99774169921875,
+                3,
+                3
+              ],
+              "name": "showElement"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2480": {
+      "id": 2480,
+      "code": 83,
+      "sha256": "5817f702be91a015466370e84e7d3b82f83a4a28c8727e9cb622bc0602c0fc8b",
+      "bounds": [
+        -1,
+        -1,
+        201,
+        57
+      ],
+      "width": 202,
+      "height": 58,
+      "file": "2480.png"
+    },
+    "2481": {
+      "id": 2481,
+      "code": 39,
+      "sha256": "654c8c34c150590a34498c306f7f5e2eb34070b11d358676694bbbdc66584f9d",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2480,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2482": {
+      "id": 2482,
+      "code": 39,
+      "sha256": "1bddf226db8f67bc8c3286a209a898689c4d1152631a98c778b132e7a5a7e2f8",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 150,
+              "matrix": [
+                2.2000274658203125,
+                0,
+                0,
+                3.199981689453125,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 151,
+              "matrix": [
+                1.100006103515625,
+                0,
+                0,
+                0.350006103515625,
+                0,
+                0
+              ],
+              "color": {
+                "mult": [
+                  256,
+                  256,
+                  256,
+                  77
+                ],
+                "add": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "depth": 6,
+              "characterId": 2435,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 7,
+              "characterId": 2057,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                196,
+                6
+              ],
+              "name": "closeButton"
+            },
+            {
+              "depth": 9,
+              "characterId": 2409,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 10,
+              "characterId": 2436,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                70.6,
+                8.9
+              ]
+            },
+            {
+              "depth": 11,
+              "characterId": 161,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                295
+              ],
+              "name": "detailButton"
+            },
+            {
+              "depth": 13,
+              "characterId": 161,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                75,
+                295
+              ],
+              "name": "dropButton"
+            },
+            {
+              "depth": 15,
+              "characterId": 2437,
+              "matrix": [
+                0.997406005859375,
+                0,
+                0,
+                1,
+                -53.1,
+                298
+              ]
+            },
+            {
+              "depth": 16,
+              "characterId": 2438,
+              "matrix": [
+                0.997406005859375,
+                0,
+                0,
+                1,
+                10.85,
+                298
+              ]
+            },
+            {
+              "depth": 17,
+              "characterId": 2372,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                143,
+                295
+              ],
+              "name": "page"
+            },
+            {
+              "depth": 23,
+              "characterId": 2479,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                43
+              ],
+              "name": "幻兽格1"
+            },
+            {
+              "depth": 35,
+              "characterId": 2479,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                104
+              ],
+              "name": "幻兽格2"
+            },
+            {
+              "depth": 47,
+              "characterId": 2479,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                165
+              ],
+              "name": "幻兽格3"
+            },
+            {
+              "depth": 59,
+              "characterId": 2479,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                226
+              ],
+              "name": "幻兽格4"
+            },
+            {
+              "depth": 71,
+              "characterId": 2481,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                10,
+                43
+              ],
+              "name": "focusMC"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "2604": {
+      "id": 2604,
+      "code": 83,
+      "sha256": "bffe06d27337dbe60dfea109df7927bbf55255585885b2486127956cf1b7e1de",
+      "bounds": [
+        -1,
+        -1,
+        21,
+        21
+      ],
+      "width": 22,
+      "height": 22,
+      "file": "2604.png"
+    },
+    "2605": {
+      "id": 2605,
+      "code": 83,
+      "sha256": "ddb3a7350d37cf33460a6b5c64deb4c302696a25a5dd44fb67abc218a9d01eef",
+      "bounds": [
+        -1,
+        -1,
+        21,
+        21
+      ],
+      "width": 22,
+      "height": 22,
+      "file": "2605.png"
+    },
+    "2606": {
+      "id": 2606,
+      "code": 39,
+      "sha256": "fca1e56543708181b65ffccf92b5199916a02f6bd73ea013180156e832e7ce2f",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 2604,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 2605,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 2
+        }
+      ]
+    },
+    "2607": {
+      "id": 2607,
+      "code": 83,
+      "sha256": "b95d40ea0730ba2c49ea35bb678952be9d4c0911df2b8f4919213e8694c8290c",
+      "bounds": [
+        -1,
+        -1,
+        21,
+        21
+      ],
+      "width": 22,
+      "height": 22,
+      "file": "2607.png"
+    },
+    "2608": {
+      "id": 2608,
+      "code": 83,
+      "sha256": "c360ab86262f57bbdafee058af0dc3dbd56325d3c7afd0166e8d0b73fe77f9c0",
+      "bounds": [
+        -1,
+        -1,
+        21,
+        21
+      ],
+      "width": 22,
+      "height": 22,
+      "file": "2608.png"
+    },
+    "2609": {
+      "id": 2609,
+      "code": 39,
+      "sha256": "b7a9a3a0013f4b6632e74d92b7c544d1ef3bcbc953479b9aa65565db24764f0e",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 2607,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 2608,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 2
+        }
+      ]
+    },
+    "2610": {
+      "id": 2610,
+      "code": 83,
+      "sha256": "7ebc6b5dd3b9c43abf5b515130b366a5a5957e384136e889c2697fc3aff20ba0",
+      "bounds": [
+        -1,
+        -1,
+        21,
+        21
+      ],
+      "width": 22,
+      "height": 22,
+      "file": "2610.png"
+    },
+    "2611": {
+      "id": 2611,
+      "code": 83,
+      "sha256": "c294a96552a67a15ec6363b337ed45659c8f2c33945acf02a7356d4fbe9e3269",
+      "bounds": [
+        -1,
+        -1,
+        21,
+        21
+      ],
+      "width": 22,
+      "height": 22,
+      "file": "2611.png"
+    },
+    "2612": {
+      "id": 2612,
+      "code": 39,
+      "sha256": "97257f1c5bf56981eee428d2c242b152f12ef4a889212d5e7eae1311431a458b",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 2610,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 2,
+              "characterId": 2611,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 2
+        }
+      ]
+    },
+    "2614": {
+      "id": 2614,
+      "code": 2,
+      "sha256": "0132b28854b74e15fec2e3d25f980601f0fe40eba2861ba522d3ca48723ea1bb",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2614.png"
+    },
+    "2616": {
+      "id": 2616,
+      "code": 2,
+      "sha256": "064b20ad61415ee71684ce84e41ce870b90be3d205ce5ea09ade2d3147f572a8",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2616.png"
+    },
+    "2617": {
+      "id": 2617,
+      "code": 32,
+      "sha256": "bba22f07b593ee5835de3960b20b3e56cb48517deec8d6618f6b778e3692c020",
+      "bounds": [
+        -11.85,
+        -16.7,
+        45.15,
+        2.3
+      ],
+      "width": 57,
+      "height": 19,
+      "file": "2617.png"
+    },
+    "2618": {
+      "id": 2618,
+      "code": 11,
+      "sha256": "d9f9c49398bd055cdccca2eedf0b9b98e31508afc8594e1ba9a492b9164a421e",
+      "bounds": [
+        46.45,
+        -0.4,
+        111.25,
+        15.4
+      ],
+      "width": 65,
+      "height": 16,
+      "file": "2618.png"
+    },
+    "2619": {
+      "id": 2619,
+      "code": 39,
+      "sha256": "6266dbbb6dc3e5155134dc9463b7aec67e200807f90cb5218d64ccb4cbc4a645",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2614,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2616,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2617,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 2618,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -55.4,
+                -15.7
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2616,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        }
+      ]
+    },
+    "2621": {
+      "id": 2621,
+      "code": 2,
+      "sha256": "b7edf7a40edbe2641ada100b71da38e513dec4969a27bc7999adf12bef8d1183",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2621.png"
+    },
+    "2623": {
+      "id": 2623,
+      "code": 2,
+      "sha256": "382c98d508b8bd8bac0dce45625690c60369b696b3868d36fe42497aece91bbc",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2623.png"
+    },
+    "2624": {
+      "id": 2624,
+      "code": 11,
+      "sha256": "6483f3521310a62c7acd5ca27e006d7c84234af6d2740dff2036b4ea590768ba",
+      "bounds": [
+        46.1,
+        -0.45,
+        111.25,
+        15.45
+      ],
+      "width": 65,
+      "height": 16,
+      "file": "2624.png"
+    },
+    "2625": {
+      "id": 2625,
+      "code": 39,
+      "sha256": "9c0a11263eb9963876c380ccea626becef2b30fe2cd38cbca17ceb5fc8a0c199",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2621,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2623,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2617,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 2624,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -55.4,
+                -15.7
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2623,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        }
+      ]
+    },
+    "2627": {
+      "id": 2627,
+      "code": 2,
+      "sha256": "8206e737a8e355964ceb19e0fefdcbc0109f3ca6c823ab9a0aaee081cda50b1b",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2627.png"
+    },
+    "2629": {
+      "id": 2629,
+      "code": 2,
+      "sha256": "0ace3b170c62db50d43913960dcf3243eb60243608ee33471ca4e6c0abd37179",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2629.png"
+    },
+    "2630": {
+      "id": 2630,
+      "code": 11,
+      "sha256": "875b3d5ce36d260eff68594f01092826495a8df6ce91c16f3114ecc400116692",
+      "bounds": [
+        46.3,
+        -0.4,
+        111.25,
+        15.4
+      ],
+      "width": 65,
+      "height": 16,
+      "file": "2630.png"
+    },
+    "2631": {
+      "id": 2631,
+      "code": 39,
+      "sha256": "94c5d3c944c5873d0a83c959e24b494b780aa68b848a3b9506e622a72925d47d",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2627,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2629,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2617,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 2630,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -55.4,
+                -15.7
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2629,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        }
+      ]
+    },
+    "2633": {
+      "id": 2633,
+      "code": 2,
+      "sha256": "373aa37ca594a4fdc9c99bbb75f2a88145e506f7cc01546c0ca18c6793f82316",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2633.png"
+    },
+    "2635": {
+      "id": 2635,
+      "code": 2,
+      "sha256": "61eaf5d7557ddfc28e9c8c0953fce18070b1907dc1e65d360e42dd6dd9eb15d1",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2635.png"
+    },
+    "2636": {
+      "id": 2636,
+      "code": 11,
+      "sha256": "0ad9d246fdcd63d2bdb6072d3b0445309cdaa0b528eff79a60b1efdd818d7c88",
+      "bounds": [
+        46.25,
+        -0.4,
+        111.25,
+        15.35
+      ],
+      "width": 65,
+      "height": 16,
+      "file": "2636.png"
+    },
+    "2637": {
+      "id": 2637,
+      "code": 39,
+      "sha256": "24b4d15d48a74173a2544a2ad090aef6a25b1986d31df1b09d9e90ca692eb9ab",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2633,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2635,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2617,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 2636,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -55.4,
+                -15.7
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2635,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        }
+      ]
+    },
+    "2639": {
+      "id": 2639,
+      "code": 2,
+      "sha256": "da10401eb2d5c11a4b1e886e077d84b1e5593fecd54d36a2b36bd81c7bcba921",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2639.png"
+    },
+    "2641": {
+      "id": 2641,
+      "code": 2,
+      "sha256": "bcf39ddf3f5419199eef13bc6563c58fc1d48c525979c96a60539d056f97bec6",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2641.png"
+    },
+    "2642": {
+      "id": 2642,
+      "code": 11,
+      "sha256": "8eb68831d60872efa72dcb0eeced48b96aab6561455df248972b6a753abce8dd",
+      "bounds": [
+        46.4,
+        -0.4,
+        111.25,
+        15.45
+      ],
+      "width": 65,
+      "height": 16,
+      "file": "2642.png"
+    },
+    "2643": {
+      "id": 2643,
+      "code": 39,
+      "sha256": "06199cf06028c5a99e39c4e928930dd2298c5074856c75595b65e9fa673d1886",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2639,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2641,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2617,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 2642,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -55.4,
+                -15.7
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2641,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        }
+      ]
+    },
+    "2645": {
+      "id": 2645,
+      "code": 2,
+      "sha256": "0d188009c32cbf17db13033c9f2694c6186850f179d4c563462d217d7e8b48d3",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2645.png"
+    },
+    "2647": {
+      "id": 2647,
+      "code": 2,
+      "sha256": "f3b89043c8fa72271f1356db97b7c358dd92e6432b527e95830c1d328bac700a",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2647.png"
+    },
+    "2648": {
+      "id": 2648,
+      "code": 11,
+      "sha256": "780fc984e7aaffa45ac499a3253190bcb19d72eb171f8a6828c9bc997876aa2a",
+      "bounds": [
+        46.1,
+        -0.35,
+        111.25,
+        15.5
+      ],
+      "width": 65,
+      "height": 16,
+      "file": "2648.png"
+    },
+    "2649": {
+      "id": 2649,
+      "code": 39,
+      "sha256": "31277dcc7c36baf5ff16bbc7c1d94058d1fc4ad2b7ddd5391e1eed74172b184c",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2645,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2647,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2617,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 2648,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -55.4,
+                -15.7
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2647,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        }
+      ]
+    },
+    "2651": {
+      "id": 2651,
+      "code": 2,
+      "sha256": "f4444dcb513e970ba1066f5bb6b25633ba7b7767d8196c44e2323ac34db8a417",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2651.png"
+    },
+    "2653": {
+      "id": 2653,
+      "code": 2,
+      "sha256": "effb803fa1f722b0af31e320173007eb819bc559575e1b3434305b9e296f194f",
+      "bounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "width": 32,
+      "height": 32,
+      "file": "2653.png"
+    },
+    "2654": {
+      "id": 2654,
+      "code": 11,
+      "sha256": "7764abbd46964e2ba148c59cfc9710f27160ca39b1886e21822a76c50e5155fc",
+      "bounds": [
+        46.4,
+        -0.35,
+        111.25,
+        15.4
+      ],
+      "width": 65,
+      "height": 16,
+      "file": "2654.png"
+    },
+    "2655": {
+      "id": 2655,
+      "code": 39,
+      "sha256": "ad4096e515329a32424c1a240b577d107c3883dbb58b7e66c428fd63a6602c91",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2651,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2653,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 2617,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 2654,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -55.4,
+                -15.7
+              ]
+            }
+          ],
+          "frame": 2
+        },
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2653,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 3
+        }
+      ]
+    },
+    "4538": {
+      "id": 4538,
+      "code": 2,
+      "sha256": "f753054ca8af28863df5b9c3806b8dc96eefb676e5156539ce377844ce9d3ee3",
+      "bounds": [
+        0,
+        0,
+        286,
+        43
+      ],
+      "width": 286,
+      "height": 43,
+      "file": "4538.png"
+    },
+    "4539": {
+      "id": 4539,
+      "code": 11,
+      "sha256": "d2cdbe379945d471337811f665d3fd315ba4294116d4595e86458e6a6665db0f",
+      "bounds": [
+        0.75,
+        1.5,
+        34,
+        22.5
+      ],
+      "width": 33,
+      "height": 21,
+      "file": "4539.png"
+    },
+    "4540": {
+      "id": 4540,
+      "code": 11,
+      "sha256": "e7859239e28ef8b70aa369798d7b0b4c593798033072949e15b0deb3b85327a3",
+      "bounds": [
+        0.55,
+        1.5,
+        34,
+        22.5
+      ],
+      "width": 33,
+      "height": 21,
+      "file": "4540.png"
+    },
+    "4541": {
+      "id": 4541,
+      "code": 11,
+      "sha256": "912803cb34423f53d97425fe12de9933adfe5278e74d262bacfb3bbde2a4b1ff",
+      "bounds": [
+        0.85,
+        1.35,
+        32.65,
+        24.25
+      ],
+      "width": 32,
+      "height": 23,
+      "file": "4541.png"
+    },
+    "4542": {
+      "id": 4542,
+      "code": 11,
+      "sha256": "97ea4f883e2648c3540bf924fc965dcc65ab4de194677fbfaa363394ea9cf60c",
+      "bounds": [
+        0.85,
+        1.5,
+        34,
+        22.5
+      ],
+      "width": 33,
+      "height": 21,
+      "file": "4542.png"
+    },
+    "4543": {
+      "id": 4543,
+      "code": 11,
+      "sha256": "985d3f4acac8776630ab5a0f9c2fee285bbdcb473391b557dd707a512694e68c",
+      "bounds": [
+        1.45,
+        1.5,
+        34,
+        22.5
+      ],
+      "width": 33,
+      "height": 21,
+      "file": "4543.png"
+    },
+    "4544": {
+      "id": 4544,
+      "code": 11,
+      "sha256": "726a51eb4fe5c5c8f0486e0fce92b3ea539c2f83f427a78d53915797871bcd39",
+      "bounds": [
+        1.25,
+        1.5,
+        34,
+        22.5
+      ],
+      "width": 33,
+      "height": 21,
+      "file": "4544.png"
+    },
+    "4545": {
+      "id": 4545,
+      "code": 11,
+      "sha256": "168789db33ccec5e24ef3caa7b967dec416d3efca58d7fff4fc602d0be4b28b3",
+      "bounds": [
+        2.75,
+        1.5,
+        34,
+        22.5
+      ],
+      "width": 31,
+      "height": 21,
+      "file": "4545.png"
+    },
+    "4546": {
+      "id": 4546,
+      "code": 39,
+      "sha256": "e8a88f93f485899a12fcbb1a47f1b9c06bd30766f977629e11c5fb5b25d24ff9",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4538,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 2,
+              "characterId": 4539,
+              "matrix": [
+                0.9998016357421875,
+                0,
+                0,
+                1,
+                256.65,
+                10
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 4540,
+              "matrix": [
+                0.9998016357421875,
+                0,
+                0,
+                1,
+                217.45,
+                10
+              ]
+            },
+            {
+              "depth": 4,
+              "characterId": 4541,
+              "matrix": [
+                0.9998016357421875,
+                0,
+                0,
+                1,
+                178.4,
+                10
+              ]
+            },
+            {
+              "depth": 5,
+              "characterId": 4542,
+              "matrix": [
+                0.9998016357421875,
+                0,
+                0,
+                1,
+                139.3,
+                10
+              ]
+            },
+            {
+              "depth": 6,
+              "characterId": 4543,
+              "matrix": [
+                0.9998016357421875,
+                0,
+                0,
+                1,
+                100.2,
+                10
+              ]
+            },
+            {
+              "depth": 7,
+              "characterId": 4544,
+              "matrix": [
+                0.9998016357421875,
+                0,
+                0,
+                1,
+                61.1,
+                10
+              ]
+            },
+            {
+              "depth": 8,
+              "characterId": 4545,
+              "matrix": [
+                0.9998016357421875,
+                0,
+                0,
+                1,
+                22,
+                10
+              ]
+            },
+            {
+              "depth": 9,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                8,
+                4
+              ],
+              "name": "包格1"
+            },
+            {
+              "depth": 14,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                46.5,
+                4
+              ],
+              "name": "包格2"
+            },
+            {
+              "depth": 19,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                86.5,
+                4
+              ],
+              "name": "包格3"
+            },
+            {
+              "depth": 24,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                126,
+                4
+              ],
+              "name": "包格4"
+            },
+            {
+              "depth": 29,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                165.5,
+                4
+              ],
+              "name": "包格5"
+            },
+            {
+              "depth": 34,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                204,
+                4
+              ],
+              "name": "包格6"
+            },
+            {
+              "depth": 39,
+              "characterId": 2049,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                244,
+                4
+              ],
+              "name": "包格7"
+            },
+            {
+              "depth": 44,
+              "characterId": 4538,
+              "matrix": [
+                1.0279693603515625,
+                0,
+                0,
+                1,
+                286,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4547": {
+      "id": 4547,
+      "code": 83,
+      "sha256": "4c5f0471e4491da8f9652eae2117d5031556f34fcbbe03801acacd3c635ef530",
+      "bounds": [
+        -1.5,
+        -1.5,
+        141.5,
+        61.5
+      ],
+      "width": 143,
+      "height": 63,
+      "file": "4547.png"
+    },
+    "4548": {
+      "id": 4548,
+      "code": 37,
+      "sha256": "76e2c651008d1f6f6258b9ccedd99bb6b124b14931e14225e6d05c63926a656d",
+      "bounds": [
+        37.4,
+        -2,
+        120.3,
+        15
+      ],
+      "fontId": 101,
+      "fontSize": 13,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 2,
+      "variable": "",
+      "text": "圣天使雷斯"
+    },
+    "4549": {
+      "id": 4549,
+      "code": 2,
+      "sha256": "bdc4e1231948f4d10910eb2a80aeddbe20f2e9a643724bc9bdcd9e6266416f28",
+      "bounds": [
+        0,
+        -4.05,
+        100,
+        3.95
+      ],
+      "width": 100,
+      "height": 8,
+      "file": "4549.png"
+    },
+    "4550": {
+      "id": 4550,
+      "code": 39,
+      "sha256": "15ba40402e9e82f097818372accdc61c008f79217e8888ebd7506683a7a6a660",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4549,
+              "matrix": [
+                0.8000030517578125,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4551": {
+      "id": 4551,
+      "code": 83,
+      "sha256": "b501be93b2208772605801633e03a28d62dddbfc1f2955f8414539e06caa974a",
+      "bounds": [
+        -1.5,
+        -1.5,
+        81.55,
+        9.5
+      ],
+      "width": 84,
+      "height": 11,
+      "file": "4551.png"
+    },
+    "4552": {
+      "id": 4552,
+      "code": 39,
+      "sha256": "dd48f81f74e14823db8be147cd3fb396dbe0a8d3ec2aa3ca00f0f02bcaedcad1",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4550,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                4
+              ],
+              "name": "reallyHp"
+            },
+            {
+              "depth": 3,
+              "characterId": 4551,
+              "matrix": [
+                1.0006256103515625,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4553": {
+      "id": 4553,
+      "code": 39,
+      "sha256": "8d1f51dbfb2b52eac892c88f589e334b84d351f841dc9ed49e84c80eb4977f7a",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4550,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                4.05
+              ],
+              "color": {
+                "mult": [
+                  0,
+                  0,
+                  0,
+                  256
+                ],
+                "add": [
+                  0,
+                  255,
+                  0,
+                  0
+                ]
+              },
+              "name": "reallyExp"
+            },
+            {
+              "depth": 3,
+              "characterId": 4551,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4554": {
+      "id": 4554,
+      "code": 83,
+      "sha256": "3785ef1689d6dda9e7fd44039d349f80f103f20986e9d9853f313605a55d821b",
+      "bounds": [
+        38.5,
+        40.5,
+        69.5,
+        71.5
+      ],
+      "width": 31,
+      "height": 31,
+      "file": "4554.png"
+    },
+    "4555": {
+      "id": 4555,
+      "code": 37,
+      "sha256": "9de9ca1494064f4e46d4aeea9572502f43e69ac355e70e2e6fb699772bc04cc5",
+      "bounds": [
+        58.65,
+        -2,
+        85.65,
+        17.45
+      ],
+      "fontId": 101,
+      "fontSize": 15,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 2,
+      "variable": "",
+      "text": "232"
+    },
+    "4556": {
+      "id": 4556,
+      "code": 39,
+      "sha256": "746505caa67d3eec3dac77d8cdba841e014cb1337f76e08938e9fbab5644bae3",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 150,
+              "matrix": [
+                1.399993896484375,
+                0,
+                0,
+                0.5999908447265625,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 4547,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 4,
+              "characterId": 2477,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                3.5,
+                5
+              ],
+              "name": "headPic"
+            },
+            {
+              "depth": 6,
+              "characterId": 4548,
+              "matrix": [
+                1.0011749267578125,
+                0,
+                0,
+                1.0009765625,
+                14.05,
+                6
+              ],
+              "name": "huanShouName"
+            },
+            {
+              "depth": 7,
+              "characterId": 4552,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                53.5,
+                22
+              ],
+              "name": "hpBar"
+            },
+            {
+              "depth": 11,
+              "characterId": 4553,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                53.55,
+                32
+              ],
+              "name": "expBar"
+            },
+            {
+              "depth": 15,
+              "characterId": 4554,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 16,
+              "characterId": 4555,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -17.65,
+                48.55
+              ],
+              "name": "huanShouLevels"
+            },
+            {
+              "depth": 17,
+              "characterId": 2612,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                117,
+                48
+              ],
+              "name": "battleButton"
+            },
+            {
+              "depth": 20,
+              "characterId": 2609,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                94,
+                48
+              ],
+              "name": "inOneButton"
+            },
+            {
+              "depth": 23,
+              "characterId": 2606,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                71,
+                48
+              ],
+              "name": "itemButton"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4579": {
+      "id": 4579,
+      "code": 32,
+      "sha256": "fed48f044f527cfffcfe696619330c11c5a8103d2547093533b5893d7cfa91bd",
+      "bounds": [
+        0,
+        0,
+        125,
+        19
+      ],
+      "width": 125,
+      "height": 19,
+      "file": "4579.png"
+    },
+    "4582": {
+      "id": 4582,
+      "code": 83,
+      "sha256": "73b61764ddc93cc039dc6808b95b0638e227a96bfb4c8f214ff7789eb5e43259",
+      "bounds": [
+        -1.5,
+        -1.5,
+        161.5,
+        61.5
+      ],
+      "width": 163,
+      "height": 63,
+      "file": "4582.png"
+    },
+    "4583": {
+      "id": 4583,
+      "code": 37,
+      "sha256": "9cf96672c5a8260439e7bbfc5ddaf16f784d5bd356c0f4df13fa6cef7f88148d",
+      "bounds": [
+        32.4,
+        -2,
+        142.35,
+        17
+      ],
+      "fontId": 101,
+      "fontSize": 15,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 2,
+      "variable": "",
+      "text": "魔域男战士一五"
+    },
+    "4584": {
+      "id": 4584,
+      "code": 39,
+      "sha256": "de1c6e05594b2eb71f5bd75c1740bc04e5ce6daffb0c3f469d87afc4e259daa1",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4549,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4585": {
+      "id": 4585,
+      "code": 83,
+      "sha256": "a85de7711e2b80f80c778c1e42b64d32a3d7175dae82545f816166d3113b4475",
+      "bounds": [
+        -1.5,
+        -1.5,
+        100.5,
+        9.5
+      ],
+      "width": 102,
+      "height": 11,
+      "file": "4585.png"
+    },
+    "4586": {
+      "id": 4586,
+      "code": 39,
+      "sha256": "fe619a5552d43927c79c7d429e5b7687a05ef7ec81bc4f8905ddee86ff2f7b96",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4584,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                4
+              ],
+              "name": "reallyHp"
+            },
+            {
+              "depth": 3,
+              "characterId": 4585,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0.05,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4587": {
+      "id": 4587,
+      "code": 39,
+      "sha256": "7394443ba65fcabc88eb4612180eed2698c6048f97acc3b51d74832db66c62b4",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4584,
+              "matrix": [
+                0.9999847412109375,
+                0,
+                0,
+                1,
+                0,
+                4.05
+              ],
+              "color": {
+                "mult": [
+                  0,
+                  0,
+                  0,
+                  256
+                ],
+                "add": [
+                  0,
+                  102,
+                  204,
+                  0
+                ]
+              },
+              "name": "reallyMp"
+            },
+            {
+              "depth": 3,
+              "characterId": 4585,
+              "matrix": [
+                1,
+                0,
+                0,
+                1.006256103515625,
+                0.05,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4588": {
+      "id": 4588,
+      "code": 39,
+      "sha256": "41ad04d84257860171210be3f2ec6c3660611a0eb10ad1dfce435dc24ef2c652",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4584,
+              "matrix": [
+                0.9999847412109375,
+                0,
+                0,
+                1,
+                0,
+                4.05
+              ],
+              "color": {
+                "mult": [
+                  0,
+                  0,
+                  0,
+                  256
+                ],
+                "add": [
+                  0,
+                  204,
+                  51,
+                  0
+                ]
+              },
+              "name": "reallyExp"
+            },
+            {
+              "depth": 3,
+              "characterId": 4585,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4589": {
+      "id": 4589,
+      "code": 83,
+      "sha256": "be74335dab02d8dc3f95d6c1a8c9f17342e0dd957b8525c909c79d2795c8ac21",
+      "bounds": [
+        38.5,
+        40.5,
+        69.5,
+        71.5
+      ],
+      "width": 31,
+      "height": 31,
+      "file": "4589.png"
+    },
+    "4590": {
+      "id": 4590,
+      "code": 37,
+      "sha256": "6ceb948269c9402fb60eded6394320d46518ed33a2f0ef88e0700701c71f7940",
+      "bounds": [
+        58.65,
+        -2,
+        85.65,
+        17.45
+      ],
+      "fontId": 101,
+      "fontSize": 15,
+      "color": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "align": 2,
+      "variable": "",
+      "text": "232"
+    },
+    "4591": {
+      "id": 4591,
+      "code": 39,
+      "sha256": "ebf9275ae4dc51f73c74636b8bfe836cf530cc468219892308ab4aa44dc4b9bb",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 150,
+              "matrix": [
+                1.5999908447265625,
+                0,
+                0,
+                0.5999908447265625,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 3,
+              "characterId": 4582,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 4,
+              "characterId": 4583,
+              "matrix": [
+                1.0003204345703125,
+                0,
+                0,
+                1.0009765625,
+                20.1,
+                7
+              ],
+              "name": "roleName"
+            },
+            {
+              "depth": 5,
+              "characterId": 2292,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                5,
+                6.5
+              ],
+              "name": "roleHead"
+            },
+            {
+              "depth": 7,
+              "characterId": 4586,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                56.65,
+                25.35
+              ],
+              "name": "hpBar"
+            },
+            {
+              "depth": 11,
+              "characterId": 4587,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                56.65,
+                36.35
+              ],
+              "name": "mpBar"
+            },
+            {
+              "depth": 15,
+              "characterId": 4588,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                56.7,
+                46.4
+              ],
+              "name": "expBar"
+            },
+            {
+              "depth": 19,
+              "characterId": 4589,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "depth": 20,
+              "characterId": 4590,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                -17.65,
+                48.55
+              ],
+              "name": "roleLevels"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4592": {
+      "id": 4592,
+      "code": 39,
+      "sha256": "0318a08f82d4bd66dd891af13aa46e059cf8f0b67d1a659d0d07d4e649d72c8f",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4579,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4593": {
+      "id": 4593,
+      "code": 37,
+      "sha256": "cef07dafffdc1bb78942dd87824dfd259aec016bded8136331c4ec5f0c0f1854",
+      "bounds": [
+        39.9,
+        -2,
+        159.9,
+        17
+      ],
+      "fontId": 89,
+      "fontSize": 15,
+      "color": [
+        255,
+        204,
+        51,
+        255
+      ],
+      "align": 2,
+      "variable": "map.nowMap",
+      "text": "卡萨诺城"
+    },
+    "4601": {
+      "id": 4601,
+      "code": 2,
+      "sha256": "9ba085ee589c66fb6a800dd1952f33c591d97aafe5645176e9c13a445fcae1e3",
+      "bounds": [
+        0,
+        0,
+        18,
+        18
+      ],
+      "width": 18,
+      "height": 18,
+      "file": "4601.png"
+    },
+    "4602": {
+      "id": 4602,
+      "code": 39,
+      "sha256": "c9826a347275f0385f734aa25b869908806c1708642393c62ed85c1a0c441eae",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4601,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    },
+    "4603": {
+      "id": 4603,
+      "code": 39,
+      "sha256": "9ca9502b057f5a01cdd6f788ce52252e024f5dce9a334ae1e50dcdfd3b6bdca9",
+      "frames": [
+        {
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 4602,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "name": "能量格1"
+            },
+            {
+              "depth": 3,
+              "characterId": 4602,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                20,
+                0
+              ],
+              "name": "能量格2"
+            },
+            {
+              "depth": 5,
+              "characterId": 4602,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                40,
+                0
+              ],
+              "name": "能量格3"
+            },
+            {
+              "depth": 7,
+              "characterId": 4602,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                20.5
+              ],
+              "name": "能量格4"
+            },
+            {
+              "depth": 9,
+              "characterId": 4602,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                20,
+                20.5
+              ],
+              "name": "能量格5"
+            },
+            {
+              "depth": 11,
+              "characterId": 4602,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                40,
+                20.5
+              ],
+              "name": "能量格6"
+            }
+          ],
+          "frame": 1
+        }
+      ]
+    }
+  }
+}

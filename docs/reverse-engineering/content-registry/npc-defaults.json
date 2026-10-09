@@ -1,0 +1,1739 @@
+{
+  "scope": "actual FriendClass constructor and declarations applied to all 60 source NPC seeds; numeric defaults normalize signed zero, absent values remain explicit",
+  "records": [
+    {
+      "contentId": "npc:杂货商",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 172
+      },
+      "values": {
+        "nTitle": "杂货商",
+        "cmd": 71,
+        "oldCmd": 71,
+        "name": "奈奈安",
+        "sex": "女",
+        "address": "卡萨诺城一",
+        "isLover": false,
+        "jobLevels": 1,
+        "jobMaxLevels": 5,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 1,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:装备打造师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 173
+      },
+      "values": {
+        "nTitle": "装备打造师",
+        "cmd": 91,
+        "oldCmd": 91,
+        "name": "约克",
+        "sex": "男",
+        "address": "卡萨诺城一",
+        "isLover": false,
+        "jobLevels": 1,
+        "jobMaxLevels": 5,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 1,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:幻兽商",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 174
+      },
+      "values": {
+        "nTitle": "幻兽商",
+        "cmd": 101,
+        "oldCmd": 101,
+        "name": "薇薇安",
+        "sex": "女",
+        "address": "卡萨诺城三",
+        "isLover": false,
+        "jobLevels": 1,
+        "jobMaxLevels": 5,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 1,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:幻兽幻化师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 175
+      },
+      "values": {
+        "nTitle": "幻兽幻化师",
+        "cmd": 111,
+        "oldCmd": 111,
+        "name": "麦克",
+        "sex": "男",
+        "address": "卡萨诺城三",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 1,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:元帅",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 176
+      },
+      "values": {
+        "nTitle": "元帅",
+        "cmd": 171,
+        "oldCmd": 171,
+        "name": "兰斯",
+        "sex": "男",
+        "address": "皇宫",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 5,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:王子",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 177
+      },
+      "values": {
+        "nTitle": "王子",
+        "cmd": 191,
+        "oldCmd": 191,
+        "name": "艾尔",
+        "sex": "男",
+        "address": "东宫",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 3,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:公主",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 178
+      },
+      "values": {
+        "nTitle": "公主",
+        "cmd": 201,
+        "oldCmd": 201,
+        "name": "海伦娜",
+        "sex": "女",
+        "address": "花园",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 4,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:女神",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 179
+      },
+      "values": {
+        "nTitle": "女神",
+        "cmd": 9221,
+        "oldCmd": 9221,
+        "name": "娜尔莎",
+        "sex": "女",
+        "address": "心湖",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 6,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:幻兽装备师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 180
+      },
+      "values": {
+        "nTitle": "幻兽装备师",
+        "cmd": 9311,
+        "oldCmd": 9311,
+        "name": "恩多",
+        "sex": "男",
+        "address": "戈壁",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 2,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:黑衣圣兽师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 181
+      },
+      "values": {
+        "nTitle": "黑衣圣兽师",
+        "cmd": 9321,
+        "oldCmd": 9321,
+        "name": "迪特",
+        "sex": "男",
+        "address": "沼泽",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 3,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:白衣圣兽师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 182
+      },
+      "values": {
+        "nTitle": "白衣圣兽师",
+        "cmd": 9331,
+        "oldCmd": 9331,
+        "name": "卡迪娜",
+        "sex": "女",
+        "address": "冰宫",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 3,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:公爵儿子",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 183
+      },
+      "values": {
+        "nTitle": "公爵儿子",
+        "cmd": 9341,
+        "oldCmd": 9341,
+        "name": "贝塔",
+        "sex": "男",
+        "address": "南城二",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 2,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:公爵女儿",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 184
+      },
+      "values": {
+        "nTitle": "公爵女儿",
+        "cmd": 9351,
+        "oldCmd": 9351,
+        "name": "爱丽娜",
+        "sex": "女",
+        "address": "南城二",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 2,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:技能导师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 185
+      },
+      "values": {
+        "nTitle": "技能导师",
+        "cmd": 9061,
+        "oldCmd": 9061,
+        "name": "露西亚",
+        "sex": "女",
+        "address": "树心城",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 2,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:老兵",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 186
+      },
+      "values": {
+        "nTitle": "老兵",
+        "cmd": 1,
+        "oldCmd": 1,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:药剂师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 187
+      },
+      "values": {
+        "nTitle": "药剂师",
+        "cmd": 19,
+        "oldCmd": 19,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:宝箱",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 188
+      },
+      "values": {
+        "nTitle": "宝箱",
+        "cmd": 21,
+        "oldCmd": 21,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:临时任务",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 189
+      },
+      "values": {
+        "nTitle": "临时任务",
+        "cmd": 31,
+        "oldCmd": 31,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:军需官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 190
+      },
+      "values": {
+        "nTitle": "军需官",
+        "cmd": 51,
+        "oldCmd": 51,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:爱神",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 191
+      },
+      "values": {
+        "nTitle": "爱神",
+        "cmd": 81,
+        "oldCmd": 81,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:PK赛报名官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 192
+      },
+      "values": {
+        "nTitle": "PK赛报名官",
+        "cmd": 121,
+        "oldCmd": 121,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:奖品发放员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 193
+      },
+      "values": {
+        "nTitle": "奖品发放员",
+        "cmd": 0,
+        "oldCmd": 0,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:城堡管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 194
+      },
+      "values": {
+        "nTitle": "城堡管理员",
+        "cmd": 141,
+        "oldCmd": 141,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:军团管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 195
+      },
+      "values": {
+        "nTitle": "军团管理员",
+        "cmd": 151,
+        "oldCmd": 151,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:经验导师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 196
+      },
+      "values": {
+        "nTitle": "经验导师",
+        "cmd": 161,
+        "oldCmd": 161,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:开心果",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 197
+      },
+      "values": {
+        "nTitle": "开心果",
+        "cmd": 9211,
+        "oldCmd": 9211,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:打造大师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 198
+      },
+      "values": {
+        "nTitle": "打造大师",
+        "cmd": 9251,
+        "oldCmd": 9251,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:国王",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 199
+      },
+      "values": {
+        "nTitle": "国王",
+        "cmd": 9511,
+        "oldCmd": 9511,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:南城公爵",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 200
+      },
+      "values": {
+        "nTitle": "南城公爵",
+        "cmd": 9361,
+        "oldCmd": 9361,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:船夫",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 201
+      },
+      "values": {
+        "nTitle": "船夫",
+        "cmd": 9400,
+        "oldCmd": 9400,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:隐者",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 202
+      },
+      "values": {
+        "nTitle": "隐者",
+        "cmd": 9449,
+        "oldCmd": 9449,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:挑战者",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 203
+      },
+      "values": {
+        "nTitle": "挑战者",
+        "cmd": 9600,
+        "oldCmd": 9600,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:王子的宝箱",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 204
+      },
+      "values": {
+        "nTitle": "王子的宝箱",
+        "cmd": 4010,
+        "oldCmd": 4010,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:公主的宝箱",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 205
+      },
+      "values": {
+        "nTitle": "公主的宝箱",
+        "cmd": 4005,
+        "oldCmd": 4005,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:公爵的宝箱",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 206
+      },
+      "values": {
+        "nTitle": "公爵的宝箱",
+        "cmd": 4020,
+        "oldCmd": 4020,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:卡萨诺城郊区管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 207
+      },
+      "values": {
+        "nTitle": "卡萨诺城郊区管理员",
+        "cmd": 3011,
+        "oldCmd": 3011,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:树心城郊区管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 208
+      },
+      "values": {
+        "nTitle": "树心城郊区管理员",
+        "cmd": 3021,
+        "oldCmd": 3021,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:戈壁郊区管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 209
+      },
+      "values": {
+        "nTitle": "戈壁郊区管理员",
+        "cmd": 3031,
+        "oldCmd": 3031,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:沼泽郊区管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 210
+      },
+      "values": {
+        "nTitle": "沼泽郊区管理员",
+        "cmd": 3041,
+        "oldCmd": 3041,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:南城郊区管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 211
+      },
+      "values": {
+        "nTitle": "南城郊区管理员",
+        "cmd": 3051,
+        "oldCmd": 3051,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:边关郊区管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 212
+      },
+      "values": {
+        "nTitle": "边关郊区管理员",
+        "cmd": 3061,
+        "oldCmd": 3061,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:冰宫郊区管理员",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 213
+      },
+      "values": {
+        "nTitle": "冰宫郊区管理员",
+        "cmd": 3071,
+        "oldCmd": 3071,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:卡萨诺城指挥官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 214
+      },
+      "values": {
+        "nTitle": "卡萨诺城指挥官",
+        "cmd": 3201,
+        "oldCmd": 3201,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:树心城指挥官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 215
+      },
+      "values": {
+        "nTitle": "树心城指挥官",
+        "cmd": 3202,
+        "oldCmd": 3202,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:戈壁指挥官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 216
+      },
+      "values": {
+        "nTitle": "戈壁指挥官",
+        "cmd": 3203,
+        "oldCmd": 3203,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:沼泽指挥官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 217
+      },
+      "values": {
+        "nTitle": "沼泽指挥官",
+        "cmd": 3204,
+        "oldCmd": 3204,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:南城指挥官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 218
+      },
+      "values": {
+        "nTitle": "南城指挥官",
+        "cmd": 3205,
+        "oldCmd": 3205,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:边关指挥官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 219
+      },
+      "values": {
+        "nTitle": "边关指挥官",
+        "cmd": 9500,
+        "oldCmd": 9500,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:冰宫指挥官",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 220
+      },
+      "values": {
+        "nTitle": "冰宫指挥官",
+        "cmd": 3207,
+        "oldCmd": 3207,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:巧匠",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 221
+      },
+      "values": {
+        "nTitle": "巧匠",
+        "cmd": 10100,
+        "oldCmd": 10100,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:戈壁幻兽商",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 222
+      },
+      "values": {
+        "nTitle": "戈壁幻兽商",
+        "cmd": 10200,
+        "oldCmd": 10200,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:南城幻兽商",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 223
+      },
+      "values": {
+        "nTitle": "南城幻兽商",
+        "cmd": 10300,
+        "oldCmd": 10300,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:冰宫幻兽商",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 224
+      },
+      "values": {
+        "nTitle": "冰宫幻兽商",
+        "cmd": 10400,
+        "oldCmd": 10400,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:花儿",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 225
+      },
+      "values": {
+        "nTitle": "花儿",
+        "cmd": 10500,
+        "oldCmd": 10500,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:抽奖箱",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 226
+      },
+      "values": {
+        "nTitle": "抽奖箱",
+        "cmd": 10600,
+        "oldCmd": 10600,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:飞翔",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 227
+      },
+      "values": {
+        "nTitle": "飞翔",
+        "cmd": 13201,
+        "oldCmd": 13201,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:白河愁",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 228
+      },
+      "values": {
+        "nTitle": "白河愁",
+        "cmd": 13301,
+        "oldCmd": 13301,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:新手导师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 229
+      },
+      "values": {
+        "nTitle": "新手导师",
+        "cmd": 13401,
+        "oldCmd": 13401,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:导师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 230
+      },
+      "values": {
+        "nTitle": "导师",
+        "cmd": 13501,
+        "oldCmd": 13501,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    },
+    {
+      "contentId": "npc:高手导师",
+      "source": {
+        "file": "DefineSprite_4536/frame_1/DoAction.as",
+        "line": 231
+      },
+      "values": {
+        "nTitle": "高手导师",
+        "cmd": 13601,
+        "oldCmd": 13601,
+        "name": "",
+        "sex": "",
+        "address": "未知",
+        "isLover": false,
+        "jobLevels": {
+          "state": "undefined"
+        },
+        "jobMaxLevels": 0,
+        "levels": 0,
+        "relationName": "",
+        "rejectTimes": 0,
+        "isFriend": false,
+        "isIntimate": false,
+        "relation": 0,
+        "maxRelation": 0,
+        "isTask": false,
+        "isBest": false
+      }
+    }
+  ]
+}

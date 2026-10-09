@@ -1,0 +1,2310 @@
+{
+  "icons": {
+    "英雄令": {
+      "sprite": 2047,
+      "frame": 6,
+      "layer": {
+        "depth": 1,
+        "characterId": "180",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "富豪礼包": {
+      "sprite": 2047,
+      "frame": 7,
+      "layer": {
+        "depth": 1,
+        "characterId": "182",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "灵魂礼包": {
+      "sprite": 2047,
+      "frame": 16,
+      "layer": {
+        "depth": 1,
+        "characterId": "188",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "英勇": {
+      "sprite": 2047,
+      "frame": 62,
+      "layer": {
+        "depth": 1,
+        "characterId": "268",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "莎菲": {
+      "sprite": 2047,
+      "frame": 175,
+      "layer": {
+        "depth": 1,
+        "characterId": "378",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "圣天使雷斯": {
+      "sprite": 2047,
+      "frame": 179,
+      "layer": {
+        "depth": 1,
+        "characterId": "380",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "圣天使奈丽": {
+      "sprite": 2047,
+      "frame": 180,
+      "layer": {
+        "depth": 1,
+        "characterId": "382",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "雪瑞": {
+      "sprite": 2047,
+      "frame": 186,
+      "layer": {
+        "depth": 1,
+        "characterId": "394",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "上品1级战士武器": {
+      "sprite": 2047,
+      "frame": 207,
+      "layer": {
+        "depth": 1,
+        "characterId": "424",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "良品1级战士头盔": {
+      "sprite": 2047,
+      "frame": 211,
+      "layer": {
+        "depth": 1,
+        "characterId": "449",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "良品1级战士衣服": {
+      "sprite": 2047,
+      "frame": 216,
+      "layer": {
+        "depth": 1,
+        "characterId": "476",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "良品1级战士鞋": {
+      "sprite": 2047,
+      "frame": 221,
+      "layer": {
+        "depth": 1,
+        "characterId": "503",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "新手戒指": {
+      "sprite": 2047,
+      "frame": 601,
+      "layer": {
+        "depth": 1,
+        "characterId": "2046",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "男战士": {
+      "sprite": 2292,
+      "frame": 1,
+      "layer": {
+        "depth": 1,
+        "characterId": "2219",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "老兵": {
+      "sprite": 2292,
+      "frame": 29,
+      "layer": {
+        "depth": 1,
+        "characterId": "2263",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    },
+    "凯恩": {
+      "sprite": 2477,
+      "frame": 11,
+      "layer": {
+        "depth": 1,
+        "characterId": "2459",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      }
+    }
+  },
+  "shapes": {
+    "180": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"180\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"179\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"21\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"10.0\" scaleY=\"10.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "182": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"182\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"181\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"21\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"10.0\" scaleY=\"10.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "188": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"188\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"187\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "268": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"268\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"267\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "378": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"378\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"377\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "380": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"380\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"379\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "382": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"382\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"381\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "394": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"394\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"393\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "424": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"424\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"423\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "449": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"449\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"448\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "476": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"476\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"475\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "503": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"503\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"502\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "2046": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"2046\">\n<shapeBounds type=\"RECT\" Xmax=\"680\" Xmin=\"40\" Ymax=\"680\" Ymin=\"40\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"2045\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"21\" nTranslateBits=\"7\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"10.0\" scaleY=\"10.0\" translateX=\"40\" translateY=\"40\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"7\" moveDeltaX=\"40\" moveDeltaY=\"40\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-640\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-640\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "2219": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"2219\">\n<shapeBounds type=\"RECT\" Xmax=\"960\" Xmin=\"0\" Ymax=\"960\" Ymin=\"0\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"2218\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"0\" moveBits=\"11\" moveDeltaX=\"960\" moveDeltaY=\"960\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-960\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-960\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"960\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"960\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "2263": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"2263\">\n<shapeBounds type=\"RECT\" Xmax=\"960\" Xmin=\"0\" Ymax=\"960\" Ymin=\"0\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"2262\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"19.99115\" scaleY=\"19.99878\" translateX=\"0\" translateY=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"11\" moveDeltaX=\"960\" moveDeltaY=\"960\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-960\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-960\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"960\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"960\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "2459": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"2459\">\n<shapeBounds type=\"RECT\" Xmax=\"960\" Xmin=\"0\" Ymax=\"960\" Ymin=\"0\" nbits=\"11\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"2458\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"0\" moveBits=\"11\" moveDeltaX=\"960\" moveDeltaY=\"960\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-960\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-960\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"960\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"960\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n"
+  },
+  "panels": {
+    "2293": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2212",
+            "name": "backMC",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2213",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 4,
+            "characterId": "2215",
+            "name": "words",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.99967957",
+              "scaleY": "1.0",
+              "translateX": "1240",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 5,
+            "characterId": "2217",
+            "name": "answer0",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9998474",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "2400"
+            }
+          },
+          {
+            "depth": 7,
+            "characterId": "2217",
+            "name": "answer1",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9996948",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 9,
+            "characterId": "2217",
+            "name": "answer2",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9996948",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "3200"
+            }
+          },
+          {
+            "depth": 11,
+            "characterId": "2217",
+            "name": "answer3",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9996948",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "3600"
+            }
+          },
+          {
+            "depth": 13,
+            "characterId": "2217",
+            "name": "answer4",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9996948",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "4000"
+            }
+          },
+          {
+            "depth": 15,
+            "characterId": "2217",
+            "name": "answer5",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.99954224",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "4400"
+            }
+          },
+          {
+            "depth": 17,
+            "characterId": "2217",
+            "name": "answer6",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.99954224",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "4800"
+            }
+          },
+          {
+            "depth": 19,
+            "characterId": "2217",
+            "name": "answer7",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.99954224",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "5200"
+            }
+          },
+          {
+            "depth": 21,
+            "characterId": "2217",
+            "name": "answer8",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9996948",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "5600"
+            }
+          },
+          {
+            "depth": 23,
+            "characterId": "2217",
+            "name": "answer9",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9996948",
+              "scaleY": "1.0",
+              "translateX": "1280",
+              "translateY": "6000"
+            }
+          },
+          {
+            "depth": 25,
+            "characterId": "2292",
+            "name": "npcHead",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "200"
+            }
+          },
+          {
+            "depth": 27,
+            "characterId": "2292",
+            "name": "roleHead",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "2400"
+            }
+          },
+          {
+            "depth": 29,
+            "characterId": "2057",
+            "name": "closeButton",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "7600",
+              "translateY": "100"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2074": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "150",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "19",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "2.9500122",
+              "scaleY": "2.4299927",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "151",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "1.4749908",
+              "scaleY": "0.32000732",
+              "translateX": "0",
+              "translateY": "0"
+            },
+            "colorTransform": {
+              "type": "CXFORMWITHALPHA",
+              "alphaAddTerm": "0",
+              "alphaMultTerm": "77",
+              "blueAddTerm": "0",
+              "blueMultTerm": "256",
+              "greenAddTerm": "0",
+              "greenMultTerm": "256",
+              "hasAddTerms": "false",
+              "hasMultTerms": "true",
+              "nbits": "10",
+              "redAddTerm": "0",
+              "redMultTerm": "256"
+            }
+          },
+          {
+            "depth": 8,
+            "characterId": "2063",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 9,
+            "characterId": "2064",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2371",
+              "translateY": "200"
+            }
+          },
+          {
+            "depth": 10,
+            "characterId": "2057",
+            "name": "closeButton",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "5396",
+              "translateY": "157"
+            }
+          },
+          {
+            "depth": 51,
+            "characterId": "2065",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 52,
+            "characterId": "2066",
+            "name": "msGold",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "492",
+              "translateY": "4400"
+            }
+          },
+          {
+            "depth": 53,
+            "characterId": "2067",
+            "name": "resGold",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3332",
+              "translateY": "4400"
+            }
+          },
+          {
+            "depth": 54,
+            "characterId": "2049",
+            "name": "包格1",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "100",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 59,
+            "characterId": "2049",
+            "name": "包格2",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "820",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 64,
+            "characterId": "2049",
+            "name": "包格3",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1540",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 69,
+            "characterId": "2049",
+            "name": "包格4",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2260",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 74,
+            "characterId": "2049",
+            "name": "包格5",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2980",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 79,
+            "characterId": "2049",
+            "name": "包格6",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3700",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 84,
+            "characterId": "2049",
+            "name": "包格7",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "4420",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 89,
+            "characterId": "2049",
+            "name": "包格8",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "5140",
+              "translateY": "700"
+            }
+          },
+          {
+            "depth": 94,
+            "characterId": "2049",
+            "name": "包格9",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "100",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 99,
+            "characterId": "2049",
+            "name": "包格10",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "820",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 104,
+            "characterId": "2049",
+            "name": "包格11",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1540",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 109,
+            "characterId": "2049",
+            "name": "包格12",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2260",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 114,
+            "characterId": "2049",
+            "name": "包格13",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2980",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 119,
+            "characterId": "2049",
+            "name": "包格14",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3700",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 124,
+            "characterId": "2049",
+            "name": "包格15",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "4420",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 129,
+            "characterId": "2049",
+            "name": "包格16",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "5140",
+              "translateY": "1400"
+            }
+          },
+          {
+            "depth": 134,
+            "characterId": "2049",
+            "name": "包格17",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "100",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 139,
+            "characterId": "2049",
+            "name": "包格18",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "820",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 144,
+            "characterId": "2049",
+            "name": "包格19",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1540",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 149,
+            "characterId": "2049",
+            "name": "包格20",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2260",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 154,
+            "characterId": "2049",
+            "name": "包格21",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2980",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 159,
+            "characterId": "2049",
+            "name": "包格22",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3700",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 164,
+            "characterId": "2049",
+            "name": "包格23",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "4420",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 169,
+            "characterId": "2049",
+            "name": "包格24",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "5140",
+              "translateY": "2100"
+            }
+          },
+          {
+            "depth": 174,
+            "characterId": "2049",
+            "name": "包格25",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "100",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 179,
+            "characterId": "2049",
+            "name": "包格26",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "820",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 184,
+            "characterId": "2049",
+            "name": "包格27",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1540",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 189,
+            "characterId": "2049",
+            "name": "包格28",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2260",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 194,
+            "characterId": "2049",
+            "name": "包格29",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2980",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 199,
+            "characterId": "2049",
+            "name": "包格30",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3700",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 204,
+            "characterId": "2049",
+            "name": "包格31",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "4420",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 209,
+            "characterId": "2049",
+            "name": "包格32",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "5140",
+              "translateY": "2800"
+            }
+          },
+          {
+            "depth": 214,
+            "characterId": "2049",
+            "name": "包格33",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "100",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 219,
+            "characterId": "2049",
+            "name": "包格34",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "820",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 224,
+            "characterId": "2049",
+            "name": "包格35",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1540",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 229,
+            "characterId": "2049",
+            "name": "包格36",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2260",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 234,
+            "characterId": "2049",
+            "name": "包格37",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2980",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 239,
+            "characterId": "2049",
+            "name": "包格38",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3700",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 244,
+            "characterId": "2049",
+            "name": "包格39",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "4420",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 249,
+            "characterId": "2049",
+            "name": "包格40",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "5140",
+              "translateY": "3500"
+            }
+          },
+          {
+            "depth": 254,
+            "characterId": "2071",
+            "name": "mstip",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "4321"
+            }
+          },
+          {
+            "depth": 256,
+            "characterId": "2073",
+            "name": "restip",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2960",
+              "translateY": "4320"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2482": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "150",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "19",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "2.2000275",
+              "scaleY": "3.1999817",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "151",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "1.1000061",
+              "scaleY": "0.3500061",
+              "translateX": "0",
+              "translateY": "0"
+            },
+            "colorTransform": {
+              "type": "CXFORMWITHALPHA",
+              "alphaAddTerm": "0",
+              "alphaMultTerm": "77",
+              "blueAddTerm": "0",
+              "blueMultTerm": "256",
+              "greenAddTerm": "0",
+              "greenMultTerm": "256",
+              "hasAddTerms": "false",
+              "hasMultTerms": "true",
+              "nbits": "10",
+              "redAddTerm": "0",
+              "redMultTerm": "256"
+            }
+          },
+          {
+            "depth": 6,
+            "characterId": "2435",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 7,
+            "characterId": "2057",
+            "name": "closeButton",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3920",
+              "translateY": "120"
+            }
+          },
+          {
+            "depth": 9,
+            "characterId": "2409",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 10,
+            "characterId": "2436",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1412",
+              "translateY": "178"
+            }
+          },
+          {
+            "depth": 11,
+            "characterId": "161",
+            "name": "detailButton",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "5900"
+            }
+          },
+          {
+            "depth": 13,
+            "characterId": "161",
+            "name": "dropButton",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1500",
+              "translateY": "5900"
+            }
+          },
+          {
+            "depth": 15,
+            "characterId": "2437",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.997406",
+              "scaleY": "1.0",
+              "translateX": "-1062",
+              "translateY": "5960"
+            }
+          },
+          {
+            "depth": 16,
+            "characterId": "2438",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.997406",
+              "scaleY": "1.0",
+              "translateX": "217",
+              "translateY": "5960"
+            }
+          },
+          {
+            "depth": 17,
+            "characterId": "2372",
+            "name": "page",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2860",
+              "translateY": "5900"
+            }
+          },
+          {
+            "depth": 23,
+            "characterId": "2479",
+            "name": "幻兽格1",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "860"
+            }
+          },
+          {
+            "depth": 35,
+            "characterId": "2479",
+            "name": "幻兽格2",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "2080"
+            }
+          },
+          {
+            "depth": 47,
+            "characterId": "2479",
+            "name": "幻兽格3",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "3300"
+            }
+          },
+          {
+            "depth": 59,
+            "characterId": "2479",
+            "name": "幻兽格4",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "4520"
+            }
+          },
+          {
+            "depth": 71,
+            "characterId": "2481",
+            "name": "focusMC",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "200",
+              "translateY": "860"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2049": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2047",
+            "name": "物品",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2479": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2439",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2170",
+            "name": "rect",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "20",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "4.628952",
+              "scaleY": "1.75",
+              "translateX": "1038",
+              "translateY": "0"
+            },
+            "colorTransform": {
+              "type": "CXFORMWITHALPHA",
+              "alphaAddTerm": "0",
+              "alphaMultTerm": "0",
+              "blueAddTerm": "0",
+              "blueMultTerm": "256",
+              "greenAddTerm": "0",
+              "greenMultTerm": "256",
+              "hasAddTerms": "false",
+              "hasMultTerms": "true",
+              "nbits": "10",
+              "redAddTerm": "0",
+              "redMultTerm": "256"
+            }
+          },
+          {
+            "depth": 4,
+            "characterId": "2477",
+            "name": "headPic",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "8",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "80",
+              "translateY": "80"
+            }
+          },
+          {
+            "depth": 6,
+            "characterId": "2478",
+            "name": "info",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "12",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "1140",
+              "translateY": "80"
+            }
+          },
+          {
+            "depth": 7,
+            "characterId": "2434",
+            "name": "battleButton",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "2700",
+              "translateY": "80"
+            }
+          },
+          {
+            "depth": 9,
+            "characterId": "2429",
+            "name": "inOneButton",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "3320",
+              "translateY": "80"
+            }
+          },
+          {
+            "depth": 11,
+            "characterId": "2334",
+            "name": "showElement",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "7",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "1.0",
+              "scaleY": "0.9977417",
+              "translateX": "60",
+              "translateY": "60"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2217": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2216",
+            "name": "words",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "7",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9998474",
+              "scaleY": "1.0",
+              "translateX": "40",
+              "translateY": "40"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2216",
+            "name": "words",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "7",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.9998474",
+              "scaleY": "1.0",
+              "translateX": "40",
+              "translateY": "40"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    }
+  },
+  "rootPanels": [
+    {
+      "depth": 703,
+      "characterId": "2482",
+      "name": "huanShou",
+      "ratio": "8",
+      "matrix": {
+        "type": "MATRIX",
+        "hasRotate": "false",
+        "hasScale": "false",
+        "nRotateBits": "0",
+        "nScaleBits": "0",
+        "nTranslateBits": "15",
+        "rotateSkew0": "0.0",
+        "rotateSkew1": "0.0",
+        "scaleX": "0.0",
+        "scaleY": "0.0",
+        "translateX": "-4593",
+        "translateY": "8276"
+      }
+    },
+    {
+      "depth": 1159,
+      "characterId": "2293",
+      "name": "talking",
+      "ratio": "8",
+      "matrix": {
+        "type": "MATRIX",
+        "hasRotate": "false",
+        "hasScale": "false",
+        "nRotateBits": "0",
+        "nScaleBits": "0",
+        "nTranslateBits": "15",
+        "rotateSkew0": "0.0",
+        "rotateSkew1": "0.0",
+        "scaleX": "0.0",
+        "scaleY": "0.0",
+        "translateX": "10060",
+        "translateY": "-6960"
+      }
+    },
+    {
+      "depth": 3028,
+      "characterId": "2074",
+      "name": "backPack",
+      "ratio": "8",
+      "matrix": {
+        "type": "MATRIX",
+        "hasRotate": "false",
+        "hasScale": "false",
+        "nRotateBits": "0",
+        "nScaleBits": "0",
+        "nTranslateBits": "14",
+        "rotateSkew0": "0.0",
+        "rotateSkew1": "0.0",
+        "scaleX": "0.0",
+        "scaleY": "0.0",
+        "translateX": "5660",
+        "translateY": "4000"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "timeline": 0,
+      "frame": 9,
+      "sha256": "32484556e8832e08349189615d0b9d17132fffabe60d5eafd47dd6f75f566c2b"
+    },
+    {
+      "timeline": 0,
+      "frame": 9,
+      "sha256": "97f8ff0741deaf70747eaec0d4631f2bdf80afcd696f419fd01e8cb629461de6"
+    },
+    {
+      "timeline": 4312,
+      "frame": 1,
+      "sha256": "00d1995bbd9d210e2804d3533d4aa2eeb6f3440b8eaeaad9b0ab72039f9575b8"
+    },
+    {
+      "timeline": 4312,
+      "frame": 1,
+      "sha256": "f263deaf948a1f3fba38631183b9c6e04bbc8d155b4a813d35578880a0d83c72"
+    },
+    {
+      "timeline": 4536,
+      "frame": 1,
+      "sha256": "cfdb45b02a1294799f0e1a6bd6df1c4102188956f6102b962ac46635395ebd9a"
+    },
+    {
+      "timeline": 4536,
+      "frame": 2,
+      "sha256": "53f3921ba782c7fae987d71018216040e3d068bbf5fe8d7c420c4b59965038b5"
+    },
+    {
+      "timeline": 2293,
+      "frame": 1,
+      "sha256": "1f1cb0e96544015281a7aecaf9a18ed30f63a894566b9ce441e56e2416e6ba1b"
+    },
+    {
+      "timeline": 2217,
+      "frame": 1,
+      "sha256": "6d3fe2ab234eb7e9bcffbb3f901e09b65f242ea5c56ffec3091533635a0108fa"
+    },
+    {
+      "timeline": 2049,
+      "frame": 1,
+      "sha256": "3439b1178527ea5f31df530f22e2a2aa5180367842287417eb65928fc603ea18"
+    },
+    {
+      "timeline": 4253,
+      "frame": 1,
+      "sha256": "a4e81ed793f12c898d66a16930719d94414901c0c36a23e11e2ab5869421994a"
+    }
+  ]
+}

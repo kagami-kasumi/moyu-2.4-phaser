@@ -1,0 +1,69 @@
+{
+  "tool": "FFDec 26.0.0 shape:png; independent of binary converter",
+  "files": [
+    {
+      "file": "180.png",
+      "sha256": "58765caac367497d2fb6e27866d7ad4b69c27e8d8e503d78861a6b73d36dde5d"
+    },
+    {
+      "file": "182.png",
+      "sha256": "7c1440b479ac146aec85583b698eebc7c30354f74993785379dd7be2d45cd9c7"
+    },
+    {
+      "file": "188.png",
+      "sha256": "110720f116684b7d4f3535d7a3c78f28a5197dc4d8288ddb73633d483f7b625c"
+    },
+    {
+      "file": "268.png",
+      "sha256": "2a2caa97daf460f7810580c3fe548a49ab25ea9a0bd45c0ed76c443ee4bd48d1"
+    },
+    {
+      "file": "378.png",
+      "sha256": "daeaeb4b0f7df3c67becd951cc25859d2fc9fda3a7b840e015fe8f5f82845ea5"
+    },
+    {
+      "file": "380.png",
+      "sha256": "0679f7a06238bcfa444d222c169177421c7f4d2de187d49e9552b74fcf95e61e"
+    },
+    {
+      "file": "382.png",
+      "sha256": "1e784a8ee8e14f48df9748a1397d6150a2ab5b8f58866073b9ac19ea464cca00"
+    },
+    {
+      "file": "394.png",
+      "sha256": "9e27700abb7b263b39fb8254b7aedc018bcb60f9145a17a261d9f36d8b171ba7"
+    },
+    {
+      "file": "424.png",
+      "sha256": "2caa14f364107a171910c0f93a0a04ea680114af2b431b984ade1695ff13f38b"
+    },
+    {
+      "file": "449.png",
+      "sha256": "50f57d49a893233f4c2f59e4f43f2f5dd9ece6ea0bc1bdf7934b108505d33feb"
+    },
+    {
+      "file": "476.png",
+      "sha256": "438b60d6d2891571e1ede6ba70168070b3cac684a5153d829dfc1668442c518c"
+    },
+    {
+      "file": "503.png",
+      "sha256": "ef683de8851f9f4f530b99a944466664fee08d36743793bc5d214a7af67738ec"
+    },
+    {
+      "file": "2046.png",
+      "sha256": "ec7445048e374687946ca64cbea49240ab39ee2dd3310193368843d73d308d0a"
+    },
+    {
+      "file": "2219.png",
+      "sha256": "0540476b9a0081f6e82079af5d32a363ffc303c71e85611cfcdfa4d6173f0716"
+    },
+    {
+      "file": "2263.png",
+      "sha256": "ab9e64b50f671fe4f45280ac33165c12aa4effc38b5a7e257d1143aff0e90d31"
+    },
+    {
+      "file": "2459.png",
+      "sha256": "688f9ddbbf27a56108563481f2012469e287bb7b1577adb3958e308a498ab594"
+    }
+  ]
+}

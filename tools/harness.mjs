@@ -187,7 +187,7 @@ function snapshotLines(state) {
   for (const task of state.tasks) board.push(`| ${cell(task.id)} | ${cell(task.title)} | ${task.type} | ${cell(task.line)} | ${task.status} | ${cell(task.dependsOn.join(', ') || '—')} | ${link('合同', task.definition)} |`);
   const queue = [banner, '# 执行队列', '', source, '', '当前治理项优先；Blocked 保留当前位置，不跳过。', '', '| 当前项 | 标题 | 类型 | 状态 | 定义 | 阻塞原因 |', '| --- | --- | --- | --- | --- | --- |'];
   const next = selectNext(state);
-  queue.push(next ? `| ${cell(next.item.id)} | ${cell(next.item.title)} | ${next.kind} | ${next.item.status} | ${link('合同', next.path)} | ${cell(next.blocker ?? '—')} |` : '| — | 全部任务完成 | — | — | — | — |');
+  queue.push(next ? `| ${cell(next.item.id)} | ${cell(next.item.title)} | ${next.kind} | ${next.item.status} | ${link('合同', next.path)} | ${cell(next.blocker ?? '—')} |` : '| — | 无当前任务；按任务生成协议检查路线并生成下一项 | — | — | [生成协议](../workflow/task-generation.md) | — |');
   return { board: `${board.join('\n')}\n`, queue: `${queue.join('\n')}\n` };
 }
 
@@ -231,7 +231,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToP
     } else if (command === 'next') {
       const result = validateState(state, { root, config, allowMissingSnapshots: true });
       if (!result.ok) { console.error(result.errors.join('\n')); process.exitCode = 1; }
-      else { const next = selectNext(state); console.log(next ? `${next.kind}\t${next.item.id}\t${next.item.title}\t${next.path}\t${next.item.status}\t${next.blocker ?? '—'}` : 'DONE'); }
+      else { const next = selectNext(state); console.log(next ? `${next.kind}\t${next.item.id}\t${next.item.title}\t${next.path}\t${next.item.status}\t${next.blocker ?? '—'}` : 'NEEDS_TASK\t无当前任务；按 docs/workflow/task-generation.md 自主检查路线并生成下一项'); }
     } else { usage(); process.exitCode = 2; }
   } catch (error) { console.error(error.message); process.exitCode = 1; }
 }

@@ -1,0 +1,25 @@
+import {test,expect} from '@playwright/test';
+import fs from 'node:fs';
+const out='.evidence/inventory';fs.mkdirSync(out,{recursive:true});
+async function start(page){await page.goto('/');await expect(page.locator('body')).toHaveAttribute('data-ready','true');await page.locator('#new-game').click();await page.locator('#warrior').click();await page.getByRole('button',{name:'进入卡萨诺城郊区'}).click();}
+async function use(page,name,verb){const card=page.locator('#bag-items details').filter({has:page.locator(`summary[aria-label="${name}"]`)}).first();await card.locator('summary').click();await card.getByRole('button',{name:`${verb} ${name}`,exact:true}).click();}
+test('cold inventory use money, materials, hatch, learn, equip and unload with visible feedback',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));await start(page);expect(await page.evaluate(()=>window.journeyProbe)).toBeUndefined();await page.keyboard.press('x');
+ await use(page,'富豪礼包','使用');await expect(page.locator('#ms-value')).toHaveText('100,000,000');await expect(page.locator('#bag-items [data-item="富豪礼包"]')).toHaveCount(0);
+ await use(page,'灵魂礼包','使用');await expect(page.locator('#bag-items [data-item="灵魂礼包"] summary b')).toHaveText('98');await expect(page.locator('#bag-items [data-item="灵魂晶石"] summary b')).toHaveText('10');
+ await use(page,'炫舞牛','孵化');await page.keyboard.press('Escape');await page.keyboard.press('c');await expect(page.locator('#pet-items')).toContainText('已孵化，未出征');await expect(page.locator('#pet-items')).toContainText('炫舞牛');await page.keyboard.press('Escape');await page.keyboard.press('x');
+ await use(page,'英勇','学习');await use(page,'新手戒指','装备');await page.keyboard.press('e');await expect(page.locator('#equipment-panel')).toBeVisible();await expect(page.locator('#equipment-stats')).toContainText('英勇 1 / 50 级');await expect(page.locator('#equipment-slots')).toContainText('新手戒指');
+ await page.screenshot({path:out+'/inventory-and-equipment.png'});await page.getByRole('button',{name:'卸下 新手戒指'}).click();await expect(page.locator('#bag-items [data-item="新手戒指"]')).toHaveCount(1);await expect(page.locator('#equipment-stats')).toContainText('生命上限 90');
+ await page.keyboard.press('Escape');await page.keyboard.press('x');await use(page,'经验球','查看使用条件');await expect(page.locator('#reward-message')).toContainText('经验球分配尚未开放');await expect(page.locator('#bag-items [data-item="经验球"] summary b')).toHaveText('999');expect(errors).toEqual([]);
+});
+test('cold veteran equipment journey, modal keyboard isolation and reopen persistence',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));await start(page);await page.keyboard.press('x');await use(page,'富豪礼包','使用');await page.keyboard.press('Escape');const b=await page.locator('canvas').boundingBox();await page.mouse.click(b.x+170,b.y+190);await page.getByRole('button',{name:'嘿嘿,我不会客气的'}).click();await page.getByRole('button',{name:'我要礼包一'}).click();await page.getByRole('button',{name:'谢谢',exact:true}).click();await page.keyboard.press('x');
+ await use(page,'长军刀','装备');await use(page,'锁环甲','装备');await use(page,'蓝色深邃','装备');await use(page,'野蛮行径','装备');
+ await page.keyboard.press('e');await expect(page.locator('#equipment-stats')).toContainText('攻击 6–49');await expect(page.locator('#equipment-stats')).toContainText('防御 8');
+ await page.keyboard.down('ArrowRight');await page.waitForTimeout(150);await expect(page.locator('#status')).toContainText('站立');await page.keyboard.up('ArrowRight');await page.screenshot({path:out+'/veteran-equipment.png'});
+ await page.keyboard.press('Escape');await page.keyboard.press('e');await expect(page.locator('#equipment-slots')).toContainText('长军刀');await page.getByRole('button',{name:'卸下 长军刀'}).click();await expect(page.locator('#equipment-stats')).toContainText('攻击 3–18');expect(errors).toEqual([]);
+});
+
+test('inventory result and equipment survive map transition and fresh game resets them',async({page})=>{
+ await page.goto('/?manual');await expect(page.locator('body')).toHaveAttribute('data-ready','true');await page.locator('#new-game').click();await page.locator('#warrior').click();await page.getByRole('button',{name:'进入卡萨诺城郊区'}).click();await page.keyboard.press('x');await use(page,'富豪礼包','使用');await use(page,'新手戒指','装备');await use(page,'英勇','学习');const before=await page.evaluate(()=>({i:window.journeyProbe.inventory(),r:window.journeyProbe.reward()}));await page.keyboard.press('Escape');await page.evaluate(()=>window.journeyProbe.position(529.8,304.6));await page.keyboard.press('q');await expect(page.locator('#completed')).toBeVisible();await page.keyboard.press('e');await expect(page.locator('#equipment-slots')).toContainText('新手戒指');expect(await page.evaluate(()=>window.journeyProbe.inventory())).toEqual(before.i);expect((await page.evaluate(()=>window.journeyProbe.reward())).bag).toEqual(before.r.bag);await page.screenshot({path:out+'/city-equipment.png'});await start(page);await page.keyboard.press('e');await expect(page.locator('#equipment-stats')).toContainText('英勇 0 / 50');await expect(page.locator('#equipment-slots')).not.toContainText('新手戒指');
+});

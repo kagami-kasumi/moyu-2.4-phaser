@@ -1,6 +1,6 @@
 # 魔域 Flash 现代化
 
-《魔域 2.4》的原生浏览器重写项目。当前已交付首个可玩切片：新建男战士，在卡萨诺城郊区移动/停步，通过右侧entry2进入卡萨诺城一entry1。原资源地图和常驻NPC可见；战斗、NPC对话、背包、幻兽和存档尚未开放。
+《魔域 2.4》的原生浏览器重写项目。首页直接进入男战士的卡萨诺城郊区，使用原版头像状态条、快捷栏、40格背包与老兵对话布局；可移动、领取礼包并进入卡萨诺城一。可使用礼包、孵化幻兽蛋、学习英勇并穿戴/卸下装备；战斗、幻兽成长和存档尚未开放。
 
 ## 运行
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-浏览器打开终端显示的本地地址。首页为旅程：方向键/WASD或按住地面移动，松开停止，在右侧传送点按Q/Ctrl或走近后点击。到达城一后本切片结束，刷新重走。`/actor.html` 保留待机、跑动、斩魂的动作验收工具。正式运行资源已在 `public/assets/first-actor/` 与 `public/assets/first-slice/`，安装、构建和运行不需要原 SWF、Java、FFDec 或 `local-resources/`。
+浏览器打开终端显示的本地地址。首页直接进入游戏：方向键/WASD或按住地面移动，松开停止，在右侧传送点按Q/Ctrl或走近后点击。点击老兵对话，点击原版背包图标或按X打开背包，C打开幻兽记录，E打开人物装备，Esc关闭面板。背包点选物品后可使用、孵化、学习或装备；装备栏可卸下并查看属性。到达城一后当前流程结束，刷新重走。`/?setup` 保留命名新建流程。`/actor.html` 保留待机、跑动、斩魂的动作验收工具。正式运行资源已在 `public/assets/first-actor/` 、`public/assets/first-slice/`、`public/assets/npc-reward/` 与 `public/assets/original-ui/`，安装、构建和运行不需要原 SWF、Java、FFDec 或 `local-resources/`。
 
 ```powershell
 npm run typecheck
@@ -21,6 +21,8 @@ npm run test:browser
 ```
 
 浏览器检查默认使用本机 Microsoft Edge；需要该浏览器可用。`npm run preview` 可查看已构建的 dist。构建含完整 Phaser 引擎，当前有大包体提示。
+
+当前SWF的无条件wudi初始奖励已按源补齐：两种货币各10亿、背包36格（含999经验球）；这是所提供文件的行为，详见[原版UI源合同](docs/reverse-engineering/original-ui/source-contract.md)。未实现系统入口保留原图并标注尚未开放。
 
 ## 证据与工具
 

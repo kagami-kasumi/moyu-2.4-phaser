@@ -1,0 +1,26 @@
+import {CHARACTERS} from '../content/character-entry.ts';
+import {fraction} from '../domain/hud.ts';
+import type {Journey} from '../domain/journey.ts';import {SourceUI,type UIAssets} from './source-ui.ts';
+const el=(id:string)=>document.getElementById(id)!;
+export class OriginalHud {
+ readonly ui:SourceUI;private map='';private started=false;private role?:HTMLElement;private pet?:HTMLElement;private nav:(()=>void)[]=[];
+ constructor(private journey:Journey,assets:UIAssets){this.ui=new SourceUI(assets);}
+ render(){const j=this.journey;if(!j.started)return;if(!this.started){this.started=true;const root=el('hud');root.hidden=false;const bar=document.createElement('div');bar.className='hud-footer-block';root.append(bar);
+  this.role=this.ui.root(root,'rolePanel',{text:{roleName:j.name,roleLevels:String(j.vitals.level)},labels:{roleHead:CHARACTERS[j.profession].label},scale:{'expBar.reallyExp':0}});
+  this.pet=this.ui.root(root,'battleHuanShouPanel1',{text:{huanShouName:'凯恩',huanShouLevels:'1'},labels:{headPic:'凯恩'},frames:{battleButton:2},scale:{'expBar.reallyExp':0}});
+  this.ui.root(root,'fastKey',{skip:['包格1','包格2','包格3','包格4','包格5','包格6','包格7']});
+  const skill=this.ui.tree(2047,{label:CHARACTERS[j.profession].skill+'图标'});skill.style.left='165.5px';skill.style.top='460px';root.append(skill);
+  this.ui.place(root,4592,0,440);
+  const map=document.createElement('div');map.id='original-map';map.className='source-node';root.append(map);
+  const nav=[['人物属性按钮','人物装备','equipment-button'],['背包按钮','查看背包与幻兽记录','inventory-button'],['幻兽按钮','幻兽记录','pets-button'],['技能按钮','技能（尚未开放）',null],['好友按钮','好友（尚未开放）',null],['任务按钮','任务（尚未开放）',null],['系统按钮','系统菜单','system-button']] as const;
+  for(const [name,label,id]of nav){const l=this.ui.assets.root.find(l=>l.name===name)!,b=id?el(id):document.createElement('button');b.hidden=false;b.className='hud-button';b.setAttribute('aria-label',label);b.title=label;Object.assign(b.style,{left:l.matrix[4]+'px',top:l.matrix[5]+'px',transform:`scale(${l.matrix[0]},${l.matrix[3]})`});if(!id){b.setAttribute('aria-disabled','true');b.onclick=()=>{el('notice').textContent=label;};}let showing=0,hover=false;const paint=(frame:number)=>{if(showing===frame)return;showing=frame;b.dataset.frame=String(frame);b.replaceChildren(this.ui.tree(l.characterId,{frame}));};const refresh=()=>{const opened=id==='inventory-button'?!el('inventory').hidden:id==='pets-button'?!el('pet-panel').hidden:id==='equipment-button'?!el('equipment-panel').hidden:false;b.setAttribute('aria-pressed',String(opened));paint(hover?2:opened?3:1);};this.nav.push(refresh);refresh();b.onpointerenter=()=>{hover=true;refresh();};b.onpointerleave=()=>{hover=false;refresh();};b.onfocus=()=>{hover=true;refresh();};b.onblur=()=>{hover=false;refresh();};root.append(b);}
+  for(const [x,w,label,action]of [[0,160,`${j.name} · 等级 1 · 生命 90/90 · 魔力 30/30 · 经验 0/9`,false],[160,140,'凯恩 · 等级 1 · 生命 99/99 · 经验 0/9',true]] as const){const zone=document.createElement('button');zone.className='hud-status-hit';zone.title=label;zone.setAttribute('aria-label',label);Object.assign(zone.style,{left:x+'px',width:w+'px'});zone.onclick=()=>{if(action)el('pets-button').click();else el('equipment-button').click();};root.append(zone);}
+  // The remaining pet controls and skill slot are visible source artwork, unavailable until their rules exist.
+  for(const [x,y,w,h,label]of [[160,50,140,22,'幻兽装备、合体与出征操作尚未开放'],[165,460,36,36,CHARACTERS[j.profession].skill+'：战斗尚未开放']] as const){const cover=document.createElement('span');cover.className='hud-unavailable';cover.title=label;Object.assign(cover.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});root.append(cover);}
+ }
+ this.nav.forEach(refresh=>refresh());
+ for(const [node,v]of [[this.role,j.vitals],[this.pet,j.petVitals]] as const){if(!node)continue;const level=node.querySelector<HTMLElement>('[data-part=roleLevels] .source-text,[data-part=huanShouLevels] .source-text');if(level)level.textContent=String(v.level);for(const [name,value,max]of [['reallyHp',v.life,v.maxLife],['reallyMp',v.mp,v.maxMp],['reallyExp',v.exp,v.maxExp]] as const){const bar=node.querySelector<HTMLElement>('[data-part="'+name+'"]');if(bar){const m=JSON.parse(bar.dataset.matrix!) as number[];m[0]=m[0]!*fraction(value,max);bar.style.transform='matrix('+m.join(',')+')';bar.setAttribute('aria-label',name+' '+value+'/'+max);}}}
+ const hits=document.querySelectorAll<HTMLButtonElement>('.hud-status-hit');for(const [i,v]of [j.vitals,j.petVitals].entries()){const title=`${i===0?j.name:'凯恩'} · 等级 ${v.level} · 生命 ${v.life}/${v.maxLife}${i===0?' · 魔力 '+v.mp+'/'+v.maxMp:''} · 经验 ${v.exp}/${v.maxExp}`;if(hits[i]){hits[i]!.title=title;hits[i]!.setAttribute('aria-label',title);}}
+ if(this.map!==j.map){this.map=j.map;const box=el('original-map');box.replaceChildren(this.ui.tree(4593,{text:{'':j.manifest.maps[j.map].name}}));box.style.transform='translate(-39.9px,442.9px)';}
+ }
+}

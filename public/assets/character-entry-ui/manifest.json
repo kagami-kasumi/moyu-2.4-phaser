@@ -1,0 +1,78 @@
+{
+  "nodes": {
+    "290": {
+      "id": 290,
+      "code": 2,
+      "bounds": [
+        0,
+        0,
+        36,
+        36
+      ],
+      "width": 36,
+      "height": 36,
+      "file": "../character-entry-ui/290.png"
+    },
+    "2047": {
+      "id": 2047,
+      "code": 39,
+      "frames": [
+        {
+          "frame": 93,
+          "label": "火球术图标",
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 290,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                2,
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "2227": {
+      "id": 2227,
+      "code": 2,
+      "bounds": [
+        0,
+        0,
+        48,
+        48
+      ],
+      "width": 48,
+      "height": 48,
+      "file": "../character-entry-ui/2227.png"
+    },
+    "2292": {
+      "id": 2292,
+      "code": 39,
+      "frames": [
+        {
+          "frame": 5,
+          "label": "女法师",
+          "layers": [
+            {
+              "depth": 1,
+              "characterId": 2227,
+              "matrix": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

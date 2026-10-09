@@ -1,0 +1,3627 @@
+{
+  "RoleMC": [
+    {
+      "property": "life",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 174
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊444);\r\n   }"
+      },
+      "aliasChain": [
+        "life"
+      ],
+      "backingField": "不要作弊444",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 157
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊444 = this.setSecreteCode(val);\r\n      if(this.life > this.maxLife)\r\n      {\r\n         this.不要作弊444 = this.setSecreteCode(this.maxLife);\r\n      }\r\n      else if(this.life < 0)\r\n      {\r\n         this.不要作弊444 = this.setSecreteCode(0);\r\n      }\r\n      this.changeHpMp();\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_maxLife",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 187
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊445);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_maxLife"
+      ],
+      "backingField": "不要作弊445",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 178
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊445 = this.setSecreteCode(val);\r\n      this.maxLifeSourse = this.maxLife * this.lifeSourseLevels;\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxLife",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 195
+        },
+        "body": "{\r\n      return this.xxx_maxLife;\r\n   }"
+      },
+      "aliasChain": [
+        "maxLife",
+        "xxx_maxLife"
+      ],
+      "backingField": "不要作弊445",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 191
+        },
+        "body": "{\r\n      trace(\"maxLife无效代码\");\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "mp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 284
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊448);\r\n   }"
+      },
+      "aliasChain": [
+        "mp"
+      ],
+      "backingField": "不要作弊448",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 267
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊448 = this.setSecreteCode(val);\r\n      if(this.mp > this.maxMp)\r\n      {\r\n         this.不要作弊448 = this.setSecreteCode(this.maxMp);\r\n      }\r\n      else if(this.mp < 0)\r\n      {\r\n         this.不要作弊448 = this.setSecreteCode(0);\r\n      }\r\n      this.changeHpMp();\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxMp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 297
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊449);\r\n   }"
+      },
+      "aliasChain": [
+        "maxMp"
+      ],
+      "backingField": "不要作弊449",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 288
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊449 = this.setSecreteCode(val);\r\n      this.maxMpSourse = this.maxMp * this.mpSourseLevels;\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_militaryRank",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 347
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊452);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_militaryRank"
+      ],
+      "backingField": "不要作弊452",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 301
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      switch(val)\r\n      {\r\n         case 0:\r\n         default:\r\n            this.militaryRankName = \"无  \";\r\n            this.militaryRankFire = 0;\r\n            break;\r\n         case 1:\r\n            this.militaryRankName = \"少尉\";\r\n            break;\r\n         case 2:\r\n            this.militaryRankName = \"中尉\";\r\n            break;\r\n         case 3:\r\n            this.militaryRankName = \"上尉\";\r\n            break;\r\n         case 4:\r\n            this.militaryRankName = \"少校\";\r\n            break;\r\n         case 5:\r\n            this.militaryRankName = \"中校\";\r\n            break;\r\n         case 6:\r\n            this.militaryRankName = \"上校\";\r\n            break;\r\n         case 7:\r\n            this.militaryRankName = \"少将\";\r\n            break;\r\n         case 8:\r\n            this.militaryRankName = \"中将\";\r\n            break;\r\n         case 9:\r\n            this.militaryRankName = \"上将\";\r\n            break;\r\n         case 10:\r\n            this.militaryRankName = \"大将\";\r\n      }\r\n      this._parent._parent.legion.flashView();\r\n      this.不要作弊452 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "militaryRank",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 355
+        },
+        "body": "{\r\n      return this.xxx_militaryRank;\r\n   }"
+      },
+      "aliasChain": [
+        "militaryRank",
+        "xxx_militaryRank"
+      ],
+      "backingField": "不要作弊452",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 351
+        },
+        "body": "{\r\n      trace(\"错误！\");\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_chaw",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 394
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊453);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_chaw"
+      ],
+      "backingField": "不要作弊453",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 359
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      switch(val)\r\n      {\r\n         case 0:\r\n         default:\r\n            this.chawName = \"无  \";\r\n            this.chawFire = 0;\r\n            break;\r\n         case 1:\r\n            this.chawName = \"勋爵\";\r\n            this.chawFire = 3;\r\n            break;\r\n         case 2:\r\n            this.chawName = \"子爵\";\r\n            this.chawFire = 6;\r\n            break;\r\n         case 3:\r\n            this.chawName = \"伯爵\";\r\n            this.chawFire = 9;\r\n            break;\r\n         case 4:\r\n            this.chawName = \"侯爵\";\r\n            this.chawFire = 12;\r\n            break;\r\n         case 5:\r\n            this.chawName = \"公爵\";\r\n            this.chawFire = 15;\r\n      }\r\n      this.不要作弊453 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "chaw",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 402
+        },
+        "body": "{\r\n      return this.xxx_chaw;\r\n   }"
+      },
+      "aliasChain": [
+        "chaw",
+        "xxx_chaw"
+      ],
+      "backingField": "不要作弊453",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 398
+        },
+        "body": "{\r\n      trace(\"错误！\");\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "job",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 450
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊456);\r\n   }"
+      },
+      "aliasChain": [
+        "job"
+      ],
+      "backingField": "不要作弊456",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 406
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      switch(val)\r\n      {\r\n         case 0:\r\n         default:\r\n            this.jobName = \"无  \";\r\n            this.jobFire = 0;\r\n            break;\r\n         case 1:\r\n            this.jobName = \"卡萨诺城守将\";\r\n            this.jobFire = 50;\r\n            break;\r\n         case 2:\r\n            this.jobName = \"树心城守将\";\r\n            this.jobFire = 70;\r\n            break;\r\n         case 3:\r\n            this.jobName = \"戈壁守将\";\r\n            this.jobFire = 90;\r\n            break;\r\n         case 4:\r\n            this.jobName = \"沼泽守将\";\r\n            this.jobFire = 110;\r\n            break;\r\n         case 5:\r\n            this.jobName = \"南城守将\";\r\n            this.jobFire = 130;\r\n            break;\r\n         case 6:\r\n            this.jobName = \"边关守将\";\r\n            this.jobFire = 150;\r\n            break;\r\n         case 7:\r\n            this.jobName = \"冰宫守将\";\r\n            this.jobFire = 200;\r\n      }\r\n      this._parent._parent.legion.flashView();\r\n      this.不要作弊456 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_nowExp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 462
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊450);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_nowExp"
+      ],
+      "backingField": "不要作弊450",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 454
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊450 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "nowExp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 470
+        },
+        "body": "{\r\n      return this.xxx_nowExp;\r\n   }"
+      },
+      "aliasChain": [
+        "nowExp",
+        "xxx_nowExp"
+      ],
+      "backingField": "不要作弊450",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 466
+        },
+        "body": "{\r\n      trace(\"nowExp无效代码\");\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxExp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 482
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊451);\r\n   }"
+      },
+      "aliasChain": [
+        "maxExp"
+      ],
+      "backingField": "不要作弊451",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 474
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊451 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "militaryExploit",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 494
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊454);\r\n   }"
+      },
+      "aliasChain": [
+        "militaryExploit"
+      ],
+      "backingField": "不要作弊454",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 486
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊454 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "exploit",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 506
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊455);\r\n   }"
+      },
+      "aliasChain": [
+        "exploit"
+      ],
+      "backingField": "不要作弊455",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 498
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊455 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_credit",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 527
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊457);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_credit"
+      ],
+      "backingField": "不要作弊457",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 510
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > this.maxRredit)\r\n      {\r\n         val = this.maxRredit;\r\n      }\r\n      var _loc3_ = Math.floor(val / 50);\r\n      if(_loc3_ > this.titleLevel)\r\n      {\r\n         this.titleLevel = _loc3_;\r\n      }\r\n      this.不要作弊457 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "credit",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 531
+        },
+        "body": "{\r\n      return this.xxx_credit;\r\n   }"
+      },
+      "aliasChain": [
+        "credit",
+        "xxx_credit"
+      ],
+      "backingField": "不要作弊457",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": null,
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_burst",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 543
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊458);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_burst"
+      ],
+      "backingField": "不要作弊458",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 535
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊458 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "burst",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 551
+        },
+        "body": "{\r\n      return this.xxx_burst;\r\n   }"
+      },
+      "aliasChain": [
+        "burst",
+        "xxx_burst"
+      ],
+      "backingField": "不要作弊458",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 547
+        },
+        "body": "{\r\n      trace(\"burst无效代码\");\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "baseBurst",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 563
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊459);\r\n   }"
+      },
+      "aliasChain": [
+        "baseBurst"
+      ],
+      "backingField": "不要作弊459",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 555
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊459 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_jook",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 575
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊460);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_jook"
+      ],
+      "backingField": "不要作弊460",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 567
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊460 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "jook",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 583
+        },
+        "body": "{\r\n      return this.xxx_jook;\r\n   }"
+      },
+      "aliasChain": [
+        "jook",
+        "xxx_jook"
+      ],
+      "backingField": "不要作弊460",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 579
+        },
+        "body": "{\r\n      trace(\"jook无效代码\");\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "baseJook",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 595
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊461);\r\n   }"
+      },
+      "aliasChain": [
+        "baseJook"
+      ],
+      "backingField": "不要作弊461",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 587
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊461 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "wind",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 607
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊462);\r\n   }"
+      },
+      "aliasChain": [
+        "wind"
+      ],
+      "backingField": "不要作弊462",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 599
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊462 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "soil",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 619
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊463);\r\n   }"
+      },
+      "aliasChain": [
+        "soil"
+      ],
+      "backingField": "不要作弊463",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 611
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊463 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "fire",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 631
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊464);\r\n   }"
+      },
+      "aliasChain": [
+        "fire"
+      ],
+      "backingField": "不要作弊464",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 623
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊464 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "water",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 643
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊465);\r\n   }"
+      },
+      "aliasChain": [
+        "water"
+      ],
+      "backingField": "不要作弊465",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 635
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊465 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "renew",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 655
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊466);\r\n   }"
+      },
+      "aliasChain": [
+        "renew"
+      ],
+      "backingField": "不要作弊466",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 647
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊466 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "attackFire",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 667
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊467);\r\n   }"
+      },
+      "aliasChain": [
+        "attackFire"
+      ],
+      "backingField": "不要作弊467",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 659
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊467 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "levels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 683
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊468);\r\n   }"
+      },
+      "aliasChain": [
+        "levels"
+      ],
+      "backingField": "不要作弊468",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 671
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > this.xxx_maxLevels)\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊468 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "xxx_maxLevels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 699
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊469);\r\n   }"
+      },
+      "aliasChain": [
+        "xxx_maxLevels"
+      ],
+      "backingField": "不要作弊469",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 687
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > 150)\r\n      {\r\n         val = 150;\r\n      }\r\n      this.不要作弊469 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxLevels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 707
+        },
+        "body": "{\r\n      return this.xxx_maxLevels;\r\n   }"
+      },
+      "aliasChain": [
+        "maxLevels",
+        "xxx_maxLevels"
+      ],
+      "backingField": "不要作弊469",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 703
+        },
+        "body": "{\r\n      trace(\"maxLevels无效代码\");\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "minAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 719
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊470);\r\n   }"
+      },
+      "aliasChain": [
+        "minAttack"
+      ],
+      "backingField": "不要作弊470",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 711
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊470 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 731
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊471);\r\n   }"
+      },
+      "aliasChain": [
+        "maxAttack"
+      ],
+      "backingField": "不要作弊471",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 723
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊471 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "defense",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 743
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊472);\r\n   }"
+      },
+      "aliasChain": [
+        "defense"
+      ],
+      "backingField": "不要作弊472",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 735
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊472 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "speedX",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 755
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊473);\r\n   }"
+      },
+      "aliasChain": [
+        "speedX"
+      ],
+      "backingField": "不要作弊473",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 747
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊473 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "speedY",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 767
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊474);\r\n   }"
+      },
+      "aliasChain": [
+        "speedY"
+      ],
+      "backingField": "不要作弊474",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 759
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊474 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "attackLength",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 779
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊475);\r\n   }"
+      },
+      "aliasChain": [
+        "attackLength"
+      ],
+      "backingField": "不要作弊475",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 771
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊475 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "attackHeight",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 791
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊476);\r\n   }"
+      },
+      "aliasChain": [
+        "attackHeight"
+      ],
+      "backingField": "不要作弊476",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 783
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊476 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "attackStopTime",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 803
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊477);\r\n   }"
+      },
+      "aliasChain": [
+        "attackStopTime"
+      ],
+      "backingField": "不要作弊477",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 795
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊477 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "lifeSourseLevels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 816
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊478);\r\n   }"
+      },
+      "aliasChain": [
+        "lifeSourseLevels"
+      ],
+      "backingField": "不要作弊478",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 807
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊478 = this.setSecreteCode(val);\r\n      this.maxLifeSourse = val * this.maxLife;\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "lifeSourse",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 828
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊479);\r\n   }"
+      },
+      "aliasChain": [
+        "lifeSourse"
+      ],
+      "backingField": "不要作弊479",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 820
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊479 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxLifeSourse",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 840
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊480);\r\n   }"
+      },
+      "aliasChain": [
+        "maxLifeSourse"
+      ],
+      "backingField": "不要作弊480",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 832
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊480 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "mpSourseLevels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 853
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊481);\r\n   }"
+      },
+      "aliasChain": [
+        "mpSourseLevels"
+      ],
+      "backingField": "不要作弊481",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 844
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊481 = this.setSecreteCode(val);\r\n      this.maxMpSourse = val * this.maxMp;\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "mpSourse",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 865
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊482);\r\n   }"
+      },
+      "aliasChain": [
+        "mpSourse"
+      ],
+      "backingField": "不要作弊482",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 857
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊482 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxMpSourse",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 877
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊483);\r\n   }"
+      },
+      "aliasChain": [
+        "maxMpSourse"
+      ],
+      "backingField": "不要作弊483",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 869
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊483 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateLife",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 889
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊484);\r\n   }"
+      },
+      "aliasChain": [
+        "rateLife"
+      ],
+      "backingField": "不要作弊484",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 881
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊484 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateMp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 901
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊485);\r\n   }"
+      },
+      "aliasChain": [
+        "rateMp"
+      ],
+      "backingField": "不要作弊485",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 893
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊485 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateMinAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 913
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊486);\r\n   }"
+      },
+      "aliasChain": [
+        "rateMinAttack"
+      ],
+      "backingField": "不要作弊486",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 905
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊486 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateMaxAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 925
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊487);\r\n   }"
+      },
+      "aliasChain": [
+        "rateMaxAttack"
+      ],
+      "backingField": "不要作弊487",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 917
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊487 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateDefense",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 937
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊488);\r\n   }"
+      },
+      "aliasChain": [
+        "rateDefense"
+      ],
+      "backingField": "不要作弊488",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 929
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊488 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "militaryRankFire",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 949
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊489);\r\n   }"
+      },
+      "aliasChain": [
+        "militaryRankFire"
+      ],
+      "backingField": "不要作弊489",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 941
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊489 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "chawFire",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 961
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊490);\r\n   }"
+      },
+      "aliasChain": [
+        "chawFire"
+      ],
+      "backingField": "不要作弊490",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 953
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊490 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "jobFire",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 973
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊491);\r\n   }"
+      },
+      "aliasChain": [
+        "jobFire"
+      ],
+      "backingField": "不要作弊491",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 965
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊491 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "titleLevel",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 985
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊492);\r\n   }"
+      },
+      "aliasChain": [
+        "titleLevel"
+      ],
+      "backingField": "不要作弊492",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 977
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊492 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "expBallNum",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 997
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊493);\r\n   }"
+      },
+      "aliasChain": [
+        "expBallNum"
+      ],
+      "backingField": "不要作弊493",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/RoleMC.as",
+          "line": 989
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊493 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    }
+  ],
+  "HuanShouClass": [
+    {
+      "property": "life",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 217
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊888);\r\n   }"
+      },
+      "aliasChain": [
+        "life"
+      ],
+      "backingField": "不要作弊888",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 201
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊888 = this.setSecreteCode(val);\r\n      if(this.life > this.maxLife)\r\n      {\r\n         this.不要作弊888 = this.setSecreteCode(this.maxLife);\r\n      }\r\n      else if(this.life < 0)\r\n      {\r\n         this.不要作弊888 = this.setSecreteCode(0);\r\n      }\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "allFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 230
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊922);\r\n   }"
+      },
+      "aliasChain": [
+        "allFen"
+      ],
+      "backingField": "不要作弊922",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 221
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.sortFen = val;\r\n      this.不要作弊922 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "levels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 243
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊897);\r\n   }"
+      },
+      "aliasChain": [
+        "levels"
+      ],
+      "backingField": "不要作弊897",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 234
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.sortLevels = val;\r\n      this.不要作弊897 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxLife",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 255
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊889);\r\n   }"
+      },
+      "aliasChain": [
+        "maxLife"
+      ],
+      "backingField": "不要作弊889",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 247
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊889 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "burst",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 267
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊890);\r\n   }"
+      },
+      "aliasChain": [
+        "burst"
+      ],
+      "backingField": "不要作弊890",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 259
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊890 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "jook",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 279
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊891);\r\n   }"
+      },
+      "aliasChain": [
+        "jook"
+      ],
+      "backingField": "不要作弊891",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 271
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊891 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "wind",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 291
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊892);\r\n   }"
+      },
+      "aliasChain": [
+        "wind"
+      ],
+      "backingField": "不要作弊892",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 283
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊892 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "soil",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 303
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊893);\r\n   }"
+      },
+      "aliasChain": [
+        "soil"
+      ],
+      "backingField": "不要作弊893",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 295
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊893 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "fire",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 315
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊894);\r\n   }"
+      },
+      "aliasChain": [
+        "fire"
+      ],
+      "backingField": "不要作弊894",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 307
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊894 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "water",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 327
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊895);\r\n   }"
+      },
+      "aliasChain": [
+        "water"
+      ],
+      "backingField": "不要作弊895",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 319
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊895 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "reduceDamage",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 339
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊896);\r\n   }"
+      },
+      "aliasChain": [
+        "reduceDamage"
+      ],
+      "backingField": "不要作弊896",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 331
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊896 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "minAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 351
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊898);\r\n   }"
+      },
+      "aliasChain": [
+        "minAttack"
+      ],
+      "backingField": "不要作弊898",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 343
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊898 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 363
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊899);\r\n   }"
+      },
+      "aliasChain": [
+        "maxAttack"
+      ],
+      "backingField": "不要作弊899",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 355
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊899 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "defense",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 375
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊900);\r\n   }"
+      },
+      "aliasChain": [
+        "defense"
+      ],
+      "backingField": "不要作弊900",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 367
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊900 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "nowExp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 387
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊901);\r\n   }"
+      },
+      "aliasChain": [
+        "nowExp"
+      ],
+      "backingField": "不要作弊901",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 379
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊901 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxExp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 399
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊902);\r\n   }"
+      },
+      "aliasChain": [
+        "maxExp"
+      ],
+      "backingField": "不要作弊902",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 391
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊902 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "attackLength",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 411
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊903);\r\n   }"
+      },
+      "aliasChain": [
+        "attackLength"
+      ],
+      "backingField": "不要作弊903",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 403
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊903 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "attackHeight",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 423
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊904);\r\n   }"
+      },
+      "aliasChain": [
+        "attackHeight"
+      ],
+      "backingField": "不要作弊904",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 415
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊904 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "zs",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 435
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊905);\r\n   }"
+      },
+      "aliasChain": [
+        "zs"
+      ],
+      "backingField": "不要作弊905",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 427
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊905 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxZs",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 447
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊906);\r\n   }"
+      },
+      "aliasChain": [
+        "maxZs"
+      ],
+      "backingField": "不要作弊906",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 439
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊906 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "element",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 459
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊907);\r\n   }"
+      },
+      "aliasChain": [
+        "element"
+      ],
+      "backingField": "不要作弊907",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 451
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊907 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "titleNum",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 471
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊908);\r\n   }"
+      },
+      "aliasChain": [
+        "titleNum"
+      ],
+      "backingField": "不要作弊908",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 463
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊908 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateLife",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 483
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊909);\r\n   }"
+      },
+      "aliasChain": [
+        "rateLife"
+      ],
+      "backingField": "不要作弊909",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 475
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊909 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateMinAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 495
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊910);\r\n   }"
+      },
+      "aliasChain": [
+        "rateMinAttack"
+      ],
+      "backingField": "不要作弊910",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 487
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊910 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateMaxAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 507
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊911);\r\n   }"
+      },
+      "aliasChain": [
+        "rateMaxAttack"
+      ],
+      "backingField": "不要作弊911",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 499
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊911 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rateDefense",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 519
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊912);\r\n   }"
+      },
+      "aliasChain": [
+        "rateDefense"
+      ],
+      "backingField": "不要作弊912",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 511
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊912 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "mainFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 531
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊913);\r\n   }"
+      },
+      "aliasChain": [
+        "mainFen"
+      ],
+      "backingField": "不要作弊913",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 523
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊913 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "lifeFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 543
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊914);\r\n   }"
+      },
+      "aliasChain": [
+        "lifeFen"
+      ],
+      "backingField": "不要作弊914",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 535
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊914 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "minAttackFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 555
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊915);\r\n   }"
+      },
+      "aliasChain": [
+        "minAttackFen"
+      ],
+      "backingField": "不要作弊915",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 547
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊915 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxAttackFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 567
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊916);\r\n   }"
+      },
+      "aliasChain": [
+        "maxAttackFen"
+      ],
+      "backingField": "不要作弊916",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 559
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊916 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "defenseFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 579
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊917);\r\n   }"
+      },
+      "aliasChain": [
+        "defenseFen"
+      ],
+      "backingField": "不要作弊917",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 571
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊917 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "rareFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 591
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊918);\r\n   }"
+      },
+      "aliasChain": [
+        "rareFen"
+      ],
+      "backingField": "不要作弊918",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 583
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊918 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "zsFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 603
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊919);\r\n   }"
+      },
+      "aliasChain": [
+        "zsFen"
+      ],
+      "backingField": "不要作弊919",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 595
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊919 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "elementFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 615
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊920);\r\n   }"
+      },
+      "aliasChain": [
+        "elementFen"
+      ],
+      "backingField": "不要作弊920",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 607
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊920 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "titleFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 627
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊921);\r\n   }"
+      },
+      "aliasChain": [
+        "titleFen"
+      ],
+      "backingField": "不要作弊921",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 619
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊921 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "moreLife",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 639
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊923);\r\n   }"
+      },
+      "aliasChain": [
+        "moreLife"
+      ],
+      "backingField": "不要作弊923",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 631
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊923 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "moreMinAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 651
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊924);\r\n   }"
+      },
+      "aliasChain": [
+        "moreMinAttack"
+      ],
+      "backingField": "不要作弊924",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 643
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊924 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "moreMaxAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 663
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊925);\r\n   }"
+      },
+      "aliasChain": [
+        "moreMaxAttack"
+      ],
+      "backingField": "不要作弊925",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 655
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊925 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "moreDefense",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 675
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊926);\r\n   }"
+      },
+      "aliasChain": [
+        "moreDefense"
+      ],
+      "backingField": "不要作弊926",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 667
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊926 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxRateLife",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 687
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊927);\r\n   }"
+      },
+      "aliasChain": [
+        "maxRateLife"
+      ],
+      "backingField": "不要作弊927",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 679
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊927 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxRateMinAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 699
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊928);\r\n   }"
+      },
+      "aliasChain": [
+        "maxRateMinAttack"
+      ],
+      "backingField": "不要作弊928",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 691
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊928 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxRateMaxAttack",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 711
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊929);\r\n   }"
+      },
+      "aliasChain": [
+        "maxRateMaxAttack"
+      ],
+      "backingField": "不要作弊929",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 703
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊929 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxRateDefense",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 723
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊930);\r\n   }"
+      },
+      "aliasChain": [
+        "maxRateDefense"
+      ],
+      "backingField": "不要作弊930",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 715
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊930 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxLifeFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 735
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊931);\r\n   }"
+      },
+      "aliasChain": [
+        "maxLifeFen"
+      ],
+      "backingField": "不要作弊931",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 727
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊931 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxMinAttackFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 747
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊932);\r\n   }"
+      },
+      "aliasChain": [
+        "maxMinAttackFen"
+      ],
+      "backingField": "不要作弊932",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 739
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊932 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxMaxAttackFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 759
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊933);\r\n   }"
+      },
+      "aliasChain": [
+        "maxMaxAttackFen"
+      ],
+      "backingField": "不要作弊933",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 751
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊933 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxDefenseFen",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 771
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊934);\r\n   }"
+      },
+      "aliasChain": [
+        "maxDefenseFen"
+      ],
+      "backingField": "不要作弊934",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 763
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊934 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "oldLevels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 783
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊935);\r\n   }"
+      },
+      "aliasChain": [
+        "oldLevels"
+      ],
+      "backingField": "不要作弊935",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 775
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊935 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "oldNowExp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 795
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊936);\r\n   }"
+      },
+      "aliasChain": [
+        "oldNowExp"
+      ],
+      "backingField": "不要作弊936",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 787
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊936 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "oldMaxExp",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 807
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊937);\r\n   }"
+      },
+      "aliasChain": [
+        "oldMaxExp"
+      ],
+      "backingField": "不要作弊937",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/HuanShouClass.as",
+          "line": 799
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊937 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    }
+  ],
+  "BuildingClass": [
+    {
+      "property": "levels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 25
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊444);\r\n   }"
+      },
+      "aliasChain": [
+        "levels"
+      ],
+      "backingField": "不要作弊444",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 17
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊444 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxLevels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 37
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊445);\r\n   }"
+      },
+      "aliasChain": [
+        "maxLevels"
+      ],
+      "backingField": "不要作弊445",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 29
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊445 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "upPrice",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 49
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊446);\r\n   }"
+      },
+      "aliasChain": [
+        "upPrice"
+      ],
+      "backingField": "不要作弊446",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 41
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊446 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "needMainLevels",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 61
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊447);\r\n   }"
+      },
+      "aliasChain": [
+        "needMainLevels"
+      ],
+      "backingField": "不要作弊447",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 53
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊447 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "prizeLv",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 73
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊448);\r\n   }"
+      },
+      "aliasChain": [
+        "prizeLv"
+      ],
+      "backingField": "不要作弊448",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/BuildingClass.as",
+          "line": 65
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊448 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    }
+  ],
+  "FriendClass": [
+    {
+      "property": "relation",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/FriendClass.as",
+          "line": 52
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊444);\r\n   }"
+      },
+      "aliasChain": [
+        "relation"
+      ],
+      "backingField": "不要作弊444",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/FriendClass.as",
+          "line": 44
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊444 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    },
+    {
+      "property": "maxRelation",
+      "type": "number",
+      "evidence": "verified-getter-type",
+      "getter": {
+        "source": {
+          "file": "__Packages/FriendClass.as",
+          "line": 64
+        },
+        "body": "{\r\n      return this.getSecreteCode(this.不要作弊445);\r\n   }"
+      },
+      "aliasChain": [
+        "maxRelation"
+      ],
+      "backingField": "不要作弊445",
+      "decoder": {
+        "source": {
+          "file": "__Packages/SecreteCode.as",
+          "line": 13
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCode.BASE) / this.SECRETECODE;\r\n   }"
+      },
+      "setter": {
+        "source": {
+          "file": "__Packages/FriendClass.as",
+          "line": 56
+        },
+        "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊445 = this.setSecreteCode(val);\r\n   }",
+        "status": "retain-whole-body; side effects require contextual review"
+      },
+      "defaultScope": "uninitialized codec reads zero; constructor and downstream initialization determine actual state"
+    }
+  ]
+}

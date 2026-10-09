@@ -1,0 +1,73 @@
+{
+  "tool": "FFDec 26.0.0 Java PNG sprite exporter",
+  "command": "ffdec-cli -onerror abort -selectid 2893,2917 -format sprite:png -export sprite local-resources/moyu/entry-021-reference \u9b54\u57df2.4.swf",
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "files": [
+    {
+      "file": "idle-1.png",
+      "spriteId": 2893,
+      "frame": 1,
+      "sha256": "6530e5b3617c39416e4740c8a21216fd5d7e57edf9721721b65af5f7cfd005b9"
+    },
+    {
+      "file": "run-1.png",
+      "spriteId": 2917,
+      "frame": 1,
+      "sha256": "3d68ba47060f0b4c17a70e1faed69197dc1095ce4c2e8de7e14eca005807d06b"
+    },
+    {
+      "file": "run-2.png",
+      "spriteId": 2917,
+      "frame": 2,
+      "sha256": "5bcf685234e24029b67ab067104b469e77217e483fdc6336de3578b1fd6868fb"
+    },
+    {
+      "file": "run-3.png",
+      "spriteId": 2917,
+      "frame": 3,
+      "sha256": "bc03db1d356bc0c41b5006ce041df884ba873ae14f975ab3f5d4afef8638d4ea"
+    },
+    {
+      "file": "run-4.png",
+      "spriteId": 2917,
+      "frame": 4,
+      "sha256": "fd2af8aa49ea31587d57ba1ef9639b3db7961eee0f83c3d2885d4d5791b4f347"
+    },
+    {
+      "file": "run-5.png",
+      "spriteId": 2917,
+      "frame": 5,
+      "sha256": "977a848655c294c54ef616266772ff406ecea005cfd1867a3267586e657a448c"
+    },
+    {
+      "file": "run-6.png",
+      "spriteId": 2917,
+      "frame": 6,
+      "sha256": "fcb38bb0e54e4668f15fa5cb78d5993ddd70bf2320f8b21b5349cdd5db1f6103"
+    },
+    {
+      "file": "run-7.png",
+      "spriteId": 2917,
+      "frame": 7,
+      "sha256": "fa6d4daf7071bf85d90596e22c8056d9827acf7de39b7089dce6957a1a4977ba"
+    },
+    {
+      "file": "run-8.png",
+      "spriteId": 2917,
+      "frame": 8,
+      "sha256": "43991d57c081c8b4a25016d3acab97fc2afac81faafee8acfe6aef7c69f1409c"
+    },
+    {
+      "file": "run-9.png",
+      "spriteId": 2917,
+      "frame": 9,
+      "sha256": "6e30dcad5e882787acd4661de40b076d80d56eec691e0438d846c07f2dc9a898"
+    },
+    {
+      "file": "run-10.png",
+      "spriteId": 2917,
+      "frame": 10,
+      "sha256": "649a4c9f801aa69ff380bd5f40efc1711c16e4d1717232dabc71c06de11cb598"
+    }
+  ]
+}

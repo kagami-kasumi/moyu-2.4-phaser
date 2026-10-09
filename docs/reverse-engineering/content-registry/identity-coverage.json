@@ -1,0 +1,2569 @@
+{
+  "scope": "TASK-DATA-015 identity and reference coverage only",
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "scripts": 734,
+  "candidateObjects": 2076,
+  "categories": [
+    {
+      "kind": "item",
+      "sourceIdentities": 194,
+      "registered": 194,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "equipment",
+      "sourceIdentities": 72,
+      "registered": 72,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "map",
+      "sourceIdentities": 165,
+      "registered": 165,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "quest",
+      "sourceIdentities": 80,
+      "registered": 80,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "npc",
+      "sourceIdentities": 60,
+      "registered": 60,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "skill",
+      "sourceIdentities": 21,
+      "registered": 21,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "building",
+      "sourceIdentities": 6,
+      "registered": 6,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "boss-growth",
+      "sourceIdentities": 13,
+      "registered": 13,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "objective",
+      "sourceIdentities": 39,
+      "registered": 39,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "reward",
+      "sourceIdentities": 7,
+      "registered": 7,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "pet",
+      "sourceIdentities": 25,
+      "registered": 25,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "enemy",
+      "sourceIdentities": 227,
+      "registered": 227,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "kind": "profession",
+      "sourceIdentities": 2,
+      "registered": 2,
+      "duplicateIds": 0,
+      "missing": 0,
+      "extra": 0
+    }
+  ],
+  "factoryAliases": 185,
+  "factoryIdentities": 184,
+  "petSeeds": 50,
+  "literalPetSeeds": 49,
+  "dynamicDomains": 72,
+  "exclusions": [
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/DoAction.as",
+        "line": 8
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_1/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_1/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_1/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_1/CLIPACTIONRECORD on(press).as",
+        "line": 6
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_1/CLIPACTIONRECORD on(press).as",
+        "line": 7
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_1/CLIPACTIONRECORD on(press).as",
+        "line": 8
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 6
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 7
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 8
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 9
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 10
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 11
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 12
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 13
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 14
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_103/CLIPACTIONRECORD on(press).as",
+        "line": 15
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 6
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 7
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 8
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 9
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 10
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 11
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_12/CLIPACTIONRECORD on(press).as",
+        "line": 12
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_127/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_127/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_127/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_127/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_130/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_130/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_130/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_130/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_145/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_145/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_145/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_145/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_145/CLIPACTIONRECORD on(press).as",
+        "line": 6
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_148/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_15/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_15/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 6
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 7
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 8
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 9
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 10
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 11
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 12
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 13
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 14
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 15
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 16
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 17
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 18
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 19
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 20
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 21
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 22
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 23
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 24
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 25
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 26
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 27
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_166/CLIPACTIONRECORD on(press).as",
+        "line": 28
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_18/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_18/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_21/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_21/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_24/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_24/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_24/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_27/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 6
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 7
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 8
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 9
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 10
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 11
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 12
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 13
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 14
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 15
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 16
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 17
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 18
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 19
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 20
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_3/CLIPACTIONRECORD on(press).as",
+        "line": 21
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_30/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_30/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_45/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_45/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_48/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_48/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_48/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_48/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_48/CLIPACTIONRECORD on(press).as",
+        "line": 6
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_74/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_74/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_74/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_85/CLIPACTIONRECORD on(press).as",
+        "line": 2
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_85/CLIPACTIONRECORD on(press).as",
+        "line": 3
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_85/CLIPACTIONRECORD on(press).as",
+        "line": 4
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_144_测试专用/frame_1/PlaceObject2_88_85/CLIPACTIONRECORD on(press).as",
+        "line": 5
+      },
+      "classification": "test-source",
+      "reason": "original debug source retained separately; not a production definition"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_148_地面物品/frame_1/DoAction.as",
+        "line": 4
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2049_物品栏物品/frame_1/DoAction.as",
+        "line": 914
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2084_幻兽研究所/frame_1/DoAction.as",
+        "line": 61
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2089_幻兽商店/frame_1/DoAction.as",
+        "line": 26
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2089_幻兽商店/frame_1/DoAction.as",
+        "line": 58
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2102_邮收物品/frame_1/DoAction.as",
+        "line": 30
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2102_邮收物品/frame_1/DoAction.as",
+        "line": 39
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2111_给予物品/frame_1/DoAction.as",
+        "line": 21
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2111_给予物品/frame_1/DoAction.as",
+        "line": 43
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2381_朋友/frame_1/DoAction.as",
+        "line": 201
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_2406/frame_1/DoAction.as",
+        "line": 52
+      },
+      "classification": "skill-shortcut",
+      "reason": "runtime shortcut references a skill record; not an item factory type"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_4253/frame_1/DoAction.as",
+        "line": 24
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_4312/frame_1/DoAction_2.as",
+        "line": 687
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_4312/frame_1/DoAction_2.as",
+        "line": 809
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "DefineSprite_4536/frame_2/DoAction.as",
+        "line": 98
+      },
+      "classification": "skill-shortcut",
+      "reason": "runtime shortcut references a skill record; not an item factory type"
+    },
+    {
+      "source": {
+        "file": "__Packages/HuanShouMC.as",
+        "line": 116
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "__Packages/MonsterMC.as",
+        "line": 311
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/controls/SimpleButton.as",
+        "line": 432
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/controls/SimpleButton.as",
+        "line": 440
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/controls/SimpleButton.as",
+        "line": 449
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/controls/SimpleButton.as",
+        "line": 469
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/controls/SimpleButton.as",
+        "line": 475
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/core/UIComponent.as",
+        "line": 78
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/core/UIComponent.as",
+        "line": 85
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/core/UIComponent.as",
+        "line": 176
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/core/UIObject.as",
+        "line": 121
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/core/UIObject.as",
+        "line": 201
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/core/UIObject.as",
+        "line": 215
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/core/UIObject.as",
+        "line": 227
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/events/UIEventDispatcher.as",
+        "line": 72
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/events/UIEventDispatcher.as",
+        "line": 76
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/events/UIEventDispatcher.as",
+        "line": 82
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/events/UIEventDispatcher.as",
+        "line": 88
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/managers/FocusManager.as",
+        "line": 624
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/managers/OverlappedWindows.as",
+        "line": 12
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "__Packages/mx/managers/SystemManager.as",
+        "line": 106
+      },
+      "classification": "excluded",
+      "reason": "Flash component framework metadata/event, not game content"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 206
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 215
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 227
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 265
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 273
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 283
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 324
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 344
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 359
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 369
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 380
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 391
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 402
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 413
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 424
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 435
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 446
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 457
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 468
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 479
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 490
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 501
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 512
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 523
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 534
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 545
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 556
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 567
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 578
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 589
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 600
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 611
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 645
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 656
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 667
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 678
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 689
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 700
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 711
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 722
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 733
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 744
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 755
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 766
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 777
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 788
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 799
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 810
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 821
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 832
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 843
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 854
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 865
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 876
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 887
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 898
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 909
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 920
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 931
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 949
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 998
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1017
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1035
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1054
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1074
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1092
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1112
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1129
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1146
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1163
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1180
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1197
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1214
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1231
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1248
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1265
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1282
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1299
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1313
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1327
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1341
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1355
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1368
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1496
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1514
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1523
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1539
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1660
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1667
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1705
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1716
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1761
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1768
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1808
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1823
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 1898
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 2271
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 2363
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 2387
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 2411
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 2904
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 3370
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 3379
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 4042
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 4130
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 4162
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 4218
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 4863
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 4982
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 4990
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 5008
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 5019
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 5027
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 5038
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 5046
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 5057
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction.as",
+        "line": 5065
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1783
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1787
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1799
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1803
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1815
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1819
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1832
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1836
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1849
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1853
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1861
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1865
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1869
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1873
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1877
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1881
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1887
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1891
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1895
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1899
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1904
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1908
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1912
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1916
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1920
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1924
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1928
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1932
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1936
+      },
+      "classification": "empty-slot",
+      "reason": "container absence sentinel, not an item"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1940
+      },
+      "classification": "dynamic-identity",
+      "reason": "runtime input or computed identity; generator/reader audit required"
+    },
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 2024
+      },
+      "classification": "dynamic-quest-requirement",
+      "reason": "setDailyTask/setFriendTask or readGame constructs a runtime objective; source conditions retained for generator audit"
+    }
+  ],
+  "anomalies": [
+    {
+      "source": {
+        "file": "frame_9/DoAction_2.as",
+        "line": 1772
+      },
+      "classification": "malformed-pet-restore-reference",
+      "identity": "stored allHuanShou[i].type; not a newly generated species",
+      "duplicatedProperty": "nextLvRate",
+      "storedInputs": [
+        "nextLvRate",
+        "sd",
+        "qyg"
+      ],
+      "resolution": "preserve all stored inputs separately; do not infer which duplicate property AVM1 retains",
+      "semanticStatus": "source-anomaly-unresolved",
+      "blocksFinalPersistenceReview": true,
+      "followUp": "TASK-DATA-019; does not define a new species"
+    }
+  ],
+  "notClaimed": [
+    "complete numeric semantics (017/018)",
+    "persistence collision/default/restore semantics (019)",
+    "runtime migration and aggregate completion gate (020)",
+    "gameplay availability"
+  ]
+}

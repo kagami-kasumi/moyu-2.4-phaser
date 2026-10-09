@@ -1,0 +1,50 @@
+{
+  "2074-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2074_物品栏\\1.png",
+    "sha256": "827323fcf8fe085760b5ddb1d226caf67264ca32899a96cd105c826500f76bde"
+  },
+  "2293-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2293_NPC对话框\\1.png",
+    "sha256": "7ec55f85e12b8af9b2b0a121d3ad424d9dd37e198985d5b1a80359d986aa77ea"
+  },
+  "2482-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2482_幻兽界面\\1.png",
+    "sha256": "12bacef9db72c7408ebfa4d8eaf6cf9ee83aeb8aacdc738227f0bbd755799cf0"
+  },
+  "2643-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2643_幻兽图标\\1.png",
+    "sha256": "66286d0042c4a15a5140d0065e361baff06401e73f5f6e56d1cf191e8ee36ebc"
+  },
+  "2643-2.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2643_幻兽图标\\2.png",
+    "sha256": "053c8bbc1c5bdf877c9c28e775d7cb9d23a952a060df99fe50f515ebf61ff2f0"
+  },
+  "2643-3.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2643_幻兽图标\\3.png",
+    "sha256": "2c59d19d259f8ebda03a905c40fe8636d9aa0377c8fe480ecceea7814c9a606b"
+  },
+  "2655-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2655_物品栏图标\\1.png",
+    "sha256": "b72502d0b0bc17217bb461d103379264df3f821fae67fddbd1ba6356ce848d7d"
+  },
+  "2655-2.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2655_物品栏图标\\2.png",
+    "sha256": "ba74d3943fd156b65e7906b9ad9fa7cfa15673b3d35345ccd70e0d7ee5bfaa47"
+  },
+  "2655-3.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_2655_物品栏图标\\3.png",
+    "sha256": "a2c6b1ae07f82073dbd23412ecf536dbdcf3722f43af68f1372fa238dd4316d5"
+  },
+  "4546-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_4546\\1.png",
+    "sha256": "9c3dabf80d2d0d6b41633e0c971e9386c22d204a31163032f709a996397b2436"
+  },
+  "4556-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_4556\\1.png",
+    "sha256": "0de76dfdbb28d74cc16695cc9bf0d81a3275ec48b21d6a19cb416fe63ba7a4ad"
+  },
+  "4591-1.png": {
+    "source": "local-resources\\moyu\\original-ui\\sprite-baseline-v2\\DefineSprite_4591\\1.png",
+    "sha256": "87dbb02cd2d45570df0ec19b6cc16ec688b4526b7dad5c704d7956d5c1723f66"
+  }
+}

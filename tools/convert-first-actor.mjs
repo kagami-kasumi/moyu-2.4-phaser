@@ -4,13 +4,14 @@ import sharp from 'sharp';
 import assert from 'node:assert/strict';
 import {loadSource,placements,shape,bitmap,SOURCE_HASH} from './lib/first-actor.mjs';
 
-export async function convert(out='public/assets/first-actor') {
+export async function convert(out='public/assets/first-actor',profession='warrior') {
   const source=loadSource();fs.mkdirSync(out,{recursive:true});
   const selectors=placements(source,3101),parent=placements(source,3106)[0].layers[0].matrix;
   const manifest={version:1,sourceSha256:SOURCE_HASH,stage:{width:580,height:500},fps:15,parentMatrix:parent,
     timing:{basis:'source frame ticks; nominal 1000/15 ms, not measured wall time',phaseOrder:['Activities','timeline-frame-action','render'],attackEndFrame:11,effect:'next Activities after end marker; no damage simulation'},
     crop:'untrimmed source bitmap rectangle; offset [0,0]; registration follows matrix chain',collision:null,actions:{}};
-  for(const [name,id,left,right] of [['idle',2986,15,16],['run',3007,17,18],['attack',3031,19,20]]) {
+  if(profession==='mage'){manifest.profession='mage';manifest.timing={basis:'source frame ticks; nominal 1000/15 ms, no nested clock or action tags',phaseOrder:['Activities','timeline-frame-action','render'],effect:'movement only; no attack available'};}
+  for(const [name,id,left,right] of profession==='mage'?[['idle',2893,1,2],['run',2917,5,6]]:[['idle',2986,15,16],['run',3007,17,18],['attack',3031,19,20]]) {
     const frames=placements(source,id),action={spriteId:id,selectorFrames:{left,right},matrices:{left:selectors[left-1].layers[0].matrix,right:selectors[right-1].layers[0].matrix},frames:[]};
     for(const [i,frame] of frames.entries()) {
       const base=shape(source,frame.layers[0].characterId); assert(base.fill.bitmapId);assert.deepEqual(base.fill.matrix,[20,0,0,20,0,0]);
@@ -29,4 +30,4 @@ export async function convert(out='public/assets/first-actor') {
   }
   fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');return manifest;
 }
-if(process.argv[1]?.endsWith('convert-first-actor.mjs')) {await convert(process.argv[2]);console.log('Converted 22 source frames and manifest.');}
+if(process.argv[1]?.endsWith('convert-first-actor.mjs')) {const m=await convert(process.argv[2],process.argv[3]);console.log('Converted '+Object.values(m.actions).reduce((n,a)=>n+a.frames.length,0)+' source frames and manifest.');}

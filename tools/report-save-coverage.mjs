@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import {SAVE_FIELDS} from '../src/content/save-field-data.ts';
+import {sourceFieldInstances,concreteKey} from '../src/application/save-source.ts';
+import {Actor} from '../src/domain/actor.ts';import {Journey} from '../src/domain/journey.ts';
+import {captureSave} from '../src/application/save-game.ts';import {restorePreservedValue} from '../src/content/preserved-value.ts';
+const json=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const j=new Journey(json('public/assets/first-slice/manifest.json'),new Actor(json('public/assets/first-actor/manifest.json')));j.start('覆盖样本');const p=j.progress(),save=captureSave(p),source=restorePreservedValue(save.source);
+const scalar=new Set(['saved','versions','saveTime','role_myName','role_vocational','role_levels','role_life','role_maxLife','role_mp','role_maxMp','role_nowExp','role_maxExp','role_ms','role_res','role_credit','role_titleLevel','role_exploit','role_militaryExploit','role_x','role_y','map_nowMap','allHuanShou_length']);
+const fields=SAVE_FIELDS.map(f=>{
+ const instances=sourceFieldInstances(f,p),keys=instances.map(v=>f.dynamic?concreteKey(f.key,v.i,v.n):f.key);
+ if(keys.some(k=>!Object.hasOwn(source,k)))throw Error('Missing seeded field '+f.id);
+ const live=scalar.has(f.key)?'game scalar → exact owned source key':f.owner==='backPack'&&f.dynamic?'game.reward.bag; modern index+1':f.owner==='equipment'?'game.inventory.equipment; source [头盔,衣服,武器,鞋,幸运符,戒指]; 幸运符 remains opaque':f.owner==='make'?'game.crafting.item/stone; no ownership transfer on save/load':f.owner==='huanShou.allHuanShou'&&f.dynamic?'game.reward.pets existing properties only; other source pet properties retained':f.owner==='map.npcState'&&f.property==='cmd'?'game.reward.cmd for 老兵 only; other NPCs retained':f.owner==='roleSkills'?'game.initialState.skills plus inventory.bravery for known learned records':f.owner==='task.mainTask'?'game.initialState.mainTask current entry only':f.owner==='fastKey'&&['name','type'].includes(f.property)?'game.initialState.fastKeys owned skill icons only':'opaque source preservation; never default-fill loaded fields';
+ return {id:f.id,sourceKey:f.key,owner:f.owner,property:f.property,seedStatus:f.seedStatus,newGameConcreteCount:keys.length,sampleKeys:keys.slice(0,2),emptyCollection:keys.length===0?'no friend instances in new game; concrete keys supported and tested with i=2':undefined,definedSeedCount:keys.filter(k=>source[k]!==undefined).length,mapping:live,roundtrip:'tests/save-game.test.ts: every template concrete key and special value; all registered payloads through encode/decode/capture'};
+});
+const output={task:'TASK-SAVE-016',evidence:'design mapping over verified 019 field registry',templateCount:fields.length,newGameSourceKeyCount:Object.keys(source).length,rawPolicy:'All source entries and unowned extension fields preserved; executable projection is extensions.game. Undefined reservations for inactive/conditional source fields are design, not reconstructed Flash saves.',deferred:restorePreservedValue(save.extensions).initialization,fields};
+fs.mkdirSync('docs/reverse-engineering/save-game',{recursive:true});fs.writeFileSync('docs/reverse-engineering/save-game/field-coverage.json',JSON.stringify(output,null,2)+'\n');console.log(`Reported ${fields.length} templates, ${Object.keys(source).length} concrete new-game keys`);

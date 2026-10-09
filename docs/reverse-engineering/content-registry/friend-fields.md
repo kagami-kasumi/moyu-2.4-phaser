@@ -1,0 +1,5 @@
+# 好友数据字段
+
+FriendClass仅建立好友数据与relation/maxRelation编码访问器，不计算关系等级。默认表见src/content/friend-field-rules.ts。oldCmd缺省继承本次初始化的cmd；jobLevels缺省保留this.jobLevels，初建通常为undefined，不能补为0。isTask/isBest由类声明初始false，构造函数没有从target恢复这两个字段。
+
+关系值写入只拒绝NaN，既不夹取到maxRelation也不自动改变isFriend。测试覆盖空输入、显式零、已有jobLevels保留、旧命令继承及关系值超上限/负小数。构造函数测试只移除super调用，基类编码另有独立源证据。

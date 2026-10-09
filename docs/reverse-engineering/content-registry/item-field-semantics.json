@@ -1,0 +1,1685 @@
+{
+  "scope": "ThingMC encoded numeric properties; other item fields require separate evidence",
+  "slotBindings": [
+    {
+      "owner": "fastKey",
+      "parentSprite": 4546,
+      "slots": [
+        {
+          "name": "包格1",
+          "sprite": 2049,
+          "depth": 9
+        },
+        {
+          "name": "包格2",
+          "sprite": 2049,
+          "depth": 14
+        },
+        {
+          "name": "包格3",
+          "sprite": 2049,
+          "depth": 19
+        },
+        {
+          "name": "包格4",
+          "sprite": 2049,
+          "depth": 24
+        },
+        {
+          "name": "包格5",
+          "sprite": 2049,
+          "depth": 29
+        },
+        {
+          "name": "包格6",
+          "sprite": 2049,
+          "depth": 34
+        },
+        {
+          "name": "包格7",
+          "sprite": 2049,
+          "depth": 39
+        }
+      ]
+    },
+    {
+      "owner": "equipment",
+      "parentSprite": 2579,
+      "slots": [
+        {
+          "name": "头盔",
+          "sprite": 2049,
+          "depth": 24
+        },
+        {
+          "name": "衣服",
+          "sprite": 2049,
+          "depth": 29
+        },
+        {
+          "name": "武器",
+          "sprite": 2049,
+          "depth": 34
+        },
+        {
+          "name": "鞋",
+          "sprite": 2049,
+          "depth": 39
+        },
+        {
+          "name": "幸运符",
+          "sprite": 2049,
+          "depth": 44
+        },
+        {
+          "name": "戒指",
+          "sprite": 2049,
+          "depth": 51
+        }
+      ]
+    },
+    {
+      "owner": "makeBell",
+      "parentSprite": 2321,
+      "slots": [
+        {
+          "name": "item1",
+          "sprite": 2049,
+          "depth": 23
+        },
+        {
+          "name": "item2",
+          "sprite": 2049,
+          "depth": 28
+        }
+      ]
+    },
+    {
+      "owner": "castleStone",
+      "parentSprite": 2303,
+      "slots": [
+        {
+          "name": "stone1",
+          "sprite": 2049,
+          "depth": 19
+        },
+        {
+          "name": "stone2",
+          "sprite": 2049,
+          "depth": 24
+        }
+      ]
+    },
+    {
+      "owner": "make",
+      "parentSprite": 2195,
+      "slots": [
+        {
+          "name": "item",
+          "sprite": 2049,
+          "depth": 19
+        },
+        {
+          "name": "stone",
+          "sprite": 2049,
+          "depth": 24
+        }
+      ]
+    },
+    {
+      "owner": "splitStone",
+      "parentSprite": 2189,
+      "slots": [
+        {
+          "name": "item",
+          "sprite": 2049,
+          "depth": 19
+        },
+        {
+          "name": "stone1",
+          "sprite": 2049,
+          "depth": 24
+        },
+        {
+          "name": "stone2",
+          "sprite": 2049,
+          "depth": 29
+        },
+        {
+          "name": "stone3",
+          "sprite": 2049,
+          "depth": 34
+        }
+      ]
+    },
+    {
+      "owner": "backPack",
+      "parentSprite": 2074,
+      "slots": [
+        {
+          "name": "包格1",
+          "sprite": 2049,
+          "depth": 54
+        },
+        {
+          "name": "包格2",
+          "sprite": 2049,
+          "depth": 59
+        },
+        {
+          "name": "包格3",
+          "sprite": 2049,
+          "depth": 64
+        },
+        {
+          "name": "包格4",
+          "sprite": 2049,
+          "depth": 69
+        },
+        {
+          "name": "包格5",
+          "sprite": 2049,
+          "depth": 74
+        },
+        {
+          "name": "包格6",
+          "sprite": 2049,
+          "depth": 79
+        },
+        {
+          "name": "包格7",
+          "sprite": 2049,
+          "depth": 84
+        },
+        {
+          "name": "包格8",
+          "sprite": 2049,
+          "depth": 89
+        },
+        {
+          "name": "包格9",
+          "sprite": 2049,
+          "depth": 94
+        },
+        {
+          "name": "包格10",
+          "sprite": 2049,
+          "depth": 99
+        },
+        {
+          "name": "包格11",
+          "sprite": 2049,
+          "depth": 104
+        },
+        {
+          "name": "包格12",
+          "sprite": 2049,
+          "depth": 109
+        },
+        {
+          "name": "包格13",
+          "sprite": 2049,
+          "depth": 114
+        },
+        {
+          "name": "包格14",
+          "sprite": 2049,
+          "depth": 119
+        },
+        {
+          "name": "包格15",
+          "sprite": 2049,
+          "depth": 124
+        },
+        {
+          "name": "包格16",
+          "sprite": 2049,
+          "depth": 129
+        },
+        {
+          "name": "包格17",
+          "sprite": 2049,
+          "depth": 134
+        },
+        {
+          "name": "包格18",
+          "sprite": 2049,
+          "depth": 139
+        },
+        {
+          "name": "包格19",
+          "sprite": 2049,
+          "depth": 144
+        },
+        {
+          "name": "包格20",
+          "sprite": 2049,
+          "depth": 149
+        },
+        {
+          "name": "包格21",
+          "sprite": 2049,
+          "depth": 154
+        },
+        {
+          "name": "包格22",
+          "sprite": 2049,
+          "depth": 159
+        },
+        {
+          "name": "包格23",
+          "sprite": 2049,
+          "depth": 164
+        },
+        {
+          "name": "包格24",
+          "sprite": 2049,
+          "depth": 169
+        },
+        {
+          "name": "包格25",
+          "sprite": 2049,
+          "depth": 174
+        },
+        {
+          "name": "包格26",
+          "sprite": 2049,
+          "depth": 179
+        },
+        {
+          "name": "包格27",
+          "sprite": 2049,
+          "depth": 184
+        },
+        {
+          "name": "包格28",
+          "sprite": 2049,
+          "depth": 189
+        },
+        {
+          "name": "包格29",
+          "sprite": 2049,
+          "depth": 194
+        },
+        {
+          "name": "包格30",
+          "sprite": 2049,
+          "depth": 199
+        },
+        {
+          "name": "包格31",
+          "sprite": 2049,
+          "depth": 204
+        },
+        {
+          "name": "包格32",
+          "sprite": 2049,
+          "depth": 209
+        },
+        {
+          "name": "包格33",
+          "sprite": 2049,
+          "depth": 214
+        },
+        {
+          "name": "包格34",
+          "sprite": 2049,
+          "depth": 219
+        },
+        {
+          "name": "包格35",
+          "sprite": 2049,
+          "depth": 224
+        },
+        {
+          "name": "包格36",
+          "sprite": 2049,
+          "depth": 229
+        },
+        {
+          "name": "包格37",
+          "sprite": 2049,
+          "depth": 234
+        },
+        {
+          "name": "包格38",
+          "sprite": 2049,
+          "depth": 239
+        },
+        {
+          "name": "包格39",
+          "sprite": 2049,
+          "depth": 244
+        },
+        {
+          "name": "包格40",
+          "sprite": 2049,
+          "depth": 249
+        }
+      ]
+    },
+    {
+      "owner": "wareHouse",
+      "parentSprite": 2060,
+      "slots": [
+        {
+          "name": "包格1",
+          "sprite": 2049,
+          "depth": 64
+        },
+        {
+          "name": "包格2",
+          "sprite": 2049,
+          "depth": 69
+        },
+        {
+          "name": "包格3",
+          "sprite": 2049,
+          "depth": 74
+        },
+        {
+          "name": "包格4",
+          "sprite": 2049,
+          "depth": 79
+        },
+        {
+          "name": "包格5",
+          "sprite": 2049,
+          "depth": 84
+        },
+        {
+          "name": "包格6",
+          "sprite": 2049,
+          "depth": 89
+        },
+        {
+          "name": "包格7",
+          "sprite": 2049,
+          "depth": 94
+        },
+        {
+          "name": "包格8",
+          "sprite": 2049,
+          "depth": 99
+        },
+        {
+          "name": "包格9",
+          "sprite": 2049,
+          "depth": 104
+        },
+        {
+          "name": "包格10",
+          "sprite": 2049,
+          "depth": 109
+        },
+        {
+          "name": "包格11",
+          "sprite": 2049,
+          "depth": 114
+        },
+        {
+          "name": "包格12",
+          "sprite": 2049,
+          "depth": 119
+        },
+        {
+          "name": "包格13",
+          "sprite": 2049,
+          "depth": 124
+        },
+        {
+          "name": "包格14",
+          "sprite": 2049,
+          "depth": 129
+        },
+        {
+          "name": "包格15",
+          "sprite": 2049,
+          "depth": 134
+        },
+        {
+          "name": "包格16",
+          "sprite": 2049,
+          "depth": 139
+        },
+        {
+          "name": "包格17",
+          "sprite": 2049,
+          "depth": 144
+        },
+        {
+          "name": "包格18",
+          "sprite": 2049,
+          "depth": 149
+        },
+        {
+          "name": "包格19",
+          "sprite": 2049,
+          "depth": 154
+        },
+        {
+          "name": "包格20",
+          "sprite": 2049,
+          "depth": 159
+        },
+        {
+          "name": "包格21",
+          "sprite": 2049,
+          "depth": 164
+        },
+        {
+          "name": "包格22",
+          "sprite": 2049,
+          "depth": 169
+        },
+        {
+          "name": "包格23",
+          "sprite": 2049,
+          "depth": 174
+        },
+        {
+          "name": "包格24",
+          "sprite": 2049,
+          "depth": 179
+        },
+        {
+          "name": "包格25",
+          "sprite": 2049,
+          "depth": 184
+        },
+        {
+          "name": "包格26",
+          "sprite": 2049,
+          "depth": 189
+        },
+        {
+          "name": "包格27",
+          "sprite": 2049,
+          "depth": 194
+        },
+        {
+          "name": "包格28",
+          "sprite": 2049,
+          "depth": 199
+        },
+        {
+          "name": "包格29",
+          "sprite": 2049,
+          "depth": 204
+        },
+        {
+          "name": "包格30",
+          "sprite": 2049,
+          "depth": 209
+        },
+        {
+          "name": "包格31",
+          "sprite": 2049,
+          "depth": 214
+        },
+        {
+          "name": "包格32",
+          "sprite": 2049,
+          "depth": 219
+        },
+        {
+          "name": "包格33",
+          "sprite": 2049,
+          "depth": 224
+        },
+        {
+          "name": "包格34",
+          "sprite": 2049,
+          "depth": 229
+        },
+        {
+          "name": "包格35",
+          "sprite": 2049,
+          "depth": 234
+        },
+        {
+          "name": "包格36",
+          "sprite": 2049,
+          "depth": 239
+        },
+        {
+          "name": "包格37",
+          "sprite": 2049,
+          "depth": 244
+        },
+        {
+          "name": "包格38",
+          "sprite": 2049,
+          "depth": 249
+        },
+        {
+          "name": "包格39",
+          "sprite": 2049,
+          "depth": 254
+        },
+        {
+          "name": "包格40",
+          "sprite": 2049,
+          "depth": 259
+        },
+        {
+          "name": "包格41",
+          "sprite": 2049,
+          "depth": 264
+        },
+        {
+          "name": "包格42",
+          "sprite": 2049,
+          "depth": 269
+        },
+        {
+          "name": "包格43",
+          "sprite": 2049,
+          "depth": 274
+        },
+        {
+          "name": "包格44",
+          "sprite": 2049,
+          "depth": 279
+        },
+        {
+          "name": "包格45",
+          "sprite": 2049,
+          "depth": 284
+        },
+        {
+          "name": "包格46",
+          "sprite": 2049,
+          "depth": 289
+        },
+        {
+          "name": "包格47",
+          "sprite": 2049,
+          "depth": 294
+        },
+        {
+          "name": "包格48",
+          "sprite": 2049,
+          "depth": 299
+        },
+        {
+          "name": "包格49",
+          "sprite": 2049,
+          "depth": 304
+        },
+        {
+          "name": "包格50",
+          "sprite": 2049,
+          "depth": 309
+        },
+        {
+          "name": "包格51",
+          "sprite": 2049,
+          "depth": 314
+        },
+        {
+          "name": "包格52",
+          "sprite": 2049,
+          "depth": 319
+        },
+        {
+          "name": "包格53",
+          "sprite": 2049,
+          "depth": 324
+        },
+        {
+          "name": "包格54",
+          "sprite": 2049,
+          "depth": 329
+        }
+      ]
+    },
+    {
+      "owner": "huanShouItem1",
+      "parentSprite": 2050,
+      "slots": [
+        {
+          "name": "bell",
+          "sprite": 2049,
+          "depth": 7
+        }
+      ]
+    },
+    {
+      "owner": "huanShouItem2",
+      "parentSprite": 2050,
+      "slots": [
+        {
+          "name": "bell",
+          "sprite": 2049,
+          "depth": 7
+        }
+      ]
+    },
+    {
+      "owner": "huanShouItem3",
+      "parentSprite": 2050,
+      "slots": [
+        {
+          "name": "bell",
+          "sprite": 2049,
+          "depth": 7
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "property": "number",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "write-zero",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 75
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 58
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "salePrice",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 110
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 79
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "grade",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 122
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 114
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "levels",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 134
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 126
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "mhdj",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 146
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 138
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "minAttack",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 158
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 150
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "maxAttack",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 170
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 162
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "defense",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 182
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 174
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "mMinAttack",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 194
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 186
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "mMaxAttack",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 206
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 198
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "mDefense",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 218
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 210
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "holes",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 230
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 222
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "hole1",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 242
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 234
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "hole2",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 254
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 246
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "hole3",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 266
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 258
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "gem1",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 278
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 270
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "gem2",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 290
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 282
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "gem3",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 302
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 294
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "gem11",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 314
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 306
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "gem12",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 326
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 318
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "gem13",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 338
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 330
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "additional",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 350
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 342
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "spirit",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 362
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 354
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "spiritVal",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 374
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 366
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "spiritLevels",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 386
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 378
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "spiritExp",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 398
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 390
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "element",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 410
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 402
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "wind",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 422
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 414
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "fire",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 434
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 426
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "soil",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 446
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 438
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "water",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 458
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 450
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "luckLevels",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 470
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 462
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "moreExp",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 482
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 474
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "moreLife",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 494
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 486
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "moreMp",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 506
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 498
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "moreDefense",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 518
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 510
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "moreAttack",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 530
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 522
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "resumeLife",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 542
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 534
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "attributeVal1",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 554
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 546
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "attributeVal2",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 566
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 558
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "attributeVal3",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 578
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 570
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "otherFire",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 590
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 582
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "reduceDamage",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 602
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 594
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "attack",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 614
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 606
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "burst",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 626
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 618
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "property": "jook",
+      "type": "number",
+      "evidence": "verified",
+      "freshInstanceRead": 0,
+      "missingOrNaNWrite": "preserve-previous-value",
+      "assignment": "numeric coercion through multiplication; serialized reads are numbers",
+      "source": [
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 638
+        },
+        {
+          "file": "__Packages/ThingMC.as",
+          "line": 630
+        },
+        {
+          "file": "__Packages/SecreteCodeMC.as",
+          "line": 14
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "files": [
+    {
+      "file": "__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "file": "__Packages/SecreteCodeMC.as",
+      "sha256": "bf3159ed901b7276793d3380234114723880eb1086c7c4f6aa21ebe760f68387"
+    }
+  ],
+  "functions": {
+    "get_xxx_ms": {
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 213
+      },
+      "body": "{\r\n      var _loc2_ = this.getSecreteCode(this.不要作弊446);\r\n      if(_loc2_ != this.魔石)\r\n      {\r\n         if(++this.cheat > 5)\r\n         {\r\n            return 0;\r\n         }\r\n      }\r\n      return _loc2_;\r\n   }"
+    },
+    "set_xxx_ms": {
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 199
+      },
+      "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > 100000000)\r\n      {\r\n         val = 100000000;\r\n      }\r\n      this.魔石 = val;\r\n      this.不要作弊446 = this.setSecreteCode(val);\r\n      this.msText = _global.numberToString(val);\r\n   }"
+    },
+    "get_xxx_res": {
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 247
+      },
+      "body": "{\r\n      var _loc2_ = this.getSecreteCode(this.不要作弊447);\r\n      if(_loc2_ != this.资源)\r\n      {\r\n         if(++this.cheat > 5)\r\n         {\r\n            return 0;\r\n         }\r\n      }\r\n      return _loc2_;\r\n   }"
+    },
+    "set_xxx_res": {
+      "source": {
+        "file": "__Packages/RoleMC.as",
+        "line": 233
+      },
+      "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > 100000000)\r\n      {\r\n         val = 100000000;\r\n      }\r\n      this.资源 = val;\r\n      this.不要作弊447 = this.setSecreteCode(val);\r\n      this.resText = _global.numberToString(val);\r\n   }"
+    },
+    "getSecreteCode": {
+      "source": {
+        "file": "__Packages/SecreteCodeMC.as",
+        "line": 14
+      },
+      "body": "{\r\n      if(isNaN(val))\r\n      {\r\n         return 0;\r\n      }\r\n      return (val - SecreteCodeMC.BASE) / this.SECRETECODE;\r\n   }"
+    },
+    "setSecreteCode": {
+      "source": {
+        "file": "__Packages/SecreteCodeMC.as",
+        "line": 10
+      },
+      "body": "{\r\n      return val * this.SECRETECODE + SecreteCodeMC.BASE;\r\n   }"
+    }
+  }
+}

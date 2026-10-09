@@ -9,7 +9,17 @@
 | --- | --- | --- | --- |
 | LINE-FOUNDATION | 源证据到单角色动作验收 | Done | [覆盖](feature-line-coverage/LINE-FOUNDATION.md) |
 | LINE-FIRST-PLAYABLE | 首个可玩闭环 | Done | [覆盖](feature-line-coverage/LINE-FIRST-PLAYABLE.md) |
-| LINE-NPC-REWARD | NPC首次礼包领取 | Active | [覆盖](feature-line-coverage/LINE-NPC-REWARD.md) |
+| LINE-NPC-REWARD | NPC首次礼包领取 | Done | [覆盖](feature-line-coverage/LINE-NPC-REWARD.md) |
+| LINE-GAME-ENTRY | 直接进入游戏 | Done | [覆盖](feature-line-coverage/LINE-GAME-ENTRY.md) |
+| LINE-ORIGINAL-UI | 原版游戏主界面 | Done | [覆盖](feature-line-coverage/LINE-ORIGINAL-UI.md) |
+| LINE-INVENTORY | 背包使用与装备 | Done | [覆盖](feature-line-coverage/LINE-INVENTORY.md) |
+| LINE-GROUND-ITEMS | 地面掉落拾取 | Done | [覆盖](feature-line-coverage/LINE-GROUND-ITEMS.md) |
+| LINE-VETERAN-EXCHANGE | 老兵勋章兑换 | Done | [覆盖](feature-line-coverage/LINE-VETERAN-EXCHANGE.md) |
+| LINE-EQUIPMENT-SOCKETS | 月光宝盒装备开孔 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-SOCKETS.md) |
+| LINE-EQUIPMENT-MAGIC | 装备魔魂强化 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-MAGIC.md) |
+| LINE-EQUIPMENT-QUALITY | 灵魂晶石装备品质提升 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-QUALITY.md) |
+| LINE-PLAYER-EXPERIENCE | 经验球人物升级 | Active | [覆盖](feature-line-coverage/LINE-PLAYER-EXPERIENCE.md) |
+| LINE-GAME-FOUNDATIONS | 全局数据、角色入口与存档 | Done | [覆盖](feature-line-coverage/LINE-GAME-FOUNDATIONS.md) |
 
 ## 任务
 
@@ -18,4 +28,21 @@
 | TASK-RE-001 | 原文件索引与启动链确认 | reverse | LINE-FOUNDATION | Done | — | [合同](task-definitions/TASK-RE-001.md) |
 | TASK-RE-002 | 单角色动作端到端交付（取证、转换、工程与验收） | implementation | LINE-FOUNDATION | Done | TASK-RE-001 | [合同](task-definitions/TASK-RE-002.md) |
 | TASK-SLICE-004 | 首个可玩闭环 | implementation | LINE-FIRST-PLAYABLE | Done | TASK-RE-002 | [合同](task-definitions/TASK-SLICE-004.md) |
-| TASK-NPC-005 | 老兵首次礼包领取闭环 | implementation | LINE-NPC-REWARD | Ready | TASK-SLICE-004 | [合同](task-definitions/TASK-NPC-005.md) |
+| TASK-NPC-005 | 老兵首次礼包领取闭环 | implementation | LINE-NPC-REWARD | Done | TASK-SLICE-004 | [合同](task-definitions/TASK-NPC-005.md) |
+| TASK-UI-006 | 首页直接进入可交互游戏 | implementation | LINE-GAME-ENTRY | Done | TASK-NPC-005 | [合同](task-definitions/TASK-UI-006.md) |
+| TASK-UI-007 | 还原原版HUD与已实现功能入口 | implementation | LINE-ORIGINAL-UI | Done | TASK-UI-006 | [合同](task-definitions/TASK-UI-007.md) |
+| TASK-ITEM-008 | 背包物品使用与装备 | implementation | LINE-INVENTORY | Done | TASK-UI-007 | [合同](task-definitions/TASK-ITEM-008.md) |
+| TASK-ITEM-009 | 地面掉落拾取闭环 | implementation | LINE-GROUND-ITEMS | Done | TASK-ITEM-008 | [合同](task-definitions/TASK-ITEM-009.md) |
+| TASK-NPC-010 | 老兵勋章兑换闭环 | implementation | LINE-VETERAN-EXCHANGE | Done | TASK-ITEM-009 | [合同](task-definitions/TASK-NPC-010.md) |
+| TASK-ITEM-011 | 月光宝盒装备开孔闭环 | implementation | LINE-EQUIPMENT-SOCKETS | Done | TASK-NPC-010 | [合同](task-definitions/TASK-ITEM-011.md) |
+| TASK-ITEM-012 | 装备魔魂强化闭环 | implementation | LINE-EQUIPMENT-MAGIC | Done | TASK-ITEM-011 | [合同](task-definitions/TASK-ITEM-012.md) |
+| TASK-ITEM-013 | 灵魂晶石装备品质提升闭环 | implementation | LINE-EQUIPMENT-QUALITY | Done | TASK-ITEM-012 | [合同](task-definitions/TASK-ITEM-013.md) |
+| TASK-DATA-015 | 全量内容身份与引用注册 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-ITEM-013 | [合同](task-definitions/TASK-DATA-015.md) |
+| TASK-DATA-017 | 角色与物品数值规则包 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-DATA-015 | [合同](task-definitions/TASK-DATA-017.md) |
+| TASK-DATA-018 | 幻兽与世界数值规则包 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-DATA-017 | [合同](task-definitions/TASK-DATA-018.md) |
+| TASK-DATA-019 | 完整持久字段与恢复语义合同 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-DATA-018 | [合同](task-definitions/TASK-DATA-019.md) |
+| TASK-DATA-020 | 既有玩法注册迁移与基础集成验收 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-DATA-019 | [合同](task-definitions/TASK-DATA-020.md) |
+| TASK-ENTRY-021 | 开始菜单与全部角色新建入口 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-DATA-020 | [合同](task-definitions/TASK-ENTRY-021.md) |
+| TASK-SAVE-016 | 完整进度保存与继续游戏 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-ENTRY-021 | [合同](task-definitions/TASK-SAVE-016.md) |
+| TASK-SAVE-022 | 存档迁移、备份与异常恢复 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-SAVE-016 | [合同](task-definitions/TASK-SAVE-022.md) |
+| TASK-GROWTH-014 | 经验球人物升级闭环 | implementation | LINE-PLAYER-EXPERIENCE | Ready | TASK-ITEM-013, TASK-SAVE-022 | [合同](task-definitions/TASK-GROWTH-014.md) |

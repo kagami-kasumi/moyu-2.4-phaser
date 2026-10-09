@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "stage": {
+    "width": 580,
+    "height": 500
+  },
+  "fps": 15,
+  "parentMatrix": [
+    0.79998779296875,
+    0,
+    0,
+    0.79998779296875,
+    -44.45,
+    -101.5
+  ],
+  "timing": {
+    "basis": "source frame ticks; nominal 1000/15 ms, no nested clock or action tags",
+    "phaseOrder": [
+      "Activities",
+      "timeline-frame-action",
+      "render"
+    ],
+    "effect": "movement only; no attack available"
+  },
+  "crop": "untrimmed source bitmap rectangle; offset [0,0]; registration follows matrix chain",
+  "collision": null,
+  "actions": {
+    "idle": {
+      "spriteId": 2893,
+      "selectorFrames": {
+        "left": 1,
+        "right": 2
+      },
+      "matrices": {
+        "left": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0,
+          1,
+          115,
+          0
+        ]
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "file": "idle-1.png",
+          "width": 115,
+          "height": 155,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2892
+            }
+          ],
+          "bitmapId": 2891,
+          "endMarker": false
+        }
+      ]
+    },
+    "run": {
+      "spriteId": 2917,
+      "selectorFrames": {
+        "left": 5,
+        "right": 6
+      },
+      "matrices": {
+        "left": [
+          1,
+          0,
+          0,
+          1,
+          -13.05,
+          -34.05
+        ],
+        "right": [
+          -1,
+          0,
+          0,
+          1,
+          123,
+          -34
+        ]
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "file": "run-1.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2898
+            }
+          ],
+          "bitmapId": 2897,
+          "endMarker": false
+        },
+        {
+          "frame": 2,
+          "file": "run-2.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2900
+            }
+          ],
+          "bitmapId": 2899,
+          "endMarker": false
+        },
+        {
+          "frame": 3,
+          "file": "run-3.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2902
+            }
+          ],
+          "bitmapId": 2901,
+          "endMarker": false
+        },
+        {
+          "frame": 4,
+          "file": "run-4.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2904
+            }
+          ],
+          "bitmapId": 2903,
+          "endMarker": false
+        },
+        {
+          "frame": 5,
+          "file": "run-5.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2906
+            }
+          ],
+          "bitmapId": 2905,
+          "endMarker": false
+        },
+        {
+          "frame": 6,
+          "file": "run-6.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2908
+            }
+          ],
+          "bitmapId": 2907,
+          "endMarker": false
+        },
+        {
+          "frame": 7,
+          "file": "run-7.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2910
+            }
+          ],
+          "bitmapId": 2909,
+          "endMarker": false
+        },
+        {
+          "frame": 8,
+          "file": "run-8.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2912
+            }
+          ],
+          "bitmapId": 2911,
+          "endMarker": false
+        },
+        {
+          "frame": 9,
+          "file": "run-9.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2914
+            }
+          ],
+          "bitmapId": 2913,
+          "endMarker": false
+        },
+        {
+          "frame": 10,
+          "file": "run-10.png",
+          "width": 145,
+          "height": 195,
+          "durationTicks": 1,
+          "offset": [
+            0,
+            0
+          ],
+          "layers": [
+            {
+              "depth": 1,
+              "shapeId": 2916
+            }
+          ],
+          "bitmapId": 2915,
+          "endMarker": false
+        }
+      ]
+    }
+  },
+  "profession": "mage"
+}

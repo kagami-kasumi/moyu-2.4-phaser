@@ -1,0 +1,5 @@
+{
+  "pet": "      case \"凯恩\":\r\n         if(this.huanShou.addHuanShou({type:\"凯恩\",levels:1,zs:0,maxZs:225,element:0,titleNum:0,rateLife:16.5,rateMinAttack:1,rateMaxAttack:2.5,rateDefense:0.3}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n",
+  "tables": "_global.战士weaponName = new Array(\"长军刀\",\"冷刀\",\"紫心刀\",\"狼牙刃\",\"明光之刃\",\"掠夺者\",\"龙牙\",\"雷眼\",\"正义之刃\");\n_global.战士clotheName = new Array(\"锁环甲\",\"骑士钢甲\",\"哥德战甲\",\"精锐之铠\",\"镜芒铠\",\"虹冥铠\",\"奇迹庇佑\",\"圣痕之铠\",\"夜魔战甲\");\n_global.战士helmetName = new Array(\"蓝色深邃\",\"安刺轻钢\",\"冥虹镜芒\",\"龙翼圣痕\",\"黄金宿印\",\"噩梦之首\",\"凌霄翼盔\",\"武神宝盔\",\"黄金宝盔\");\n_global.战士shoesName = new Array(\"野蛮行径\",\"破冰护胫\",\"火纹战靴\",\"金色梦想\",\"护卫使命\",\"银澜月华\",\"龙神御风\",\"辉煌战靴\",\"神明战靴\");",
+  "ring": "var ringMainValue = new Array();\r\nringMainValue.moreAttack = [5,10,15,20,25];\r\nringMainValue.moreDefense = [15,20,25,30,35];\r\nringMainValue.moreLife = [5,10,15,20,25];\r\nringMainValue.moreMp = [10,15,20,25,30];\r\n"
+}
