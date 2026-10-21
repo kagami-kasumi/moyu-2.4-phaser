@@ -1,12 +1,12 @@
 import {dispatchWorldDrops} from '../content/world-drop-rules.ts';
 import {generateEquipmentNumbers} from '../content/equipment-generation-rules.ts';
 import type {Item} from './npc-reward.ts';
-export type FirstCombatReward={kind:'catch';name:string;count:1}|{kind:'create';name:string}|{kind:'throw';item:Item}|{kind:'warning';name:'第二批强盗'|'强盗首领'|'挑战怪物'|'龙怪头目'|'鹿角护卫'|'龙王'|'宝箱'|'监狱守卫'|'监狱长'|'炎女头目'|'恐兽护卫'|'妖王'|'刺虫人头目'|'提风护卫'|'剌虫王';seconds:3|5|10};
-export type FirstBossReward=FirstCombatReward|{kind:'credit';amount:1}|{kind:'boss-level'}|{kind:'south-boss-level'}|{kind:'border-boss-level'}|{kind:'create-item';item:Item};
+export type FirstCombatReward={kind:'catch';name:string;count:1}|{kind:'create';name:string}|{kind:'throw';item:Item}|{kind:'warning';name:'第二批强盗'|'强盗首领'|'挑战怪物'|'龙怪头目'|'鹿角护卫'|'龙王'|'宝箱'|'监狱守卫'|'监狱长'|'炎女头目'|'恐兽护卫'|'妖王'|'暗黑格拉斯头目'|'巨杰士护卫'|'暗黑之王'|'刺虫人头目'|'提风护卫'|'剌虫王';seconds:3|5|10};
+export type FirstBossReward=FirstCombatReward|{kind:'credit';amount:1}|{kind:'boss-level'}|{kind:'south-boss-level'}|{kind:'abyss-field-level'}|{kind:'border-boss-level'}|{kind:'create-item';item:Item};
 /** Only the dragon boss branch while in wild one. Wild-five successor guards
  * belong to that region, not to this entry point. */
 export function firstBossDrops(level:number,profession:string,random:(n:number)=>number,fraction:()=>number,emit:(event:FirstBossReward)=>void,name='龙怪头目',finale=false,policy={credit:true,soul:true}){
- emit({kind:'catch',name,count:1});emit({kind:'catch',name:'怪物',count:1});if(policy.credit)emit({kind:'credit',amount:1});if(name==='龙怪头目'||name==='炎女头目'||name==='刺虫人头目'){emit({kind:'create',name:'勇士勋章'});emit({kind:name==='刺虫人头目'?'border-boss-level':name==='炎女头目'?'south-boss-level':'boss-level'});}
+ emit({kind:'catch',name,count:1});emit({kind:'catch',name:'怪物',count:1});if(policy.credit)emit({kind:'credit',amount:1});if(name==='暗黑格拉斯头目'||name==='龙怪头目'||name==='炎女头目'||name==='刺虫人头目'){emit({kind:'create',name:'勇士勋章'});emit({kind:name==='暗黑格拉斯头目'?'abyss-field-level':name==='刺虫人头目'?'border-boss-level':name==='炎女头目'?'south-boss-level':'boss-level'});}
  dispatchWorldDrops('头目',level,{levels:level,vocational:profession},random,r=>{
   if(r.kind==='item'){emit({kind:'create',name:r.name});return;}
   if(r.kind!=='generator')throw Error('Unexpected boss drop');
@@ -14,7 +14,7 @@ export function firstBossDrops(level:number,profession:string,random:(n:number)=
   else if(r.name==='dropBossStone')for(const [name,limit]of [['魔魂晶石',500],['幻魔晶石',500],['灵魂晶石',2000],['灵魂晶石',2000],['高级经验宝石',100],['高级攻击宝石',100],['高级减伤害宝石',100],['高级战斗力宝石',100],['初级月光宝盒',600],['小元素石',1000]] as const){if(random(10000)<limit)emit({kind:'create',name});}
   else throw Error('Unexpected boss generator '+r.name);
  });
- if(finale)emit({kind:'warning',name:name==='刺虫人头目'?'提风护卫':name==='提风护卫'?'剌虫王':name==='炎女头目'?'恐兽护卫':name==='恐兽护卫'?'妖王':name==='龙怪头目'?'鹿角护卫':name==='鹿角护卫'?'龙王':'宝箱',seconds:10});
+ if(finale)emit({kind:'warning',name:name==='暗黑格拉斯头目'?'巨杰士护卫':name==='巨杰士护卫'?'暗黑之王':name==='刺虫人头目'?'提风护卫':name==='提风护卫'?'剌虫王':name==='炎女头目'?'恐兽护卫':name==='恐兽护卫'?'妖王':name==='龙怪头目'?'鹿角护卫':name==='鹿角护卫'?'龙王':'宝箱',seconds:10});
  if(!policy.soul||random(100)>=10)return;
  const kind=random(10)+1,min=[0,30,20,100,100,5,10,15,15,2,1],max=[0,300,200,1000,1000,50,100,150,150,20,10];
  const value=Math.ceil((max[kind]!-min[kind]!)*Math.min(300,level)/300*(.9+fraction()*.2));

@@ -10,7 +10,7 @@ import type {Vitals} from '../domain/hud.ts';
 
 /** Design: only data and owned inventory containers cross the persistence port. */
 export interface GameProgress {
- frostBattle?:import('../domain/ice-palace-battle.ts').FrostBattleState;iceBattle?:import('../domain/ice-battle.ts').IceBattleState;borderField?:import('../domain/border-field.ts').BorderFieldState;southField?:import('../domain/south-field.ts').SouthFieldState;southBattle?:import('../domain/south-battle.ts').SouthBattleState;
+ abyssField?:import('../domain/black-abyss-field.ts').AbyssFieldState;abyssBattle?:import('../domain/black-abyss-battle.ts').AbyssBattleState;frostBattle?:import('../domain/ice-palace-battle.ts').FrostBattleState;iceBattle?:import('../domain/ice-battle.ts').IceBattleState;borderField?:import('../domain/border-field.ts').BorderFieldState;southField?:import('../domain/south-field.ts').SouthFieldState;southBattle?:import('../domain/south-battle.ts').SouthBattleState;
  swampBattle?:import('../domain/swamp-battle.ts').SwampBattleState;
  gobiBattle?:import('../domain/gobi-battle.ts').GobiBattleState;
  banditWarning?:number;

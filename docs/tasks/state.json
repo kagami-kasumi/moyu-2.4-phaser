@@ -472,8 +472,26 @@
     {
       "id": "LINE-ICE-PALACE-CITY",
       "title": "冰宫城市与幻境旅程",
-      "status": "Active",
+      "status": "Done",
       "coverage": "docs/tasks/feature-line-coverage/LINE-ICE-PALACE-CITY.md"
+    },
+    {
+      "id": "LINE-BLACK-ABYSS-BATTLE",
+      "title": "黑渊入口与进入黑渊第2军团",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-BLACK-ABYSS-BATTLE.md"
+    },
+    {
+      "id": "LINE-BLACK-ABYSS-FIELD",
+      "title": "黑渊野外与暗黑格拉斯头目循环",
+      "status": "Done",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-BLACK-ABYSS-FIELD.md"
+    },
+    {
+      "id": "LINE-FIRST-LEGION",
+      "title": "黑渊深处与第1军团转世战役",
+      "status": "Active",
+      "coverage": "docs/tasks/feature-line-coverage/LINE-FIRST-LEGION.md"
     }
   ],
   "tasks": [
@@ -5604,12 +5622,229 @@
       "id": "TASK-WORLD-088",
       "title": "冰宫城市与幻境旅程",
       "line": "LINE-ICE-PALACE-CITY",
-      "status": "Active",
+      "status": "Done",
       "type": "implementation",
       "dependsOn": [
         "TASK-WORLD-087"
       ],
       "definition": "docs/tasks/task-definitions/TASK-WORLD-088.md",
+      "completion": {
+        "summary": "冰宫城市/幻境、首赠与入侵、四只125级死神战将、13分支掉落及神兽药水消费、完整回城存取完成；568项逻辑与双职业真实旅程及相邻回归通过。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test（568项，旧关闭范围断言修正后从失败命令继续，三日志见validation）",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:save",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:ice-palace-city",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:ice-palace-battle",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:ice-battle",
+            "result": "passed"
+          },
+          {
+            "command": "npx playwright test tests/browser/ice-palace-city.spec.mjs（两职业及受控边界3项）",
+            "result": "passed"
+          },
+          {
+            "command": "088显示及087/086相邻浏览器6项",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/ice-palace-city/source-contract.md",
+          "docs/reverse-engineering/ice-palace-city/validation.md",
+          "docs/reverse-engineering/ice-palace-city/review.md",
+          "tests/ice-palace-city-source.test.mjs",
+          "tests/ice-palace-city.test.mjs",
+          "tests/ice-palace-city-collision.test.mjs",
+          "tests/browser/ice-palace-city.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-WORLD-089",
+      "title": "黑渊入口与进入黑渊第2军团",
+      "line": "LINE-BLACK-ABYSS-BATTLE",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-WORLD-088"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-WORLD-089.md",
+      "completion": {
+        "summary": "黑渊入口与第2军团六图、完整战斗/掉落、主线13/14与转世计数、奖励消费及冰宫回城存取完成。584项逻辑、8项专项浏览器及3项相邻回归通过。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test（584项，logic-retry.log）",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:save",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:black-abyss-battle",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:ice-palace-city",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:ice-palace-battle",
+            "result": "passed"
+          },
+          {
+            "command": "089主旅程/边界/奖励消费浏览器8项",
+            "result": "passed"
+          },
+          {
+            "command": "088/087相邻浏览器3项",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/black-abyss-battle/source-contract.md",
+          "docs/reverse-engineering/black-abyss-battle/review.md",
+          "docs/reverse-engineering/black-abyss-battle/validation.md",
+          "tests/black-abyss-battle-source.test.mjs",
+          "tests/abyss-quest-source.test.mjs",
+          "tests/browser/black-abyss-battle.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-WORLD-090",
+      "title": "黑渊野外与暗黑格拉斯头目循环",
+      "line": "LINE-BLACK-ABYSS-FIELD",
+      "status": "Done",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-WORLD-089"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-WORLD-090.md",
+      "completion": {
+        "summary": "黑渊三图、两完整家族、混合精英与预警覆盖、独立bossLevels8及头目/护卫/王/宝箱、奖励消费和冰宫回城存取完成。599项完整逻辑、4项专项浏览器与3项相邻回归通过。",
+        "checks": [
+          {
+            "command": "npm run typecheck",
+            "result": "passed"
+          },
+          {
+            "command": "npm test（599项，62组，logic-retry.log）",
+            "result": "passed"
+          },
+          {
+            "command": "npm run build",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:save",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:source",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:black-abyss-field",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:black-abyss-battle",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:ice-palace-city",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:lucky-gate",
+            "result": "passed"
+          },
+          {
+            "command": "node tools/convert-first-slice.mjs（原子写后复跑）",
+            "result": "passed"
+          },
+          {
+            "command": "090双职业实战及受控边界浏览器4项",
+            "result": "passed"
+          },
+          {
+            "command": "089/088相邻浏览器3项",
+            "result": "passed"
+          },
+          {
+            "command": "npm run check:harness",
+            "result": "passed"
+          }
+        ],
+        "evidence": [
+          "docs/reverse-engineering/black-abyss-field/source-contract.md",
+          "docs/reverse-engineering/black-abyss-field/review.md",
+          "docs/reverse-engineering/black-abyss-field/validation.md",
+          "tests/black-abyss-field-source.test.mjs",
+          "tests/black-abyss-field.test.mjs",
+          "tests/browser/black-abyss-field.spec.mjs",
+          "tests/browser/black-abyss-field-boundaries.spec.mjs"
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "id": "TASK-WORLD-091",
+      "title": "黑渊深处与第1军团转世战役",
+      "line": "LINE-FIRST-LEGION",
+      "status": "Ready",
+      "type": "implementation",
+      "dependsOn": [
+        "TASK-WORLD-090"
+      ],
+      "definition": "docs/tasks/task-definitions/TASK-WORLD-091.md",
       "completion": null,
       "blocker": null
     }

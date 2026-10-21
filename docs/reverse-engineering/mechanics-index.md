@@ -51,3 +51,9 @@
 卡萨诺幻境（069）：[源合同](kasano-mirage/source-contract.md)，包含四怪奖励、随机进入、原入口缺失及明确现代修复。
 
 边关野外与三头目（085）：[源合同](border-field/source-contract.md)，含独立bossLevels5、提风技能、剌虫人行踪及五地图存档。
+
+冰宫城市与幻境（088）：[源合同](ice-palace-city/source-contract.md)，含四只125级幻影死神战将、13分支掉落、首赠/入侵、神兽药水消费与冰宫回城。
+
+黑渊入口与第2军团（089）：[源合同](black-abyss-battle/source-contract.md)，含六地图、90/92/95生成、任务13/14与转世计数、六军团存取隔离。
+
+黑渊野外（090）：[源合同](black-abyss-field/source-contract.md)，含混合精英、预警覆盖、独立bossLevels8、暗黑格拉斯10帧技能和原行踪。

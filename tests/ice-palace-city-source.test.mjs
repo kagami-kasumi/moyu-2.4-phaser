@@ -1,3 +1,4 @@
+import {FirstCombat} from '../src/domain/first-combat.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -69,4 +70,21 @@ test('city first grant, untouched pharmacy stock, four NPC identities and strict
  assert(fixture.sources['DefineSprite_4536/frame_1/DoAction'].includes('nTitle:"巧匠",name:"",cmd:10100'));
  const portraits=fixture.timelines['4308'];for(const map of ['icePalaceCity'])for(const npc of NPCS[map]){const frame=Object.entries(portraits.labels).find(([,name])=>name===npc.title)?.[0];assert(frame,npc.title);assert.equal(Number(portraits.frames[Number(frame)-1][0].characterId),npc.shape);}
  assert.deepEqual(NPCS.icePalaceCity.map(n=>[n.title,n.x,n.y]),[['药剂师',235,220],['冰宫指挥官',300,330],['白衣圣兽师',470,330],['挑战者',375,330]]);
+});
+
+test('all ice palace drops use original full item factories and can be sold through the actual merchant',()=>{
+ const json=p=>JSON.parse(fs.readFileSync(p)),maps=json('public/assets/first-slice/manifest.json'),actor=json('public/assets/first-actor/manifest.json');
+ const factory=new vm.Script('(function(tThing,isDrop,fX,fY)'+functionRange(fixture.sources['frame_9/DoAction'],'this.createThing =').text+')');
+ for(const profession of ['战士','法师'])for(let branch=0;branch<13;branch++)for(let egg=0;egg<4;egg++){
+  const actors={战士:actor,法师:json('public/assets/mage/manifest.json')},j=new Journey(maps,new Actor(actors[profession]),actors);j.start('完整工厂',profession);j.arrive('city','entry1','city');j.reward.bag.fill(null);const expected=[],ec=[],ac=[];
+  const draw=calls=>n=>{calls.push(n);return n===13?branch:n===4?egg:0;};const er=draw(ec),ar=draw(ac);
+  const parent={task:{catchThing(){}},map:{goods:{throwGoods(x,y,item){expected.push(JSON.parse(JSON.stringify(item)));er(150);er(50);}}}};
+  parent.createThing=factory.runInNewContext().bind(parent);
+  const c=vm.createContext({_parent:parent,role:{creditUp(){}},random:er,maxArr:[4,6,8,10,11,12,13],fX:undefined,fY:undefined,haveMonst:()=>false,entry1:{}});
+  for(const [name,args]of [['dropItemX','prizeLevel,fX,fY'],['SuperHS','rand']])c[name]=new vm.Script('(function('+args+')'+functionRange(source,'function '+name).text+')').runInContext(c);
+  new vm.Script('(function(mName,fX,fY,level)'+functionRange(source,'this.monsterDeath =').text+')').runInContext(c).call({_parent:parent},'幻影死神战将',300,300,125);
+  const combat=new FirstCombat({inventory:j.inventory,pets:j.petProgression,position:()=>({x:300,y:300,facing:'left'}),contains:()=>true,notice(){},region:'icePalaceMirage'});combat.random=ar;
+  icePalaceMirageDrops(false,ar,(event,atRole)=>combat.reward(atRole?combat.role:{x:300,y:300},event));assert.deepEqual(ac,ec);assert.equal(j.reward.drops.length,expected.length);
+  for(let n=0;n<expected.length;n++){const item=j.reward.drops[n].item;for(const [key,value]of Object.entries(expected[n]))assert.deepEqual(item[key],value,key);j.reward.bag[0]={...item};j.shop.interact();j.shop.show();assert(j.shop.sell(0,j.reward.bag[0]),item.type);assert.equal(j.reward.bag[0],null);j.shop.close();}
+ }
 });

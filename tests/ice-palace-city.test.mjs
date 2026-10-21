@@ -15,10 +15,14 @@ test('first grant full bag and border flag migration never replay; invalid snaps
  const saved=captureSave(j.progress()),ext=restorePreservedValue(saved.extensions),raw=restorePreservedValue(saved.source);delete ext.game.cityVisit.icePalaceMirageGranted;raw.map_冰宫获得幻境=true;raw.borderFuture='opaque';saved.extensions=preserveValue(ext);saved.source=preserveValue(raw);const p=savedProgress(decodeSave(encodeSave(saved)));assert(p.cityVisit.icePalaceMirageGranted);assert.equal(restorePreservedValue(captureSave(p,saved).source).borderFuture,'opaque');
 });
 test('death and lucky return use ice palace home; ports remain closed',()=>{
- let j=make();city(j);enter(j);j.vitals.life=0;assert(j.reviveCombat());assert.equal(j.map,'icePalaceCity');assert.equal(j.x,maps.maps.icePalaceCity.layers.find(p=>p.name==='backPoint').matrix[4]);j.reward.bag[0]=literalItem('幸运之门');assert(j.inventory.use(0,j.reward.bag[0]));assert(j.arrive('icePalaceCity','backPoint','icePalaceCity'));for(const name of ['entry2','entry3']){const e=j.entries.find(e=>e.name===name);j.x=e.x;j.y=e.y;assert(!j.activate(name));assert.match(j.notice,/港口与黑渊入口尚未开放/);}
+ let j=make();city(j);enter(j);j.vitals.life=0;assert(j.reviveCombat());assert.equal(j.map,'icePalaceCity');assert.equal(j.x,maps.maps.icePalaceCity.layers.find(p=>p.name==='backPoint').matrix[4]);j.reward.bag[0]=literalItem('幸运之门');assert(j.inventory.use(0,j.reward.bag[0]));assert(j.arrive('icePalaceCity','backPoint','icePalaceCity'));for(const name of ['entry2']){const e=j.entries.find(e=>e.name===name);j.x=e.x;j.y=e.y;assert(!j.activate(name));assert.match(j.notice,/港口尚未开放/);}
 });
 
 test('entry6 is an explicit design recovery for source entry1 inconsistency, including intrusion and item cancellation',()=>{
  const j=make();assert(j.arrive('frostOutskirts','entry1','frostOutskirts'));j.mirageElapsed=300001;j.mirageRandom=()=>0;assert(j.arrive('icePalaceCity','entry1','icePalaceCity'));assert.equal(j.map,'icePalaceMirage');const entry=maps.maps.icePalaceMirage.layers.find(p=>p.name==='entry6');assert.equal(j.x,entry.matrix[4]);assert.equal(j.y,entry.matrix[5]);assert(j.cityVisit.icePalaceMirageGranted);const index=j.reward.bag.findIndex(i=>i?.type==='冰宫幻境'),item=j.reward.bag[index];assert(!j.inventory.use(index,item));assert.equal(j.reward.bag[index],item);j.vitals.life=0;assert(j.reviveCombat());j.paused=true;assert(!j.inventory.use(index,item));assert.equal(j.reward.bag[index],item);
 });
 
+
+test('active third legion rejects ice palace city and leaves old pharmacy callback unusable after leaving',()=>{
+ const j=make();assert(j.arrive('frostOutskirts','entry1','frostOutskirts'));j.firstQuest.icePalace={number:0,isDoing:true,isComplete:false};j.firstQuest.icePalaceActive=true;const before=j.transitions;assert(!j.arrive('icePalaceCity','entry1','icePalaceCity'));assert.equal(j.transitions,before);j.firstQuest.icePalace={number:1,isDoing:false,isComplete:true};j.firstQuest.icePalaceActive=false;assert(j.arrive('icePalaceCity','entry1','icePalaceCity'));assert(j.openShop('pharmacy'));const old=j.pharmacy;assert(j.arrive('frostOutskirts','entry3','frostOutskirts'));assert(!old.interact());
+});

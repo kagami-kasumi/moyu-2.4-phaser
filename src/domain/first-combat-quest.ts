@@ -2,7 +2,7 @@ import {contentById,literalItem} from '../content/registry.ts';
 import {refreshEquipmentAttributes} from './equipment-attributes.ts';
 import type {NpcReward,Item} from './npc-reward.ts';
 export interface TrainingStage {number:number;isDoing:boolean;isComplete:boolean}
-export interface FirstQuestState {number:number;secondActive:boolean;later?:[TrainingStage,TrainingStage];fourthActive?:boolean;fourth?:TrainingStage;nextActive?:boolean;bandits?:TrainingStage;kingActive?:boolean;king?:TrainingStage;swampActive?:boolean;swamp?:TrainingStage;southActive?:boolean;south?:TrainingStage;counterattackActive?:boolean;counterattack?:TrainingStage;icePalaceActive?:boolean;icePalace?:TrainingStage;blackAbyssActive?:boolean;honor?:TrainingStage;honorPrompt?:boolean}
+export interface FirstQuestState {number:number;secondActive:boolean;later?:[TrainingStage,TrainingStage];fourthActive?:boolean;fourth?:TrainingStage;nextActive?:boolean;bandits?:TrainingStage;kingActive?:boolean;king?:TrainingStage;swampActive?:boolean;swamp?:TrainingStage;southActive?:boolean;south?:TrainingStage;counterattackActive?:boolean;counterattack?:TrainingStage;icePalaceActive?:boolean;icePalace?:TrainingStage;blackAbyssActive?:boolean;blackAbyss?:TrainingStage;firstLegionActive?:boolean;firstLegionRebirth?:number;honor?:TrainingStage;honorPrompt?:boolean}
 /** Three source profession-specific training stages, independently claimable. */
 export class FirstCombatQuest {
  constructor(readonly state:FirstQuestState,readonly flags:{index:number;isDoing:boolean;isComplete:boolean},readonly reward:NpcReward){}

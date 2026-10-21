@@ -85,7 +85,10 @@
 | LINE-BORDER-FIELD | 边关野外与刺虫人头目完整循环 | Done | [覆盖](feature-line-coverage/LINE-BORDER-FIELD.md) |
 | LINE-ICE-BATTLE | 冰封走廊与反攻第4军团 | Done | [覆盖](feature-line-coverage/LINE-ICE-BATTLE.md) |
 | LINE-ICE-PALACE-BATTLE | 冰宫郊区与进入冰宫第3军团 | Done | [覆盖](feature-line-coverage/LINE-ICE-PALACE-BATTLE.md) |
-| LINE-ICE-PALACE-CITY | 冰宫城市与幻境旅程 | Active | [覆盖](feature-line-coverage/LINE-ICE-PALACE-CITY.md) |
+| LINE-ICE-PALACE-CITY | 冰宫城市与幻境旅程 | Done | [覆盖](feature-line-coverage/LINE-ICE-PALACE-CITY.md) |
+| LINE-BLACK-ABYSS-BATTLE | 黑渊入口与进入黑渊第2军团 | Done | [覆盖](feature-line-coverage/LINE-BLACK-ABYSS-BATTLE.md) |
+| LINE-BLACK-ABYSS-FIELD | 黑渊野外与暗黑格拉斯头目循环 | Done | [覆盖](feature-line-coverage/LINE-BLACK-ABYSS-FIELD.md) |
+| LINE-FIRST-LEGION | 黑渊深处与第1军团转世战役 | Active | [覆盖](feature-line-coverage/LINE-FIRST-LEGION.md) |
 
 ## 任务
 
@@ -177,4 +180,7 @@
 | TASK-WORLD-085 | 边关野外与刺虫人头目完整循环 | implementation | LINE-BORDER-FIELD | Done | TASK-WORLD-084 | [合同](task-definitions/TASK-WORLD-085.md) |
 | TASK-WORLD-086 | 冰封走廊与反攻第4军团 | implementation | LINE-ICE-BATTLE | Done | TASK-WORLD-085 | [合同](task-definitions/TASK-WORLD-086.md) |
 | TASK-WORLD-087 | 冰宫郊区与进入冰宫第3军团 | implementation | LINE-ICE-PALACE-BATTLE | Done | TASK-WORLD-086 | [合同](task-definitions/TASK-WORLD-087.md) |
-| TASK-WORLD-088 | 冰宫城市与幻境旅程 | implementation | LINE-ICE-PALACE-CITY | Active | TASK-WORLD-087 | [合同](task-definitions/TASK-WORLD-088.md) |
+| TASK-WORLD-088 | 冰宫城市与幻境旅程 | implementation | LINE-ICE-PALACE-CITY | Done | TASK-WORLD-087 | [合同](task-definitions/TASK-WORLD-088.md) |
+| TASK-WORLD-089 | 黑渊入口与进入黑渊第2军团 | implementation | LINE-BLACK-ABYSS-BATTLE | Done | TASK-WORLD-088 | [合同](task-definitions/TASK-WORLD-089.md) |
+| TASK-WORLD-090 | 黑渊野外与暗黑格拉斯头目循环 | implementation | LINE-BLACK-ABYSS-FIELD | Done | TASK-WORLD-089 | [合同](task-definitions/TASK-WORLD-090.md) |
+| TASK-WORLD-091 | 黑渊深处与第1军团转世战役 | implementation | LINE-FIRST-LEGION | Ready | TASK-WORLD-090 | [合同](task-definitions/TASK-WORLD-091.md) |

@@ -1,5 +1,15 @@
 # 质量门禁
 
+## 黑渊入口与第2军团门禁
+
+`check:black-abyss-battle`独立核对六地图、三魔军家族20选择器、Action/AS/P-code与43张重建PNG。源oracle覆盖90/92/95级、左区18倍生命与其他副将15倍的差异、15次生成随机、全部掉落工厂和主线13逆序奖励/14接续/mainBossLv增量。领域与浏览器检查六军团oldCity、空左区自然进入、部分存取、死亡/幸运返回、满包和双职业真实战斗、奖励消费及冰宫回城。限制见[源合同](../reverse-engineering/black-abyss-battle/source-contract.md)。
+
+
+## 冰宫城市与幻境门禁
+
+`check:ice-palace-city`验证三地图源入口、死神战将八选择器/三动作、独立Action/AS/P-code、23重建PNG与1原图完整性。源oracle覆盖全部字段、13掉落分支与工厂、城市随机/首赠/药店；领域和碰撞检查满包、清场、非法混合档、旧字段、死亡/幸运home及任务入口。双职业浏览器承接087真实home档完成城市服务、幻境实战、神兽药水实际进阶、回城/刷新/文件导入；受控边界单独记录。原entry1引用冲突和现代entry6修正见[源合同](../reverse-engineering/ice-palace-city/source-contract.md)。
+
+
 ## 边关城市与边境幻境门禁
 
 `check:border-city`独立核对三地图、刺虫人6选择器/12帧跑/9帧攻击、Action/AS/P-code和20张FFDec重建PNG。源测试执行生成、12奖励分支/超级幻兽及工厂、首赠与严格入侵计时、药店数量不变和共用巧匠绑定。领域/碰撞验证三地点、部分战斗、清场出口、旧字段、非法档、死亡/幸运homeCity及旧回调。原entry1不在幻境显示列表，现代entry6入场/清场是明确design修正，不声称原AVM1落点精确。双职业浏览器分别验证城市服务/合成产物消费、受控高阶装备实际战斗和奖励消费/存取，另测满包、暂停、死亡与关闭入口。见[border-city源合同](../reverse-engineering/border-city/source-contract.md)。
@@ -453,3 +463,11 @@ TASK-QUEST-075：`tests/king-honor.test.mjs`独立原菜单/任务函数/RoleMC 
 ## 冰宫郊区与进入冰宫军团门禁
 
 087执行`check:ice-palace-battle`，六图/三类魔军20选择器/7动画、XML/Action/AS/P-code及56张FFDec资产（55独立转换像素比对，冰柱4314直接原图完整性）。源oracle须覆盖80/82/85级、frame135中区副将特殊攻击/闪避、15随机、全部掉落工厂、任务12/13及满包封顶。领域/浏览器覆盖反攻门槛、库存15/冰柱、五军团oldCity、各区部分存取、暂停死亡/幸运/军需官和旧回调。两职业从086实际档真实按键完成四有敌人区、领取/消费奖励、回城刷新文件导入；保留受控队伍与经验球上限说明。运行类型、完整逻辑、构建、save/source、专项和086/085相邻回归，结果见ice-palace-battle验证。
+
+## 黑渊入口与第2军团门禁
+
+089执行check:black-abyss-battle：六地图、三家族20选择器/7动画、43张独立PNG及Action/AS/P-code。源oracle覆盖90/92/95生成及左区副将差异、15次随机、所有掉落工厂、mainTask13/14与转世计数、逆序奖励。领域和浏览器验证六军团共享oldCity、部分清场存取、左区自然空场与受控生成、暂停死亡/幸运/军需官、满包及旧档未知字段保留。两职业从088实际home真实按键完成四有敌人区，领取并消费经验球与25万资源、回冰宫刷新导入；明确沿用受控队伍。类型、完整逻辑、构建、save/source、专项与088/087相邻回归、harness均需实际通过。
+
+## 黑渊野外门禁
+
+090执行check:black-abyss-field：三图独立XML/Action/AS/P-code、两家族各八选择器与9/10帧技能、40张独立PNG转换比对和3644/3690两张原图完整性。原函数对照初始五怪及两普通区、不同头目攻击公式、bossLevels8、预警覆盖与只覆盖第一怪、所有掉落工厂与随机顺序。领域/浏览器覆盖存活精英保留、随机覆盖后继、死亡暂停、满包宝箱、部分存取及旧计数隔离。双职业读取089实际档，明确额外供给行踪，实际走图/F战斗/开箱/拾取出售/回冰宫刷新导入，不能写成自然养成或自然掉落行踪。完整npm test通过tools/test-all.mjs依tools/test-suites.json原组序列执行，避免Windows命令长度限制；保留遇错停止。还需typecheck/build/save/source、专项及089/088相邻浏览器、harness。

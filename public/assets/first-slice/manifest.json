@@ -1893,6 +1893,274 @@
       "line": 1,
       "file": "2678.png"
     },
+    "2686": {
+      "id": 2686,
+      "bounds": [
+        -1,
+        57,
+        581,
+        461
+      ],
+      "fills": [
+        {
+          "kind": 0,
+          "color": [
+            0,
+            153,
+            102,
+            255
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "width": 2,
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ]
+        },
+        {
+          "width": 2,
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ]
+        }
+      ],
+      "edges": [
+        [
+          "M",
+          0,
+          340.05
+        ],
+        [
+          "L",
+          580,
+          58
+        ],
+        [
+          "L",
+          580,
+          460
+        ],
+        [
+          "L",
+          0,
+          460
+        ],
+        [
+          "L",
+          0,
+          340.05
+        ]
+      ],
+      "segments": [
+        {
+          "from": [
+            0,
+            340.05
+          ],
+          "to": [
+            580,
+            58
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 2
+        },
+        {
+          "from": [
+            580,
+            58
+          ],
+          "to": [
+            580,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 1
+        },
+        {
+          "from": [
+            580,
+            460
+          ],
+          "to": [
+            0,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 1
+        },
+        {
+          "from": [
+            0,
+            460
+          ],
+          "to": [
+            0,
+            340.05
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 1
+        }
+      ],
+      "fill0": 0,
+      "fill1": 1,
+      "line": 1,
+      "file": "2686.png"
+    },
+    "2688": {
+      "id": 2688,
+      "bounds": [
+        -1,
+        71,
+        581,
+        461
+      ],
+      "fills": [
+        {
+          "kind": 0,
+          "color": [
+            0,
+            153,
+            102,
+            255
+          ]
+        }
+      ],
+      "lines": [
+        {
+          "width": 2,
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ]
+        },
+        {
+          "width": 2,
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ]
+        }
+      ],
+      "edges": [
+        [
+          "M",
+          0,
+          236
+        ],
+        [
+          "L",
+          388.95,
+          167
+        ],
+        [
+          "L",
+          580,
+          72
+        ],
+        [
+          "L",
+          580,
+          460
+        ],
+        [
+          "L",
+          0,
+          460
+        ],
+        [
+          "L",
+          0,
+          236
+        ]
+      ],
+      "segments": [
+        {
+          "from": [
+            0,
+            236
+          ],
+          "to": [
+            388.95,
+            167
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 2
+        },
+        {
+          "from": [
+            388.95,
+            167
+          ],
+          "to": [
+            580,
+            72
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 2
+        },
+        {
+          "from": [
+            580,
+            72
+          ],
+          "to": [
+            580,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 1
+        },
+        {
+          "from": [
+            580,
+            460
+          ],
+          "to": [
+            0,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 1
+        },
+        {
+          "from": [
+            0,
+            460
+          ],
+          "to": [
+            0,
+            236
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 1
+        }
+      ],
+      "fill0": 0,
+      "fill1": 1,
+      "line": 1,
+      "file": "2688.png"
+    },
     "2696": {
       "id": 2696,
       "bounds": [
@@ -152510,6 +152778,422 @@
       "line": 0,
       "file": "4461.png"
     },
+    "4469": {
+      "id": 4469,
+      "bounds": [
+        0,
+        0,
+        580,
+        460
+      ],
+      "fills": [
+        {
+          "kind": 67,
+          "bitmapId": 4468,
+          "matrix": [
+            20,
+            0,
+            0,
+            20,
+            0,
+            0
+          ]
+        }
+      ],
+      "lines": [],
+      "edges": [
+        [
+          "L",
+          580,
+          0
+        ],
+        [
+          "L",
+          580,
+          460
+        ],
+        [
+          "L",
+          0,
+          460
+        ],
+        [
+          "L",
+          0,
+          0
+        ]
+      ],
+      "segments": [
+        {
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            580,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            0
+          ],
+          "to": [
+            580,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            460
+          ],
+          "to": [
+            0,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            0,
+            460
+          ],
+          "to": [
+            0,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        }
+      ],
+      "fill0": 0,
+      "fill1": 1,
+      "line": 0,
+      "file": "4469.png"
+    },
+    "4471": {
+      "id": 4471,
+      "bounds": [
+        0,
+        0,
+        580,
+        460
+      ],
+      "fills": [
+        {
+          "kind": 67,
+          "bitmapId": 4470,
+          "matrix": [
+            20,
+            0,
+            0,
+            20,
+            0,
+            0
+          ]
+        }
+      ],
+      "lines": [],
+      "edges": [
+        [
+          "L",
+          580,
+          0
+        ],
+        [
+          "L",
+          580,
+          460
+        ],
+        [
+          "L",
+          0,
+          460
+        ],
+        [
+          "L",
+          0,
+          0
+        ]
+      ],
+      "segments": [
+        {
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            580,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            0
+          ],
+          "to": [
+            580,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            460
+          ],
+          "to": [
+            0,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            0,
+            460
+          ],
+          "to": [
+            0,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        }
+      ],
+      "fill0": 0,
+      "fill1": 1,
+      "line": 0,
+      "file": "4471.png"
+    },
+    "4473": {
+      "id": 4473,
+      "bounds": [
+        0,
+        0,
+        580,
+        460
+      ],
+      "fills": [
+        {
+          "kind": 67,
+          "bitmapId": 4472,
+          "matrix": [
+            20,
+            0,
+            0,
+            20,
+            0,
+            0
+          ]
+        }
+      ],
+      "lines": [],
+      "edges": [
+        [
+          "L",
+          580,
+          0
+        ],
+        [
+          "L",
+          580,
+          460
+        ],
+        [
+          "L",
+          0,
+          460
+        ],
+        [
+          "L",
+          0,
+          0
+        ]
+      ],
+      "segments": [
+        {
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            580,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            0
+          ],
+          "to": [
+            580,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            460
+          ],
+          "to": [
+            0,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            0,
+            460
+          ],
+          "to": [
+            0,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        }
+      ],
+      "fill0": 0,
+      "fill1": 1,
+      "line": 0,
+      "file": "4473.png"
+    },
+    "4475": {
+      "id": 4475,
+      "bounds": [
+        0,
+        0,
+        580,
+        460
+      ],
+      "fills": [
+        {
+          "kind": 67,
+          "bitmapId": 4474,
+          "matrix": [
+            20,
+            0,
+            0,
+            20,
+            0,
+            0
+          ]
+        }
+      ],
+      "lines": [],
+      "edges": [
+        [
+          "L",
+          580,
+          0
+        ],
+        [
+          "L",
+          580,
+          460
+        ],
+        [
+          "L",
+          0,
+          460
+        ],
+        [
+          "L",
+          0,
+          0
+        ]
+      ],
+      "segments": [
+        {
+          "from": [
+            0,
+            0
+          ],
+          "to": [
+            580,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            0
+          ],
+          "to": [
+            580,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            580,
+            460
+          ],
+          "to": [
+            0,
+            460
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        },
+        {
+          "from": [
+            0,
+            460
+          ],
+          "to": [
+            0,
+            0
+          ],
+          "fill0": 0,
+          "fill1": 1,
+          "line": 0
+        }
+      ],
+      "fill0": 0,
+      "fill1": 1,
+      "line": 0,
+      "file": "4475.png"
+    },
     "4484": {
       "id": 4484,
       "bounds": [
@@ -154022,6 +154706,784 @@
             411.6
           ],
           "ratio": 3,
+          "name": "entry2"
+        }
+      ]
+    },
+    "abyssWildOne": {
+      "frame": 96,
+      "name": "黑渊一",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4471,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2807,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 94,
+          "name": "ground"
+        },
+        {
+          "depth": 76,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            411.6
+          ],
+          "ratio": 91,
+          "name": "entry1"
+        },
+        {
+          "depth": 80,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            411.6
+          ],
+          "ratio": 94,
+          "name": "entry2"
+        }
+      ]
+    },
+    "abyssWildTwo": {
+      "frame": 97,
+      "name": "黑渊二",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4473,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2689,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 96,
+          "name": "ground"
+        },
+        {
+          "depth": 76,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            411.6
+          ],
+          "ratio": 91,
+          "name": "entry1"
+        },
+        {
+          "depth": 80,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            411.6
+          ],
+          "ratio": 94,
+          "name": "entry2"
+        }
+      ]
+    },
+    "abyssWildThree": {
+      "frame": 98,
+      "name": "黑渊三",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4475,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2687,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 97,
+          "name": "ground"
+        },
+        {
+          "depth": 76,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            411.6
+          ],
+          "ratio": 91,
+          "name": "entry1"
+        }
+      ]
+    },
+    "abyssEntrance": {
+      "frame": 95,
+      "name": "黑渊入口",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4469,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2807,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 94,
+          "name": "ground"
+        },
+        {
+          "depth": 76,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            411.6
+          ],
+          "ratio": 91,
+          "name": "entry1"
+        },
+        {
+          "depth": 80,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            411.6
+          ],
+          "ratio": 94,
+          "name": "entry2"
+        },
+        {
+          "depth": 84,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            278,
+            184.65
+          ],
+          "ratio": 94,
+          "name": "entry3"
+        }
+      ]
+    },
+    "abyssLeft": {
+      "frame": 148,
+      "name": "黑渊战场左",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4469,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2807,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 141,
+          "name": "ground"
+        },
+        {
+          "depth": 12,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            106
+          ],
+          "ratio": 145,
+          "name": "entry1"
+        },
+        {
+          "depth": 16,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            436
+          ],
+          "ratio": 145,
+          "name": "entry3"
+        },
+        {
+          "depth": 20,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            256
+          ],
+          "ratio": 143,
+          "name": "entry2"
+        },
+        {
+          "depth": 24,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            101.45,
+            256
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              0
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 147,
+          "name": "backPoint"
+        }
+      ]
+    },
+    "abyssUp": {
+      "frame": 142,
+      "name": "黑渊战场上",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4469,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2807,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 141,
+          "name": "ground"
+        },
+        {
+          "depth": 28,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            441.6
+          ],
+          "ratio": 135,
+          "name": "entry1"
+        },
+        {
+          "depth": 32,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            441.6
+          ],
+          "ratio": 135,
+          "name": "entry3"
+        },
+        {
+          "depth": 36,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            292,
+            441.6
+          ],
+          "ratio": 133,
+          "name": "entry2"
+        }
+      ]
+    },
+    "abyssCenter": {
+      "frame": 144,
+      "name": "黑渊战场中",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4469,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2807,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 141,
+          "name": "ground"
+        },
+        {
+          "depth": 20,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            292,
+            107.6
+          ],
+          "ratio": 143,
+          "name": "entry2"
+        },
+        {
+          "depth": 24,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            292,
+            437.6
+          ],
+          "ratio": 143,
+          "name": "entry3"
+        },
+        {
+          "depth": 28,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            257.6
+          ],
+          "ratio": 135,
+          "name": "entry1"
+        },
+        {
+          "depth": 40,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            257.6
+          ],
+          "ratio": 142,
+          "name": "entry4"
+        }
+      ]
+    },
+    "abyssDown": {
+      "frame": 146,
+      "name": "黑渊战场下",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4469,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2807,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 141,
+          "name": "ground"
+        },
+        {
+          "depth": 12,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            137.6
+          ],
+          "ratio": 145,
+          "name": "entry1"
+        },
+        {
+          "depth": 16,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            542,
+            137.6
+          ],
+          "ratio": 145,
+          "name": "entry3"
+        },
+        {
+          "depth": 20,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            292,
+            137.6
+          ],
+          "ratio": 143,
+          "name": "entry2"
+        }
+      ]
+    },
+    "abyssRight": {
+      "frame": 150,
+      "name": "黑渊战场右",
+      "layers": [
+        {
+          "depth": 1,
+          "characterId": 4469,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "depth": 2,
+          "characterId": 2807,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "color": {
+            "mult": [
+              256,
+              256,
+              256,
+              77
+            ],
+            "add": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "ratio": 141,
+          "name": "ground"
+        },
+        {
+          "depth": 12,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            106
+          ],
+          "ratio": 145,
+          "name": "entry1"
+        },
+        {
+          "depth": 16,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            436
+          ],
+          "ratio": 145,
+          "name": "entry3"
+        },
+        {
+          "depth": 20,
+          "characterId": 4247,
+          "matrix": [
+            1,
+            0,
+            0,
+            1,
+            42,
+            256
+          ],
+          "ratio": 143,
           "name": "entry2"
         }
       ]
