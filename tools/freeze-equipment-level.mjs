@@ -1,0 +1,6 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {functionRange} from './lib/as2-data.mjs';
+const baseline='docs/reverse-engineering/equipment-magic/source-functions.json',role='local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as',text=fs.readFileSync(role,'utf8');
+const hash=path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')});
+const nameTables=fs.readFileSync('local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as','utf8').split(/\r?\n/).filter(line=>/^_global\.(战士|法师)(weapon|clothe|helmet|shoes)Name =/.test(line)).join('\n');
+const functions=Object.fromEntries(['function set xxx_maxLevels(val)','function get maxLevels()'].map(marker=>[marker,functionRange(text,marker).text]));
+fs.mkdirSync('docs/reverse-engineering/equipment-level',{recursive:true});fs.writeFileSync('docs/reverse-engineering/equipment-level/source-reference.json',JSON.stringify({nameTables,baseline:hash(baseline),hashes:[hash(role),hash(role.replace('/as/','/pcode/').replace('.as','.pcode'))],functions,scope:'makeItem/useGem/yes/upDataWeapon are consumed from the existing independently frozen baseline without rewriting it.'},null,2)+'\n');

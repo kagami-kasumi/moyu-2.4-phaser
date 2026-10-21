@@ -1,0 +1,10 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {functionRange} from './lib/as2-data.mjs';
+const base='local-resources/moyu/source-index/',read=f=>fs.readFileSync(base+'as/scripts/'+f+'.as','utf8');
+const npc='DefineSprite_4312/frame_1/DoAction',bag='frame_9/DoAction',role='__Packages/RoleMC',text=read(npc);
+const cases=Object.fromEntries([3011,3103,3104,3105,3106,3107,3108,3109,13111].map(id=>[id,text.slice(text.indexOf('      case '+id+':'),text.indexOf('      case ',text.indexOf('      case '+id+':')+12))]));
+const functions={command:'{ this.clearAnswer(); switch(nextCmd) {\n'+Object.values(cases).join('\n')+'\n} this.openDialog(); }'};
+for(const n of ['accountThing','useThing'])functions[n]=functionRange(read(bag),'this.backPack.'+n+' = function').text;
+functions.spendRes=functionRange(read(role),'function spendRes(').text;
+const files=[npc,bag,role,'DefineSprite_4536/frame_1/DoAction','DefineSprite_4536/frame_8/DoAction'];
+const hashes=files.flatMap(f=>['as','pcode'].map(ext=>{const path=base+ext+'/scripts/'+f+'.'+ext;return {path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')};}));
+const out='docs/reverse-engineering/outskirts-trade/source-functions.json';fs.mkdirSync('docs/reverse-engineering/outskirts-trade',{recursive:true});if(fs.existsSync(out))throw Error('Frozen baseline exists');fs.writeFileSync(out,JSON.stringify({cases,functions,hashes},null,2)+'\n');

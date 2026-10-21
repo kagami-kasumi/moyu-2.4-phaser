@@ -1,0 +1,50 @@
+{
+  "tool": "FFDec 26.0.0",
+  "command": "ffdec-cli -onerror abort -selectid 2798,2796,2794,2792,4333,4335,4337,4339,4297,4301,4263 -format shape:png -export shape local-resources/moyu/royal-wings-063-reference 魔域2.4.swf",
+  "files": [
+    {
+      "file": "baseline/2798.png",
+      "sha256": "395b2066b5e5db2d51e14b11bcd32350f7eb171378c3115253001612a38d8607"
+    },
+    {
+      "file": "baseline/2796.png",
+      "sha256": "696a6f670899a2724094c0fd4cade5bc354dcb2eaa3e0dba0f091d75b5bfbc20"
+    },
+    {
+      "file": "baseline/2794.png",
+      "sha256": "5f8a2fc9d07571fcfc2a72a634e05825872c183212f7dc1dabeb8ae471752506"
+    },
+    {
+      "file": "baseline/2792.png",
+      "sha256": "743ecafa557aa26c465646b14798d72827d10395df2af5f5cb942cb9a0664f2f"
+    },
+    {
+      "file": "baseline/4333.png",
+      "sha256": "99fdf9164fa8c549108eb532188328e7e17aa424de7aa5dfdb351b77017fcab8"
+    },
+    {
+      "file": "baseline/4335.png",
+      "sha256": "f124512cd8e05d6274f1ff798dcf4276925d80f5dd9caa9467824a3cd24d6c62"
+    },
+    {
+      "file": "baseline/4337.png",
+      "sha256": "ce4855f90ab43960f570e9d4284cfd768d35988a002c753355c9d8519b49dafc"
+    },
+    {
+      "file": "baseline/4339.png",
+      "sha256": "7d8436d078c58562c982b8ffc40e414a3bbf857c9ce6bb8d5cb3a605ad1e7100"
+    },
+    {
+      "file": "baseline/4297.png",
+      "sha256": "15769b5c82a7c500db9adb57728893a4434d3afec058c5ca92084a6f0cde976e"
+    },
+    {
+      "file": "baseline/4301.png",
+      "sha256": "b5f9cc5dd3469ac5a0c3781713a2c5ab797bfbaa57f460eaf25992a89ff4f746"
+    },
+    {
+      "file": "baseline/4263.png",
+      "sha256": "e39e7605056d563315ef8c9f4b464dcacb520ddace4b4e78f2280f50c35cddc9"
+    }
+  ]
+}

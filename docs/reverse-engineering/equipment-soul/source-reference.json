@@ -1,0 +1,25 @@
+{
+  "hashes": [
+    {
+      "path": "docs/reverse-engineering/equipment-magic/source-functions.json",
+      "sha256": "0dadeb286685b3f6d689168e6f2980a62314a66e6f9d30a1fed501ddd64df1e5"
+    },
+    {
+      "path": "docs/reverse-engineering/equipment-elements/source-functions.json",
+      "sha256": "b43a60cc18e9cbea2afaaa1c5c813af0d6cd15e40207a5b70c8eb99ce9be6a77"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+      "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+    }
+  ],
+  "scope": "Full unchanged makeItem/useGem/yes/upDataWeapon and equipment init/flashAttribute consumed by independent VM oracle",
+  "forge": "frame_9/DoAction.as:3915-3927",
+  "attributes": "frame_9/DoAction.as:2115-2157",
+  "pcode": "frame_9/DoAction.pcode:15660-15710",
+  "save": "DoAction_2 make_item omits val1/val2; make_stone/backPack/equipment include them"
+}

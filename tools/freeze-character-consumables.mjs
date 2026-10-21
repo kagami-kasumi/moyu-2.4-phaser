@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {functionRange} from './lib/as2-data.mjs';
+const base='local-resources/moyu/source-index/',files=['frame_9/DoAction','__Packages/RoleMC','DefineSprite_4591/frame_1/DoAction','DefineSprite_4556/frame_1/DoAction','DefineSprite_4603/frame_1/DoAction'];
+const read=f=>fs.readFileSync(base+'as/scripts/'+f+'.as','utf8');
+const functions={};
+for(const [key,file,marker]of [['useItem',files[0],'this.useItem = function(item)'],['setThing',files[2],'this.setThing = function(target)'],['petSetThing',files[3],'this.setThing = function(target)'],['roleStats',files[1],'function flashAttribute()']])functions[key]=functionRange(read(file),marker).text;
+for(const p of ['life','xxx_maxLife','maxLife','mp','maxMp','lifeSourseLevels','maxLifeSourse','lifeSourse','mpSourseLevels','maxMpSourse','mpSourse'])for(const kind of ['get','set'])functions[kind+'_'+p]=functionRange(read(files[1]),`function ${kind} ${p}(${kind==='set'?'val':''})`).text;
+const hashes=files.flatMap(f=>['as','pcode'].map(format=>{const path=base+format+'/scripts/'+f+'.'+format;return {path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')};}));
+const dir='docs/reverse-engineering/character-consumables';fs.mkdirSync(dir,{recursive:true});
+fs.writeFileSync(dir+'/source-functions.json',JSON.stringify({functions,hashes},null,2)+'\n');

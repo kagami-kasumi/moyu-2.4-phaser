@@ -18,8 +18,74 @@
 | LINE-EQUIPMENT-SOCKETS | 月光宝盒装备开孔 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-SOCKETS.md) |
 | LINE-EQUIPMENT-MAGIC | 装备魔魂强化 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-MAGIC.md) |
 | LINE-EQUIPMENT-QUALITY | 灵魂晶石装备品质提升 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-QUALITY.md) |
-| LINE-PLAYER-EXPERIENCE | 经验球人物升级 | Active | [覆盖](feature-line-coverage/LINE-PLAYER-EXPERIENCE.md) |
+| LINE-PLAYER-EXPERIENCE | 经验球人物升级 | Done | [覆盖](feature-line-coverage/LINE-PLAYER-EXPERIENCE.md) |
 | LINE-GAME-FOUNDATIONS | 全局数据、角色入口与存档 | Done | [覆盖](feature-line-coverage/LINE-GAME-FOUNDATIONS.md) |
+| LINE-CHARACTER-CONSUMABLES | 人物消耗品与储备资源 | Done | [覆盖](feature-line-coverage/LINE-CHARACTER-CONSUMABLES.md) |
+| LINE-CHARACTER-SKILLS | 人物技能书学习与被动属性 | Done | [覆盖](feature-line-coverage/LINE-CHARACTER-SKILLS.md) |
+| LINE-ORDINARY-SHOP | 城内杂货商购买与出售 | Done | [覆盖](feature-line-coverage/LINE-ORDINARY-SHOP.md) |
+| LINE-PHARMACY | 城内药店与采购使用 | Done | [覆盖](feature-line-coverage/LINE-PHARMACY.md) |
+| LINE-EQUIPMENT-LEVEL | 四类装备使用等级提升 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-LEVEL.md) |
+| LINE-EQUIPMENT-GEMS | 装备宝石镶嵌与拆取 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-GEMS.md) |
+| LINE-RING-FORGE | 戒指品质与精炼 | Done | [覆盖](feature-line-coverage/LINE-RING-FORGE.md) |
+| LINE-VETERAN-LEVEL-REWARDS | 老兵等级奖励 | Done | [覆盖](feature-line-coverage/LINE-VETERAN-LEVEL-REWARDS.md) |
+| LINE-EQUIPMENT-ELEMENTS | 装备元素附加与成长 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-ELEMENTS.md) |
+| LINE-EQUIPMENT-REFORGE | 四类装备高阶重铸 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-REFORGE.md) |
+| LINE-EQUIPMENT-SOUL | 装备魔之魂十类属性附加 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-SOUL.md) |
+| LINE-OUTSKIRTS-TRADE | 城郊管理员资源与通行物交易 | Done | [覆盖](feature-line-coverage/LINE-OUTSKIRTS-TRADE.md) |
+| LINE-OUTSKIRTS-PROPERTY | 卡萨诺城郊区产权购买 | Done | [覆盖](feature-line-coverage/LINE-OUTSKIRTS-PROPERTY.md) |
+| LINE-CITY-ROUNDTRIP | 城郊与城内持续往返 | Done | [覆盖](feature-line-coverage/LINE-CITY-ROUNDTRIP.md) |
+| LINE-SHOP-UPGRADES | 杂货商升级任务与全货品解锁 | Done | [覆盖](feature-line-coverage/LINE-SHOP-UPGRADES.md) |
+| LINE-GEM-FUSION | 高级宝石融合与三类圣石 | Done | [覆盖](feature-line-coverage/LINE-GEM-FUSION.md) |
+| LINE-WAREHOUSE | 54格仓库存取与旧档恢复 | Done | [覆盖](feature-line-coverage/LINE-WAREHOUSE.md) |
+| LINE-CITY-SECOND | 城二区往返与军团仓库入口 | Done | [覆盖](feature-line-coverage/LINE-CITY-SECOND.md) |
+| LINE-LEGION-PACKING | 军团管理员三类晶石打包 | Done | [覆盖](feature-line-coverage/LINE-LEGION-PACKING.md) |
+| LINE-EQUIPMENT-RECYCLE | 装备回收与经验球兑换 | Done | [覆盖](feature-line-coverage/LINE-EQUIPMENT-RECYCLE.md) |
+| LINE-CITY-THIRD | 城三区往返与经验导师入口 | Done | [覆盖](feature-line-coverage/LINE-CITY-THIRD.md) |
+| LINE-PET-SHOP | 城三幻兽商店交易 | Done | [覆盖](feature-line-coverage/LINE-PET-SHOP.md) |
+| LINE-PET-SHOP-UPGRADES | 幻兽商四阶段升级 | Done | [覆盖](feature-line-coverage/LINE-PET-SHOP-UPGRADES.md) |
+| LINE-PET-DETAILS | 幻兽属性与评分详情 | Done | [覆盖](feature-line-coverage/LINE-PET-DETAILS.md) |
+| LINE-PET-HATCHING | 完整幻兽孵化 | Done | [覆盖](feature-line-coverage/LINE-PET-HATCHING.md) |
+| LINE-PET-COLLECTION | 幻兽收藏整理与释放 | Done | [覆盖](feature-line-coverage/LINE-PET-COLLECTION.md) |
+| LINE-PET-PROGRESSION | 幻兽出征与经验成长 | Done | [覆盖](feature-line-coverage/LINE-PET-PROGRESSION.md) |
+| LINE-PET-RECOVERY | 幻兽治疗与城郊复活 | Done | [覆盖](feature-line-coverage/LINE-PET-RECOVERY.md) |
+| LINE-PET-BELLS | 三槽幻兽铃铛装备 | Done | [覆盖](feature-line-coverage/LINE-PET-BELLS.md) |
+| LINE-BELL-FUSION | 铃铛双槽融合打造 | Done | [覆盖](feature-line-coverage/LINE-BELL-FUSION.md) |
+| LINE-PET-ADVANCEMENT | 幻兽进阶道具与代际进化 | Done | [覆盖](feature-line-coverage/LINE-PET-ADVANCEMENT.md) |
+| LINE-PET-PILL-CRAFTING | 幻化师转世丹制作 | Done | [覆盖](feature-line-coverage/LINE-PET-PILL-CRAFTING.md) |
+| LINE-PET-MAIN-FUSION | 幻兽主属性幻化 | Done | [覆盖](feature-line-coverage/LINE-PET-MAIN-FUSION.md) |
+| LINE-PET-REBIRTH-FUSION | 幻兽转世幻化 | Done | [覆盖](feature-line-coverage/LINE-PET-REBIRTH-FUSION.md) |
+| LINE-PET-TITLES | 幻兽评称与名额持久化 | Done | [覆盖](feature-line-coverage/LINE-PET-TITLES.md) |
+| LINE-PET-MERGE | 幻兽合体状态与人物属性 | Done | [覆盖](feature-line-coverage/LINE-PET-MERGE.md) |
+| LINE-SAFE-RECOVERY | 安全区域进入恢复与储备补充 | Done | [覆盖](feature-line-coverage/LINE-SAFE-RECOVERY.md) |
+| LINE-PARTY-HEALING | 全队药品与储备自动分配 | Done | [覆盖](feature-line-coverage/LINE-PARTY-HEALING.md) |
+| LINE-PALACE | 皇宫探索与元帅捐献旅程 | Done | [覆盖](feature-line-coverage/LINE-PALACE.md) |
+| LINE-PALACE-LOTTERY | 皇宫宝箱抽奖 | Done | [覆盖](feature-line-coverage/LINE-PALACE-LOTTERY.md) |
+| LINE-ROYAL-WINGS | 皇宫侧区探索与王室宝箱 | Done | [覆盖](feature-line-coverage/LINE-ROYAL-WINGS.md) |
+| LINE-FIRST-COMBAT | 卡萨诺城野外一首战 | Done | [覆盖](feature-line-coverage/LINE-FIRST-COMBAT.md) |
+| LINE-KASANO-TRAINING | 卡萨诺新手训练后续区域 | Done | [覆盖](feature-line-coverage/LINE-KASANO-TRAINING.md) |
+| LINE-KASANO-FINALE | 卡萨诺野外终章与头目宝箱 | Done | [覆盖](feature-line-coverage/LINE-KASANO-FINALE.md) |
+| LINE-MARSHAL-QUESTS | 元帅爵位与军衔任务 | Done | [覆盖](feature-line-coverage/LINE-MARSHAL-QUESTS.md) |
+| LINE-LUCKY-GATE | 幸运之门三十轮挑战 | Done | [覆盖](feature-line-coverage/LINE-LUCKY-GATE.md) |
+| LINE-KASANO-MIRAGE | 卡萨诺幻境战斗与奖励旅程 | Done | [覆盖](feature-line-coverage/LINE-KASANO-MIRAGE.md) |
+| LINE-SHUXIN-BANDITS | 树心路强盗任务与通路 | Done | [覆盖](feature-line-coverage/LINE-SHUXIN-BANDITS.md) |
+| LINE-SHUXIN-CITY | 树心城与幻境往返 | Done | [覆盖](feature-line-coverage/LINE-SHUXIN-CITY.md) |
+| LINE-GOBI-BATTLE | 接应国王与戈壁战场 | Done | [覆盖](feature-line-coverage/LINE-GOBI-BATTLE.md) |
+| LINE-GOBI-CITY | 戈壁城与幻境往返 | Done | [覆盖](feature-line-coverage/LINE-GOBI-CITY.md) |
+| LINE-GOBI-PET-MERCHANT | 戈壁幻兽商五类幻兽卡交易 | Done | [覆盖](feature-line-coverage/LINE-GOBI-PET-MERCHANT.md) |
+| LINE-KING-HONOR | 国王荣誉任务闭环 | Done | [覆盖](feature-line-coverage/LINE-KING-HONOR.md) |
+| LINE-SWAMP-BATTLE | 进入沼泽与第6军团战场 | Done | [覆盖](feature-line-coverage/LINE-SWAMP-BATTLE.md) |
+| LINE-SWAMP-CITY | 沼泽城市与幻境往返 | Done | [覆盖](feature-line-coverage/LINE-SWAMP-CITY.md) |
+| LINE-SWAMP-ARTISAN | 沼泽巧匠材料合成与装备消费 | Done | [覆盖](feature-line-coverage/LINE-SWAMP-ARTISAN.md) |
+| LINE-SOUTH-BATTLE | 南城郊区与第5军团 | Done | [覆盖](feature-line-coverage/LINE-SOUTH-BATTLE.md) |
+| LINE-SOUTH-CITY | 南城城区与幻境往返 | Done | [覆盖](feature-line-coverage/LINE-SOUTH-CITY.md) |
+| LINE-SOUTH-PET-MERCHANT | 南城幻兽商五种35星卡 | Done | [覆盖](feature-line-coverage/LINE-SOUTH-PET-MERCHANT.md) |
+| LINE-SOUTH-RESCUE | 南城劫狱支线与公爵回报 | Done | [覆盖](feature-line-coverage/LINE-SOUTH-RESCUE.md) |
+| LINE-SOUTH-FIELD | 南城炎女头目与野外五完整循环 | Done | [覆盖](feature-line-coverage/LINE-SOUTH-FIELD.md) |
+| LINE-BORDER-CITY | 边关城市与边境幻境旅程 | Done | [覆盖](feature-line-coverage/LINE-BORDER-CITY.md) |
+| LINE-BORDER-FIELD | 边关野外与刺虫人头目完整循环 | Done | [覆盖](feature-line-coverage/LINE-BORDER-FIELD.md) |
+| LINE-ICE-BATTLE | 冰封走廊与反攻第4军团 | Done | [覆盖](feature-line-coverage/LINE-ICE-BATTLE.md) |
+| LINE-ICE-PALACE-BATTLE | 冰宫郊区与进入冰宫第3军团 | Done | [覆盖](feature-line-coverage/LINE-ICE-PALACE-BATTLE.md) |
+| LINE-ICE-PALACE-CITY | 冰宫城市与幻境旅程 | Active | [覆盖](feature-line-coverage/LINE-ICE-PALACE-CITY.md) |
 
 ## 任务
 
@@ -45,4 +111,70 @@
 | TASK-ENTRY-021 | 开始菜单与全部角色新建入口 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-DATA-020 | [合同](task-definitions/TASK-ENTRY-021.md) |
 | TASK-SAVE-016 | 完整进度保存与继续游戏 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-ENTRY-021 | [合同](task-definitions/TASK-SAVE-016.md) |
 | TASK-SAVE-022 | 存档迁移、备份与异常恢复 | implementation | LINE-GAME-FOUNDATIONS | Done | TASK-SAVE-016 | [合同](task-definitions/TASK-SAVE-022.md) |
-| TASK-GROWTH-014 | 经验球人物升级闭环 | implementation | LINE-PLAYER-EXPERIENCE | Ready | TASK-ITEM-013, TASK-SAVE-022 | [合同](task-definitions/TASK-GROWTH-014.md) |
+| TASK-GROWTH-014 | 经验球人物升级闭环 | implementation | LINE-PLAYER-EXPERIENCE | Done | TASK-ITEM-013, TASK-SAVE-022 | [合同](task-definitions/TASK-GROWTH-014.md) |
+| TASK-ITEM-023 | 人物消耗品与储备资源机制包 | implementation | LINE-CHARACTER-CONSUMABLES | Done | TASK-GROWTH-014, TASK-SAVE-022 | [合同](task-definitions/TASK-ITEM-023.md) |
+| TASK-SKILL-024 | 人物技能书学习与被动属性机制包 | implementation | LINE-CHARACTER-SKILLS | Done | TASK-ITEM-023 | [合同](task-definitions/TASK-SKILL-024.md) |
+| TASK-SHOP-025 | 城内杂货商购买与出售机制包 | implementation | LINE-ORDINARY-SHOP | Done | TASK-SKILL-024 | [合同](task-definitions/TASK-SHOP-025.md) |
+| TASK-SHOP-026 | 城内药店与采购使用闭环 | implementation | LINE-PHARMACY | Done | TASK-SHOP-025 | [合同](task-definitions/TASK-SHOP-026.md) |
+| TASK-EQUIP-027 | 四类装备使用等级提升机制包 | implementation | LINE-EQUIPMENT-LEVEL | Done | TASK-SHOP-026 | [合同](task-definitions/TASK-EQUIP-027.md) |
+| TASK-EQUIP-028 | 装备宝石镶嵌与拆取闭环 | implementation | LINE-EQUIPMENT-GEMS | Done | TASK-EQUIP-027 | [合同](task-definitions/TASK-EQUIP-028.md) |
+| TASK-EQUIP-029 | 戒指品质与精炼闭环 | implementation | LINE-RING-FORGE | Done | TASK-EQUIP-028 | [合同](task-definitions/TASK-EQUIP-029.md) |
+| TASK-NPC-030 | 老兵等级奖励与成长领取闭环 | implementation | LINE-VETERAN-LEVEL-REWARDS | Done | TASK-EQUIP-029 | [合同](task-definitions/TASK-NPC-030.md) |
+| TASK-EQUIP-031 | 装备元素附加与元素石成长 | implementation | LINE-EQUIPMENT-ELEMENTS | Done | TASK-NPC-030 | [合同](task-definitions/TASK-EQUIP-031.md) |
+| TASK-EQUIP-032 | 四类装备高阶重铸 | implementation | LINE-EQUIPMENT-REFORGE | Done | TASK-EQUIP-031 | [合同](task-definitions/TASK-EQUIP-032.md) |
+| TASK-EQUIP-033 | 装备魔之魂十类属性附加 | implementation | LINE-EQUIPMENT-SOUL | Done | TASK-EQUIP-032 | [合同](task-definitions/TASK-EQUIP-033.md) |
+| TASK-NPC-034 | 城郊管理员资源与通行物交易 | implementation | LINE-OUTSKIRTS-TRADE | Done | TASK-EQUIP-033 | [合同](task-definitions/TASK-NPC-034.md) |
+| TASK-NPC-035 | 卡萨诺城郊区产权购买 | implementation | LINE-OUTSKIRTS-PROPERTY | Done | TASK-NPC-034 | [合同](task-definitions/TASK-NPC-035.md) |
+| TASK-WORLD-036 | 城郊与城内持续往返旅程 | implementation | LINE-CITY-ROUNDTRIP | Done | TASK-NPC-035 | [合同](task-definitions/TASK-WORLD-036.md) |
+| TASK-SHOP-037 | 杂货商升级任务与全货品解锁 | implementation | LINE-SHOP-UPGRADES | Done | TASK-WORLD-036 | [合同](task-definitions/TASK-SHOP-037.md) |
+| TASK-GEM-038 | 高级宝石融合与三类圣石 | implementation | LINE-GEM-FUSION | Done | TASK-SHOP-037 | [合同](task-definitions/TASK-GEM-038.md) |
+| TASK-BAG-039 | 54格仓库存取与旧档恢复 | implementation | LINE-WAREHOUSE | Done | TASK-GEM-038 | [合同](task-definitions/TASK-BAG-039.md) |
+| TASK-WORLD-040 | 城二区往返与军团仓库入口 | implementation | LINE-CITY-SECOND | Done | TASK-BAG-039 | [合同](task-definitions/TASK-WORLD-040.md) |
+| TASK-NPC-041 | 军团管理员三类晶石打包 | implementation | LINE-LEGION-PACKING | Done | TASK-WORLD-040 | [合同](task-definitions/TASK-NPC-041.md) |
+| TASK-EQUIP-042 | 装备回收与经验球兑换 | implementation | LINE-EQUIPMENT-RECYCLE | Done | TASK-NPC-041 | [合同](task-definitions/TASK-EQUIP-042.md) |
+| TASK-WORLD-043 | 城三区往返与经验导师入口 | implementation | LINE-CITY-THIRD | Done | TASK-EQUIP-042 | [合同](task-definitions/TASK-WORLD-043.md) |
+| TASK-SHOP-044 | 城三幻兽商店交易与孵化旅程 | implementation | LINE-PET-SHOP | Done | TASK-WORLD-043 | [合同](task-definitions/TASK-SHOP-044.md) |
+| TASK-SHOP-045 | 幻兽商四阶段升级与奖励 | implementation | LINE-PET-SHOP-UPGRADES | Done | TASK-SHOP-044 | [合同](task-definitions/TASK-SHOP-045.md) |
+| TASK-PET-046 | 幻兽属性与评分详情 | implementation | LINE-PET-DETAILS | Done | TASK-SHOP-045 | [合同](task-definitions/TASK-PET-046.md) |
+| TASK-PET-047 | 完整幻兽孵化与初始化 | implementation | LINE-PET-HATCHING | Done | TASK-PET-046 | [合同](task-definitions/TASK-PET-047.md) |
+| TASK-PET-048 | 幻兽收藏整理与释放 | implementation | LINE-PET-COLLECTION | Done | TASK-PET-047 | [合同](task-definitions/TASK-PET-048.md) |
+| TASK-PET-049 | 幻兽出征召回与经验球成长 | implementation | LINE-PET-PROGRESSION | Done | TASK-PET-048 | [合同](task-definitions/TASK-PET-049.md) |
+| TASK-PET-050 | 幻兽治疗与城郊复活 | implementation | LINE-PET-RECOVERY | Done | TASK-PET-049 | [合同](task-definitions/TASK-PET-050.md) |
+| TASK-PET-051 | 三槽幻兽铃铛装备 | implementation | LINE-PET-BELLS | Done | TASK-PET-050 | [合同](task-definitions/TASK-PET-051.md) |
+| TASK-PET-052 | 铃铛双槽融合打造 | implementation | LINE-BELL-FUSION | Done | TASK-PET-051 | [合同](task-definitions/TASK-PET-052.md) |
+| TASK-PET-053 | 幻兽进阶道具与代际进化 | implementation | LINE-PET-ADVANCEMENT | Done | TASK-PET-052 | [合同](task-definitions/TASK-PET-053.md) |
+| TASK-NPC-054 | 幻化师转世丹制作 | implementation | LINE-PET-PILL-CRAFTING | Done | TASK-PET-053 | [合同](task-definitions/TASK-NPC-054.md) |
+| TASK-PET-055 | 幻兽主属性幻化 | implementation | LINE-PET-MAIN-FUSION | Done | TASK-NPC-054 | [合同](task-definitions/TASK-PET-055.md) |
+| TASK-PET-056 | 幻兽转世幻化 | implementation | LINE-PET-REBIRTH-FUSION | Done | TASK-PET-055 | [合同](task-definitions/TASK-PET-056.md) |
+| TASK-PET-057 | 幻兽评称与名额持久化 | implementation | LINE-PET-TITLES | Done | TASK-PET-056 | [合同](task-definitions/TASK-PET-057.md) |
+| TASK-PET-058 | 幻兽合体状态与人物属性 | implementation | LINE-PET-MERGE | Done | TASK-PET-057 | [合同](task-definitions/TASK-PET-058.md) |
+| TASK-WORLD-059 | 安全区域进入恢复与储备补充 | implementation | LINE-SAFE-RECOVERY | Done | TASK-PET-058 | [合同](task-definitions/TASK-WORLD-059.md) |
+| TASK-ITEM-060 | 全队药品与储备自动分配 | implementation | LINE-PARTY-HEALING | Done | TASK-WORLD-059 | [合同](task-definitions/TASK-ITEM-060.md) |
+| TASK-WORLD-061 | 皇宫探索与元帅捐献旅程 | implementation | LINE-PALACE | Done | TASK-ITEM-060 | [合同](task-definitions/TASK-WORLD-061.md) |
+| TASK-NPC-062 | 皇宫宝箱抽奖与奖品使用旅程 | implementation | LINE-PALACE-LOTTERY | Done | TASK-WORLD-061 | [合同](task-definitions/TASK-NPC-062.md) |
+| TASK-WORLD-063 | 皇宫侧区探索与王室宝箱旅程 | implementation | LINE-ROYAL-WINGS | Done | TASK-NPC-062 | [合同](task-definitions/TASK-WORLD-063.md) |
+| TASK-WORLD-064 | 卡萨诺城野外一首战与返回旅程 | implementation | LINE-FIRST-COMBAT | Done | TASK-WORLD-063 | [合同](task-definitions/TASK-WORLD-064.md) |
+| TASK-WORLD-065 | 卡萨诺野外二三与新手训练后续旅程 | implementation | LINE-KASANO-TRAINING | Done | TASK-WORLD-064 | [合同](task-definitions/TASK-WORLD-065.md) |
+| TASK-WORLD-066 | 卡萨诺野外终章与头目宝箱旅程 | implementation | LINE-KASANO-FINALE | Done | TASK-WORLD-065 | [合同](task-definitions/TASK-WORLD-066.md) |
+| TASK-NPC-067 | 元帅爵位与军衔任务旅程 | implementation | LINE-MARSHAL-QUESTS | Done | TASK-WORLD-066 | [合同](task-definitions/TASK-NPC-067.md) |
+| TASK-WORLD-068 | 幸运之门三十轮挑战 | implementation | LINE-LUCKY-GATE | Done | TASK-NPC-067 | [合同](task-definitions/TASK-WORLD-068.md) |
+| TASK-WORLD-069 | 卡萨诺幻境战斗与奖励旅程 | implementation | LINE-KASANO-MIRAGE | Done | TASK-WORLD-068 | [合同](task-definitions/TASK-WORLD-069.md) |
+| TASK-WORLD-070 | 树心路强盗任务与通路 | implementation | LINE-SHUXIN-BANDITS | Done | TASK-WORLD-069 | [合同](task-definitions/TASK-WORLD-070.md) |
+| TASK-WORLD-071 | 树心城与幻境往返 | implementation | LINE-SHUXIN-CITY | Done | TASK-WORLD-070 | [合同](task-definitions/TASK-WORLD-071.md) |
+| TASK-WORLD-072 | 接应国王与戈壁战场 | implementation | LINE-GOBI-BATTLE | Done | TASK-WORLD-071 | [合同](task-definitions/TASK-WORLD-072.md) |
+| TASK-WORLD-073 | 戈壁城与幻境往返 | implementation | LINE-GOBI-CITY | Done | TASK-WORLD-072 | [合同](task-definitions/TASK-WORLD-073.md) |
+| TASK-SHOP-074 | 戈壁幻兽商五类幻兽卡交易 | implementation | LINE-GOBI-PET-MERCHANT | Done | TASK-WORLD-073 | [合同](task-definitions/TASK-SHOP-074.md) |
+| TASK-QUEST-075 | 国王荣誉任务闭环 | implementation | LINE-KING-HONOR | Done | TASK-SHOP-074 | [合同](task-definitions/TASK-QUEST-075.md) |
+| TASK-WORLD-076 | 进入沼泽与第6军团战场 | implementation | LINE-SWAMP-BATTLE | Done | TASK-QUEST-075 | [合同](task-definitions/TASK-WORLD-076.md) |
+| TASK-WORLD-077 | 沼泽城市与幻境往返 | implementation | LINE-SWAMP-CITY | Done | TASK-WORLD-076 | [合同](task-definitions/TASK-WORLD-077.md) |
+| TASK-WORLD-078 | 沼泽巧匠材料合成与装备消费 | implementation | LINE-SWAMP-ARTISAN | Done | TASK-WORLD-077 | [合同](task-definitions/TASK-WORLD-078.md) |
+| TASK-WORLD-079 | 南城郊区与第5军团 | implementation | LINE-SOUTH-BATTLE | Done | TASK-WORLD-078 | [合同](task-definitions/TASK-WORLD-079.md) |
+| TASK-WORLD-080 | 南城城区与幻境往返 | implementation | LINE-SOUTH-CITY | Done | TASK-WORLD-079 | [合同](task-definitions/TASK-WORLD-080.md) |
+| TASK-SHOP-081 | 南城幻兽商五种35星卡 | implementation | LINE-SOUTH-PET-MERCHANT | Done | TASK-WORLD-080 | [合同](task-definitions/TASK-SHOP-081.md) |
+| TASK-QUEST-082 | 南城劫狱支线与公爵回报 | implementation | LINE-SOUTH-RESCUE | Done | TASK-SHOP-081 | [合同](task-definitions/TASK-QUEST-082.md) |
+| TASK-WORLD-083 | 南城炎女头目与野外五完整循环 | implementation | LINE-SOUTH-FIELD | Done | TASK-QUEST-082 | [合同](task-definitions/TASK-WORLD-083.md) |
+| TASK-WORLD-084 | 边关城市与边境幻境旅程 | implementation | LINE-BORDER-CITY | Done | TASK-WORLD-083 | [合同](task-definitions/TASK-WORLD-084.md) |
+| TASK-WORLD-085 | 边关野外与刺虫人头目完整循环 | implementation | LINE-BORDER-FIELD | Done | TASK-WORLD-084 | [合同](task-definitions/TASK-WORLD-085.md) |
+| TASK-WORLD-086 | 冰封走廊与反攻第4军团 | implementation | LINE-ICE-BATTLE | Done | TASK-WORLD-085 | [合同](task-definitions/TASK-WORLD-086.md) |
+| TASK-WORLD-087 | 冰宫郊区与进入冰宫第3军团 | implementation | LINE-ICE-PALACE-BATTLE | Done | TASK-WORLD-086 | [合同](task-definitions/TASK-WORLD-087.md) |
+| TASK-WORLD-088 | 冰宫城市与幻境旅程 | implementation | LINE-ICE-PALACE-CITY | Active | TASK-WORLD-087 | [合同](task-definitions/TASK-WORLD-088.md) |

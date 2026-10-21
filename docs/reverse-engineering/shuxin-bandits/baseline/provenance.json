@@ -1,0 +1,103 @@
+{
+  "tool": "FFDec 26.0.0",
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "command": "ffdec-cli -onerror abort -selectid 2778,2788,2804,2806,3729,3730,3732,3734,3736,3738,3740,3742,3745,3747,3749,3751,3754,3756,3758,3760,4329,4347,4359,4505 -format shape:png -export shape local-resources/moyu/shuxin-bandits-070-reference 魔域2.4.swf",
+  "files": [
+    {
+      "file": "2778.png",
+      "sha256": "f67eb05840b4a3969c914d37fc230a9a54ff58f712da7c7eb2b1c77fbeab0602"
+    },
+    {
+      "file": "2788.png",
+      "sha256": "0ce927ef1353e1833af231472de3836fb14a8ea49a5929b19139be1b7d2237dd"
+    },
+    {
+      "file": "2804.png",
+      "sha256": "64bb33517a27099287d4dcbb6678f5222913f3fb29d8f243d3c2a82aa9b68a74"
+    },
+    {
+      "file": "2806.png",
+      "sha256": "8c30b0806c7752d4f1759e25aece6262aa15ea50cabad8aab6d330b37ac7f0f3"
+    },
+    {
+      "file": "3729.png",
+      "sha256": "44a39d27c0fec80b8313f3fea573469149211dfe7de00786dbc60487724b234e"
+    },
+    {
+      "file": "3730.png",
+      "sha256": "d8a21d41fe5127d2a69d35dd08a4ba52b6046d77185b3e25a632bd64f03fe2f9"
+    },
+    {
+      "file": "3732.png",
+      "sha256": "fe65b6a392418504706f622fc72ef70b95689a7292234931765008b4d38610fd"
+    },
+    {
+      "file": "3734.png",
+      "sha256": "cb3eab97c0646b9fbf8fedc3d940c7c164290f95797cd12aba891ff3018c1ae5"
+    },
+    {
+      "file": "3736.png",
+      "sha256": "a38b068fbcafa4160674ee13cefe08613b33dab61c201673a4d8d48bbf5138cb"
+    },
+    {
+      "file": "3738.png",
+      "sha256": "9d026dddf9b17e6d4dbcf4bf9df7255f72992d695efb6c75432c93bc9f3c2f43"
+    },
+    {
+      "file": "3740.png",
+      "sha256": "58ab4c93df761f38f50a79f4e71ff18c9d2e852c14958f0e1bf17e5b7317c0ea"
+    },
+    {
+      "file": "3742.png",
+      "sha256": "40915d5b6f1c55a4973d8dd59e5044eb088b0f57b4ce596e60b2cd358465fed1"
+    },
+    {
+      "file": "3745.png",
+      "sha256": "719b947c7c246606bb763f23d6644449be79cdc1c528ca07e8a99c6e090b4500"
+    },
+    {
+      "file": "3747.png",
+      "sha256": "8c436fc48fd7e5ee4af5b89fff9df56798de1ece3db37ae58d80c9f351a5ae51"
+    },
+    {
+      "file": "3749.png",
+      "sha256": "7fd4be07b7773f622d7440b27627c74bb9c4d1467d8d27a89c55470b65508155"
+    },
+    {
+      "file": "3751.png",
+      "sha256": "c1b06c547cdedff85d8cdce7dd741786860987902eea9da72fcc644f49df3e4c"
+    },
+    {
+      "file": "3754.png",
+      "sha256": "6f53b7481452bfbab804752750a9078443424b34696e70396d6e6cf4263d379e"
+    },
+    {
+      "file": "3756.png",
+      "sha256": "99e1eb3e840775b79e59ec732a33d2026a894d68599edd29a361e6cc9e01ab19"
+    },
+    {
+      "file": "3758.png",
+      "sha256": "420343e580b90fc3aa3fbe44b6f83b1d98f3fa72da15044a068cb29ae4ddd4bc"
+    },
+    {
+      "file": "3760.png",
+      "sha256": "2484e76d83137b413586b612c94b8801a4d47dd10cedf1ffb247c7d975d1dae8"
+    },
+    {
+      "file": "4329.png",
+      "sha256": "a5996b43bde0d3352c344f14626b98b90d894d99eae5d12a168577dabd7fdba8"
+    },
+    {
+      "file": "4347.png",
+      "sha256": "62da48fc20034085a0b5b0a95ef7ab75154bc7bf36fe04f88d1682914ea279ba"
+    },
+    {
+      "file": "4359.png",
+      "sha256": "d8a6ade8da39353e0a0fab7a98b8ec05924f0e51bea24417a27e1d817e3a7290"
+    },
+    {
+      "file": "4505.png",
+      "sha256": "2adef8434e01c77e334d1ca08cacc5d4bcb42778de673aea2b36d4ca0ba87a82"
+    }
+  ]
+}

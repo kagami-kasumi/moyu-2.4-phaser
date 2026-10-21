@@ -1,0 +1,38 @@
+{
+  "frames": {
+    "DefineSprite_4536/frame_8/DoAction": "this.allowJumpMap(\"卡萨诺城郊区\");\r\nthis.entry1.toMap = \"卡萨诺城野外一\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.entry2.toMap = \"卡萨诺城一\";\r\nthis.entry2.toEntry = \"entry1\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"老兵\"),170,250);\r\nthis.npc02.appear(getNpc(\"卡萨诺城郊区管理员\"),450,250);\r\nthis.npc03.appear(getNpc(\"花儿\"),300,250);\r\nif(_root.daoshiLv == 0)\r\n{\r\n   this.npc04.appear(getNpc(\"飞翔\"),120,385);\r\n}\r\nelse if(_root.daoshiLv == 1)\r\n{\r\n   this.npc05.appear(getNpc(\"新手导师\"),440,390);\r\n}\r\nelse if(_root.daoshiLv == 2)\r\n{\r\n   this.npc05.appear(getNpc(\"导师\"),440,390);\r\n}\r\nelse if(_root.daoshiLv == 3)\r\n{\r\n   this.npc05.appear(getNpc(\"高手导师\"),440,390);\r\n}\r\nif(getTimer() - _root.tempTaskTime > _root.tempTaskWait && _root.tempTaskPlace != nowMap && Math.random() < _root.tempNpcRand)\r\n{\r\n   _root.tempTaskTime = getTimer();\r\n   _root.tempTaskPlace = nowMap;\r\n   npc06.appear(getNpc(\"白河愁\"),300,300);\r\n}\r\nhomeCity = \"卡萨诺城二\";\r\n_global.playBackSound(\"back.mp3\");\r\nstop();\r\n",
+    "DefineSprite_4536/frame_9/DoAction": "this.allowJumpMap(\"卡萨诺城一\");\r\nthis.entry1.toMap = \"卡萨诺城郊区\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.entry2.toMap = \"卡萨诺城二\";\r\nthis.entry2.toEntry = \"entry1\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"药剂师\"),155,280);\r\nthis.npc02.appear(getNpc(\"杂货商\"),320,310);\r\nthis.npc03.appear(getNpc(\"装备打造师\"),490,350);\r\nhomeCity = \"卡萨诺城二\";\r\n_global.playBackSound(\"back.mp3\");\r\n"
+  },
+  "functions": {
+    "jumpMap": "{\r\n   var _loc2_;\r\n   _loc2_ = 1;\r\n   while(_loc2_ <= 6)\r\n   {\r\n      if(this[\"entry\" + _loc2_].hitTest(this.role._x,this.role._y,false) == true && this[\"entry\" + _loc2_]._visible == true)\r\n      {\r\n         this.jumpToMap(this[\"entry\" + _loc2_]);\r\n         return true;\r\n      }\r\n      _loc2_ = _loc2_ + 1;\r\n   }\r\n   return false;\r\n}",
+    "jumpToMap": "{\r\n   if(entry._alpha == 0)\r\n   {\r\n      return false;\r\n   }\r\n   entry1._visible = true;\r\n   entry2._visible = true;\r\n   entry3._visible = true;\r\n   entry4._visible = true;\r\n   entry5._visible = true;\r\n   entry6._visible = true;\r\n   switch(entry.toMap)\r\n   {\r\n      case \"沼泽郊区\":\r\n         if(_parent.task.getTask(\"接应国王\").isComplete != true)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r前方有魔族军团，没有国王命令不能进入\");\r\n            return false;\r\n         }\r\n         break;\r\n      case \"冰封走廊\":\r\n         if(role.levels < 70)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r前方有魔族军团，70级前不能进入\");\r\n            return false;\r\n         }\r\n         break;\r\n      case \"失落高地一\":\r\n         if(role.levels < 100)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r100级前不能进入\");\r\n            return false;\r\n         }\r\n   }\r\n   if(entry)\r\n   {\r\n      this.nextMap = entry.toMap;\r\n      this.nextEntry = entry.toEntry;\r\n      this.role.myTarget = undefined;\r\n      this.huanShou1.myTarget = undefined;\r\n      this.huanShou2.myTarget = undefined;\r\n      this.huanShou3.myTarget = undefined;\r\n      this.gotoAndStop(this.nextMap);\r\n      return true;\r\n   }\r\n   return false;\r\n}",
+    "allowJumpMap": "{\r\n   if(this.nextMap == toMap)\r\n   {\r\n      this.goods.clearGoods();\r\n      this._parent.closeAllPanel();\r\n      this._parent.warning.close();\r\n      this.nowMap = this.nextMap;\r\n      this.afterJumpMap(this.nowMap);\r\n      return true;\r\n   }\r\n   this.nextMap = this.nowMap;\r\n   this.gotoAndStop(this.nowMap);\r\n   return false;\r\n}",
+    "afterJumpMap": "{\r\n   var _loc4_;\r\n   var _loc3_;\r\n   if(nextEntry != undefined)\r\n   {\r\n      _loc4_ = this[nextEntry]._x;\r\n      _loc3_ = this[nextEntry]._y;\r\n      this.role._x = _loc4_;\r\n      this.role._y = _loc3_;\r\n      this.huanShou1._x = _loc4_ - 15;\r\n      this.huanShou1._y = _loc3_ - 15;\r\n      this.huanShou2._x = _loc4_ + 5;\r\n      this.huanShou2._y = _loc3_ + 5;\r\n      this.huanShou3._x = _loc4_ + 20;\r\n      this.huanShou3._y = _loc3_ + 20;\r\n   }\r\n   this.nextMap = \"\";\r\n   this.nextEntry = \"\";\r\n   _global.ownMap = false;\r\n   this.hideMonster();\r\n   this.hideNPC();\r\n   if(nowMap != \"冰宫郊区\")\r\n   {\r\n      this.冰柱._visible = false;\r\n   }\r\n   return true;\r\n}"
+  },
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_8/DoAction.as",
+      "sha256": "fb1eb574de71555931c28fdd4b854797bfa863aa7c1f8b85eccf3f52e53db870"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_8/DoAction.pcode",
+      "sha256": "6109f38a8b5d6ce0ec7a965e00df5e4410a3822a746e9419ff73fe81d4e12863"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_9/DoAction.as",
+      "sha256": "7b8e4c303277ccc9b64f2c3e664f5133113e6203ad7d5f8364efaf64a83b19cc"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_9/DoAction.pcode",
+      "sha256": "f8df01a2a88a42b7efcac8b766e4546f21c86233222e3330ef6077b12d706289"
+    }
+  ]
+}

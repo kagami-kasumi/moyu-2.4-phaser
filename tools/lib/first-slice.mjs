@@ -28,10 +28,10 @@ export function readShape(s,id){
  const r=new Bits(b,at),rgba=()=>[r.byte(),r.byte(),r.byte(),t.code===2?255:r.byte()],count=()=>{const n=r.byte();return n===255?r.word():n;};
  const fills=[];for(let n=count();n--;){const kind=r.byte();if(kind===0)fills.push({kind,color:rgba()});else{assert([66,67].includes(kind),'bitmap or solid fill only');fills.push({kind,bitmapId:r.word(),matrix:matrix(r)});}}
  const lines=[];for(let n=count();n--;){const width=r.word()/20;if(t.code===83){const start=r.u(2),join=r.u(2),hasFill=r.u(1);r.u(1);r.u(1);r.u(1);r.u(5);r.u(1);const end=r.u(2);assert(!hasFill&&join===0&&start===0&&end===0,'bounded round stroke only');}lines.push({width,color:rgba()});}
- let nf=r.u(4),nl=r.u(4),x=0,y=0;const edges=[];let fill0=0,fill1=0,line=0;
+ let nf=r.u(4),nl=r.u(4),x=0,y=0;const edges=[],segments=[];let fill0=0,fill1=0,line=0;
  while(true){if(!r.u(1)){const flags=r.u(5);if(!flags)break;assert(!(flags&16),'new styles unsupported');if(flags&1){const n=r.u(5);x=r.s(n);y=r.s(n);edges.push(['M',x/20,y/20]);}if(flags&2)fill0=r.u(nf);if(flags&4)fill1=r.u(nf);if(flags&8)line=r.u(nl);}
- else{const straight=r.u(1),n=r.u(4)+2;assert(straight,'bounded straight contours');if(r.u(1)){x+=r.s(n);y+=r.s(n);}else if(r.u(1))y+=r.s(n);else x+=r.s(n);edges.push(['L',x/20,y/20]);}}
- return {id,bounds:[rect.xmin/20,rect.ymin/20,rect.xmax/20,rect.ymax/20],fills,lines,edges,fill0,fill1,line};
+ else{const from=[x/20,y/20],straight=r.u(1),n=r.u(4)+2;if(!straight){const cx=x+r.s(n),cy=y+r.s(n);x=cx+r.s(n);y=cy+r.s(n);edges.push(['Q',cx/20,cy/20,x/20,y/20]);segments.push({from,to:[x/20,y/20],control:[cx/20,cy/20],fill0,fill1,line});}else{if(r.u(1)){x+=r.s(n);y+=r.s(n);}else if(r.u(1))y+=r.s(n);else x+=r.s(n);edges.push(['L',x/20,y/20]);segments.push({from,to:[x/20,y/20],fill0,fill1,line});}}}
+ return {id,bounds:[rect.xmin/20,rect.ymin/20,rect.xmax/20,rect.ymax/20],fills,lines,edges,segments,fill0,fill1,line};
 }
 export async function readBitmap(s,id,sharp){const t=s.chars.get(id),b=s.payload(t);
  if([6,21].includes(t.code))return sharp(b.subarray(2)).ensureAlpha().raw().toBuffer({resolveWithObject:true});

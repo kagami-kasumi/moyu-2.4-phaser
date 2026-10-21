@@ -1,3 +1,4 @@
+import {levelPrize} from './veteran-level-rewards.ts';
 import {literalItem} from '../content/registry.ts';
 import {ITEM_PETS} from '../content/item-pets.ts';
 import {ITEM_STACK_RULES} from '../content/item-stack-rules.ts';
@@ -9,7 +10,7 @@ import {RING_RULES,starterRingSeed} from '../content/ring-rules.ts';
 import type {Profession} from '../content/character-entry.ts';
 /** Bounded first reward rules. Source locators: docs/reverse-engineering/npc-reward/source-contract.md. */
 export interface Item {type:string;name?:string;number?:number;salePrice?:number;[key:string]:string|number|undefined}
-export interface PetRecord {type:string;levels:number;zs:number;maxZs:number;element:number;titleNum:number;rateLife:number;rateMinAttack:number;rateMaxAttack:number;rateDefense:number;battle:boolean}
+export interface PetRecord {life?:number;inOne?:boolean;type:string;levels:number;zs:number;maxZs:number;element:number;titleNum:number;rateLife:number;rateMinAttack:number;rateMaxAttack:number;rateDefense:number;battle:boolean;nowLifeLv?:number;rareFen?:number;nowExp?:number;maxExp?:number;oldLevels?:number;oldNowExp?:number;oldMaxExp?:number;nextLvRate?:number;sd?:number;qyg?:number;isGod?:boolean;sourceExtras?:Record<string,unknown>}
 export interface Drop {item:Item;x:number;y:number}
 export interface Answer {txt:string;cmd:number}
 const ZERO_FIELDS=['minAttack','maxAttack','mMinAttack','mMaxAttack','defense','mDefense','element','wind','fire','soil','water','holes','hole1','gem1','gem11','hole2','gem2','gem12','hole3','gem3','gem13','additional','spirit','spiritVal','spiritLevels','spiritExp'];
@@ -39,7 +40,8 @@ export class NpcReward {
  get ms(){return this.currencyMs;} set ms(value:number){this.currencyMs=roleCurrencyWrite(this.currencyMs,value);}
  get res(){return this.currencyRes;} set res(value:number){this.currencyRes=roleCurrencyWrite(this.currencyRes,value);}
  credit=500;titleLevel=10;
- readonly capacity=40;readonly petCapacity=40;bag:(Item|null)[]=Array.from({length:40},()=>null);pets:PetRecord[]=[];drops:Drop[]=[];messages:string[]=[];
+ petCollectionEdited=false;readonly capacity=40;readonly petCapacity=40;bag:(Item|null)[]=Array.from({length:40},()=>null);pets:PetRecord[]=[];drops:Drop[]=[];messages:string[]=[];
+ upLevelPrize=1;level:()=>number=()=>1;private offeredPrize:number|null=null;
  cmd=1;nextCmd=1;open=false;words='';answers:Answer[]=[];revision=0;claimedPack:number|null=null;
  constructor(readonly name:string,private random:(n:number)=>number=n=>Math.floor(Math.random()*n),readonly profession:Profession='战士',position={x:0,y:0},contains:((x:number,y:number)=>boolean)=()=>true,initialize=true){
   if(!initialize)return;
@@ -51,6 +53,7 @@ export class NpcReward {
    for(const item of [{type:'经验球',number:99},{type:'超级经验球',number:99},{type:'幸运幻化草',number:99},{type:'勇士勋章',number:99},{type:'灵魂礼包',number:99},{type:'宝石',name:'雷元素',number:5},...['炫舞牛','霹雳虎','异界精灵','嘻哈牛','玲珑虎'].map(type=>({type}))])this.store(item,position,contains);
   }
  }
+ randomInt(n:number){return this.random(n);}
  store(value:Item,position={x:0,y:0},contains:((x:number,y:number)=>boolean)=()=>true){
   const item={...value};if((item.number??0)>0){for(const slot of this.bag){if(slot&&slot.type===item.type&&(slot.name===undefined||slot.name===item.name)&&(slot.number??0)>0&&slot.number!<ITEM_STACK_RULES.maxQuantity){const n=Math.min(item.number!,ITEM_STACK_RULES.maxQuantity-slot.number!);slot.number!+=n;item.number!-=n;if(item.number!<=0)return true;}}}
   const index=this.bag.findIndex(slot=>!slot);if(index>=0){this.bag[index]={...item,number:item.number??0};return true;}
@@ -58,7 +61,7 @@ export class NpcReward {
   this.drops.push({item:{...item,number:item.number??0},x,y});this.messages.push('背包已满，物品掉落在地上了');return true;
  }
  interact(){this.execute(this.nextCmd);}
- close(){this.open=false;this.revision++;}
+ close(){this.open=false;this.offeredPrize=null;this.revision++;}
  private consumeMedals(){
   const matches=(item:Item|null):item is Item=>item?.type==='勇士勋章'&&item.name===undefined;
   const count=(item:Item)=>item.number===undefined||item.number===0||Number.isNaN(item.number)?1:item.number;
@@ -74,10 +77,11 @@ export class NpcReward {
  }
  choose(cmd:number,revision=this.revision,position={x:0,y:0},contains:((x:number,y:number)=>boolean)=()=>true){
   if(!this.open||revision!==this.revision||!this.answers.some(a=>a.cmd===cmd))return false;
+  if(cmd>=9&&cmd<=17){const prize=levelPrize(this.upLevelPrize,this.level());if(this.offeredPrize!==this.upLevelPrize||!prize.eligible||!prize.choices.some(c=>c.cmd===cmd))return false;}
   if(cmd===-1){this.close();return true;}this.nextCmd=cmd;this.execute(cmd,position,contains);return true;
  }
  private execute(cmd:number,position={x:0,y:0},contains:((x:number,y:number)=>boolean)=()=>true){
-  this.open=true;this.revision++;this.answers=[];
+  this.open=true;this.revision++;this.answers=[];this.offeredPrize=null;
   if(cmd===1){this.words=this.name+',你是新来的吧。我这里有些东西我已经用不上了,你挑几样去吧。';this.answers=[{txt:'嘿嘿,我不会客气的',cmd:2}];}
   else if(cmd===2){this.words='哎,现在的年轻人真不懂礼貌。你挑一包去吧\r礼包一：上品+9武器、良品衣服、莎菲幻兽\r礼包二：雪瑞幻兽、灵魂礼包\r礼包三：圣天使雷斯幻兽、圣天使奈丽幻兽';this.answers=[{txt:'我要礼包一',cmd:3},{txt:'我要礼包二',cmd:4},{txt:'我要礼包三',cmd:5}];this.nextCmd=this.cmd;}
   else if(cmd>=3&&cmd<=5&&this.cmd===1){
@@ -85,7 +89,7 @@ export class NpcReward {
    const gifts:Item[]=cmd===3?[literalItem('莎菲'),...rewardEquipment(this.profession)]:cmd===4?[literalItem('雪瑞'),literalItem('灵魂礼包')]:[literalItem('圣天使雷斯'),literalItem('圣天使奈丽')];
    for(const item of gifts)this.store(item,position,contains);
    this.words=cmd===3?'你已经获得了礼包一,祝你游戏愉快':cmd===4?'你已经获得了礼包二,希望你能多多打BOSS':'你已经获得了礼包三,接下来就看你的了,我相信你是个高手';this.answers=[{txt:'谢谢',cmd:-1}];this.nextCmd=this.cmd;
-  }else if(cmd===6){this.words='如果你能拿得到2个勇士勋章给我,我可以给你一个月光宝盒。';this.answers=[{txt:'我已经拿来了',cmd:7},{txt:'我不想要',cmd:-1}];this.nextCmd=this.cmd;}
+  }else if(cmd===6){this.words='如果你能拿得到2个勇士勋章给我,我可以给你一个月光宝盒。';this.answers=[{txt:'我已经拿来了',cmd:7},{txt:'是否有等级奖励',cmd:8},{txt:'我不想要',cmd:-1}];this.nextCmd=this.cmd;}
   else if(cmd===7){
    this.nextCmd=this.cmd;
    if(this.consumeMedals()){
@@ -93,8 +97,19 @@ export class NpcReward {
     this.messages.push('获得初级月光宝盒');this.close();return;
    }
    this.words='你的物品栏里没有2个勇士勋章啊。';this.answers=[{txt:'还是蒙不了你',cmd:-1}];
+  }else if(cmd===8){
+   this.nextCmd=this.cmd;const prize=levelPrize(this.upLevelPrize,this.level());
+   this.words=`超过${prize.threshold}级可领取这一档等级奖励。当前等级${this.level()}。`+(this.upLevelPrize>1?`已领取至${prize.threshold-10}级档。`:'');
+   this.answers=[{txt:'返回',cmd:this.cmd},{txt:'知道了',cmd:-1}];
+   if(prize.eligible){this.offeredPrize=this.upLevelPrize;this.words=`可领取第${prize.threshold}级奖励，三选一：\n`+prize.choices.map(c=>c.kind==='box'?`${c.box} ×${c.amount}`:`${c.kind==='res'?'资源':'魔石'} ${c.amount.toLocaleString('en-US')}`).join('\n');this.answers=prize.choices.map(({cmd,txt})=>({cmd,txt}));}
+  }else if(cmd>=9&&cmd<=17){
+   const prize=levelPrize(this.upLevelPrize,this.level()),choice=prize.choices.find(c=>c.cmd===cmd);if(!prize.eligible||!choice){this.nextCmd=this.cmd;this.close();return;}
+   this.upLevelPrize++;
+   if(choice.kind==='box'){for(let n=0;n<choice.amount;n++)this.store(literalItem(choice.box!),position,contains);this.messages.push('获得 '+choice.box+(choice.amount>1?'×'+choice.amount:''));}
+   else{this[choice.kind]+=choice.amount;this.messages.push('获得 '+choice.amount.toLocaleString('en-US')+(choice.kind==='res'?'资源':'魔石'));}
+   this.nextCmd=this.cmd;this.close();return;
   }
  }
  leaveMap(){this.close();this.drops=[];}
- snapshot(){return {cmd:this.cmd,nextCmd:this.nextCmd,open:this.open,words:this.words,answers:structuredClone(this.answers),bag:structuredClone(this.bag),pets:structuredClone(this.pets),drops:structuredClone(this.drops),claimedPack:this.claimedPack,messages:[...this.messages]};}
+ snapshot(){return {upLevelPrize:this.upLevelPrize,cmd:this.cmd,nextCmd:this.nextCmd,open:this.open,words:this.words,answers:structuredClone(this.answers),bag:structuredClone(this.bag),pets:structuredClone(this.pets),drops:structuredClone(this.drops),claimedPack:this.claimedPack,messages:[...this.messages]};}
 }

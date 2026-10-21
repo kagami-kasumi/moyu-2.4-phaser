@@ -1,0 +1,22 @@
+[
+  {
+    "file": "frame_9/DoAction.as",
+    "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+  },
+  {
+    "file": "frame_9/DoAction_2.as",
+    "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+  },
+  {
+    "file": "__Packages/HuanShouClass.as",
+    "sha256": "272527ee87e7cbb21c6a3e9f65410266a65e10a3477a44c43b1bda821d6fcc46"
+  },
+  {
+    "file": "DefineSprite_4556/frame_1/DoAction.as",
+    "sha256": "6a8e8811085a1ae8eb041af0611b78dc5735874b6e8bc86690523b42d0002216"
+  },
+  {
+    "file": "DefineSprite_2049_物品栏物品/frame_1/DoAction.as",
+    "sha256": "3e944154f9923be8b2d92c9fd12bfc5795471e64a51271f1b312128ea32c117f"
+  }
+]

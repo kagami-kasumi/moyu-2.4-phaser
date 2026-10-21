@@ -1,0 +1,43 @@
+{
+  "functions": {
+    "testToExp": "{\r\n   var _loc3_;\r\n   if(target.type == \"头盔\" || target.type == \"衣服\" || target.type == \"武器\" || target.type == \"鞋\" || target.type == \"庇护铃铛\" || target.type == \"翡翠铃铛\" || target.type == \"凤翼铃铛\")\r\n   {\r\n      _loc3_ = target.grade + 1;\r\n      switch(target.holes)\r\n      {\r\n         case 1:\r\n            _loc3_ += 1;\r\n            break;\r\n         case 2:\r\n            _loc3_ += 3;\r\n            break;\r\n         case 3:\r\n            _loc3_ += 6;\r\n      }\r\n      _global.msg.open(\"\\r\\r这件装备可以兑换\" + _loc3_ + \"个经验球，你确定兑换吗？\",weaponToExp,target);\r\n   }\r\n   else\r\n   {\r\n      _global.msg.open(\"\\r\\r\\r这个东西不能换成经验球\");\r\n   }\r\n   return false;\r\n}",
+    "weaponToExp": "{\r\n   var _loc2_;\r\n   if(target.type == \"头盔\" || target.type == \"衣服\" || target.type == \"武器\" || target.type == \"鞋\" || target.type == \"庇护铃铛\" || target.type == \"翡翠铃铛\" || target.type == \"凤翼铃铛\")\r\n   {\r\n      _loc2_ = target.grade + 1;\r\n      switch(target.holes)\r\n      {\r\n         case 1:\r\n            _loc2_ += 1;\r\n            break;\r\n         case 2:\r\n            _loc2_ += 3;\r\n            break;\r\n         case 3:\r\n            _loc2_ += 6;\r\n      }\r\n      target.setThing({type:\"经验球\",number:_loc2_,salePrice:50});\r\n   }\r\n   return false;\r\n}",
+    "testToBreakUp": "{\r\n   var _loc5_;\r\n   var _loc4_;\r\n   var _loc3_;\r\n   if(target.type == \"头盔\" || target.type == \"衣服\" || target.type == \"武器\" || target.type == \"鞋\")\r\n   {\r\n      _loc4_ = \"\";\r\n      _loc5_ = target.grade;\r\n      switch(_loc5_)\r\n      {\r\n         case 0:\r\n            _parent._parent.createThing({type:\"魔魂晶石\"});\r\n            _loc4_ = \"获得 魔魂晶石\";\r\n            break;\r\n         case 1:\r\n            _parent._parent.createThing({type:\"幻魔晶石\"});\r\n            _loc4_ = \"获得 幻魔晶石\";\r\n            break;\r\n         case 2:\r\n            _parent._parent.createThing({type:\"灵魂晶石\"});\r\n            _loc4_ = \"获得 灵魂晶石\";\r\n            break;\r\n         case 3:\r\n            _parent._parent.createThing({type:\"灵魂晶石\"});\r\n            _parent._parent.createThing({type:\"灵魂晶石\"});\r\n            _loc4_ = \"获得 灵魂晶石×2\";\r\n            break;\r\n         case 4:\r\n            _parent._parent.createThing({type:\"小元素石\"});\r\n            _loc4_ = \"获得 小元素石\";\r\n            break;\r\n         case 5:\r\n            _parent._parent.createThing({type:\"大元素石\"});\r\n            _loc4_ = \"获得 大元素石\";\r\n      }\r\n      switch(target.holes)\r\n      {\r\n         case 1:\r\n            _parent._parent.createThing({type:\"初级月光宝盒\"});\r\n            _loc4_ += \"\\r获得 初级月光宝盒\";\r\n            break;\r\n         case 2:\r\n            _parent._parent.createThing({type:\"初级月光宝盒\"});\r\n            _parent._parent.createThing({type:\"初级月光宝盒\"});\r\n            _parent._parent.createThing({type:\"初级月光宝盒\"});\r\n            _loc4_ += \"\\r获得 初级月光宝盒×3\";\r\n            break;\r\n         case 3:\r\n            _parent._parent.createThing({type:\"中级月光宝盒\"});\r\n            _parent._parent.createThing({type:\"中级月光宝盒\"});\r\n            _loc4_ += \"\\r获得 中级月光宝盒×2\";\r\n      }\r\n      if(target.levels >= 60)\r\n      {\r\n         _parent._parent.createThing({type:\"幻魔之心\"});\r\n         _loc4_ += \"\\r获得 幻魔之心\";\r\n      }\r\n      _loc5_ = Math.floor(target.mhdj / 6);\r\n      _loc3_ = 0;\r\n      while(_loc3_ < _loc5_ && _loc3_ <= 6)\r\n      {\r\n         _parent._parent.createThing({type:\"魔魂之心\"});\r\n         _loc3_ = _loc3_ + 1;\r\n      }\r\n      if(_loc5_ > 0)\r\n      {\r\n         _loc4_ += \"\\r获得 魔魂之心×\" + _loc5_;\r\n      }\r\n      switch(target.element)\r\n      {\r\n         case 0:\r\n            break;\r\n         case 1:\r\n            _parent._parent.createThing({type:\"风元素\"});\r\n            _loc4_ += \"\\r获得 风元素\";\r\n            break;\r\n         case 2:\r\n            _parent._parent.createThing({type:\"火元素\"});\r\n            _loc4_ += \"\\r获得 火元素\";\r\n            break;\r\n         case 3:\r\n            _parent._parent.createThing({type:\"水元素\"});\r\n            _loc4_ += \"\\r获得 水元素\";\r\n            break;\r\n         case 4:\r\n            _parent._parent.createThing({type:\"地元素\"});\r\n            _loc4_ += \"\\r获得 地风元素\";\r\n            break;\r\n         case 5:\r\n            _parent._parent.createThing({type:\"雷元素\"});\r\n            _loc4_ += \"\\r获得 雷元素\";\r\n      }\r\n      _global.msg.open(\"\\r\\r\" + _loc4_);\r\n      return true;\r\n   }\r\n   _global.msg.open(\"\\r\\r\\r这个东西不能分解\");\r\n   return false;\r\n}",
+    "give": "{\r\n   if(\"空格\" != this.包格1.type && undefined != this.包格1.type && funName != undefined)\r\n   {\r\n      if(this.funName(this.包格1) == true)\r\n      {\r\n         if(this.包格1.number > 0)\r\n         {\r\n            return false;\r\n         }\r\n         this.包格1.setThing({type:\"空格\"});\r\n         return true;\r\n      }\r\n   }\r\n   return false;\r\n}",
+    "setThing": "{\r\n   if(target.number > 0 && this.包格1.type == target.type && this.包格1.name == target.name)\r\n   {\r\n      this.包格1.number += target.number;\r\n      return true;\r\n   }\r\n   if(\"空格\" != this.包格1.type && undefined != this.包格1.type)\r\n   {\r\n      this._parent.backPack.setThing(this.包格1);\r\n   }\r\n   this.包格1.setThing(target);\r\n   return true;\r\n}"
+  },
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction_2.as",
+      "sha256": "641bb5e3fa324340e376e1a3fcb7a7ae7b8afcdff792b9627cde214fe7c85375"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction_2.pcode",
+      "sha256": "5779e831beb3a77a713a0dfbbb04f9f051785450082641169a2f86b1efcdebfa"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2111_给予物品/frame_1/DoAction.as",
+      "sha256": "a19b2565d3b08755895d03329d13cd94e46792d0ff2b15f640cab41d4fc3a696"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2111_给予物品/frame_1/DoAction.pcode",
+      "sha256": "a291f7662923598ffd9593951c3b815bad4be3d9248f86fcb7832aec719cb9b1"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction.as",
+      "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction.pcode",
+      "sha256": "3eaec722a433ca4e60dccff025806c7688b47d5537152b3f811da0a9e37a0e5f"
+    }
+  ]
+}

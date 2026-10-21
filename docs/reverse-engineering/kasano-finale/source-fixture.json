@@ -1,0 +1,1251 @@
+{
+  "mapFrames": {
+    "3": [
+      {
+        "depth": 1,
+        "characterId": "4236",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      },
+      {
+        "depth": 2,
+        "characterId": "4118",
+        "name": "ground",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        },
+        "colorTransform": {
+          "type": "CXFORMWITHALPHA",
+          "alphaAddTerm": "0",
+          "alphaMultTerm": "77",
+          "blueAddTerm": "0",
+          "blueMultTerm": "256",
+          "greenAddTerm": "0",
+          "greenMultTerm": "256",
+          "hasAddTerms": "false",
+          "hasMultTerms": "true",
+          "nbits": "10",
+          "redAddTerm": "0",
+          "redMultTerm": "256"
+        }
+      },
+      {
+        "depth": 5,
+        "characterId": "4247",
+        "name": "entry1",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "10780",
+          "translateY": "8132"
+        }
+      },
+      {
+        "depth": 88,
+        "characterId": "4252",
+        "name": "光辉光环效果",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13409",
+          "translateY": "9819"
+        }
+      },
+      {
+        "depth": 98,
+        "characterId": "4253",
+        "name": "goods",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "3",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "2",
+          "translateY": "0"
+        }
+      },
+      {
+        "depth": 100,
+        "characterId": "4116",
+        "name": "monster1",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13675",
+          "translateY": "8478"
+        }
+      },
+      {
+        "depth": 117,
+        "characterId": "4116",
+        "name": "monster6",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "3732",
+          "translateY": "11670"
+        }
+      },
+      {
+        "depth": 134,
+        "characterId": "4116",
+        "name": "monster5",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "13",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-1086",
+          "translateY": "2677"
+        }
+      },
+      {
+        "depth": 151,
+        "characterId": "4116",
+        "name": "monster4",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-860",
+          "translateY": "9190"
+        }
+      },
+      {
+        "depth": 168,
+        "characterId": "4116",
+        "name": "monster3",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "11559",
+          "translateY": "11257"
+        }
+      },
+      {
+        "depth": 185,
+        "characterId": "4116",
+        "name": "monster2",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "14",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-1134",
+          "translateY": "6080"
+        }
+      },
+      {
+        "depth": 202,
+        "characterId": "3106",
+        "name": "role",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "1249",
+          "translateY": "12067"
+        }
+      },
+      {
+        "depth": 231,
+        "characterId": "2890",
+        "name": "huanShou3",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "9090",
+          "translateY": "11751"
+        }
+      },
+      {
+        "depth": 252,
+        "characterId": "2890",
+        "name": "huanShou1",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-818",
+          "translateY": "12018"
+        }
+      },
+      {
+        "depth": 273,
+        "characterId": "2890",
+        "name": "huanShou2",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13540",
+          "translateY": "11658"
+        }
+      },
+      {
+        "depth": 294,
+        "characterId": "4312",
+        "name": "npc01",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "true",
+          "nRotateBits": "0",
+          "nScaleBits": "18",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "1.0",
+          "scaleY": "0.9996338",
+          "translateX": "6778",
+          "translateY": "12668"
+        }
+      },
+      {
+        "depth": 300,
+        "characterId": "4312",
+        "name": "npc02",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "14",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "4899",
+          "translateY": "4793"
+        }
+      },
+      {
+        "depth": 306,
+        "characterId": "4312",
+        "name": "npc03",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "15980",
+          "translateY": "4897"
+        }
+      },
+      {
+        "depth": 312,
+        "characterId": "4312",
+        "name": "npc05",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13360",
+          "translateY": "5438"
+        }
+      },
+      {
+        "depth": 318,
+        "characterId": "4312",
+        "name": "npc06",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "16060",
+          "translateY": "9776"
+        }
+      },
+      {
+        "depth": 324,
+        "characterId": "4315",
+        "name": "冰柱",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "14",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "4959",
+          "translateY": "4573"
+        }
+      },
+      {
+        "depth": 326,
+        "characterId": "4312",
+        "name": "npc04",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "true",
+          "nRotateBits": "0",
+          "nScaleBits": "18",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "1.0",
+          "scaleY": "0.9996338",
+          "translateX": "13260",
+          "translateY": "2669"
+        }
+      }
+    ],
+    "4": [
+      {
+        "depth": 1,
+        "characterId": "4317",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        }
+      },
+      {
+        "depth": 5,
+        "characterId": "4247",
+        "name": "entry1",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "840",
+          "translateY": "8232"
+        },
+        "colorTransform": {
+          "type": "CXFORMWITHALPHA",
+          "alphaAddTerm": "0",
+          "alphaMultTerm": "0",
+          "blueAddTerm": "0",
+          "blueMultTerm": "256",
+          "greenAddTerm": "0",
+          "greenMultTerm": "256",
+          "hasAddTerms": "false",
+          "hasMultTerms": "true",
+          "nbits": "10",
+          "redAddTerm": "0",
+          "redMultTerm": "256"
+        }
+      },
+      {
+        "depth": 88,
+        "characterId": "4252",
+        "name": "光辉光环效果",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13409",
+          "translateY": "9819"
+        }
+      },
+      {
+        "depth": 98,
+        "characterId": "4253",
+        "name": "goods",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "3",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "2",
+          "translateY": "0"
+        }
+      },
+      {
+        "depth": 100,
+        "characterId": "4116",
+        "name": "monster1",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13675",
+          "translateY": "8478"
+        }
+      },
+      {
+        "depth": 117,
+        "characterId": "4116",
+        "name": "monster6",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "3732",
+          "translateY": "11670"
+        }
+      },
+      {
+        "depth": 134,
+        "characterId": "4116",
+        "name": "monster5",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "13",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-1086",
+          "translateY": "2677"
+        }
+      },
+      {
+        "depth": 151,
+        "characterId": "4116",
+        "name": "monster4",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-860",
+          "translateY": "9190"
+        }
+      },
+      {
+        "depth": 168,
+        "characterId": "4116",
+        "name": "monster3",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "11559",
+          "translateY": "11257"
+        }
+      },
+      {
+        "depth": 185,
+        "characterId": "4116",
+        "name": "monster2",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "14",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-1134",
+          "translateY": "6080"
+        }
+      },
+      {
+        "depth": 202,
+        "characterId": "3106",
+        "name": "role",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "1249",
+          "translateY": "12067"
+        }
+      },
+      {
+        "depth": 231,
+        "characterId": "2890",
+        "name": "huanShou3",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "9090",
+          "translateY": "11751"
+        }
+      },
+      {
+        "depth": 252,
+        "characterId": "2890",
+        "name": "huanShou1",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "-818",
+          "translateY": "12018"
+        }
+      },
+      {
+        "depth": 273,
+        "characterId": "2890",
+        "name": "huanShou2",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13540",
+          "translateY": "11658"
+        }
+      },
+      {
+        "depth": 294,
+        "characterId": "4312",
+        "name": "npc01",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "true",
+          "nRotateBits": "0",
+          "nScaleBits": "18",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "1.0",
+          "scaleY": "0.9996338",
+          "translateX": "6778",
+          "translateY": "12668"
+        }
+      },
+      {
+        "depth": 300,
+        "characterId": "4312",
+        "name": "npc02",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "14",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "4899",
+          "translateY": "4793"
+        }
+      },
+      {
+        "depth": 306,
+        "characterId": "4312",
+        "name": "npc03",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "15980",
+          "translateY": "4897"
+        }
+      },
+      {
+        "depth": 312,
+        "characterId": "4312",
+        "name": "npc05",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "13360",
+          "translateY": "5438"
+        }
+      },
+      {
+        "depth": 318,
+        "characterId": "4312",
+        "name": "npc06",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "16060",
+          "translateY": "9776"
+        }
+      },
+      {
+        "depth": 324,
+        "characterId": "4315",
+        "name": "冰柱",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "14",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "4959",
+          "translateY": "4573"
+        }
+      },
+      {
+        "depth": 326,
+        "characterId": "4312",
+        "name": "npc04",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "true",
+          "nRotateBits": "0",
+          "nScaleBits": "18",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "1.0",
+          "scaleY": "0.9996338",
+          "translateX": "13260",
+          "translateY": "2669"
+        }
+      },
+      {
+        "depth": 2,
+        "characterId": "2815",
+        "name": "ground",
+        "ratio": "3",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "0",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "0",
+          "translateY": "0"
+        },
+        "colorTransform": {
+          "type": "CXFORMWITHALPHA",
+          "alphaAddTerm": "0",
+          "alphaMultTerm": "77",
+          "blueAddTerm": "0",
+          "blueMultTerm": "256",
+          "greenAddTerm": "0",
+          "greenMultTerm": "256",
+          "hasAddTerms": "false",
+          "hasMultTerms": "true",
+          "nbits": "10",
+          "redAddTerm": "0",
+          "redMultTerm": "256"
+        }
+      },
+      {
+        "depth": 17,
+        "characterId": "4247",
+        "name": "entry2",
+        "ratio": "3",
+        "matrix": {
+          "type": "MATRIX",
+          "hasRotate": "false",
+          "hasScale": "false",
+          "nRotateBits": "0",
+          "nScaleBits": "0",
+          "nTranslateBits": "15",
+          "rotateSkew0": "0.0",
+          "rotateSkew1": "0.0",
+          "scaleX": "0.0",
+          "scaleY": "0.0",
+          "translateX": "10840",
+          "translateY": "8232"
+        }
+      }
+    ]
+  },
+  "timelines": {
+    "2815": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2814",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "4118": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "4117",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "4247": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "4243",
+            "name": "闪光",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "17",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.59999084",
+              "scaleY": "0.59999084",
+              "translateX": "-840",
+              "translateY": "-352"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "4246",
+            "name": "传送点提示",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "-1020",
+              "translateY": "-432"
+            },
+            "colorTransform": {
+              "type": "CXFORMWITHALPHA",
+              "alphaAddTerm": "0",
+              "alphaMultTerm": "128",
+              "blueAddTerm": "0",
+              "blueMultTerm": "256",
+              "greenAddTerm": "0",
+              "greenMultTerm": "256",
+              "hasAddTerms": "false",
+              "hasMultTerms": "true",
+              "nbits": "10",
+              "redAddTerm": "0",
+              "redMultTerm": "256"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "4312": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "4308",
+            "name": "npcPic",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "17",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.7999878",
+              "scaleY": "0.7999878",
+              "translateX": "-664",
+              "translateY": "-2151"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "4310",
+            "name": "nameBack",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "-1400",
+              "translateY": "-2310"
+            }
+          },
+          {
+            "depth": 5,
+            "characterId": "4311",
+            "name": "npcName",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "13",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "-1220",
+              "translateY": "-2260"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    }
+  },
+  "npcChest": [
+    {
+      "depth": 1,
+      "characterId": "4263",
+      "matrix": {
+        "type": "MATRIX",
+        "hasRotate": "false",
+        "hasScale": "false",
+        "nRotateBits": "0",
+        "nScaleBits": "0",
+        "nTranslateBits": "0",
+        "rotateSkew0": "0.0",
+        "rotateSkew1": "0.0",
+        "scaleX": "0.0",
+        "scaleY": "0.0",
+        "translateX": "0",
+        "translateY": "0"
+      }
+    }
+  ],
+  "shapes": {
+    "2814": "<item type=\"DefineShape4Tag\" forceWriteAsLong=\"true\" reserved=\"0\" shapeId=\"2814\" usesFillWindingRule=\"false\" usesNonScalingStrokes=\"false\" usesScalingStrokes=\"true\">\n<edgeBounds type=\"RECT\" Xmax=\"11599\" Xmin=\"0\" Ymax=\"9200\" Ymin=\"1380\" nbits=\"15\" />\n<shapeBounds type=\"RECT\" Xmax=\"11619\" Xmin=\"-20\" Ymax=\"9220\" Ymin=\"1360\" nbits=\"15\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"2\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"0\" fillStyleType=\"0\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"102\" green=\"153\" red=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"40\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"40\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n</lineStyles2>\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"2\" moveBits=\"15\" moveDeltaX=\"0\" moveDeltaY=\"9200\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"true\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-7820\" generalLineFlag=\"false\" numBits=\"12\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"3520\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"839\" deltaY=\"1820\" generalLineFlag=\"true\" numBits=\"10\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"4838\" deltaY=\"1120\" generalLineFlag=\"true\" numBits=\"12\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"2401\" deltaY=\"1320\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"1\" deltaY=\"3560\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"0\" lineStyle=\"1\" moveBits=\"0\" moveDeltaX=\"0\" moveDeltaY=\"0\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"false\" stateLineStyle=\"true\" stateMoveTo=\"false\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-11599\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "4117": "<item type=\"DefineShape4Tag\" forceWriteAsLong=\"true\" reserved=\"0\" shapeId=\"4117\" usesFillWindingRule=\"false\" usesNonScalingStrokes=\"false\" usesScalingStrokes=\"true\">\n<edgeBounds type=\"RECT\" Xmax=\"11598\" Xmin=\"0\" Ymax=\"9140\" Ymin=\"1881\" nbits=\"15\" />\n<shapeBounds type=\"RECT\" Xmax=\"11628\" Xmin=\"-30\" Ymax=\"9170\" Ymin=\"1861\" nbits=\"15\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"2\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"0\" fillStyleType=\"0\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"102\" green=\"153\" red=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"60\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"40\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n</lineStyles2>\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"2\" moveBits=\"15\" moveDeltaX=\"0\" moveDeltaY=\"9140\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"true\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-4240\" generalLineFlag=\"false\" numBits=\"12\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"2600\" deltaY=\"-1400\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"3039\" deltaY=\"-520\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"2540\" deltaY=\"-780\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"799\" deltaY=\"860\" generalLineFlag=\"true\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"839\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"9\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"1780\" deltaY=\"-1179\" generalLineFlag=\"true\" numBits=\"10\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"1\" deltaY=\"7259\" generalLineFlag=\"true\" numBits=\"12\" vertLineFlag=\"false\" />\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"0\" lineStyle=\"1\" moveBits=\"0\" moveDeltaX=\"0\" moveDeltaY=\"0\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"false\" stateLineStyle=\"true\" stateMoveTo=\"false\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-11598\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "4236": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"4236\">\n<shapeBounds type=\"RECT\" Xmax=\"11600\" Xmin=\"0\" Ymax=\"9200\" Ymin=\"0\" nbits=\"15\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"4235\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"0\" moveBits=\"0\" moveDeltaX=\"0\" moveDeltaY=\"0\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"false\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"11600\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"9200\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-11600\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-9200\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "4317": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"4317\">\n<shapeBounds type=\"RECT\" Xmax=\"11600\" Xmin=\"0\" Ymax=\"9200\" Ymin=\"0\" nbits=\"15\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"4316\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"0\" moveBits=\"0\" moveDeltaX=\"0\" moveDeltaY=\"0\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"false\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"11600\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"9200\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-11600\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-9200\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "4263": "<item type=\"DefineShapeTag\" forceWriteAsLong=\"true\" shapeId=\"4263\">\n<shapeBounds type=\"RECT\" Xmax=\"1975\" Xmin=\"-25\" Ymax=\"3303\" Ymin=\"1303\" nbits=\"13\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"2\" numLineBits=\"0\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"65535\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"0\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"0\" translateY=\"0\" />\n</item>\n<item type=\"FILLSTYLE\" bitmapId=\"4262\" fillStyleType=\"67\">\n<bitmapMatrix type=\"MATRIX\" hasRotate=\"false\" hasScale=\"true\" nRotateBits=\"0\" nScaleBits=\"22\" nTranslateBits=\"12\" rotateSkew0=\"0.0\" rotateSkew1=\"0.0\" scaleX=\"20.0\" scaleY=\"20.0\" translateX=\"-25\" translateY=\"1303\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2 />\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"2\" lineStyle=\"0\" moveBits=\"13\" moveDeltaX=\"1975\" moveDeltaY=\"3303\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"false\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-2000\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"10\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-2000\" generalLineFlag=\"false\" numBits=\"10\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"2000\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"10\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"2000\" generalLineFlag=\"false\" numBits=\"10\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n"
+  },
+  "actions": [
+    {
+      "timeline": 2815,
+      "frame": 1,
+      "sha256": "631d8dd2437f5fe3f8dc1b2bf325019b6bfc75b54090354c0de12d9cc4015a94"
+    },
+    {
+      "timeline": 4118,
+      "frame": 1,
+      "sha256": "631d8dd2437f5fe3f8dc1b2bf325019b6bfc75b54090354c0de12d9cc4015a94"
+    },
+    {
+      "timeline": 4247,
+      "frame": 1,
+      "sha256": "f28409611654433d16cf1cafab809a0ab8a1819579be3407af09c1fa87d2164a"
+    },
+    {
+      "timeline": 4312,
+      "frame": 1,
+      "sha256": "00d1995bbd9d210e2804d3533d4aa2eeb6f3440b8eaeaad9b0ab72039f9575b8"
+    },
+    {
+      "timeline": 4312,
+      "frame": 1,
+      "sha256": "f263deaf948a1f3fba38631183b9c6e04bbc8d155b4a813d35578880a0d83c72"
+    },
+    {
+      "timeline": 4536,
+      "frame": 1,
+      "sha256": "cfdb45b02a1294799f0e1a6bd6df1c4102188956f6102b962ac46635395ebd9a"
+    },
+    {
+      "timeline": 4536,
+      "frame": 3,
+      "sha256": "fb05abeef56233b90f2a1ffb0f9b00b302468f12cab9dec926bea704c77a6c13"
+    },
+    {
+      "timeline": 4536,
+      "frame": 4,
+      "sha256": "012f16e8b69f0edec7b4d8dc588b61628b01349c717cbe03e36be8d0416df7a5"
+    },
+    {
+      "timeline": 2210,
+      "frame": 1,
+      "sha256": "16f309e6a63817685a4cc8d77faa29f128fcbb09d9dd2dd1b7f48d7baf505de1"
+    },
+    {
+      "timeline": 2210,
+      "frame": 1,
+      "sha256": "5c5fba1a9e4a5126e7fd816fd5a08d7a3f4e0161ca64ce1b74c489f5572e1b49"
+    },
+    {
+      "timeline": 0,
+      "frame": 9,
+      "sha256": "32484556e8832e08349189615d0b9d17132fffabe60d5eafd47dd6f75f566c2b"
+    },
+    {
+      "timeline": 0,
+      "frame": 9,
+      "sha256": "97f8ff0741deaf70747eaec0d4631f2bdf80afcd696f419fd01e8cb629461de6"
+    }
+  ],
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_3/DoAction.as",
+      "sha256": "2e75c6a884042bc06e0bd34649c1f61e6190fc1ec7ac7bdecab2c8a4cf0b6c3a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_3/DoAction.pcode",
+      "sha256": "bf0249c5dedb7588fd44402b09dd4aea457e10f09b421d4ee53ec516a0cc1e3b"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_4/DoAction.as",
+      "sha256": "d603d29c39402afb0f25d001935126775b04148014a25e589c838fbbe9f3bafe"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_4/DoAction.pcode",
+      "sha256": "5d596c6b24f54b9f0892e51abf6385fe784b5ba94d8de69d1e93c5dd73d4a704"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2210_任务系统/frame_1/DoAction.as",
+      "sha256": "7304f43ad32ce00dc93b936db83a388a6c2865bc1ae3436278f21c30d1136974"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2210_任务系统/frame_1/DoAction_2.as",
+      "sha256": "64c09f75449f03ebde494b8121c0caab11cf57ec8679f36ac2b6c8093f451573"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2210_任务系统/frame_1/DoAction.pcode",
+      "sha256": "c67780a3ee3efbeef6b3a15823d58c076a9aa1d5191be7a65c3467fc286a6ae9"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2210_任务系统/frame_1/DoAction_2.pcode",
+      "sha256": "0cbff19de03a5a9f907e9db9f3bf1dcc6e211f2f15d2c85fab17721d425adac1"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction_2.as",
+      "sha256": "641bb5e3fa324340e376e1a3fcb7a7ae7b8afcdff792b9627cde214fe7c85375"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction_2.pcode",
+      "sha256": "5779e831beb3a77a713a0dfbbb04f9f051785450082641169a2f86b1efcdebfa"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4247/frame_1/DoAction.as",
+      "sha256": "7e765c40ae74ab82ae422ba62deddf973737b60f43a6c7589945f4e26bf9b495"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4247/frame_1/DoAction.pcode",
+      "sha256": "43f78af821cecade8afebaf0d24a84e8209c5882986296211af15e806c808243"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction.as",
+      "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction.pcode",
+      "sha256": "3eaec722a433ca4e60dccff025806c7688b47d5537152b3f811da0a9e37a0e5f"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+      "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+    }
+  ]
+}

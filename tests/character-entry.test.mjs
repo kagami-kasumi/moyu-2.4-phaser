@@ -38,8 +38,8 @@ test('invalid submissions are atomic; fresh starts do not retain old profession,
  const j=make();assert.equal(j.start(''),false);assert.equal(j.started,false);assert(j.start('1234567890','法师'));const before=j.snapshot();for(const name of ['', '12345678901']){assert.equal(j.start(name,'战士'),false);assert.deepEqual(j.snapshot(),before);}
  j.reward.bag[0]=null;j.input.right=true;j.step();assert(j.start('新战士','战士'));assert.equal(j.actor.action,'idle');assert.equal(j.reward.bag[0].type,'富豪礼包');assert.equal(j.input.right,false);assert.equal(j.vitals.maxLife,90);
 });
-test('mage movement clocks at source ticks across render schedules, mirrors without resetting, and cannot attack',()=>{
- for(const hz of [15,30,60,144]){const a=new Actor(manifests.法师);a.select('run');for(let i=0;i<hz*2;i++)a.advance(1000/hz);assert.equal(a.tick,30);assert.equal(a.frame,1);a.advance(3*1000/15);a.select('run','right');assert.equal(a.frame,4);assert.equal(a.select('attack'),false);assert.equal(a.action,'run');a.paused=true;a.advance(10000);assert.equal(a.frame,4);a.paused=false;a.advance(1000/15);assert.equal(a.frame,5);a.select('idle');assert.equal(a.frame,1);assert.deepEqual(a.events,[]);}
+test('mage movement clocks at source ticks across render schedules, mirrors without resetting, and exposes the verified eleven-frame cast',()=>{
+ for(const hz of [15,30,60,144]){const a=new Actor(manifests.法师);a.select('run');for(let i=0;i<hz*2;i++)a.advance(1000/hz);assert.equal(a.tick,30);assert.equal(a.frame,1);a.advance(3*1000/15);a.select('run','right');assert.equal(a.frame,4);a.paused=true;a.advance(10000);assert.equal(a.frame,4);a.paused=false;a.advance(1000/15);assert.equal(a.frame,5);a.select('idle');assert.equal(a.frame,1);assert.deepEqual(a.events,[]);assert.equal(a.select('attack'),true);a.advance(11*1000/15);assert.equal(a.events.at(-1).type,'effect-requested');}
  const bad=structuredClone(manifests.法师);bad.actions.attack=manifests.战士.actions.attack;assert.throws(()=>validateManifest(bad));
 });
 test('source credit setter raises title to ten; source role init contributes twenty title fire on attribute refresh',()=>{

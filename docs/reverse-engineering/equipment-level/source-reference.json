@@ -1,0 +1,22 @@
+{
+  "nameTables": "_global.战士weaponName = new Array(\"长军刀\",\"冷刀\",\"紫心刀\",\"狼牙刃\",\"明光之刃\",\"掠夺者\",\"龙牙\",\"雷眼\",\"正义之刃\");\n_global.战士clotheName = new Array(\"锁环甲\",\"骑士钢甲\",\"哥德战甲\",\"精锐之铠\",\"镜芒铠\",\"虹冥铠\",\"奇迹庇佑\",\"圣痕之铠\",\"夜魔战甲\");\n_global.战士helmetName = new Array(\"蓝色深邃\",\"安刺轻钢\",\"冥虹镜芒\",\"龙翼圣痕\",\"黄金宿印\",\"噩梦之首\",\"凌霄翼盔\",\"武神宝盔\",\"黄金宝盔\");\n_global.战士shoesName = new Array(\"野蛮行径\",\"破冰护胫\",\"火纹战靴\",\"金色梦想\",\"护卫使命\",\"银澜月华\",\"龙神御风\",\"辉煌战靴\",\"神明战靴\");\n_global.法师weaponName = new Array(\"蛇杖\",\"霜晶杖\",\"炼玉杖\",\"星魔杖\",\"冷晶杖\",\"炎灵杖\",\"魂唱\",\"天诛权杖\",\"圣辉法杖\");\n_global.法师clotheName = new Array(\"旅者装\",\"精灵装\",\"竞技装\",\"魔导装\",\"女神装\",\"和谐之舞\",\"真理圣袍\",\"暗血装\",\"天空法袍\");\n_global.法师helmetName = new Array(\"紫色占卜\",\"魔海诱惑\",\"黑色魔法\",\"星虚魔阵\",\"魔力喷泉\",\"银月清歌\",\"幻星法帽\",\"龙魂秘法\",\"远古迷梦\");\n_global.法师shoesName = new Array(\"虚幻圆舞\",\"魔力沸点\",\"白色宁静\",\"炼金术士\",\"魔血洗礼\",\"碧波万里\",\"转瞬千年\",\"深渊魔眼\",\"魔魂漫步\");",
+  "baseline": {
+    "path": "docs/reverse-engineering/equipment-magic/source-functions.json",
+    "sha256": "0dadeb286685b3f6d689168e6f2980a62314a66e6f9d30a1fed501ddd64df1e5"
+  },
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/RoleMC.pcode",
+      "sha256": "b80c765117ef67690b0e32f9be649cbbda86287c44b3496b3879b5692ce0753c"
+    }
+  ],
+  "functions": {
+    "function set xxx_maxLevels(val)": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > 150)\r\n      {\r\n         val = 150;\r\n      }\r\n      this.不要作弊469 = this.setSecreteCode(val);\r\n   }",
+    "function get maxLevels()": "{\r\n      return this.xxx_maxLevels;\r\n   }"
+  },
+  "scope": "makeItem/useGem/yes/upDataWeapon are consumed from the existing independently frozen baseline without rewriting it."
+}

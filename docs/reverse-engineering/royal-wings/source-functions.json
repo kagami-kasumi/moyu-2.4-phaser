@@ -1,0 +1,96 @@
+{
+  "functions": {
+    "luckyDraw2": "{\r\n   var _loc3_ = random(10000);\r\n   if(_loc3_ < 2000)\r\n   {\r\n      _parent._parent.createThing({type:\"幻魔之心\"});\r\n      _global.sysMsg.addMsg(\"获得 幻魔之心\");\r\n   }\r\n   else if(_loc3_ < 4500)\r\n   {\r\n      _parent._parent.createThing({type:\"小魔石袋子\"});\r\n      _global.sysMsg.addMsg(\"获得 小魔石袋子\");\r\n   }\r\n   else if(_loc3_ < 7000)\r\n   {\r\n      _parent._parent.createThing({type:\"中魔石袋子\"});\r\n      _global.sysMsg.addMsg(\"获得 中魔石袋子\");\r\n   }\r\n   else if(_loc3_ < 9500)\r\n   {\r\n      _parent._parent.createThing({type:\"大魔石袋子\"});\r\n      _global.sysMsg.addMsg(\"获得 大魔石袋子\");\r\n   }\r\n   else\r\n   {\r\n      _parent._parent.createThing({type:\"圣天使雷斯\"});\r\n      _global.sysMsg.addMsg(\"获得 圣天使雷斯\");\r\n   }\r\n}",
+    "luckyDraw3": "{\r\n   var _loc3_ = random(10000);\r\n   if(_loc3_ < 2000)\r\n   {\r\n      _parent._parent.createThing({type:\"魔魂之心\"});\r\n      _global.sysMsg.addMsg(\"获得 魔魂之心\");\r\n   }\r\n   else if(_loc3_ < 4500)\r\n   {\r\n      _parent._parent.createThing({type:\"奇异兽\"});\r\n      _global.sysMsg.addMsg(\"获得 奇异兽\");\r\n   }\r\n   else if(_loc3_ < 7000)\r\n   {\r\n      _parent._parent.createThing({type:\"6星奇异兽\"});\r\n      _global.sysMsg.addMsg(\"获得 6星奇异兽\");\r\n   }\r\n   else if(_loc3_ < 9500)\r\n   {\r\n      _parent._parent.createThing({type:\"8星奇异兽\"});\r\n      _global.sysMsg.addMsg(\"获得 8星奇异兽\");\r\n   }\r\n   else\r\n   {\r\n      _parent._parent.createThing({type:\"圣天使奈丽\"});\r\n      _global.sysMsg.addMsg(\"获得 圣天使奈丽\");\r\n   }\r\n}",
+    "is5min": "{\r\n   return getTimer() - _root.intoTime > 300000;\r\n}"
+  },
+  "cases": {
+    "4000": "      case 4000:\r\n         words = \"打开宝箱一次需要花费一个极品玉石。\";\r\n         answer = [{txt:\"打开看看\",cmd:4001},{txt:\"还是算了\",cmd:-1}];\r\n         break;\r\n",
+    "4001": "      case 4001:\r\n         if(is5min() != true)\r\n         {\r\n            _global.sysMsg.addMsg(\"刚刚读取游戏,5分钟后才可以抽奖。\");\r\n            nextCmd = myID.cmd;\r\n            return undefined;\r\n         }\r\n         closeDialog();\r\n         if(_parent._parent.backPack.useThing({type:\"极品玉石\"},1) == true)\r\n         {\r\n            luckyDraw2();\r\n         }\r\n         else\r\n         {\r\n            _global.sysMsg.addMsg(\"你的没有极品玉石\");\r\n         }\r\n         nextCmd = myID.cmd;\r\n         return undefined;\r\n         break;\r\n",
+    "4002": "      case 4002:\r\n         words = \"打开宝箱一次需要花费一束9朵玫瑰。\";\r\n         answer = [{txt:\"打开看看\",cmd:4003},{txt:\"还是算了\",cmd:-1}];\r\n         break;\r\n",
+    "4003": "      case 4003:\r\n         if(is5min() != true)\r\n         {\r\n            _global.sysMsg.addMsg(\"刚刚读取游戏,5分钟后才可以抽奖。\");\r\n            nextCmd = myID.cmd;\r\n            return undefined;\r\n         }\r\n         closeDialog();\r\n         if(_parent._parent.backPack.useThing({type:\"9朵玫瑰\"},1) == true)\r\n         {\r\n            luckyDraw3();\r\n         }\r\n         else\r\n         {\r\n            _global.sysMsg.addMsg(\"你的没有9朵玫瑰\");\r\n         }\r\n         nextCmd = myID.cmd;\r\n         return undefined;\r\n         break;\r\n",
+    "4005": "      case 4005:\r\n         words = \"未上锁的箱子\";\r\n         answer = [{txt:\"打开看看\",cmd:4006}];\r\n         break;\r\n",
+    "4006": "      case 4006:\r\n         _parent._parent.createThing({type:\"魔魂之心\"});\r\n         _parent._parent.createThing({type:\"魔魂之心\"});\r\n         _parent.role.xxx_ms += 1500;\r\n         _global.sysMsg.addMsg(\"获得 2个魔魂之心和1,500魔石\");\r\n         closeDialog();\r\n         myID.cmd = 4002;\r\n         nextCmd = myID.cmd;\r\n         return undefined;\r\n",
+    "4010": "      case 4010:\r\n         nextCmd = myID.cmd;\r\n         words = \"未上锁的箱子\";\r\n         answer = [{txt:\"打开看看\",cmd:4011}];\r\n         break;\r\n",
+    "4011": "      case 4011:\r\n         _parent._parent.createThing({type:\"幻魔之心\"});\r\n         _parent._parent.createThing({type:\"幻魔之心\"});\r\n         _parent.role.xxx_ms += 1500;\r\n         _global.sysMsg.addMsg(\"获得 2个幻魔之心和1,500魔石\");\r\n         closeDialog();\r\n         myID.cmd = 4000;\r\n         nextCmd = myID.cmd;\r\n         return undefined;\r\n"
+  },
+  "frames": {
+    "13": "this.allowJumpMap(\"皇宫\");\r\nthis.entry1.toMap = \"东宫\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.entry2.toMap = \"卡萨诺城二\";\r\nthis.entry2.toEntry = \"entry3\";\r\nthis.entry3.toMap = \"花园\";\r\nthis.entry3.toEntry = \"entry2\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"元帅\"),200,200);\r\nthis.npc03.appear(getNpc(\"PK赛报名官\"),430,300);\r\nif(_parent.task.getTask(\"接应国王\").isComplete == true)\r\n{\r\n   this.npc02.appear(getNpc(\"国王\"),320,250);\r\n}\r\nthis.npc04.appear(getNpc(\"抽奖箱\"),100,350);\r\n",
+    "14": "this.allowJumpMap(\"东宫\");\r\nthis.entry1.toMap = \"殿外\";\r\nthis.entry1.toEntry = \"entry1\";\r\nthis.entry2.toMap = \"皇宫\";\r\nthis.entry2.toEntry = \"entry1\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"王子\"),130 + random(290),110 + random(240));\r\n",
+    "15": "this.allowJumpMap(\"殿外\");\r\nthis.entry1.toMap = \"东宫\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"王子的宝箱\"),400,370);\r\n",
+    "16": "this.allowJumpMap(\"花园\");\r\nthis.entry1.toMap = \"观天亭\";\r\nthis.entry1.toEntry = \"entry1\";\r\nthis.entry2.toMap = \"皇宫\";\r\nthis.entry2.toEntry = \"entry3\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"公主\"),300 + random(220),270 + random(130));\r\n",
+    "17": "this.allowJumpMap(\"观天亭\");\r\nthis.entry1.toMap = \"花园\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"公主的宝箱\"),330,220);\r\n"
+  },
+  "initial": [
+    "npcState.push(new FriendClass({nTitle:\"王子\",name:\"艾尔\",cmd:191,sex:\"男\",address:\"东宫\",rejectTimes:3}));\r",
+    "npcState.push(new FriendClass({nTitle:\"公主\",name:\"海伦娜\",cmd:201,sex:\"女\",address:\"花园\",rejectTimes:4}));\r",
+    "npcState.push({nTitle:\"王子的宝箱\",name:\"\",cmd:4010});\r",
+    "npcState.push({nTitle:\"公主的宝箱\",name:\"\",cmd:4005});\r"
+  ],
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction_2.as",
+      "sha256": "641bb5e3fa324340e376e1a3fcb7a7ae7b8afcdff792b9627cde214fe7c85375"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction_2.pcode",
+      "sha256": "5779e831beb3a77a713a0dfbbb04f9f051785450082641169a2f86b1efcdebfa"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_13/DoAction.as",
+      "sha256": "85a5711dccc349c02d48867ee574f3309e074e4d93bc77a335c10aa8c7e6f587"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_13/DoAction.pcode",
+      "sha256": "c83cb3f19c2dcff6eadb571775b42f5681e321ac961609280ee1b87ae92b3592"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_14/DoAction.as",
+      "sha256": "80ba75e32212aa03783a2c0bb834440bc860dd7380b0b4c6518d567e19efd666"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_14/DoAction.pcode",
+      "sha256": "06ae7912e65896a7059fb304540c59ee3f648aa4f719579dda74b2e3e504f24d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_15/DoAction.as",
+      "sha256": "7c9e0115fbc0534c7310811c19d2840ecce6792a8f3607fcb2e72f078d7c76cb"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_15/DoAction.pcode",
+      "sha256": "098e45fa41f09b73ecb7e49a4348005070a73ec7fd7012c618fd937fb3cf0500"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_16/DoAction.as",
+      "sha256": "3ba443bd2d8939ac3d9d976bd64c108e75b9aed054e9f45f88fea19e13969a85"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_16/DoAction.pcode",
+      "sha256": "c8b10d071fde90a6b5a147c37514587a34f92a2bfecf4c4b0810d407e434ebde"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_17/DoAction.as",
+      "sha256": "a3ef19a4a01828976307b6283632fe4bf05e3b98f3d0262003541957bbb814ff"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_17/DoAction.pcode",
+      "sha256": "3bb4b5dd2a84080d9aab30eaa75d280387e82a327ae9e7a8cb4bf5611fab6834"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {functionRange} from './lib/as2-data.mjs';
+const base='local-resources/moyu/source-index/',file='frame_9/DoAction';
+const source=fs.readFileSync(base+'as/scripts/'+file+'.as','utf8');
+const functions={};
+for(const name of ['setThing','notice','flashInfo','beginSplit','yesButton.onRelease'])functions['split.'+name]=functionRange(source,'this.splitStone.'+name+' = function').text;
+for(const name of ['init','flashAttribute'])functions['equipment.'+name]=functionRange(source,'this.equipment.'+name+' = function').text;
+const files=[file,'frame_9/DoAction_2','DefineSprite_4312/frame_1/DoAction','DefineSprite_4536/frame_1/DoAction','DefineSprite_4536/frame_9/DoAction'];
+const hashes=files.flatMap(f=>['as','pcode'].map(ext=>{const path=base+ext+'/scripts/'+f+'.'+ext;return {path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')};}));
+const out='docs/reverse-engineering/equipment-gems/source-functions.json';
+fs.mkdirSync('docs/reverse-engineering/equipment-gems',{recursive:true});
+if(fs.existsSync(out))throw Error('Frozen baseline already exists; do not overwrite');
+fs.writeFileSync(out,JSON.stringify({functions,hashes,forgeBaseline:'docs/reverse-engineering/equipment-magic/source-functions.json'},null,2)+'\n');

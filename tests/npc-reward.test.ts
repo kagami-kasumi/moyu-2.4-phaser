@@ -11,7 +11,7 @@ for(const cmd of [3,4,5])test(`pack ${cmd-2}: cold inventory and every attribute
 });
 test('close/reopen at each stage and repeated/stale answers',()=>{
  const a=new NpcReward('玩家',()=>0),s=rewardOracle();for(const stage of [1,2]){a.interact();s.interact();if(stage===2){a.choose(2);s.choose(2);}a.close();s.close();a.interact();s.interact();assert.equal(a.words,s.scope.words);assert.equal(a.nextCmd,s.scope.nextCmd);}
- a.choose(2);const revision=a.revision;a.choose(3,revision);const before=a.snapshot();assert.equal(a.choose(3,revision),false);assert.equal(a.choose(4),false);assert.deepEqual(a.snapshot(),before);a.choose(-1);a.interact();assert.equal(a.cmd,6);assert.deepEqual(a.answers.map(a=>a.cmd),[7,-1]);assert.equal(a.choose(2),false);assert.equal(a.choose(3),false);
+ a.choose(2);const revision=a.revision;a.choose(3,revision);const before=a.snapshot();assert.equal(a.choose(3,revision),false);assert.equal(a.choose(4),false);assert.deepEqual(a.snapshot(),before);a.choose(-1);a.interact();assert.equal(a.cmd,6);assert.deepEqual(a.answers.map(a=>a.cmd),[7,8,-1]);assert.equal(a.choose(2),false);assert.equal(a.choose(3),false);
 });
 test('all packs with 0/1/2/4 free slots: ordered partial delivery, drops, consumed flag',()=>{
  for(const cmd of [3,4,5])for(const free of [0,1,2,4]){const a=new NpcReward('玩家',()=>0),s=rewardOracle();for(let i=4;i<40;i++){a.bag[i]=null;s.root.backPack['包格'+(i+1)].setThing({type:'空格'});}for(let i=4;i<40-free;i++){a.bag[i]={type:'测试占位',number:1,salePrice:0};s.root.backPack['包格'+(i+1)].setThing(a.bag[i]);}

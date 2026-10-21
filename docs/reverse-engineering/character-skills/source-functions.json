@@ -1,0 +1,365 @@
+{
+  "functions": {
+    "useItem": "{\r\n   if(item.type == \"空格\")\r\n   {\r\n      return false;\r\n   }\r\n   if(item.hitTest(this.backPack) == false && item.hitTest(this.fastKey) == false)\r\n   {\r\n      if(true == this.backPack.isOpen && true == this.backPack.setThing(item))\r\n      {\r\n         item.setThing({type:\"空格\"});\r\n         return true;\r\n      }\r\n      return false;\r\n   }\r\n   if(item.type == \"头盔\" || item.type == \"衣服\" || item.type == \"武器\" || item.type == \"鞋\" || item.type == \"幸运符\" || item.type == \"戒指\")\r\n   {\r\n      if(this.equipment.setThing(item))\r\n      {\r\n         item.setThing({type:\"空格\"});\r\n         return true;\r\n      }\r\n      return false;\r\n   }\r\n   if(item.type == \"庇护铃铛\" || item.type == \"翡翠铃铛\" || item.type == \"凤翼铃铛\")\r\n   {\r\n      i = 1;\r\n      while(i <= 3)\r\n      {\r\n         if(this[\"huanShouItem\" + i].isOpen && \"空格\" == this[\"huanShouItem\" + i].bell.type && this[\"huanShouItem\" + i].setThing(item))\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         i++;\r\n      }\r\n      return false;\r\n   }\r\n   var _loc5_;\r\n   var _loc0_;\r\n   var _loc10_;\r\n   var _loc9_;\r\n   var _loc8_;\r\n   var _loc7_;\r\n   var _loc11_;\r\n   var _loc6_;\r\n   var _loc13_;\r\n   var _loc12_;\r\n   var _loc14_;\r\n   switch(item.type)\r\n   {\r\n      case \"镐\":\r\n         if(this.map.nowMap == \"矿洞\")\r\n         {\r\n            if(random(10000) < 3000)\r\n            {\r\n               this.createThing({type:\"玄铁矿\"});\r\n               _global.sysMsg.addMsg(\"挖到了 玄铁矿\");\r\n            }\r\n            else if(random(7000) < 6000)\r\n            {\r\n               this.createThing({type:\"紫水晶\"});\r\n               _global.sysMsg.addMsg(\"挖到了 紫水晶\");\r\n            }\r\n            else\r\n            {\r\n               this.createThing({type:\"陨铁矿\"});\r\n               _global.sysMsg.addMsg(\"挖到了 陨铁矿\");\r\n            }\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         _global.msg.open(\"\\r\\r什么也没挖到!\\r请在矿洞里使用\");\r\n         return false;\r\n         break;\r\n      case \"月光礼包\":\r\n         this.createThing({type:\"宝石\",name:\"初级月光宝盒\"});\r\n         item.setThing({type:\"空格\"});\r\n         return true;\r\n      case \"经验球\":\r\n         this.useExpball.open();\r\n         break;\r\n      case \"能量药水\":\r\n      case \"转世圣水\":\r\n      case \"超级经验球\":\r\n         if(rolePanel.setThing(item) == true)\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         return false;\r\n         break;\r\n      case \"药品\":\r\n         _loc5_ = this.map.role;\r\n         hp = _loc5_.maxLife - _loc5_.life;\r\n         if(item.mpVal > 0 && item.mpVal != undefined)\r\n         {\r\n            if(_loc5_.life <= 0)\r\n            {\r\n               return false;\r\n            }\r\n            _loc5_.mp += item.mpVal;\r\n         }\r\n         if(this.battleHuanShouPanel1.isOpen && this.battleHuanShouPanel1.huanShou.life > 0 && this.battleHuanShouPanel1.huanShou.maxLife - this.battleHuanShouPanel1.huanShou.life > hp)\r\n         {\r\n            _loc5_ = this.battleHuanShouPanel1.body;\r\n            hp = this.battleHuanShouPanel1.huanShou.maxLife - this.battleHuanShouPanel1.huanShou.life;\r\n         }\r\n         if(this.battleHuanShouPanel2.isOpen && this.battleHuanShouPanel2.huanShou.life > 0 && this.battleHuanShouPanel2.huanShou.maxLife - this.battleHuanShouPanel2.huanShou.life > hp)\r\n         {\r\n            _loc5_ = this.battleHuanShouPanel2.body;\r\n            hp = this.battleHuanShouPanel2.huanShou.maxLife - this.battleHuanShouPanel2.huanShou.life;\r\n         }\r\n         if(this.battleHuanShouPanel3.isOpen && this.battleHuanShouPanel3.huanShou.life > 0 && this.battleHuanShouPanel3.huanShou.maxLife - this.battleHuanShouPanel3.huanShou.life > hp)\r\n         {\r\n            _loc5_ = this.battleHuanShouPanel3.body;\r\n            hp = this.battleHuanShouPanel3.huanShou.maxLife - this.battleHuanShouPanel3.huanShou.life;\r\n         }\r\n         if(_loc5_.life <= 0)\r\n         {\r\n            return false;\r\n         }\r\n         _loc5_.life += item.hpVal;\r\n         _global.playSound(\"喝药.wav\");\r\n         if(this.backPack.useThing(item,1) == true)\r\n         {\r\n            return false;\r\n         }\r\n         item.setThing({type:\"空格\"});\r\n         return true;\r\n         break;\r\n      case \"生命之源\":\r\n      case \"魔力源泉\":\r\n         this.rolePanel.setThing(item);\r\n         this.battleHuanShouPanel1.setThing(item);\r\n         this.battleHuanShouPanel2.setThing(item);\r\n         this.battleHuanShouPanel3.setThing(item);\r\n         return false;\r\n      case \"电浆药水\":\r\n      case \"神兽药水\":\r\n      case \"奇异果\":\r\n         if(this.battleHuanShouPanel1.isOpen)\r\n         {\r\n            if(this.battleHuanShouPanel1.setThing(item) == true)\r\n            {\r\n               item.number = _loc0_ = item.number - 1;\r\n               if(_loc0_ <= 0)\r\n               {\r\n                  item.setThing({type:\"空格\"});\r\n                  return true;\r\n               }\r\n            }\r\n         }\r\n         return false;\r\n      case \"小魔石袋子\":\r\n      case \"中魔石袋子\":\r\n      case \"大魔石袋子\":\r\n      case \"富豪礼包\":\r\n         this.map.role.xxx_ms += item.salePrice;\r\n         _global.sysMsg.addMsg(\"获得\" + _global.numberToString(item.salePrice) + \"魔石\");\r\n         item.number = _loc0_ = item.number - 1;\r\n         if(_loc0_ <= 0)\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         break;\r\n      case \"朵朵\":\r\n         if(this.huanShou.addHuanShou({type:\"朵朵\",levels:1,zs:0,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:1.7}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"飞飞\":\r\n         if(this.huanShou.addHuanShou({type:\"飞飞\",levels:1,zs:0,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:1.7}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"吉祥噜噜\":\r\n         if(this.huanShou.addHuanShou({type:\"吉祥噜噜\",levels:1,zs:0,maxZs:200,element:0,titleNum:0,rateLife:16,rateMinAttack:0.5,rateMaxAttack:2.5,rateDefense:0.25}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"如意嘟嘟\":\r\n         if(this.huanShou.addHuanShou({type:\"如意嘟嘟\",levels:1,zs:0,maxZs:200,element:0,titleNum:0,rateLife:16,rateMinAttack:1.5,rateMaxAttack:1.5,rateDefense:0.25}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"圣天使雷斯\":\r\n         if(this.huanShou.addHuanShou({type:\"圣天使雷斯\",levels:1,zs:0,maxZs:213,element:0,titleNum:0,rateLife:36,rateMinAttack:0.5,rateMaxAttack:1.2,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"圣天使奈丽\":\r\n         if(this.huanShou.addHuanShou({type:\"圣天使奈丽\",levels:1,zs:0,maxZs:213,element:0,titleNum:0,rateLife:36,rateMinAttack:0.5,rateMaxAttack:1.2,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"守护者\":\r\n         if(this.huanShou.addHuanShou({type:\"守护者\",levels:1,zs:0,maxZs:195,element:0,titleNum:0,rateLife:8.65,rateMinAttack:3,rateMaxAttack:5,rateDefense:0.1}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"眺望者\":\r\n         if(this.huanShou.addHuanShou({type:\"眺望者\",levels:1,zs:0,maxZs:195,element:0,titleNum:0,rateLife:8.65,rateMinAttack:3,rateMaxAttack:5,rateDefense:0.1}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"鼠来福\":\r\n         if(this.huanShou.addHuanShou({type:\"鼠来福\",levels:1,zs:0,maxZs:205,element:0,titleNum:0,rateLife:8.65,rateMinAttack:1,rateMaxAttack:7,rateDefense:0.1}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"鼠来运\":\r\n         if(this.huanShou.addHuanShou({type:\"鼠来运\",levels:1,zs:0,maxZs:205,element:0,titleNum:0,rateLife:8.65,rateMinAttack:1,rateMaxAttack:7,rateDefense:0.1}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"凯恩\":\r\n         if(this.huanShou.addHuanShou({type:\"凯恩\",levels:1,zs:0,maxZs:225,element:0,titleNum:0,rateLife:16.5,rateMinAttack:1,rateMaxAttack:2.5,rateDefense:0.3}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"莎菲\":\r\n         if(this.huanShou.addHuanShou({type:\"莎菲\",levels:1,zs:0,maxZs:215,element:0,titleNum:0,rateLife:17.5,rateMinAttack:1.25,rateMaxAttack:1.75,rateDefense:0.35}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"雪瑞\":\r\n         if(this.huanShou.addHuanShou({type:\"雪瑞\",levels:1,zs:0,maxZs:185,element:0,titleNum:0,rateLife:14.5,rateMinAttack:0,rateMaxAttack:4,rateDefense:0.25}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"炫舞牛\":\r\n         if(this.huanShou.addHuanShou({type:\"炫舞牛\",levels:1,zs:0,maxZs:50,element:0,titleNum:0,rateLife:12,rateMinAttack:5,rateMaxAttack:15,rateDefense:4}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"霹雳虎\":\r\n         if(this.huanShou.addHuanShou({type:\"霹雳虎\",levels:1,zs:0,maxZs:50,element:0,titleNum:0,rateLife:40,rateMinAttack:2,rateMaxAttack:20,rateDefense:0.4}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"嘻哈牛\":\r\n         if(this.huanShou.addHuanShou({type:\"嘻哈牛\",levels:1,zs:0,maxZs:0,element:0,titleNum:0,rateLife:5,rateMinAttack:8,rateMaxAttack:23,rateDefense:3}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"玲珑虎\":\r\n         if(this.huanShou.addHuanShou({type:\"玲珑虎\",levels:1,zs:0,maxZs:0,element:0,titleNum:0,rateLife:30,rateMinAttack:1,rateMaxAttack:30,rateDefense:0.1}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"异界精灵\":\r\n         if(this.huanShou.addHuanShou({type:\"异界精灵\",levels:1,zs:0,maxZs:50,element:0,titleNum:0,rateLife:88,rateMinAttack:1,rateMaxAttack:2,rateDefense:5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"狄克牛\":\r\n         if(this.huanShou.addHuanShou({type:\"狄克牛\",levels:1,zs:0,maxZs:35,element:0,titleNum:0,rateLife:32,rateMinAttack:0,rateMaxAttack:0.5,rateDefense:3}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"发条虎\":\r\n         if(this.huanShou.addHuanShou({type:\"发条虎\",levels:1,zs:0,maxZs:35,element:0,titleNum:0,rateLife:30,rateMinAttack:5,rateMaxAttack:9,rateDefense:0}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"神影兽\":\r\n         if(this.huanShou.addHuanShou({type:\"神影兽\",levels:1,zs:0,maxZs:35,element:0,titleNum:0,rateLife:4,rateMinAttack:7,rateMaxAttack:7,rateDefense:2}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"蝴蝶牛\":\r\n         if(this.huanShou.addHuanShou({type:\"蝴蝶牛\",levels:1,zs:0,maxZs:0,element:0,titleNum:0,rateLife:35,rateMinAttack:0,rateMaxAttack:15,rateDefense:0}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"乖乖虎\":\r\n         if(this.huanShou.addHuanShou({type:\"乖乖虎\",levels:1,zs:0,maxZs:0,element:0,titleNum:0,rateLife:2,rateMinAttack:0,rateMaxAttack:15,rateDefense:3}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"奇迹龙\":\r\n         _loc10_ = 35;\r\n         _loc9_ = 3;\r\n         _loc8_ = 3;\r\n         _loc7_ = 2;\r\n         switch(random(4))\r\n         {\r\n            case 0:\r\n               _loc10_ = 105;\r\n               break;\r\n            case 1:\r\n               _loc9_ = 9;\r\n               break;\r\n            case 2:\r\n               _loc8_ = 9;\r\n               break;\r\n            case 3:\r\n               _loc7_ = 6;\r\n         }\r\n         _loc11_ = Math.round(10000 * (Math.random() * _loc10_ + 1)) / 10000;\r\n         _loc6_ = Math.round(10000 * (Math.random() * _loc9_)) / 10000;\r\n         _loc13_ = Math.round(10000 * (_loc6_ + Math.random() * _loc8_)) / 10000;\r\n         _loc12_ = Math.round(10000 * (Math.random() * _loc7_)) / 10000;\r\n         _loc14_ = 200 + Math.round(200 * (_loc11_ / _loc10_ + _loc6_ / _loc9_ + (_loc13_ - _loc6_) / _loc8_ + _loc12_ / _loc7_));\r\n         if(this.huanShou.addHuanShou({type:\"奇迹龙\",levels:1,zs:0,maxZs:1000,element:0,titleNum:0,rateLife:_loc11_,rateMinAttack:_loc6_,rateMaxAttack:_loc13_,rateDefense:_loc12_,rareFen:_loc14_}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:0,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2,rateMaxAttack:2,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"6星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:5,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.1,rateMaxAttack:2.1,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"8星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:8,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.1545,rateMaxAttack:2.1545,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"12星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:14,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.2625,rateMaxAttack:2.2625,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"15星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:19,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.3476,rateMaxAttack:2.3476,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"19星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:26,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.46,rateMaxAttack:2.46,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"23星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:33,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.5646,rateMaxAttack:2.5646,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"26星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:39,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.6485,rateMaxAttack:2.6485,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"30星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:47,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.753,rateMaxAttack:2.753,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"35星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:60,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:2.973,rateMaxAttack:2.973,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"40星奇异兽\":\r\n         if(this.huanShou.addHuanShou({type:\"奇异兽\",levels:1,zs:80,maxZs:213,element:0,titleNum:0,rateLife:12,rateMinAttack:3.08,rateMaxAttack:3.08,rateDefense:0.5}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品20星凯恩\":\r\n         if(this.huanShou.addHuanShou({type:\"凯恩\",levels:1,zs:31,maxZs:225,element:0,titleNum:0,rateLife:16.5,rateMinAttack:1.2676,rateMaxAttack:3.1692,rateDefense:0.3797}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品35星凯恩\":\r\n         if(this.huanShou.addHuanShou({type:\"凯恩\",levels:1,zs:62,maxZs:225,element:0,titleNum:0,rateLife:16.5,rateMinAttack:1.4637,rateMaxAttack:3.6593,rateDefense:0.4381}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品45星凯恩\":\r\n         if(this.huanShou.addHuanShou({type:\"凯恩\",levels:1,zs:88,maxZs:225,element:0,titleNum:0,rateLife:16.5,rateMinAttack:1.587,rateMaxAttack:3.9676,rateDefense:0.4749}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品20星莎菲\":\r\n         if(this.huanShou.addHuanShou({type:\"莎菲\",levels:1,zs:28,maxZs:215,element:0,titleNum:0,rateLife:17.5,rateMinAttack:1.5566,rateMaxAttack:2.1792,rateDefense:0.4358}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品35星莎菲\":\r\n         if(this.huanShou.addHuanShou({type:\"莎菲\",levels:1,zs:59,maxZs:215,element:0,titleNum:0,rateLife:17.5,rateMinAttack:1.8091,rateMaxAttack:2.5328,rateDefense:0.5065}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品45星莎菲\":\r\n         if(this.huanShou.addHuanShou({type:\"莎菲\",levels:1,zs:84,maxZs:215,element:0,titleNum:0,rateLife:17.5,rateMinAttack:1.9626,rateMaxAttack:2.7476,rateDefense:0.5495}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品20星雪瑞\":\r\n         if(this.huanShou.addHuanShou({type:\"雪瑞\",levels:1,zs:21,maxZs:185,element:0,titleNum:0,rateLife:14.5,rateMinAttack:0,rateMaxAttack:4.761,rateDefense:0.2975}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品35星雪瑞\":\r\n         if(this.huanShou.addHuanShou({type:\"雪瑞\",levels:1,zs:49,maxZs:185,element:0,titleNum:0,rateLife:14.5,rateMinAttack:0,rateMaxAttack:5.5555,rateDefense:0.3472}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品45星雪瑞\":\r\n         if(this.huanShou.addHuanShou({type:\"雪瑞\",levels:1,zs:72,maxZs:185,element:0,titleNum:0,rateLife:14.5,rateMinAttack:0,rateMaxAttack:6.06,rateDefense:0.3787}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品20星朵朵\":\r\n         if(this.huanShou.addHuanShou({type:\"朵朵\",levels:1,zs:27,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:2.104}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品35星朵朵\":\r\n         if(this.huanShou.addHuanShou({type:\"朵朵\",levels:1,zs:57,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:2.4412}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品45星朵朵\":\r\n         if(this.huanShou.addHuanShou({type:\"朵朵\",levels:1,zs:81,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:2.6468}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品20星飞飞\":\r\n         if(this.huanShou.addHuanShou({type:\"飞飞\",levels:1,zs:27,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:2.104}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品35星飞飞\":\r\n         if(this.huanShou.addHuanShou({type:\"飞飞\",levels:1,zs:57,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:2.4412}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"极品45星飞飞\":\r\n         if(this.huanShou.addHuanShou({type:\"飞飞\",levels:1,zs:81,maxZs:208,element:0,titleNum:0,rateLife:21,rateMinAttack:0.5,rateMaxAttack:1.5,rateDefense:2.6468}))\r\n         {\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n         }\r\n         break;\r\n      case \"技能书\":\r\n         if(item.vocational != this.map.role.vocational && item.vocational != \"公共\")\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r职业不符合。\");\r\n            return false;\r\n         }\r\n         if(item.levels > this.map.role.levels)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r等级不够，无法学习技能。\");\r\n            return false;\r\n         }\r\n         if(this.roleSkills.addSkill(item.name))\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         break;\r\n      case \"技能图标\":\r\n         switch(item.name)\r\n         {\r\n            case \"斩魂\":\r\n               this.map.role.斩魂();\r\n               break;\r\n            case \"旋风斩\":\r\n               this.map.role.旋风斩();\r\n               break;\r\n            case \"刀光斩\":\r\n               this.map.role.刀光斩();\r\n               break;\r\n            case \"飞天连斩\":\r\n               this.map.role.飞天连斩();\r\n               break;\r\n            case \"狂暴\":\r\n               this.map.role.狂暴();\r\n               break;\r\n            case \"震\":\r\n               this.map.role.震();\r\n               break;\r\n            case \"火球术\":\r\n               this.map.role.火球术();\r\n               break;\r\n            case \"电击术\":\r\n               this.map.role.电击术();\r\n               break;\r\n            case \"光辉光环\":\r\n               this.map.role.光辉光环();\r\n               break;\r\n            case \"爆雷术\":\r\n               this.map.role.爆雷术();\r\n               break;\r\n            case \"雷霆万钧\":\r\n               this.map.role.雷霆万钧();\r\n               break;\r\n            case \"怒\":\r\n               this.map.role.怒();\r\n         }\r\n         break;\r\n      case \"英雄令\":\r\n         this.map.role.creditUp(10);\r\n         item.number = _loc0_ = item.number - 1;\r\n         if(_loc0_ <= 0)\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         break;\r\n      case \"卡萨诺幻境\":\r\n      case \"树心幻境\":\r\n      case \"戈壁幻境\":\r\n      case \"沼泽幻境\":\r\n      case \"南城幻境\":\r\n      case \"边境幻境\":\r\n      case \"冰宫幻境\":\r\n         if(this.map.nowMap != item.type)\r\n         {\r\n            this.map.nextMap = item.type;\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(item.type);\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"亚维特岛地图\":\r\n         if(this.map.nowMap != \"亚维特岛\")\r\n         {\r\n            this.map.nextMap = \"亚维特岛\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.Map亚维特岛 = true;\r\n            this.map.gotoAndStop(\"亚维特岛\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"百兽岛地图\":\r\n         if(this.map.nowMap != \"百兽岛一\")\r\n         {\r\n            this.map.nextMap = \"百兽岛一\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.Map百兽岛一 = true;\r\n            this.map.Map百兽岛二 = true;\r\n            this.map.gotoAndStop(\"百兽岛一\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"蜘蛛谷地图\":\r\n         if(this.map.nowMap != \"蜘蛛谷一\")\r\n         {\r\n            this.map.nextMap = \"蜘蛛谷一\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.Map蜘蛛谷一 = true;\r\n            this.map.Map蜘蛛谷二 = true;\r\n            this.map.Map蜘蛛谷三 = true;\r\n            this.map.gotoAndStop(\"蜘蛛谷一\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"玫瑰湖地图\":\r\n         if(this.map.nowMap != \"玫瑰湖\")\r\n         {\r\n            this.map.nextMap = \"玫瑰湖\";\r\n            this.map.nextEntry = \"entry1\";\r\n            _root.firstInto = true;\r\n            this.map.gotoAndStop(\"玫瑰湖\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"雷兽谷地图\":\r\n         if(this.map.nowMap != \"雷兽谷\")\r\n         {\r\n            this.map.nextMap = \"雷兽谷\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.reiMap1 = true;\r\n            this.map.reiMap2 = true;\r\n            this.map.reiMap3 = true;\r\n            this.map.gotoAndStop(\"雷兽谷\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"龙怪头目行踪\":\r\n         if(this.map.nowMap != \"卡萨诺城野外五\")\r\n         {\r\n            this.map.nextMap = \"卡萨诺城野外五\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"卡萨诺城野外五\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"冰妖剑士头目行踪\":\r\n         if(this.map.nowMap != \"树心城野外五\")\r\n         {\r\n            this.map.nextMap = \"树心城野外五\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"树心城野外五\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"守卫魔头目行踪\":\r\n         if(this.map.nowMap != \"戈壁野外五\")\r\n         {\r\n            this.map.nextMap = \"戈壁野外五\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"戈壁野外五\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"绿魔精头目行踪\":\r\n         if(this.map.nowMap != \"沼泽野外五\")\r\n         {\r\n            this.map.nextMap = \"沼泽野外五\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"沼泽野外五\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"炎女头目行踪\":\r\n         if(this.map.nowMap != \"南城野外五\")\r\n         {\r\n            this.map.nextMap = \"南城野外五\";\r\n            this.map.nextEntry = \"entry2\";\r\n            this.map.gotoAndStop(\"南城野外五\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"剌虫人头目行踪\":\r\n         if(this.map.nowMap != \"边关野外五\")\r\n         {\r\n            this.map.nextMap = \"边关野外五\";\r\n            this.map.nextEntry = \"entry2\";\r\n            this.map.gotoAndStop(\"边关野外五\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"四牙怪头目行踪\":\r\n         if(this.map.nowMap != \"冰封谷三\")\r\n         {\r\n            this.map.nextMap = \"冰封谷三\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"冰封谷三\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"黑翼法师头目行踪\":\r\n         if(this.map.nowMap != \"冰宫野外三\")\r\n         {\r\n            this.map.nextMap = \"冰宫野外三\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"冰宫野外三\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"暗黑格拉斯头目行踪\":\r\n         if(this.map.nowMap != \"黑渊三\")\r\n         {\r\n            this.map.nextMap = \"黑渊三\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"黑渊三\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"雷兽行踪\":\r\n         if(this.map.nowMap != \"雷兽密室\")\r\n         {\r\n            this.map.nextMap = \"雷兽密室\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"雷兽密室\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"深渊迷宫地图\":\r\n         if(this.map.nowMap != \"深渊迷宫一\")\r\n         {\r\n            this.map.nextMap = \"深渊迷宫一\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"深渊迷宫一\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      case \"勇士勋章\":\r\n         map.role.exploitUp(100);\r\n         map.role.militaryExploitUp(100);\r\n         item.number = _loc0_ = item.number - 1;\r\n         if(_loc0_ <= 0)\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         break;\r\n      case \"灵魂礼包\":\r\n         var i = 0;\r\n         while(i < 10)\r\n         {\r\n            this.createThing({type:\"灵魂晶石\"});\r\n            i++;\r\n         }\r\n         item.number = _loc0_ = item.number - 1;\r\n         if(_loc0_ <= 0)\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         break;\r\n      case \"幻魔礼包\":\r\n         i = 0;\r\n         while(i < 10)\r\n         {\r\n            this.createThing({type:\"幻魔之心\"});\r\n            i++;\r\n         }\r\n         item.number = _loc0_ = item.number - 1;\r\n         if(_loc0_ <= 0)\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         break;\r\n      case \"魔魂礼包\":\r\n         i = 0;\r\n         while(i < 10)\r\n         {\r\n            this.createThing({type:\"魔魂之心\"});\r\n            i++;\r\n         }\r\n         item.number = _loc0_ = item.number - 1;\r\n         if(_loc0_ <= 0)\r\n         {\r\n            item.setThing({type:\"空格\"});\r\n            return true;\r\n         }\r\n         break;\r\n      case \"幸运之门\":\r\n         if(this.map.nowMap != \"幸运之门\")\r\n         {\r\n            this.map.nextMap = \"幸运之门\";\r\n            this.map.nextEntry = \"entry1\";\r\n            this.map.gotoAndStop(\"幸运之门\");\r\n            item.number = _loc0_ = item.number - 1;\r\n            if(_loc0_ <= 0)\r\n            {\r\n               item.setThing({type:\"空格\"});\r\n               return true;\r\n            }\r\n            break;\r\n         }\r\n         _global.sysMsg.addMsg(\"此物品在该地图使用无效\");\r\n         return false;\r\n         break;\r\n      default:\r\n         return false;\r\n   }\r\n   return false;\r\n}",
+    "addSkill": "{\r\n   var _loc2_;\r\n   _loc2_ = this.allSkills.length - 1;\r\n   while(_loc2_ >= 0)\r\n   {\r\n      if(this.allSkills[_loc2_].name == skillName)\r\n      {\r\n         if(this.allSkills[_loc2_].levels + 1 > this.allSkills[_loc2_].maxLevels)\r\n         {\r\n            return false;\r\n         }\r\n         if(this.allSkills[_loc2_].levels == 0)\r\n         {\r\n            this.allSkills[_loc2_].studied = true;\r\n            this.studiedSkills = this.studiedSkills + 1;\r\n            if(skillName == \"震\" || skillName == \"怒\")\r\n            {\r\n               this._parent.XPPower.isUsed = true;\r\n            }\r\n         }\r\n         if(isNaN(reLv) == false)\r\n         {\r\n            this.allSkills[_loc2_].levels = reLv;\r\n         }\r\n         else\r\n         {\r\n            this.allSkills[_loc2_].levels++;\r\n         }\r\n         this.effect(skillName,this.allSkills[_loc2_].levels);\r\n         this.afterAdd();\r\n         return true;\r\n      }\r\n      _loc2_ = _loc2_ - 1;\r\n   }\r\n   return false;\r\n}",
+    "effect": "{\r\n   switch(skillName)\r\n   {\r\n      case \"重伤\":\r\n         this.role.heavyDamage = levels;\r\n         break;\r\n      case \"寒冰\":\r\n         this.role.frost = levels;\r\n         break;\r\n      case \"神圣\":\r\n         this.role.skillAttack = 2 * levels;\r\n         break;\r\n      case \"重击\":\r\n         this.role.heavyHit = 2 * levels;\r\n         break;\r\n      case \"破防\":\r\n         this.role.nonDefense = 2 * levels;\r\n         break;\r\n      case \"金刚\":\r\n         this.role.skillDefense = 8 * levels;\r\n         break;\r\n      case \"强健之术\":\r\n         this.role.skillLife = 10 * this.role.rateLife * levels;\r\n         break;\r\n      case \"智慧之术\":\r\n         this.role.skillMp = 10 * this.role.rateMp * levels;\r\n         break;\r\n      case \"英勇\":\r\n         this.role.skillAddFire = 5 * levels;\r\n         break;\r\n      default:\r\n         return false;\r\n   }\r\n   this.role.flashAttribute();\r\n   return true;\r\n}"
+  },
+  "skills": [
+    {
+      "name": "火球术",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r远程单体攻击,攻击前方的一个敌人。"
+    },
+    {
+      "name": "电击术",
+      "studied": false,
+      "condition": 25,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r线形攻击，攻击前方直线上的所有敌人。"
+    },
+    {
+      "name": "光辉光环",
+      "studied": false,
+      "condition": 50,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r群体攻击，攻击以自身为中心周围一定范围的敌人。"
+    },
+    {
+      "name": "爆雷术",
+      "studied": false,
+      "condition": 75,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r远程单体攻击，暴发2倍攻击力攻击前方一个敌人。"
+    },
+    {
+      "name": "雷霆万钧",
+      "studied": false,
+      "condition": 89,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r总体攻击力提升50%，闪避率加5%,总体防御力下降50%，状态持续30秒。"
+    },
+    {
+      "name": "斩魂",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r近程单体攻击，附加额外攻击力攻击前方一个敌人，人物等级越高附加攻击越高。"
+    },
+    {
+      "name": "旋风斩",
+      "studied": false,
+      "condition": 25,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r近程群体攻击，以旋风般的速度攻击前方近身的所有敌人。"
+    },
+    {
+      "name": "刀光斩",
+      "studied": false,
+      "condition": 50,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r远程群体攻击，发出一道刀光攻击前方所有敌人。"
+    },
+    {
+      "name": "飞天连斩",
+      "studied": false,
+      "condition": 75,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r近程单体攻击，以飞快的快速向目标发出三次攻击，并且短时间麻痹对方。"
+    },
+    {
+      "name": "狂暴",
+      "studied": false,
+      "condition": 89,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "主动技能\r进入狂暴状态，攻击力提升50%，爆击率增加5%，每次攻击损耗自身4%生命值，状态持续30秒。"
+    },
+    {
+      "name": "怒",
+      "studied": false,
+      "condition": 0,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "XP技能\r以500%的攻击力全屏攻击，需要消耗一格XP能量。"
+    },
+    {
+      "name": "震",
+      "studied": false,
+      "condition": 0,
+      "levels": 0,
+      "maxLevels": 1,
+      "canUse": true,
+      "description": "XP技能\r以500%的攻击力全屏攻击，需要消耗一格XP能量。"
+    },
+    {
+      "name": "重伤",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r每级增加1%概率使敌人持续受到攻击者最小攻击的伤害，持续5秒。"
+    },
+    {
+      "name": "寒冰",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r每级增加1%概率使敌人持续3秒被冰冻而不可行动。"
+    },
+    {
+      "name": "神圣",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r每级提高2%的攻击。"
+    },
+    {
+      "name": "重击",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r每级增加2%概率打出最高攻击。"
+    },
+    {
+      "name": "破防",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r每级增加2%概率使对方处于虚弱状态，防御为0，持续5秒。"
+    },
+    {
+      "name": "金刚",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r每级提高8%的防御。"
+    },
+    {
+      "name": "强健之术",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r提高人物最大生命值，每级技能战士提高150，法师提高120。"
+    },
+    {
+      "name": "智慧之术",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 10,
+      "canUse": false,
+      "description": "被动辅助技能\r提高人物最大魔力值，每级技能战士提高50，法师提高90。"
+    },
+    {
+      "name": "英勇",
+      "studied": false,
+      "condition": 1,
+      "levels": 0,
+      "maxLevels": 50,
+      "canUse": false,
+      "description": "被动辅助技能\r提高战斗力，每级提高5点战斗力，最高50级。"
+    }
+  ],
+  "books": [
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 1,
+      "name": "火球术",
+      "salePrice": 2
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 25,
+      "name": "电击术",
+      "salePrice": 20
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 50,
+      "name": "光辉光环",
+      "salePrice": 400
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 75,
+      "name": "爆雷术",
+      "salePrice": 5000
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 89,
+      "name": "雷霆万钧",
+      "salePrice": 3000
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 1,
+      "name": "怒",
+      "salePrice": 1000
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 1,
+      "name": "重伤",
+      "salePrice": 500
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 1,
+      "name": "寒冰",
+      "salePrice": 500
+    },
+    {
+      "type": "技能书",
+      "vocational": "法师",
+      "levels": 1,
+      "name": "神圣",
+      "salePrice": 2000
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 1,
+      "name": "斩魂",
+      "salePrice": 2
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 25,
+      "name": "旋风斩",
+      "salePrice": 10
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 50,
+      "name": "刀光斩",
+      "salePrice": 200
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 75,
+      "name": "飞天连斩",
+      "salePrice": 5000
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 89,
+      "name": "狂暴",
+      "salePrice": 2000
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 1,
+      "name": "震",
+      "salePrice": 1000
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 1,
+      "name": "破防",
+      "salePrice": 500
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 1,
+      "name": "重击",
+      "salePrice": 500
+    },
+    {
+      "type": "技能书",
+      "vocational": "战士",
+      "levels": 1,
+      "name": "金刚",
+      "salePrice": 2000
+    },
+    {
+      "type": "技能书",
+      "vocational": "公共",
+      "levels": 1,
+      "name": "强健之术",
+      "salePrice": 500
+    },
+    {
+      "type": "技能书",
+      "vocational": "公共",
+      "levels": 1,
+      "name": "智慧之术",
+      "salePrice": 500
+    },
+    {
+      "type": "技能书",
+      "vocational": "公共",
+      "levels": 1,
+      "name": "英勇",
+      "salePrice": 5000
+    }
+  ],
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction.as",
+      "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction.pcode",
+      "sha256": "3eaec722a433ca4e60dccff025806c7688b47d5537152b3f811da0a9e37a0e5f"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+      "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+    }
+  ]
+}

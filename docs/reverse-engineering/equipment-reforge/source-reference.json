@@ -1,0 +1,18 @@
+{
+  "hashes": [
+    {
+      "path": "docs/reverse-engineering/equipment-magic/source-functions.json",
+      "sha256": "0dadeb286685b3f6d689168e6f2980a62314a66e6f9d30a1fed501ddd64df1e5"
+    },
+    {
+      "path": "docs/reverse-engineering/equipment-elements/source-functions.json",
+      "sha256": "b43a60cc18e9cbea2afaaa1c5c813af0d6cd15e40207a5b70c8eb99ce9be6a77"
+    },
+    {
+      "path": "docs/reverse-engineering/equipment-level/source-reference.json",
+      "sha256": "9ae351015b820a4773c04ac87843e96cb44760dd524082e56e0cc7b08aefb0d2"
+    }
+  ],
+  "scope": "Consume unchanged full makeItem/useGem/yes/upDataWeapon and full equipment attribute oracle; no rewritten source baseline.",
+  "pcode": "frame_9/DoAction.pcode:14685-14830 king credit and consumption branches"
+}

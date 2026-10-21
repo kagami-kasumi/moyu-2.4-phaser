@@ -1,0 +1,10 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import vm from 'node:vm';import {functionRange} from './lib/as2-data.mjs';
+const base='local-resources/moyu/source-index/',paths=['DefineSprite_2210_任务系统/frame_1/DoAction_2','DefineSprite_2210_任务系统/frame_1/DoAction','DefineSprite_4312/frame_1/DoAction','frame_9/DoAction','frame_9/DoAction_2','DefineSprite_4536/frame_1/DoAction','__Packages/RoleMC'];
+const texts=paths.map(p=>fs.readFileSync(base+'as/scripts/'+p+'.as','utf8'));
+const branches=[...texts[0].matchAll(/branchTask.push\(([^\n]+)\);/g)].map((m,index)=>({m,index})).filter(({m})=>/name:"[^"\r\n]*级幻兽商"/.test(m[1])).map(({m,index})=>({index,...vm.runInNewContext('('+m[1]+')')}));
+const quests=branches.filter(q=>/^\d+级幻兽商$/.test(q.name));
+const functions={getPrize:functionRange(texts[1],'this.getPrize =').text,command:functionRange(texts[2],'this.command2 =').text,factory:functionRange(texts[3],'this.createThing =').text,credit:functionRange(texts[6],'function creditUp(').text};
+functions.creditSetter=functionRange(texts[6],'function set xxx_credit(').text;
+const hashes=paths.flatMap(p=>['as','pcode'].map(f=>{const path=base+f+'/scripts/'+p+'.'+f;return {path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')};}));
+fs.mkdirSync('docs/reverse-engineering/pet-shop-upgrades',{recursive:true});fs.writeFileSync('docs/reverse-engineering/pet-shop-upgrades/source-functions.json',JSON.stringify({quests,functions,hashes},null,2)+'\n');
+fs.writeFileSync('src/content/pet-shop-upgrade-data.ts','// Verified branchTask definitions and huanShouShop.levelNum; see pet-shop-upgrades/source-contract.md.\nexport const PET_SHOP_UPGRADES='+JSON.stringify(quests.map(q=>({index:q.index,name:q.name,cost:q.need[0].needNumber,prize:q.prize})),null,2)+' as const;\nexport const PET_SHOP_LEVEL_STOCK=[0,9,11,14,17,20] as const;\n');

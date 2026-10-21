@@ -1,0 +1,122 @@
+{
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2327_幻兽超进化/frame_1/DoAction.as",
+      "sha256": "03e20cc072943b46b8066afefa394fef7eca74a37e9de12ff818875f36129325"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    }
+  ],
+  "panel": "var price = 100;\r\nvar mainHuanShou;\r\nthis.open = function()\r\n{\r\n   this.setMainHuanShou();\r\n   this.flashView();\r\n   this.openPanel();\r\n};\r\nthis.setHuanShou = function(target)\r\n{\r\n   if(this.mainRect.hitTest(_root._xmouse,_root._ymouse,true))\r\n   {\r\n      this.setMainHuanShou(target);\r\n      return true;\r\n   }\r\n   return false;\r\n};\r\nthis.setMainHuanShou = function(target)\r\n{\r\n   if(target.type)\r\n   {\r\n      this.mainHuanShou = target;\r\n      this.mainHuanShouView._visible = true;\r\n      this.mainHuanShouView.gotoAndStop(this.mainHuanShou.type);\r\n      this.huanShouName.text = this.mainHuanShou.type;\r\n      this.showInfo();\r\n      return true;\r\n   }\r\n   this.huanShouName.text = \"\";\r\n   this.mainHuanShou = undefined;\r\n   this.mainHuanShouView._visible = false;\r\n   this.showInfo();\r\n   return false;\r\n};\r\nthis.superEvolve = function()\r\n{\r\n   if(this.mainHuanShou == undefined)\r\n   {\r\n      return false;\r\n   }\r\n   if(this.mainHuanShou.allFen < 5000)\r\n   {\r\n      _global.sysMsg.addMsg(\"极品50星以上的幻兽才能评称\");\r\n      return false;\r\n   }\r\n   if(this.mainHuanShou.titleNum > 0)\r\n   {\r\n      return false;\r\n   }\r\n   var _loc3_;\r\n   _loc3_ = this._parent.allTitle.length;\r\n   while(_loc3_ > 0)\r\n   {\r\n      if(this._parent.allTitle[_loc3_ - 1].type == this.mainHuanShou.type)\r\n      {\r\n         this.mainHuanShou.titleNum = this._parent.allTitle[_loc3_ - 1].number + 2;\r\n         if(this._parent.allTitle[_loc3_ - 1].number > 0)\r\n         {\r\n            this._parent.allTitle[_loc3_ - 1].number -= 1;\r\n         }\r\n         this.mainHuanShou.maxZs += 50;\r\n         break;\r\n      }\r\n      _loc3_ = _loc3_ - 1;\r\n   }\r\n   this.mainHuanShou.checkUp();\r\n   this._parent.flashHuanShouView();\r\n   this.closePanel();\r\n   _global.msg.open(\"\\r\\r\\r幻兽\" + mainHuanShou.type + \"获得了\" + mainHuanShou.titleName + \"称号\");\r\n   _global.msg.open(\"\\r\\r\\r幻兽\" + mainHuanShou.type + \"最大转世次数增加50次\");\r\n   return true;\r\n};\r\nthis.flashView = function()\r\n{\r\n   this.setMainHuanShou(this.mainHuanShou);\r\n};\r\nthis.showInfo = function()\r\n{\r\n};\r\n",
+  "declaration": "var allTitle = new Array({type:\"朵朵\",number:3},{type:\"飞飞\",number:3},{type:\"吉祥噜噜\",number:3},{type:\"凯恩\",number:3},{type:\"奇异兽\",number:3},{type:\"如意嘟嘟\",number:3},{type:\"莎菲\",number:3},{type:\"圣天使雷斯\",number:3},{type:\"圣天使奈丽\",number:3},{type:\"守护者\",number:3},{type:\"鼠来福\",number:3},{type:\"鼠来运\",number:3},{type:\"眺望者\",number:3},{type:\"雪瑞\",number:3},{type:\"奇迹龙\",number:3},{type:\"炫舞牛\",number:3},{type:\"霹雳虎\",number:3},{type:\"嘻哈牛\",number:3},{type:\"玲珑虎\",number:3},{type:\"异界精灵\",number:3},{type:\"狄克牛\",number:3},{type:\"发条虎\",number:3},{type:\"神影兽\",number:3},{type:\"蝴蝶牛\",number:3},{type:\"乖乖虎\",number:3});\r",
+  "types": [
+    {
+      "type": "朵朵",
+      "number": 3
+    },
+    {
+      "type": "飞飞",
+      "number": 3
+    },
+    {
+      "type": "吉祥噜噜",
+      "number": 3
+    },
+    {
+      "type": "凯恩",
+      "number": 3
+    },
+    {
+      "type": "奇异兽",
+      "number": 3
+    },
+    {
+      "type": "如意嘟嘟",
+      "number": 3
+    },
+    {
+      "type": "莎菲",
+      "number": 3
+    },
+    {
+      "type": "圣天使雷斯",
+      "number": 3
+    },
+    {
+      "type": "圣天使奈丽",
+      "number": 3
+    },
+    {
+      "type": "守护者",
+      "number": 3
+    },
+    {
+      "type": "鼠来福",
+      "number": 3
+    },
+    {
+      "type": "鼠来运",
+      "number": 3
+    },
+    {
+      "type": "眺望者",
+      "number": 3
+    },
+    {
+      "type": "雪瑞",
+      "number": 3
+    },
+    {
+      "type": "奇迹龙",
+      "number": 3
+    },
+    {
+      "type": "炫舞牛",
+      "number": 3
+    },
+    {
+      "type": "霹雳虎",
+      "number": 3
+    },
+    {
+      "type": "嘻哈牛",
+      "number": 3
+    },
+    {
+      "type": "玲珑虎",
+      "number": 3
+    },
+    {
+      "type": "异界精灵",
+      "number": 3
+    },
+    {
+      "type": "狄克牛",
+      "number": 3
+    },
+    {
+      "type": "发条虎",
+      "number": 3
+    },
+    {
+      "type": "神影兽",
+      "number": 3
+    },
+    {
+      "type": "蝴蝶牛",
+      "number": 3
+    },
+    {
+      "type": "乖乖虎",
+      "number": 3
+    }
+  ],
+  "save": "   moyu_so.data.XPPower_6_visible = this.XPPower.能量格6._visible;\r\n   i = 0;\r\n   while(i < allTitle.length)\r\n   {\r\n      moyu_so.data[\"allTitle\" + i] = this.allTitle[i].number;\r\n      i++;\r\n   }\r\n   moyu_so.data.winpk50 = pk50;\r\n   moyu_so.data.winpk60 = pk60;\r",
+  "load": "   i = 0;\r\n   while(i < allTitle.length)\r\n   {\r\n      this.allTitle[i].number = moyu_so.data[\"allTitle\" + i];\r\n      i++;\r\n   }\r\n   pk50 = moyu_so.data.winpk50;\r\n   pk60 = moyu_so.data.winpk60;\r"
+}

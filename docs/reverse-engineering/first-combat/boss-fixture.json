@@ -1,0 +1,2365 @@
+{
+  "timelines": {
+    "3188": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "3151",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3152",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3167",
+            "ratio": "2",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "-1.0",
+              "scaleY": "1.0",
+              "translateX": "6680",
+              "translateY": "-260"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3167",
+            "ratio": "2",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "-60",
+              "translateY": "-260"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3178",
+            "ratio": "4",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "-1.0",
+              "scaleY": "1.0",
+              "translateX": "6650",
+              "translateY": "-620"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3178",
+            "ratio": "4",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "-430",
+              "translateY": "-620"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3187",
+            "ratio": "6",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "14",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "-1.0",
+              "scaleY": "1.0",
+              "translateX": "7067",
+              "translateY": "-550"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3187",
+            "ratio": "6",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "-653",
+              "translateY": "-550"
+            }
+          }
+        ]
+      ],
+      "labels": {
+        "1": "左",
+        "2": "右",
+        "3": "向左跑",
+        "4": "向右跑",
+        "5": "左攻击",
+        "6": "右攻击",
+        "7": "左技能",
+        "8": "右技能"
+      }
+    },
+    "3167": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "3154",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3154",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3156",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3156",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3158",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3158",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3160",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3160",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3162",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3162",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3164",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3164",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3166",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3166",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "3178": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "3169",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3169",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3171",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3171",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3171",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3173",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3175",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3175",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3177",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3177",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "3187": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "3180",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3180",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3180",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3182",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3184",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3184",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "3186",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2874": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2873",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2873",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2878": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2875",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2876",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "9",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "140",
+              "translateY": "140"
+            }
+          },
+          {
+            "depth": 3,
+            "characterId": "2877",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2881": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ],
+        [
+          {
+            "depth": 1,
+            "characterId": "2879",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "2880",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "10",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "360",
+              "translateY": "400"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "4581": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "4579",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "true",
+              "nRotateBits": "0",
+              "nScaleBits": "18",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "1.3200073",
+              "scaleY": "1.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          },
+          {
+            "depth": 2,
+            "characterId": "4580",
+            "name": "info",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "11",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "-798",
+              "translateY": "40"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    }
+  },
+  "actions": [
+    {
+      "timeline": 3188,
+      "frame": 1,
+      "sha256": "0a6361b3a802f55cd5ae06101c88a1e216320fe11cc0cfe1d791eed08a1200fd"
+    },
+    {
+      "timeline": 3178,
+      "frame": 10,
+      "sha256": "640d410751ef06328f7f2f48d025dde6d293a2124a3e528f371f8d78266e4685"
+    },
+    {
+      "timeline": 3187,
+      "frame": 7,
+      "sha256": "640d410751ef06328f7f2f48d025dde6d293a2124a3e528f371f8d78266e4685"
+    },
+    {
+      "timeline": 2874,
+      "frame": 1,
+      "sha256": "067dd6a8a0e04ec24fa089ba0b715c84c7ac4463665a2403fc97b86ac5552a12"
+    },
+    {
+      "timeline": 2878,
+      "frame": 1,
+      "sha256": "ad43f22417629b0b4d71258e1f16cd4cd0c381cb64ec6062a01b228b8962ba66"
+    },
+    {
+      "timeline": 2881,
+      "frame": 1,
+      "sha256": "6b0ece06703410b68cb0e1262f56a8e6a31d01b3139c44584dd8de1ebd2464db"
+    },
+    {
+      "timeline": 4581,
+      "frame": 1,
+      "sha256": "1af41b912cda9c5e92c8410f419e453baf0f53bb3bc6aaaf4187998e67aacf5c"
+    }
+  ]
+}

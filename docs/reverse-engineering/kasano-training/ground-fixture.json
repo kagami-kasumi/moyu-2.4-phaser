@@ -1,0 +1,58 @@
+{
+  "timelines": {
+    "2811": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2810",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    },
+    "2813": {
+      "frames": [
+        [
+          {
+            "depth": 1,
+            "characterId": "2812",
+            "matrix": {
+              "type": "MATRIX",
+              "hasRotate": "false",
+              "hasScale": "false",
+              "nRotateBits": "0",
+              "nScaleBits": "0",
+              "nTranslateBits": "0",
+              "rotateSkew0": "0.0",
+              "rotateSkew1": "0.0",
+              "scaleX": "0.0",
+              "scaleY": "0.0",
+              "translateX": "0",
+              "translateY": "0"
+            }
+          }
+        ]
+      ],
+      "labels": {}
+    }
+  },
+  "shapes": {
+    "2810": "<item type=\"DefineShape4Tag\" forceWriteAsLong=\"true\" reserved=\"0\" shapeId=\"2810\" usesFillWindingRule=\"false\" usesNonScalingStrokes=\"false\" usesScalingStrokes=\"true\">\n<edgeBounds type=\"RECT\" Xmax=\"11600\" Xmin=\"0\" Ymax=\"9200\" Ymin=\"1400\" nbits=\"15\" />\n<shapeBounds type=\"RECT\" Xmax=\"11620\" Xmin=\"-20\" Ymax=\"9220\" Ymin=\"1380\" nbits=\"15\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"2\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"0\" fillStyleType=\"0\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"102\" green=\"153\" red=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"40\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"40\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n</lineStyles2>\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"2\" moveBits=\"12\" moveDeltaX=\"0\" moveDeltaY=\"1400\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"true\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"3100\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"3019\" deltaY=\"2540\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"5481\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"12\" vertLineFlag=\"false\" />\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"0\" lineStyle=\"1\" moveBits=\"0\" moveDeltaX=\"0\" moveDeltaY=\"0\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"false\" stateLineStyle=\"true\" stateMoveTo=\"false\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"5260\" generalLineFlag=\"false\" numBits=\"12\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-11600\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-7800\" generalLineFlag=\"false\" numBits=\"12\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n",
+    "2812": "<item type=\"DefineShape4Tag\" forceWriteAsLong=\"true\" reserved=\"0\" shapeId=\"2812\" usesFillWindingRule=\"false\" usesNonScalingStrokes=\"false\" usesScalingStrokes=\"true\">\n<edgeBounds type=\"RECT\" Xmax=\"11600\" Xmin=\"0\" Ymax=\"9200\" Ymin=\"1260\" nbits=\"15\" />\n<shapeBounds type=\"RECT\" Xmax=\"11620\" Xmin=\"-20\" Ymax=\"9220\" Ymin=\"1240\" nbits=\"15\" />\n<shapes type=\"SHAPEWITHSTYLE\" numFillBits=\"1\" numLineBits=\"2\">\n<fillStyles type=\"FILLSTYLEARRAY\">\n<fillStyles>\n<item type=\"FILLSTYLE\" bitmapId=\"0\" fillStyleType=\"0\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"102\" green=\"153\" red=\"0\" />\n</item>\n</fillStyles>\n</fillStyles>\n<lineStyles type=\"LINESTYLEARRAY\">\n<lineStyles />\n<lineStyles2>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"40\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n<item type=\"LINESTYLE2\" endCapStyle=\"0\" hasFillFlag=\"false\" joinStyle=\"0\" miterLimitFactor=\"0.0\" noClose=\"false\" noHScaleFlag=\"false\" noVScaleFlag=\"false\" pixelHintingFlag=\"false\" reserved=\"0\" startCapStyle=\"0\" width=\"40\">\n<color type=\"RGBA\" alpha=\"255\" blue=\"0\" green=\"0\" red=\"0\" />\n</item>\n</lineStyles2>\n</lineStyles>\n<shapeRecords>\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"1\" lineStyle=\"2\" moveBits=\"14\" moveDeltaX=\"0\" moveDeltaY=\"5781\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"true\" stateLineStyle=\"true\" stateMoveTo=\"true\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"4000\" deltaY=\"-1781\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"3179\" deltaY=\"-720\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"960\" deltaY=\"-1200\" generalLineFlag=\"true\" numBits=\"10\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"3461\" deltaY=\"-820\" generalLineFlag=\"true\" numBits=\"11\" vertLineFlag=\"false\" />\n<item type=\"StyleChangeRecord\" fillStyle0=\"0\" fillStyle1=\"0\" lineStyle=\"1\" moveBits=\"0\" moveDeltaX=\"0\" moveDeltaY=\"0\" numFillBits=\"0\" numLineBits=\"0\" stateFillStyle0=\"false\" stateFillStyle1=\"false\" stateLineStyle=\"true\" stateMoveTo=\"false\" stateNewStyles=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"7940\" generalLineFlag=\"false\" numBits=\"12\" vertLineFlag=\"true\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"-11600\" deltaY=\"0\" generalLineFlag=\"false\" numBits=\"13\" vertLineFlag=\"false\" />\n<item type=\"StraightEdgeRecord\" deltaX=\"0\" deltaY=\"-3419\" generalLineFlag=\"false\" numBits=\"11\" vertLineFlag=\"true\" />\n<item type=\"EndShapeRecord\" endOfShape=\"0\" />\n</shapeRecords>\n</shapes>\n</item>\n"
+  }
+}

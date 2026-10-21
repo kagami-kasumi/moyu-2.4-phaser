@@ -1,0 +1,196 @@
+{
+  "catalog": [
+    {
+      "type": "小幻化草",
+      "number": 1,
+      "salePrice": 6
+    },
+    {
+      "type": "宝石",
+      "name": "魔魂晶石",
+      "number": 1,
+      "salePrice": 50
+    },
+    {
+      "type": "宝石",
+      "name": "幻魔晶石",
+      "number": 1,
+      "salePrice": 50
+    },
+    {
+      "type": "宝石",
+      "name": "中级经验宝石",
+      "val1": 15,
+      "salePrice": 30
+    },
+    {
+      "type": "中幻化草",
+      "number": 1,
+      "salePrice": 50
+    },
+    {
+      "type": "宝石",
+      "name": "中级攻击宝石",
+      "val1": 10,
+      "salePrice": 50
+    },
+    {
+      "type": "宝石",
+      "name": "中级减伤害宝石",
+      "val1": 2,
+      "salePrice": 50
+    },
+    {
+      "type": "宝石",
+      "name": "中级战斗力宝石",
+      "val1": 3,
+      "salePrice": 50
+    },
+    {
+      "type": "宝石",
+      "name": "高级经验宝石",
+      "val1": 25,
+      "salePrice": 500
+    },
+    {
+      "type": "大幻化草",
+      "number": 1,
+      "salePrice": 100
+    },
+    {
+      "type": "幸运幻化草",
+      "number": 1,
+      "salePrice": 200
+    },
+    {
+      "type": "宝石",
+      "name": "高级攻击宝石",
+      "val1": 15,
+      "salePrice": 1000
+    },
+    {
+      "type": "宝石",
+      "name": "高级减伤害宝石",
+      "val1": 8,
+      "salePrice": 1000
+    },
+    {
+      "type": "宝石",
+      "name": "高级战斗力宝石",
+      "val1": 5,
+      "salePrice": 2000
+    },
+    {
+      "type": "电浆药水",
+      "salePrice": 8000
+    },
+    {
+      "type": "神力宝石",
+      "salePrice": 1000
+    }
+  ],
+  "functions": {
+    "factory": "{\r\n   var _loc2_;\r\n   var _loc6_;\r\n   var _loc4_ = 0;\r\n   var _loc5_ = 0;\r\n   switch(tThing.type)\r\n   {\r\n      case \"药品\":\r\n      case \"技能书\":\r\n         _loc6_ = tThing.name;\r\n         break;\r\n      case \"宝石\":\r\n         _loc6_ = tThing.name;\r\n         _loc4_ = !(tThing.val1 != undefined && tThing.val1 != null) ? 0 : tThing.val1;\r\n         _loc5_ = !(tThing.val2 != undefined && tThing.val2 != null) ? 0 : tThing.val2;\r\n         break;\r\n      default:\r\n         _loc6_ = tThing.type;\r\n   }\r\n   switch(_loc6_)\r\n   {\r\n      case \"凯恩\":\r\n         _loc2_ = {type:\"凯恩\",number:1,salePrice:20};\r\n         break;\r\n      case \"莎菲\":\r\n         _loc2_ = {type:\"莎菲\",number:1,salePrice:500};\r\n         break;\r\n      case \"朵朵\":\r\n         _loc2_ = {type:\"朵朵\",number:1,salePrice:1000};\r\n         break;\r\n      case \"飞飞\":\r\n         _loc2_ = {type:\"飞飞\",number:1,salePrice:1000};\r\n         break;\r\n      case \"吉祥噜噜\":\r\n         _loc2_ = {type:\"吉祥噜噜\",number:1,salePrice:5800};\r\n         break;\r\n      case \"如意嘟嘟\":\r\n         _loc2_ = {type:\"如意嘟嘟\",number:1,salePrice:5800};\r\n         break;\r\n      case \"圣天使雷斯\":\r\n         _loc2_ = {type:\"圣天使雷斯\",number:1,salePrice:1000};\r\n         break;\r\n      case \"圣天使奈丽\":\r\n         _loc2_ = {type:\"圣天使奈丽\",number:1,salePrice:1000};\r\n         break;\r\n      case \"守护者\":\r\n         _loc2_ = {type:\"守护者\",number:1,salePrice:1500};\r\n         break;\r\n      case \"鼠来福\":\r\n         _loc2_ = {type:\"鼠来福\",number:1,salePrice:1500};\r\n         break;\r\n      case \"鼠来运\":\r\n         _loc2_ = {type:\"鼠来运\",number:1,salePrice:1500};\r\n         break;\r\n      case \"眺望者\":\r\n         _loc2_ = {type:\"眺望者\",number:1,salePrice:1500};\r\n         break;\r\n      case \"雪瑞\":\r\n         _loc2_ = {type:\"雪瑞\",number:1,salePrice:2800};\r\n         break;\r\n      case \"炫舞牛\":\r\n         _loc2_ = {type:\"炫舞牛\",number:1,salePrice:15800};\r\n         break;\r\n      case \"霹雳虎\":\r\n         _loc2_ = {type:\"霹雳虎\",number:1,salePrice:15800};\r\n         break;\r\n      case \"嘻哈牛\":\r\n         _loc2_ = {type:\"嘻哈牛\",number:1,salePrice:58800};\r\n         break;\r\n      case \"玲珑虎\":\r\n         _loc2_ = {type:\"玲珑虎\",number:1,salePrice:58800};\r\n         break;\r\n      case \"异界精灵\":\r\n         _loc2_ = {type:\"异界精灵\",number:1,salePrice:15800};\r\n         break;\r\n      case \"狄克牛\":\r\n         _loc2_ = {type:\"狄克牛\",number:1,salePrice:8500};\r\n         break;\r\n      case \"发条虎\":\r\n         _loc2_ = {type:\"发条虎\",number:1,salePrice:8500};\r\n         break;\r\n      case \"神影兽\":\r\n         _loc2_ = {type:\"神影兽\",number:1,salePrice:8500};\r\n         break;\r\n      case \"蝴蝶牛\":\r\n         _loc2_ = {type:\"蝴蝶牛\",number:1,salePrice:38800};\r\n         break;\r\n      case \"乖乖虎\":\r\n         _loc2_ = {type:\"乖乖虎\",number:1,salePrice:38800};\r\n         break;\r\n      case \"奇迹龙\":\r\n         _loc2_ = {type:\"奇迹龙\",number:1,salePrice:5800};\r\n         break;\r\n      case \"奇异兽\":\r\n         _loc2_ = {type:\"奇异兽\",number:1,salePrice:30};\r\n         break;\r\n      case \"6星奇异兽\":\r\n         _loc2_ = {type:\"6星奇异兽\",number:1,salePrice:150};\r\n         break;\r\n      case \"8星奇异兽\":\r\n         _loc2_ = {type:\"8星奇异兽\",number:1,salePrice:250};\r\n         break;\r\n      case \"12星奇异兽\":\r\n         _loc2_ = {type:\"12星奇异兽\",number:1,salePrice:400};\r\n         break;\r\n      case \"15星奇异兽\":\r\n         _loc2_ = {type:\"15星奇异兽\",number:1,salePrice:650};\r\n         break;\r\n      case \"19星奇异兽\":\r\n         _loc2_ = {type:\"19星奇异兽\",number:1,salePrice:1300};\r\n         break;\r\n      case \"23星奇异兽\":\r\n         _loc2_ = {type:\"23星奇异兽\",number:1,salePrice:2000};\r\n         break;\r\n      case \"26星奇异兽\":\r\n         _loc2_ = {type:\"26星奇异兽\",number:1,salePrice:2500};\r\n         break;\r\n      case \"30星奇异兽\":\r\n         _loc2_ = {type:\"30星奇异兽\",number:1,salePrice:3000};\r\n         break;\r\n      case \"35星奇异兽\":\r\n         _loc2_ = {type:\"35星奇异兽\",number:1,salePrice:5000};\r\n         break;\r\n      case \"40星奇异兽\":\r\n         _loc2_ = {type:\"40星奇异兽\",number:1,salePrice:9000};\r\n         break;\r\n      case \"极品20星凯恩\":\r\n         _loc2_ = {type:\"极品20星凯恩\",number:1,salePrice:1500};\r\n         break;\r\n      case \"极品20星莎菲\":\r\n         _loc2_ = {type:\"极品20星莎菲\",number:1,salePrice:2000};\r\n         break;\r\n      case \"极品20星雪瑞\":\r\n         _loc2_ = {type:\"极品20星雪瑞\",number:1,salePrice:3000};\r\n         break;\r\n      case \"极品20星朵朵\":\r\n         _loc2_ = {type:\"极品20星朵朵\",number:1,salePrice:2500};\r\n         break;\r\n      case \"极品20星飞飞\":\r\n         _loc2_ = {type:\"极品20星飞飞\",number:1,salePrice:2500};\r\n         break;\r\n      case \"极品35星凯恩\":\r\n         _loc2_ = {type:\"极品35星凯恩\",number:1,salePrice:5000};\r\n         break;\r\n      case \"极品35星莎菲\":\r\n         _loc2_ = {type:\"极品35星莎菲\",number:1,salePrice:6000};\r\n         break;\r\n      case \"极品35星雪瑞\":\r\n         _loc2_ = {type:\"极品35星雪瑞\",number:1,salePrice:7000};\r\n         break;\r\n      case \"极品35星朵朵\":\r\n         _loc2_ = {type:\"极品35星朵朵\",number:1,salePrice:6500};\r\n         break;\r\n      case \"极品35星飞飞\":\r\n         _loc2_ = {type:\"极品35星飞飞\",number:1,salePrice:6500};\r\n         break;\r\n      case \"极品45星凯恩\":\r\n         _loc2_ = {type:\"极品45星凯恩\",number:1,salePrice:25000};\r\n         break;\r\n      case \"极品45星莎菲\":\r\n         _loc2_ = {type:\"极品45星莎菲\",number:1,salePrice:28000};\r\n         break;\r\n      case \"极品45星雪瑞\":\r\n         _loc2_ = {type:\"极品45星雪瑞\",number:1,salePrice:32000};\r\n         break;\r\n      case \"极品45星朵朵\":\r\n         _loc2_ = {type:\"极品45星朵朵\",number:1,salePrice:30000};\r\n         break;\r\n      case \"极品45星飞飞\":\r\n         _loc2_ = {type:\"极品45星飞飞\",number:1,salePrice:30000};\r\n         break;\r\n      case \"火球术\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:1,name:\"火球术\",salePrice:2};\r\n         break;\r\n      case \"电击术\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:25,name:\"电击术\",salePrice:20};\r\n         break;\r\n      case \"光辉光环\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:50,name:\"光辉光环\",salePrice:400};\r\n         break;\r\n      case \"爆雷术\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:75,name:\"爆雷术\",salePrice:5000};\r\n         break;\r\n      case \"雷霆万钧\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:89,name:\"雷霆万钧\",salePrice:3000};\r\n         break;\r\n      case \"怒\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:1,name:\"怒\",salePrice:1000};\r\n         break;\r\n      case \"重伤\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:1,name:\"重伤\",salePrice:500};\r\n         break;\r\n      case \"寒冰\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:1,name:\"寒冰\",salePrice:500};\r\n         break;\r\n      case \"神圣\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"法师\",levels:1,name:\"神圣\",salePrice:2000};\r\n         break;\r\n      case \"斩魂\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:1,name:\"斩魂\",salePrice:2};\r\n         break;\r\n      case \"旋风斩\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:25,name:\"旋风斩\",salePrice:10};\r\n         break;\r\n      case \"刀光斩\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:50,name:\"刀光斩\",salePrice:200};\r\n         break;\r\n      case \"飞天连斩\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:75,name:\"飞天连斩\",salePrice:5000};\r\n         break;\r\n      case \"狂暴\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:89,name:\"狂暴\",salePrice:2000};\r\n         break;\r\n      case \"震\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:1,name:\"震\",salePrice:1000};\r\n         break;\r\n      case \"破防\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:1,name:\"破防\",salePrice:500};\r\n         break;\r\n      case \"重击\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:1,name:\"重击\",salePrice:500};\r\n         break;\r\n      case \"金刚\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"战士\",levels:1,name:\"金刚\",salePrice:2000};\r\n         break;\r\n      case \"强健之术\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"公共\",levels:1,name:\"强健之术\",salePrice:500};\r\n         break;\r\n      case \"智慧之术\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"公共\",levels:1,name:\"智慧之术\",salePrice:500};\r\n         break;\r\n      case \"英勇\":\r\n         _loc2_ = {type:\"技能书\",vocational:\"公共\",levels:1,name:\"英勇\",salePrice:5000};\r\n         break;\r\n      case \"初级锻造技能书\":\r\n         _loc2_ = {type:\"初级锻造技能书\",salePrice:100};\r\n         break;\r\n      case \"中级锻造技能书\":\r\n         _loc2_ = {type:\"中级锻造技能书\",salePrice:200};\r\n         break;\r\n      case \"高级锻造技能书\":\r\n         _loc2_ = {type:\"高级锻造技能书\",salePrice:1000};\r\n         break;\r\n      case \"高级攻击宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"高级攻击宝石\",val1:(_loc4_ != 0 ? _loc4_ : 15),salePrice:1000};\r\n         break;\r\n      case \"高级减伤害宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"高级减伤害宝石\",val1:(_loc4_ != 0 ? _loc4_ : 8),salePrice:1000};\r\n         break;\r\n      case \"高级经验宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"高级经验宝石\",val1:(_loc4_ != 0 ? _loc4_ : 25),salePrice:500};\r\n         break;\r\n      case \"高级战斗力宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"高级战斗力宝石\",val1:(_loc4_ != 0 ? _loc4_ : 5),salePrice:2000};\r\n         break;\r\n      case \"战斗攻击圣石\":\r\n         _loc2_ = {type:\"宝石\",name:\"战斗攻击圣石\",val1:8,val2:25,salePrice:2000};\r\n         break;\r\n      case \"战斗减伤害圣石\":\r\n         _loc2_ = {type:\"宝石\",name:\"战斗减伤害圣石\",val1:8,val2:12,salePrice:2000};\r\n         break;\r\n      case \"战斗经验圣石\":\r\n         _loc2_ = {type:\"宝石\",name:\"战斗经验圣石\",val1:8,val2:35,salePrice:2000};\r\n         break;\r\n      case \"中级攻击宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"中级攻击宝石\",val1:10,salePrice:50};\r\n         break;\r\n      case \"中级减伤害宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"中级减伤害宝石\",val1:5,salePrice:50};\r\n         break;\r\n      case \"中级经验宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"中级经验宝石\",val1:15,salePrice:30};\r\n         break;\r\n      case \"中级战斗力宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"中级战斗力宝石\",val1:3,salePrice:100};\r\n         break;\r\n      case \"灵魂晶石\":\r\n         _loc2_ = {type:\"宝石\",name:\"灵魂晶石\",number:1,salePrice:100};\r\n         break;\r\n      case \"灵魂王\":\r\n         _loc2_ = {type:\"宝石\",name:\"灵魂王\",number:1,salePrice:2000};\r\n         break;\r\n      case \"魔魂晶石\":\r\n         _loc2_ = {type:\"宝石\",name:\"魔魂晶石\",number:1,salePrice:10};\r\n         break;\r\n      case \"魔魂之心\":\r\n         _loc2_ = {type:\"宝石\",name:\"魔魂之心\",number:1,salePrice:150};\r\n         break;\r\n      case \"玄铁矿\":\r\n         _loc2_ = {type:\"宝石\",name:\"玄铁矿\",number:1,salePrice:1000};\r\n         break;\r\n      case \"陨铁矿\":\r\n         _loc2_ = {type:\"宝石\",name:\"陨铁矿\",number:1,salePrice:2000};\r\n         break;\r\n      case \"幻魔晶石\":\r\n         _loc2_ = {type:\"宝石\",name:\"幻魔晶石\",number:1,salePrice:20};\r\n         break;\r\n      case \"幻魔之心\":\r\n         _loc2_ = {type:\"宝石\",name:\"幻魔之心\",number:1,salePrice:200};\r\n         break;\r\n      case \"紫水晶\":\r\n         _loc2_ = {type:\"宝石\",name:\"紫水晶\",number:1,salePrice:1000};\r\n         break;\r\n      case \"初级月光宝盒\":\r\n         _loc2_ = {type:\"宝石\",name:\"初级月光宝盒\",number:1,salePrice:500};\r\n         break;\r\n      case \"中级月光宝盒\":\r\n         _loc2_ = {type:\"宝石\",name:\"中级月光宝盒\",number:1,salePrice:2800};\r\n         break;\r\n      case \"高级月光宝盒\":\r\n         _loc2_ = {type:\"宝石\",name:\"高级月光宝盒\",number:1,salePrice:8200};\r\n         break;\r\n      case \"大元素石\":\r\n         _loc2_ = {type:\"宝石\",name:\"大元素石\",number:1,salePrice:2000};\r\n         break;\r\n      case \"小元素石\":\r\n         _loc2_ = {type:\"宝石\",name:\"小元素石\",number:1,salePrice:200};\r\n         break;\r\n      case \"风元素\":\r\n         _loc2_ = {type:\"宝石\",name:\"风元素\",number:1,salePrice:1000};\r\n         break;\r\n      case \"火元素\":\r\n         _loc2_ = {type:\"宝石\",name:\"火元素\",number:1,salePrice:1000};\r\n         break;\r\n      case \"水元素\":\r\n         _loc2_ = {type:\"宝石\",name:\"水元素\",number:1,salePrice:1000};\r\n         break;\r\n      case \"地元素\":\r\n         _loc2_ = {type:\"宝石\",name:\"地元素\",number:1,salePrice:1000};\r\n         break;\r\n      case \"雷元素\":\r\n         _loc2_ = {type:\"宝石\",name:\"雷元素\",number:1,salePrice:5000};\r\n         break;\r\n      case \"神力宝石\":\r\n         _loc2_ = {type:\"宝石\",name:\"神力宝石\",number:1,salePrice:1000};\r\n         break;\r\n      case \"魔之魂\":\r\n         _loc2_ = {type:\"宝石\",name:\"魔之魂\",val1:(_loc4_ != 0 ? _loc4_ : 0),val2:(_loc5_ != 0 ? _loc5_ : 0),salePrice:5000};\r\n         break;\r\n      case \"小幻化草\":\r\n         _loc2_ = {type:\"小幻化草\",number:1,salePrice:6};\r\n         break;\r\n      case \"中幻化草\":\r\n         _loc2_ = {type:\"中幻化草\",number:1,salePrice:50};\r\n         break;\r\n      case \"大幻化草\":\r\n         _loc2_ = {type:\"大幻化草\",number:1,salePrice:100};\r\n         break;\r\n      case \"幸运幻化草\":\r\n         _loc2_ = {type:\"幸运幻化草\",number:1,salePrice:200};\r\n         break;\r\n      case \"1朵玫瑰\":\r\n         _loc2_ = {type:\"1朵玫瑰\",number:1,salePrice:2};\r\n         break;\r\n      case \"3朵玫瑰\":\r\n         _loc2_ = {type:\"3朵玫瑰\",number:1,salePrice:20};\r\n         break;\r\n      case \"9朵玫瑰\":\r\n         _loc2_ = {type:\"9朵玫瑰\",number:1,salePrice:100};\r\n         break;\r\n      case \"普通玉石\":\r\n         _loc2_ = {type:\"普通玉石\",number:1,salePrice:2};\r\n         break;\r\n      case \"精品玉石\":\r\n         _loc2_ = {type:\"精品玉石\",number:1,salePrice:20};\r\n         break;\r\n      case \"极品玉石\":\r\n         _loc2_ = {type:\"极品玉石\",number:1,salePrice:100};\r\n         break;\r\n      case \"经验球\":\r\n         _loc2_ = {type:\"经验球\",number:1,salePrice:50};\r\n         break;\r\n      case \"超级经验球\":\r\n         _loc2_ = {type:\"超级经验球\",number:1,salePrice:200};\r\n         break;\r\n      case \"大魔石袋子\":\r\n         _loc2_ = {type:\"大魔石袋子\",number:1,salePrice:250};\r\n         break;\r\n      case \"中魔石袋子\":\r\n         _loc2_ = {type:\"中魔石袋子\",number:1,salePrice:150};\r\n         break;\r\n      case \"小魔石袋子\":\r\n         _loc2_ = {type:\"小魔石袋子\",number:1,salePrice:100};\r\n         break;\r\n      case \"转世水晶\":\r\n      case \"幻兽转世水晶\":\r\n         _loc2_ = {type:\"幻兽转世水晶\",number:1,salePrice:100};\r\n         break;\r\n      case \"电浆药水\":\r\n         _loc2_ = {type:\"电浆药水\",number:1,salePrice:8000};\r\n         break;\r\n      case \"魔力源泉\":\r\n         _loc2_ = {type:\"魔力源泉\",salePrice:0};\r\n         break;\r\n      case \"生命之源\":\r\n         _loc2_ = {type:\"生命之源\",salePrice:0};\r\n         break;\r\n      case \"小型生命药\":\r\n         _loc2_ = {type:\"药品\",name:\"小型生命药\",hpVal:200,mpVal:0,salePrice:10};\r\n         break;\r\n      case \"小型魔力药\":\r\n         _loc2_ = {type:\"药品\",name:\"小型魔力药\",hpVal:0,mpVal:100,salePrice:10};\r\n         break;\r\n      case \"中型魔力药\":\r\n         _loc2_ = {type:\"药品\",name:\"中型魔力药\",hpVal:0,mpVal:250,salePrice:30};\r\n         break;\r\n      case \"中型生命药\":\r\n         _loc2_ = {type:\"药品\",name:\"中型生命药\",hpVal:500,mpVal:0,salePrice:30};\r\n         break;\r\n      case \"大型生命药\":\r\n         _loc2_ = {type:\"药品\",name:\"大型生命药\",hpVal:1000,mpVal:0,salePrice:80};\r\n         break;\r\n      case \"大型魔力药\":\r\n         _loc2_ = {type:\"药品\",name:\"大型魔力药\",hpVal:0,mpVal:500,salePrice:80};\r\n         break;\r\n      case \"超级药\":\r\n         _loc2_ = {type:\"药品\",name:\"超级药\",hpVal:1500,mpVal:1000,salePrice:150};\r\n         break;\r\n      case \"镐\":\r\n         _loc2_ = {type:\"镐\",salePrice:2};\r\n         break;\r\n      case \"英雄令\":\r\n         _loc2_ = {type:\"英雄令\",number:1,salePrice:2000};\r\n         break;\r\n      case \"富豪礼包\":\r\n         _loc2_ = {type:\"富豪礼包\",number:1,salePrice:20000};\r\n         break;\r\n      case \"幻兽转世丹\":\r\n         _loc2_ = {type:\"幻兽转世丹\",number:1,salePrice:2000};\r\n         break;\r\n      case \"卡萨诺幻境\":\r\n      case \"树心幻境\":\r\n      case \"戈壁幻境\":\r\n      case \"沼泽幻境\":\r\n      case \"南城幻境\":\r\n      case \"边境幻境\":\r\n      case \"冰宫幻境\":\r\n      case \"亚维特岛地图\":\r\n      case \"百兽岛地图\":\r\n      case \"蜘蛛谷地图\":\r\n      case \"玫瑰湖地图\":\r\n      case \"雷兽谷地图\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:280};\r\n         break;\r\n      case \"龙怪头目行踪\":\r\n      case \"冰妖剑士头目行踪\":\r\n      case \"守卫魔头目行踪\":\r\n      case \"绿魔精头目行踪\":\r\n      case \"炎女头目行踪\":\r\n      case \"剌虫人头目行踪\":\r\n      case \"四牙怪头目行踪\":\r\n      case \"黑翼法师头目行踪\":\r\n      case \"暗黑格拉斯头目行踪\":\r\n      case \"雷兽行踪\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:560};\r\n         break;\r\n      case \"50级PK赛参赛券\":\r\n      case \"60级PK赛参赛券\":\r\n      case \"70级PK赛参赛券\":\r\n      case \"80级PK赛参赛券\":\r\n      case \"90级PK赛参赛券\":\r\n      case \"100级PK赛参赛券\":\r\n      case \"110级PK赛参赛券\":\r\n      case \"120级PK赛参赛券\":\r\n      case \"130级PK赛参赛券\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:1000};\r\n         break;\r\n      case \"勇士勋章\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:300};\r\n         break;\r\n      case \"圣兽令\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:2000};\r\n         break;\r\n      case \"灵魂礼包\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:2000};\r\n         break;\r\n      case \"幻魔礼包\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:2000};\r\n         break;\r\n      case \"魔魂礼包\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:1500};\r\n         break;\r\n      case \"幸运之门\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:1600};\r\n         break;\r\n      case \"神兽药水\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:5000};\r\n         break;\r\n      case \"奇异果\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:500};\r\n         break;\r\n      case \"迷宫地图残片\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:560};\r\n         break;\r\n      case \"深渊迷宫地图\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:5600};\r\n         break;\r\n      case \"风神兽内丹\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:10000};\r\n         break;\r\n      case \"火神兽内丹\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:10000};\r\n         break;\r\n      case \"水神兽内丹\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:10000};\r\n         break;\r\n      case \"地神兽内丹\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:10000};\r\n         break;\r\n      case \"雷神兽内丹\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:50000};\r\n         break;\r\n      case \"能量药水\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:10000};\r\n         break;\r\n      case \"转世圣水\":\r\n         _loc2_ = {type:tThing.type,number:1,salePrice:0};\r\n         break;\r\n      default:\r\n         return false;\r\n   }\r\n   if(isDrop == true)\r\n   {\r\n      this.map.goods.throwGoods(fX,fY,_loc2_);\r\n   }\r\n   else\r\n   {\r\n      this.backPack.setThing(_loc2_);\r\n   }\r\n   return true;\r\n}",
+    "shop": "this.open = function()\r\n{\r\n   this.shopTitle.text = this.shopName;\r\n   var _loc2_;\r\n   _loc2_ = 1;\r\n   while(_loc2_ <= this.number && _loc2_ <= this.openNumber)\r\n   {\r\n      this[\"格子\" + _loc2_].open(_loc2_ - 1);\r\n      this[\"包格\" + _loc2_].setThing(this.saleThings[_loc2_ - 1]);\r\n      _loc2_ = _loc2_ + 1;\r\n   }\r\n   this.openPanel();\r\n};\r\nthis.sell = function(tNumber)\r\n{\r\n   this.buyNumber = tNumber;\r\n   _parent.buyNumber.open(this.saleThings[tNumber].salePrice,this);\r\n};\r\nthis.onSell = function(num)\r\n{\r\n   tNumber = this.buyNumber;\r\n   if(!this.saleThings[tNumber])\r\n   {\r\n      return false;\r\n   }\r\n   if(this._parent.backPack.accountThing({type:\"空格\"}) <= 0)\r\n   {\r\n      _global.msg.open(\"\\r\\r\\r你的背包满了\");\r\n      return false;\r\n   }\r\n   var _loc3_;\r\n   if(this._parent.map.role.xxx_ms >= this.saleThings[tNumber].salePrice * num)\r\n   {\r\n      _loc3_ = 0;\r\n      while(_loc3_ < num)\r\n      {\r\n         this._parent.createThing(this.saleThings[tNumber]);\r\n         _loc3_ = _loc3_ + 1;\r\n      }\r\n      this._parent.map.role.xxx_ms -= this.saleThings[tNumber].salePrice * num;\r\n      this._parent.buyNumber.closePanel();\r\n   }\r\n   else\r\n   {\r\n      _global.msg.open(\"\\r\\r你的没有足够的磨石购买该物品\");\r\n   }\r\n};\r\nthis.setThing = function(target)\r\n{\r\n   var _loc4_;\r\n   if(target.type && target.salePrice)\r\n   {\r\n      _loc4_ = Math.floor(target.salePrice / 2) * (target.number <= 0 ? 1 : target.number);\r\n      if(!isNaN(_loc4_))\r\n      {\r\n         this._parent.map.role.xxx_ms += _loc4_;\r\n      }\r\n      target.setThing({type:\"空格\"});\r\n      _global.playSound(\"交易.wav\");\r\n      return true;\r\n   }\r\n   return false;\r\n};\r\nthis.thingDetial = function(tNumber)\r\n{\r\n   this[\"包格\" + (tNumber + 1)].showDetail(\"buyPrice\");\r\n};\r\nthis.close = function()\r\n{\r\n   this.closePanel();\r\n};\r\n",
+    "quantity": "function valueChange()\r\n{\r\n   var _loc1_ = buyTxt.text;\r\n   if(isNaN(_loc1_))\r\n   {\r\n      buyTxt.text = buyNum;\r\n      return undefined;\r\n   }\r\n   buyNum = Math.round(_loc1_);\r\n   if(buyNum < MINNUM)\r\n   {\r\n      buyNum = MINNUM;\r\n   }\r\n   if(buyNum > MAXNUM)\r\n   {\r\n      buyNum = MAXNUM;\r\n   }\r\n   buyTxt.text = buyNum;\r\n   update();\r\n}\r\nfunction update()\r\n{\r\n   price = eprice * buyNum;\r\n   priceTxt.text = _global.numberToString(price);\r\n}\r\nvar eprice = 0;\r\nvar buyNum = 1;\r\nvar price = 0;\r\nvar MINNUM = 1;\r\nvar MAXNUM = 99;\r\nvar targetObj = null;\r\nbuyTxt.onChanged = function()\r\n{\r\n   valueChange();\r\n};\r\nprePage.onRelease = function()\r\n{\r\n   if(buyNum > MINNUM)\r\n   {\r\n      buyTxt.text = \"\" + (Number(buyNum) - 1);\r\n      valueChange();\r\n   }\r\n};\r\nnextPage.onRelease = function()\r\n{\r\n   if(buyNum < MAXNUM)\r\n   {\r\n      buyTxt.text = \"\" + (Number(buyNum) + 1);\r\n      valueChange();\r\n   }\r\n};\r\nminPage.onRelease = function()\r\n{\r\n   buyTxt.text = MINNUM;\r\n   valueChange();\r\n};\r\nmaxPage.onRelease = function()\r\n{\r\n   buyTxt.text = MAXNUM;\r\n   valueChange();\r\n};\r\nyesButton.onRelease = function()\r\n{\r\n   this._parent.targetObj.onSell(buyNum);\r\n};\r\nthis.open = function(p, target)\r\n{\r\n   this.buyNum = MINNUM;\r\n   if(_visible && target.buyNumber == lastNumber)\r\n   {\r\n      buyNum = MAXNUM;\r\n   }\r\n   this.lastNumber = target.buyNumber;\r\n   this.targetObj = target;\r\n   this.eprice = p;\r\n   this.update();\r\n   this.openPanel();\r\n};\r\n"
+  },
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction.as",
+      "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction.pcode",
+      "sha256": "3eaec722a433ca4e60dccff025806c7688b47d5537152b3f811da0a9e37a0e5f"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+      "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2089_幻兽商店/frame_1/DoAction.as",
+      "sha256": "cf183f72a7bba44a8c57a777b0c122dabff2b6a6ba5989c5dbabc910e4464d5b"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2089_幻兽商店/frame_1/DoAction.pcode",
+      "sha256": "1c8707ce22c7dcaf3ec9cafa3929c7b65f2e13adaa038464491b7dcf6b5dd47a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_167_输入数量/frame_1/DoAction.as",
+      "sha256": "2ee89b2e038b5adf3602e92d3db280033dc7cbc28909b2dc971af76fdad48a4d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_167_输入数量/frame_1/DoAction.pcode",
+      "sha256": "d27adda454448b76d665f03de4ddd2668d840ab38ea3bc2f59f431e439fd3f1c"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/ThingMC.as",
+      "sha256": "49047b15fd24f831577b04537818284723ef1b52cdd96cc392c6ffad3c8b5eea"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/ThingMC.pcode",
+      "sha256": "78bf8346b16ef41e744c9b543973f30311c389c2c3f51f01194a0eb10ddcd407"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/RoleMC.pcode",
+      "sha256": "b80c765117ef67690b0e32f9be649cbbda86287c44b3496b3879b5692ce0753c"
+    }
+  ],
+  "bindings": [
+    {
+      "depth": 2201,
+      "characterId": 2089,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        467.95,
+        512.8
+      ],
+      "ratio": 8,
+      "name": "shop"
+    },
+    {
+      "depth": 3890,
+      "characterId": 167,
+      "matrix": [
+        1,
+        0,
+        0,
+        1,
+        65,
+        613
+      ],
+      "ratio": 8,
+      "name": "buyNumber"
+    }
+  ],
+  "xml": [
+    "<item type=\"PlaceObject2Tag\" characterId=\"2089\" clipDepth=\"0\" depth=\"2201\" forceWriteAsLong=\"true\" name=\"shop\" placeFlagHasCharacter=\"true\" placeFlagHasClipActions=\"false\" placeFlagHasClipDepth=\"false\" placeFlagHasColorTransform=\"false\" placeFlagHasMatrix=\"true\" placeFlagHasName=\"true\" placeFlagHasRatio=\"true\" placeFlagMove=\"false\" ratio=\"8\">"
+  ]
+}

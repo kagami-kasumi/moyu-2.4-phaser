@@ -24,7 +24,7 @@ test('source oracle exchange: insufficient, exact, repeated, cross-slot order, n
  for(const counts of [[1,1,5],[0,1,3],[undefined,1,2]]){const bag:(Item|null)[]=Array.from({length:40},()=>null);counts.forEach((n,i)=>bag[i*7]=medal(n));bag[2]={...medal(99),name:'不匹配'};cases.push(bag);}
  for(const boxCount of [98,99]){const bag:(Item|null)[]=Array.from({length:40},()=>({type:'英雄令',number:99}));bag[0]=medal(5);bag[4]={type:'宝石',name:'初级月光宝盒',number:boxCount,salePrice:500};cases.push(bag);}
  for(const bag of cases){const {r,o}=pair(bag);for(let repeat=0;repeat<3;repeat++){
-  r.interact();o.interact();assert.equal(r.words,o.scope.words);assert.deepEqual(r.answers,JSON.parse(JSON.stringify(o.scope.answer)).filter((a:any)=>a.cmd!==8));
+  r.interact();o.interact();assert.equal(r.words,o.scope.words);assert.deepEqual(r.answers,JSON.parse(JSON.stringify(o.scope.answer)));
   const revision=r.revision;r.choose(7,revision,{x:277.8,y:421.6});o.choose(7);
   assert.deepEqual(r.bag,o.bag());assert.deepEqual(r.drops,o.drops);assert.deepEqual(r.messages,o.messages);assert.equal(r.open,o.scope.open);assert.equal(r.nextCmd,o.scope.nextCmd);
   if(r.open){assert.equal(r.words,o.scope.words);assert.deepEqual(r.answers,JSON.parse(JSON.stringify(o.scope.answer)));}

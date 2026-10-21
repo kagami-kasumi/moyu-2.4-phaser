@@ -1,0 +1,30 @@
+[
+  {
+    "file": "frame_9/DoAction.as",
+    "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+  },
+  {
+    "file": "frame_9/DoAction_2.as",
+    "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+  },
+  {
+    "file": "__Packages/HuanShouMC.as",
+    "sha256": "4556c1fb054753ef4d96b50b6e2cd6ad84194db33c0b1eb985e7ce63550177ef"
+  },
+  {
+    "file": "__Packages/RoleMC.as",
+    "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+  },
+  {
+    "file": "DefineSprite_4556/frame_1/DoAction.as",
+    "sha256": "6a8e8811085a1ae8eb041af0611b78dc5735874b6e8bc86690523b42d0002216"
+  },
+  {
+    "file": "DefineSprite_2181_使用经验球/frame_1/DoAction.as",
+    "sha256": "29e1db9cbcc07fd0f75ccf6ef6ac7b83afac8bbbb7797aa3c170e3edca90c093"
+  },
+  {
+    "file": "DefineSprite_4536/frame_1/DoAction.as",
+    "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+  }
+]

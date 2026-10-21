@@ -18,6 +18,14 @@ export function captureSave(progress:GameProgress,previous?:PersistentState):Per
  const raw=previous?record(restorePreservedValue(previous.source)):seed!.source;
  const extensions=previous?record(restorePreservedValue(previous.extensions)):{buildings:seed!.buildings,initialization:{evidence:'design',deferredSourceKeys:seed!.deferred,policy:'Unimplemented generated values remain undefined until their owning gameplay module exists; raw loaded values are never default-filled.'}};
  extensions.game=merge(extensions.game,progress);
+ // A combat snapshot owns its whole wave, warning and chest lifecycle.
+ // Recursive metadata merging must not resurrect a consumed warning/old boss.
+ if(progress.combat)record(extensions.game).combat=structuredClone(progress.combat);
+ else delete record(extensions.game).combat;
+ // The recycle slot owns its complete item. A transformed ball must not inherit
+ // old equipment fields through extension metadata preservation.
+ if(progress.recycle)record(record(extensions.game).recycle).item=structuredClone(progress.recycle.item);
+ if(progress.bellFusion)record(extensions.game).bellFusion=structuredClone(progress.bellFusion);
  const source=updateSource(raw,progress);
  if(seed)record(extensions.initialization).deferredSourceKeys=seed.deferred.filter(key=>source[key]===undefined);
  return persistentState(source,extensions);

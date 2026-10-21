@@ -45,11 +45,11 @@ test('currency and all material packs match frozen useItem output and consume af
 });
 test('all supported pet eggs match frozen literal records, capacity failure preserves egg',()=>{
  assert.equal(Object.keys(ITEM_PETS).length,49);
- assert.equal(ITEM_PETS['奇迹龙'],undefined,'randomized source initialization remains unimplemented');
+ assert.equal(ITEM_PETS['奇迹龙'],undefined,'randomized initialization is generated, not a fixed seed');
  for(const [type,record]of Object.entries(ITEM_PETS)){
   const inv=make(),item={type,number:1};inv.reward.bag[0]=item;let observed:any;
   fn('useItem','item').call({backPack:{},fastKey:{},huanShou:{addHuanShou(p:object){observed=p;return true;}}},{...item,hitTest:()=>true,setThing(){}});
-  assert.deepEqual(JSON.parse(JSON.stringify(observed)),record);assert.ok(inv.use(0,item));assert.deepEqual(inv.reward.pets.at(-1),{...record,battle:false});assert.equal(inv.reward.bag[0],null);
+  assert.deepEqual(JSON.parse(JSON.stringify(observed)),record);assert.ok(inv.use(0,item));for(const [key,value]of Object.entries(record))assert.equal((inv.reward.pets.at(-1) as any)[key],value);assert.equal(inv.reward.pets.at(-1)!.battle,false);assert.equal(inv.reward.bag[0],null);
  }
  const inv=make(),egg={type:'莎菲',number:2};inv.reward.bag[0]=egg;while(inv.reward.pets.length<40)inv.reward.pets.push({...inv.reward.pets[0]!});assert.equal(inv.use(0,egg),false);assert.equal(egg.number,2);
 });

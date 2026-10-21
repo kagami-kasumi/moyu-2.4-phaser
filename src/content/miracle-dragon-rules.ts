@@ -1,4 +1,4 @@
-/** Original seed generator; registration utility, not an enabled inventory action. */
+/** Original seed generator; consumed by the complete hatching domain. */
 export const MIRACLE_DRAGON_RULES={
  source:{file:'frame_9/DoAction.as',line:616},
  baseSpans:[35,3,3,2],

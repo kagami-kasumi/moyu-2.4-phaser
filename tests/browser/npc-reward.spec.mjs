@@ -7,7 +7,7 @@ async function start(page,url='/'){await page.goto(url==='/'?'/?setup':url);awai
 async function veteran(page){if(await page.locator('#inventory').isVisible())await page.locator('#close-inventory').click();const b=await page.locator('#stage canvas').boundingBox();await page.mouse.click(b.x+170,b.y+190);await expect(page.locator('#talk')).toBeVisible();}
 async function gifts(page,cmd){const s=rewardOracle();s.interact();s.choose(2);s.choose(cmd);const expected=s.bag().slice(36).filter(Boolean);await page.getByRole('button',{name:'查看背包与幻兽记录'}).click();await expect(page.locator('#inventory')).toBeVisible();await expect(page.locator('#bag-count')).toHaveText(`物品背包 ${36+expected.length} / 40`);
  for(const [index,item] of expected.entries()){const card=page.locator(`#bag-items [data-slot="${37+index}"]`);await expect(card).toBeVisible();await expect(card.locator('summary b')).toHaveText('');await card.locator('summary').click();const values=await card.locator('dd').allTextContents();for(const [k,v]of Object.entries(item)){if(['number','grade'].includes(k))continue;expect(values).toContain(String(v));}if(item.grade)expect(values).toContain(item.grade===2?'上品':'良品');}
- await page.keyboard.press('c');await expect(page.locator('#pet-count')).toHaveText('幻兽初始记录 1 / 40');
+ await page.keyboard.press('c');await expect(page.locator('#pet-count')).toHaveText('幻兽记录 1 / 40');
  return expected;
 }
 for(const cmd of [3,4,5])test(`live cold first reward ${cmd-2}: UI inventory and no repeat`,async({page})=>{

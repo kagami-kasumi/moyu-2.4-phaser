@@ -1,0 +1,46 @@
+{
+  "cases": {
+    "3011": "      case 3011:\r\n         city = \"卡萨诺城\";\r\n         words = \"你好,\" + _parent.role.myName + \"。\";\r\n         words += \"这里可以兑换的物品：\";\r\n         words += \"\\r5个灵魂晶石兑换亚维特岛地图；\";\r\n         words += \"\\r1个魔魂之心兑换蜘蛛谷地图；\";\r\n         words += \"\\r888魔石和5点声望兑换50级PK赛参赛券。\";\r\n         words += \"\\r提示：卡萨诺城野外的怪物可能掉落蜘蛛谷地图、亚维特岛地图、50级PK赛参赛券。\";\r\n         answer = [{txt:\"出售我的资源\",cmd:3103},{txt:\"我需要亚维特岛地图\",cmd:3108},{txt:\"我需要蜘蛛谷地图\",cmd:3109},{txt:\"我需要50级PK赛参赛券\",cmd:13111},{txt:\"没什么事了\",cmd:-1}];\r\n         if(_parent[city + \"产权\"] == false)\r\n         {\r\n            answer.unshift({txt:\"购买\" + city + \"郊区产权\",cmd:3101});\r\n            needChawName = \"勋爵\";\r\n            needChaw = 1;\r\n            needPrice = 100;\r\n         }\r\n         else\r\n         {\r\n            words += \"\\r你已经拥有的\" + city + \"郊区产权了。\";\r\n         }\r\n         answer.unshift({txt:\"我要复活我的幻兽\",cmd:3000});\r\n         break;\r\n",
+    "3101": "      case 3101:\r\n         words = \"购买\" + city + \"郊区产权需要\" + needChawName + \"爵位以上和\" + _global.numberToString(needPrice) + \"魔石资金。\";\r\n         words += \"\\r    购买\" + city + \"郊区产权之后在\" + city + \"野外战斗时获得经验的同时也能获得资源。\";\r\n         answer = [{txt:\"我确定要购买\",cmd:3102},{txt:\"我还是再考虑一下吧\",cmd:myID.cmd}];\r\n         nextCmd = myID.cmd;\r\n         break;\r\n",
+    "3102": "      case 3102:\r\n         nextCmd = myID.cmd;\r\n         if(_parent.role.chaw < needChaw)\r\n         {\r\n            _global.sysMsg.addMsg(\"你的爵位没有达到\" + needChawName + \",无法购买\");\r\n            return undefined;\r\n         }\r\n         if(_parent.role.spendMs(needPrice) != true)\r\n         {\r\n            _global.sysMsg.addMsg(\"你的魔石不足,无法购买\");\r\n            return undefined;\r\n         }\r\n         _parent[city + \"产权\"] = true;\r\n         _parent.role.xxx_res += needPrice * 100;\r\n         words = \"恭喜你获得了卡萨诺城郊区的产权和\" + _global.numberToString(needPrice * 100) + \"资源。\";\r\n         words += \"\\r    购买\" + city + \"郊区产权之后在\" + city + \"野外战斗时获得经验的同时也能获得资源。\";\r\n         answer = [{txt:\"返回  \",cmd:myID.cmd}];\r\n         break;\r\n"
+  },
+  "functions": {
+    "command": "{ this.clearAnswer(); switch(nextCmd) {\n      case 3011:\r\n         city = \"卡萨诺城\";\r\n         words = \"你好,\" + _parent.role.myName + \"。\";\r\n         words += \"这里可以兑换的物品：\";\r\n         words += \"\\r5个灵魂晶石兑换亚维特岛地图；\";\r\n         words += \"\\r1个魔魂之心兑换蜘蛛谷地图；\";\r\n         words += \"\\r888魔石和5点声望兑换50级PK赛参赛券。\";\r\n         words += \"\\r提示：卡萨诺城野外的怪物可能掉落蜘蛛谷地图、亚维特岛地图、50级PK赛参赛券。\";\r\n         answer = [{txt:\"出售我的资源\",cmd:3103},{txt:\"我需要亚维特岛地图\",cmd:3108},{txt:\"我需要蜘蛛谷地图\",cmd:3109},{txt:\"我需要50级PK赛参赛券\",cmd:13111},{txt:\"没什么事了\",cmd:-1}];\r\n         if(_parent[city + \"产权\"] == false)\r\n         {\r\n            answer.unshift({txt:\"购买\" + city + \"郊区产权\",cmd:3101});\r\n            needChawName = \"勋爵\";\r\n            needChaw = 1;\r\n            needPrice = 100;\r\n         }\r\n         else\r\n         {\r\n            words += \"\\r你已经拥有的\" + city + \"郊区产权了。\";\r\n         }\r\n         answer.unshift({txt:\"我要复活我的幻兽\",cmd:3000});\r\n         break;\r\n\n      case 3101:\r\n         words = \"购买\" + city + \"郊区产权需要\" + needChawName + \"爵位以上和\" + _global.numberToString(needPrice) + \"魔石资金。\";\r\n         words += \"\\r    购买\" + city + \"郊区产权之后在\" + city + \"野外战斗时获得经验的同时也能获得资源。\";\r\n         answer = [{txt:\"我确定要购买\",cmd:3102},{txt:\"我还是再考虑一下吧\",cmd:myID.cmd}];\r\n         nextCmd = myID.cmd;\r\n         break;\r\n\n      case 3102:\r\n         nextCmd = myID.cmd;\r\n         if(_parent.role.chaw < needChaw)\r\n         {\r\n            _global.sysMsg.addMsg(\"你的爵位没有达到\" + needChawName + \",无法购买\");\r\n            return undefined;\r\n         }\r\n         if(_parent.role.spendMs(needPrice) != true)\r\n         {\r\n            _global.sysMsg.addMsg(\"你的魔石不足,无法购买\");\r\n            return undefined;\r\n         }\r\n         _parent[city + \"产权\"] = true;\r\n         _parent.role.xxx_res += needPrice * 100;\r\n         words = \"恭喜你获得了卡萨诺城郊区的产权和\" + _global.numberToString(needPrice * 100) + \"资源。\";\r\n         words += \"\\r    购买\" + city + \"郊区产权之后在\" + city + \"野外战斗时获得经验的同时也能获得资源。\";\r\n         answer = [{txt:\"返回  \",cmd:myID.cmd}];\r\n         break;\r\n\n} this.openDialog(); }",
+    "spendMs": "{\r\n      if(isNaN(val))\r\n      {\r\n         return undefined;\r\n      }\r\n      if(this.xxx_ms >= val)\r\n      {\r\n         this.xxx_ms -= val;\r\n         return true;\r\n      }\r\n      return false;\r\n   }",
+    "exploitUp": "{\r\n      val = Math.round(val);\r\n      if(this.exploit >= 38500)\r\n      {\r\n         _global.sysMsg.addMsg(\"爵位已经达到最高，无法获得功勋了\");\r\n         return false;\r\n      }\r\n      this.exploit += val;\r\n      var _loc4_ = this.exploit;\r\n      var _loc3_ = 0;\r\n      if(_loc4_ >= 38500)\r\n      {\r\n         _loc3_ = this.chaw < 5 ? (this.xxx_chaw = 5) : 0;\r\n         this.exploit = 38500;\r\n      }\r\n      else if(_loc4_ >= 18500)\r\n      {\r\n         _loc3_ = this.chaw < 4 ? (this.xxx_chaw = 4) : 0;\r\n      }\r\n      else if(_loc4_ >= 8500)\r\n      {\r\n         _loc3_ = this.chaw < 3 ? (this.xxx_chaw = 3) : 0;\r\n      }\r\n      else if(_loc4_ >= 3500)\r\n      {\r\n         _loc3_ = this.chaw < 2 ? (this.xxx_chaw = 2) : 0;\r\n      }\r\n      else if(_loc4_ >= 1000)\r\n      {\r\n         _loc3_ = this.chaw < 1 ? (this.xxx_chaw = 1) : 0;\r\n      }\r\n      if(_loc3_ > 0)\r\n      {\r\n         _global.sysMsg.addMsg(\"恭喜你被授予 \" + this.chawName);\r\n      }\r\n      return true;\r\n   }"
+  },
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/RoleMC.pcode",
+      "sha256": "b80c765117ef67690b0e32f9be649cbbda86287c44b3496b3879b5692ce0753c"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+      "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+    }
+  ]
+}

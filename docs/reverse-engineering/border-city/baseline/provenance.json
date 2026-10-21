@@ -1,0 +1,87 @@
+{
+  "tool": "FFDec 26.0.0",
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "command": "ffdec-cli -onerror abort -selectid 2716,2718,3476,3477,3479,3481,3483,3485,3487,3489,3492,3494,3496,3498,4255,4257,4269,4277,4430,4439 -format shape:png -export shape local-resources/moyu/border-city-084-reference 魔域2.4.swf",
+  "files": [
+    {
+      "file": "2716.png",
+      "sha256": "c407c6be37c8cde3e8455e92bacddd1dc93af1ed291c9214d511f849628ddcab"
+    },
+    {
+      "file": "2718.png",
+      "sha256": "785fa594a40d8bcea18a359ea1e9c55b5b296a46cc3f7e64048a2d8beb04b3bb"
+    },
+    {
+      "file": "3476.png",
+      "sha256": "3b966fb616abeefde9c665f84436821a274e1f85a6f0cd220fd5ba96efe75b7f"
+    },
+    {
+      "file": "3477.png",
+      "sha256": "23a7496b827d5e4f6c8d4f3770149d1c78c96eee933d0684e550d1b24e5b7804"
+    },
+    {
+      "file": "3479.png",
+      "sha256": "5bf3929a883da5ec809e23c9a9441855cefa4cc25e1f41d523b1fb529d17a95f"
+    },
+    {
+      "file": "3481.png",
+      "sha256": "90c6537b42a51fe9944a8d4f8a81d93f29d86b280ac76845805ccc2956803283"
+    },
+    {
+      "file": "3483.png",
+      "sha256": "3d66cb387463c1780be9addb67eba4d6c63f9d6b9ebb92a353222c083b71ca97"
+    },
+    {
+      "file": "3485.png",
+      "sha256": "475059a83ed48f1d2e99c2e54d7d21945ba722b28f57d3fd8c07ae7a6fa2e7ad"
+    },
+    {
+      "file": "3487.png",
+      "sha256": "08757536a55547d77b0dc787a1f00a2969aef5d3a9141ef10850e19e07279d81"
+    },
+    {
+      "file": "3489.png",
+      "sha256": "2530128ad803ecc6a0a5e9f7e32d2ac6b5e7ffbaff56622489c860d3c1f1669d"
+    },
+    {
+      "file": "3492.png",
+      "sha256": "6407d780fbba29ec19e092750bbdbe19280a70365f3d8fd43d256e36b694ee76"
+    },
+    {
+      "file": "3494.png",
+      "sha256": "e65f08d38ea57cf33d15a91a374d6a88210695d07e6649cbb0563206c7ea819f"
+    },
+    {
+      "file": "3496.png",
+      "sha256": "3b6d2c8f44aec9fc9a42721b276931491afd54669368baeb7c7e6651463fa2a3"
+    },
+    {
+      "file": "3498.png",
+      "sha256": "80850f75d6eabc7d2a5a8526a15958cdc5a964e6b79973be67e94735e668dc08"
+    },
+    {
+      "file": "4255.png",
+      "sha256": "662ead29dc8f1218aeae5aa37c2f6a9b7bdf6a93566b8a695c7bd93edd5b5763"
+    },
+    {
+      "file": "4257.png",
+      "sha256": "23c59d8a3f9bc76952a3aa00450824d8c6243a3922f488070acc227738716add"
+    },
+    {
+      "file": "4269.png",
+      "sha256": "665354e08691bb3822405a03caa1cb4e47f8e5d9ed18ecd05842d015c2d3f421"
+    },
+    {
+      "file": "4277.png",
+      "sha256": "254565b57c0417be972eab61d41df8478115a396882dbe914c9ccffbaf7d1315"
+    },
+    {
+      "file": "4430.png",
+      "sha256": "55ccf8db015ebfe27499d3781a8144a4c8037dc723d61b82a95866b3f6f904eb"
+    },
+    {
+      "file": "4439.png",
+      "sha256": "c1102733513a991e183129908ecf06062d1241d28e87ee8e224fb07049487e42"
+    }
+  ]
+}

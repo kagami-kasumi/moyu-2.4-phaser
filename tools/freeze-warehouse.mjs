@@ -1,0 +1,5 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {functionRange} from './lib/as2-data.mjs';
+const base='local-resources/moyu/source-index/',paths=['frame_9/DoAction','frame_9/DoAction_2','__Packages/ThingMC','DefineSprite_4312/frame_1/DoAction'],texts=paths.map(p=>fs.readFileSync(base+'as/scripts/'+p+'.as','utf8'));
+const functions=Object.fromEntries(['wareHouse.setThing','wareHouse.notice','wareHouse.initData','backPack.setThing','mover.stopMove'].map(k=>[k,functionRange(texts[0],'this.'+k+' =').text]));functions.addNumber=functionRange(texts[2],'function addNumber(').text;functions.room=functionRange(texts[2],'function get room(').text;
+const capacity=Number(texts[0].match(/this.wareHouse.number = (\d+);/)[1]),hashes=paths.flatMap(p=>['as','pcode'].map(f=>{const path=base+f+'/scripts/'+p+'.'+f;return {path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')};}));
+fs.mkdirSync('docs/reverse-engineering/warehouse',{recursive:true});fs.writeFileSync('docs/reverse-engineering/warehouse/source-functions.json',JSON.stringify({capacity,functions,hashes},null,2)+'\n');

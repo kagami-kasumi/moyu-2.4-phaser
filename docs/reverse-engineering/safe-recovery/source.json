@@ -1,0 +1,32 @@
+{
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_8/DoAction.as",
+      "sha256": "fb1eb574de71555931c28fdd4b854797bfa863aa7c1f8b85eccf3f52e53db870"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_9/DoAction.as",
+      "sha256": "7b8e4c303277ccc9b64f2c3e664f5133113e6203ad7d5f8364efaf64a83b19cc"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_10/DoAction.as",
+      "sha256": "2f86c548636f7183d73526893e71d4adbc145bc7ebe1ad1e8e85dc9a6e701296"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_12/DoAction.as",
+      "sha256": "ff2436848ef16e80ce6695020a4033f9b0b2bc38dcd647f0dfb5daa5fbee1ba3"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/HuanShouMC.as",
+      "sha256": "4556c1fb054753ef4d96b50b6e2cd6ad84194db33c0b1eb985e7ce63550177ef"
+    }
+  ]
+}

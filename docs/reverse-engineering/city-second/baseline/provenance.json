@@ -1,0 +1,26 @@
+{
+  "tool": "FFDec 26.0.0",
+  "command": "ffdec-cli -onerror abort -selectid 2802,4328,4255,4261,4285 -format shape:png -export shape local-resources/moyu/city-second-040-reference 魔域2.4.swf",
+  "files": [
+    {
+      "file": "baseline/2802.png",
+      "sha256": "08e483c9812b6dc723c8d387c5e5a64324ea60546680bac8532ba4e4f12f7e4e"
+    },
+    {
+      "file": "baseline/4328.png",
+      "sha256": "cbcfbd67fb1b95228672941d3e3c5749ae0f46e9db8dc1b4d0cb232a9202a513"
+    },
+    {
+      "file": "baseline/4255.png",
+      "sha256": "662ead29dc8f1218aeae5aa37c2f6a9b7bdf6a93566b8a695c7bd93edd5b5763"
+    },
+    {
+      "file": "baseline/4261.png",
+      "sha256": "0a7603257a95d04979d82a9a9a26a747c6fab6f16affae829d8442c7a8e05439"
+    },
+    {
+      "file": "baseline/4285.png",
+      "sha256": "3a66041e4ff0aefdb7c34c641551b1a254cbb9f06eafa98af83752941a706542"
+    }
+  ]
+}

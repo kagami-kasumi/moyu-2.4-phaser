@@ -1,0 +1,71 @@
+{
+  "tool": "FFDec 26.0.0",
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "command": "ffdec-cli -onerror abort -selectid 2772,2778,3225,3226,3228,3231,3233,3235,3237,4255,4265,4269,4277,4303,4359,4369 -format shape:png -export shape local-resources/moyu/shuxin-city-071-reference 魔域2.4.swf",
+  "files": [
+    {
+      "file": "2772.png",
+      "sha256": "7d966821f443b96b3e3d2425b1a4bfa652c017cfb7f3fc31c89c67ba150c3ac3"
+    },
+    {
+      "file": "2778.png",
+      "sha256": "f67eb05840b4a3969c914d37fc230a9a54ff58f712da7c7eb2b1c77fbeab0602"
+    },
+    {
+      "file": "3225.png",
+      "sha256": "f06ea756cd65fe72b21bde3095a18eec01857c4bd46c6a6080a8d080720558fa"
+    },
+    {
+      "file": "3226.png",
+      "sha256": "cfd9e9f2b929c98b3edc3a1a444ffbe282d7ba2410a1deece2e6e5f8797e6115"
+    },
+    {
+      "file": "3228.png",
+      "sha256": "6847910a0130e02203712dc667b5e6edf32c43274076e4028761c7a622248e98"
+    },
+    {
+      "file": "3231.png",
+      "sha256": "aab72ae23b668eab85a1c21eebd3453614daf675c4dc8772b78ebf7bcac389f4"
+    },
+    {
+      "file": "3233.png",
+      "sha256": "61294d136ae68243044e587192780c393df4d124bdfe2dbcd28e499f77d286a2"
+    },
+    {
+      "file": "3235.png",
+      "sha256": "e0f187da3ae0ade6a75ddc918ffc1c220a18aac733a3d4d437fefd7c21d280e0"
+    },
+    {
+      "file": "3237.png",
+      "sha256": "1e4b22a5cc0b2a3b4e3aa90446ed3440067bb9cfc720c33a9f1761f7983f2ccf"
+    },
+    {
+      "file": "4255.png",
+      "sha256": "662ead29dc8f1218aeae5aa37c2f6a9b7bdf6a93566b8a695c7bd93edd5b5763"
+    },
+    {
+      "file": "4265.png",
+      "sha256": "9449a6272525009462cf4f5749ace4db52201521c8d550bcd69902ef0ac4cc13"
+    },
+    {
+      "file": "4269.png",
+      "sha256": "665354e08691bb3822405a03caa1cb4e47f8e5d9ed18ecd05842d015c2d3f421"
+    },
+    {
+      "file": "4277.png",
+      "sha256": "254565b57c0417be972eab61d41df8478115a396882dbe914c9ccffbaf7d1315"
+    },
+    {
+      "file": "4303.png",
+      "sha256": "af1bcb511779c9706cd98e99cddcca11d600dfa67d126dfc312922919a8c3700"
+    },
+    {
+      "file": "4359.png",
+      "sha256": "d8a6ade8da39353e0a0fab7a98b8ec05924f0e51bea24417a27e1d817e3a7290"
+    },
+    {
+      "file": "4369.png",
+      "sha256": "4bfe9ccbd665f98c2b209b0f07dc747fe5ed1d1d84f9ba411d98b0424a50eb17"
+    }
+  ]
+}

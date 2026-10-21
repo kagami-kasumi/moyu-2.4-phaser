@@ -1,0 +1,27 @@
+{
+  "tool": "FFDec 26.0.0",
+  "source": "魔域2.4.swf",
+  "format": "shape:png",
+  "files": [
+    {
+      "file": "2814.png",
+      "sha256": "cf36bddf03208b688664d1ae99b881bdf3f9c30efe0d158d77eb4f75602790ba"
+    },
+    {
+      "file": "4117.png",
+      "sha256": "b323629b8220461e7f4229d38b1c720606aaf2698499134a72242333c91cc2e6"
+    },
+    {
+      "file": "4236.png",
+      "sha256": "7742387254f6bddb4c7870c04a728a5c2a1015e6667f7d8a87c8868f868bba50"
+    },
+    {
+      "file": "4317.png",
+      "sha256": "5512c5f6b9f1b178c47cc2537a2279fb45459a6593ee546414cbd5d6eea36bad"
+    },
+    {
+      "file": "4263.png",
+      "sha256": "e39e7605056d563315ef8c9f4b464dcacb520ddace4b4e78f2280f50c35cddc9"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "menu": "      case 9511:\r\n         nextCmd = myID.cmd;\r\n         task = _parent._parent.task.getTask(\"荣誉任务\");\r\n         if(task.isDoing != true)\r\n         {\r\n            words = \"你好勇士,为了鼓励士兵的英勇战斗,我发布了荣誉任务,完成任务后来我这里领取奖励。对于声望越高的人奖励就会越高。\";\r\n            answer = [{txt:\"我愿意接受任务\",cmd:9512},{txt:\"哦,我暂时没空呢\",cmd:-1}];\r\n         }\r\n         else if(task.isComplete == true)\r\n         {\r\n            words = \"恩,你已经完成任务了。你现在的声望是\" + _parent.role.xxx_credit + \"。有魔石和资源两种奖励。请你选择一种奖励吧。\";\r\n            words += \"\\r1.奖励 魔石\" + _global.numberToString(_parent.role.xxx_credit * 200);\r\n            words += \"\\r2.奖励 资源\" + _global.numberToString(_parent.role.xxx_credit * 20000);\r\n            words += \"\\r3.奖励 声望\" + _global.numberToString(20);\r\n            answer = [{txt:\"给我魔石吧\",cmd:9513},{txt:\"我需要资源\",cmd:9514},{txt:\"我需要声望\",cmd:9515}];\r\n         }\r\n         else\r\n         {\r\n            words = \"你完成任务再来找我吧,我国王可不是小气鬼,奖励不会少的。\";\r\n            answer = [{txt:\"好的\",cmd:-1}];\r\n         }\r\n         break;\r\n",
+  "commands": "      case 9512:\r\n         _parent._parent.task.setHonorTask(true);\r\n         nextCmd = myID.cmd;\r\n         closeDialog();\r\n         return undefined;\r\n      case 9513:\r\n         _parent._parent.task.setHonorTask(false);\r\n         _parent.role.xxx_ms += _parent.role.xxx_credit * 200;\r\n         _global.sysMsg.addMsg(\"获得\" + _global.numberToString(_parent.role.xxx_credit * 200) + \"魔石\");\r\n         nextCmd = myID.cmd;\r\n         closeDialog();\r\n         return undefined;\r\n      case 9514:\r\n         _parent._parent.task.setHonorTask(false);\r\n         _parent.role.xxx_res += _parent.role.xxx_credit * 20000;\r\n         _global.sysMsg.addMsg(\"获得\" + _global.numberToString(_parent.role.xxx_credit * 20000) + \"资源\");\r\n         nextCmd = myID.cmd;\r\n         closeDialog();\r\n         return undefined;\r\n      case 9515:\r\n         _parent._parent.task.setHonorTask(false);\r\n         _parent.role.xxx_credit += 20;\r\n         _global.sysMsg.addMsg(\"获得\" + _global.numberToString(20) + \"声望\");\r\n         nextCmd = myID.cmd;\r\n         closeDialog();\r\n         return undefined;\r\n",
+  "map": "this.allowJumpMap(\"皇宫\");\r\nthis.entry1.toMap = \"东宫\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.entry2.toMap = \"卡萨诺城二\";\r\nthis.entry2.toEntry = \"entry3\";\r\nthis.entry3.toMap = \"花园\";\r\nthis.entry3.toEntry = \"entry2\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"元帅\"),200,200);\r\nthis.npc03.appear(getNpc(\"PK赛报名官\"),430,300);\r\nif(_parent.task.getTask(\"接应国王\").isComplete == true)\r\n{\r\n   this.npc02.appear(getNpc(\"国王\"),320,250);\r\n}\r\nthis.npc04.appear(getNpc(\"抽奖箱\"),100,350);\r\n",
+  "npc": "npcState.push({nTitle:\"国王\",name:\"\",cmd:9511});\r",
+  "taskSeed": "   dailyTask.push({type:\"日常任务\",name:\"荣誉任务\",explain:\"名称：荣誉任务\\r要求：消灭100个怪物。\\r奖励：魔石或资源\\r说明：声望越高奖励越多。（删除任务奖会减少1点声望）\",isComplete:false,isDoing:false,levels:1,need:[{name:\"怪物\",number:0,needNumber:100}],prize:[{type:\"魔石\",val:1500}]});\r",
+  "functions": {
+    "setHonorTask": "{\r\n   var _loc2_;\r\n   _loc2_ = getTask(\"荣誉任务\");\r\n   if(todo == false)\r\n   {\r\n      _loc2_.isDoing = false;\r\n      showTask(nowTaskType);\r\n      return true;\r\n   }\r\n   if(_loc2_.isDoing != true)\r\n   {\r\n      _loc2_.isDoing = true;\r\n      _loc2_.isComplete = false;\r\n      _loc2_.need = [{name:\"怪物\",number:0,needNumber:100}];\r\n      showTask(nowTaskType);\r\n      _global.sysMsg.addMsg(\"接受日常任务 荣誉任务\");\r\n      return true;\r\n   }\r\n   return false;\r\n}",
+    "catchThing": "{\r\n   var _loc9_;\r\n   var _loc6_;\r\n   if(thing.type != undefined)\r\n   {\r\n      _loc6_ = !(thing.number == undefined || thing.number == 0) ? thing.number : 1;\r\n      if(thing.name == undefined)\r\n      {\r\n         _loc9_ = thing.type;\r\n      }\r\n      else\r\n      {\r\n         _loc9_ = thing.name;\r\n      }\r\n   }\r\n   else\r\n   {\r\n      _loc9_ = thing;\r\n      _loc6_ = num;\r\n   }\r\n   if(isNaN(_loc6_))\r\n   {\r\n      return false;\r\n   }\r\n   var _loc4_;\r\n   var _loc3_;\r\n   var _loc5_;\r\n   _loc4_ = allTask.length;\r\n   var _loc7_;\r\n   while(_loc4_)\r\n   {\r\n      _loc3_ = allTask[_loc4_ - 1].length;\r\n      while(_loc3_)\r\n      {\r\n         _loc5_ = allTask[_loc4_ - 1][_loc3_ - 1].need.length;\r\n         while(_loc5_)\r\n         {\r\n            if(allTask[_loc4_ - 1][_loc3_ - 1].isDoing == true && allTask[_loc4_ - 1][_loc3_ - 1].need[_loc5_ - 1].number < allTask[_loc4_ - 1][_loc3_ - 1].need[_loc5_ - 1].needNumber && allTask[_loc4_ - 1][_loc3_ - 1].need[_loc5_ - 1].name == _loc9_ && allTask[_loc4_ - 1][_loc3_ - 1].levels <= _parent.map.role.levels)\r\n            {\r\n               _loc7_ = allTask[_loc4_ - 1][_loc3_ - 1].need[_loc5_ - 1].needNumber - allTask[_loc4_ - 1][_loc3_ - 1].need[_loc5_ - 1].number;\r\n               if(_loc6_ > _loc7_)\r\n               {\r\n                  allTask[_loc4_ - 1][_loc3_ - 1].need[_loc5_ - 1].number += _loc7_;\r\n                  _loc6_ -= _loc7_;\r\n               }\r\n               else\r\n               {\r\n                  allTask[_loc4_ - 1][_loc3_ - 1].need[_loc5_ - 1].number += _loc6_;\r\n                  _loc6_ = 0;\r\n               }\r\n               if(!(thing.number == undefined || thing.number == 0))\r\n               {\r\n                  thing.number = _loc6_;\r\n               }\r\n               if(taskComplete(allTask[_loc4_ - 1][_loc3_ - 1]))\r\n               {\r\n                  _global.sysMsg.addMsg(allTask[_loc4_ - 1][_loc3_ - 1].type + \" \" + allTask[_loc4_ - 1][_loc3_ - 1].name + \"任务完成\");\r\n                  if(allTask[_loc4_ - 1][_loc3_ - 1].type == \"主线任务\")\r\n                  {\r\n                     nextMainTask();\r\n                  }\r\n               }\r\n               showTask(nowTaskType);\r\n               taskDetail(nowTask);\r\n               return true;\r\n            }\r\n            _loc5_ = _loc5_ - 1;\r\n         }\r\n         _loc3_ = _loc3_ - 1;\r\n      }\r\n      _loc4_ = _loc4_ - 1;\r\n   }\r\n}",
+    "taskComplete": "{\r\n   var _loc1_;\r\n   task.isComplete = true;\r\n   _loc1_ = task.need.length;\r\n   while(_loc1_)\r\n   {\r\n      if(task.need[_loc1_ - 1].number < task.need[_loc1_ - 1].needNumber)\r\n      {\r\n         task.isComplete = false;\r\n         break;\r\n      }\r\n      _loc1_ = _loc1_ - 1;\r\n   }\r\n   return task.isComplete;\r\n}"
+  },
+  "setters": {
+    "credit": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > this.maxRredit)\r\n      {\r\n         val = this.maxRredit;\r\n      }\r\n      var _loc3_ = Math.floor(val / 50);\r\n      if(_loc3_ > this.titleLevel)\r\n      {\r\n         this.titleLevel = _loc3_;\r\n      }\r\n      this.不要作弊457 = this.setSecreteCode(val);\r\n   }",
+    "ms": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > 100000000)\r\n      {\r\n         val = 100000000;\r\n      }\r\n      this.魔石 = val;\r\n      this.不要作弊446 = this.setSecreteCode(val);\r\n      this.msText = _global.numberToString(val);\r\n   }",
+    "res": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > 100000000)\r\n      {\r\n         val = 100000000;\r\n      }\r\n      this.资源 = val;\r\n      this.不要作弊447 = this.setSecreteCode(val);\r\n      this.resText = _global.numberToString(val);\r\n   }"
+  },
+  "maxCredit": "500",
+  "provenance": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_13/DoAction.as",
+      "sha256": "85a5711dccc349c02d48867ee574f3309e074e4d93bc77a335c10aa8c7e6f587"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_13/DoAction.pcode",
+      "sha256": "c83cb3f19c2dcff6eadb571775b42f5681e321ac961609280ee1b87ae92b3592"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2210_任务系统/frame_1/DoAction.as",
+      "sha256": "7304f43ad32ce00dc93b936db83a388a6c2865bc1ae3436278f21c30d1136974"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2210_任务系统/frame_1/DoAction.pcode",
+      "sha256": "c67780a3ee3efbeef6b3a15823d58c076a9aa1d5191be7a65c3467fc286a6ae9"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2210_任务系统/frame_1/DoAction_2.as",
+      "sha256": "64c09f75449f03ebde494b8121c0caab11cf57ec8679f36ac2b6c8093f451573"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2210_任务系统/frame_1/DoAction_2.pcode",
+      "sha256": "0cbff19de03a5a9f907e9db9f3bf1dcc6e211f2f15d2c85fab17721d425adac1"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/RoleMC.pcode",
+      "sha256": "b80c765117ef67690b0e32f9be649cbbda86287c44b3496b3879b5692ce0753c"
+    }
+  ],
+  "portrait": {
+    "shape": 4275,
+    "source": "docs/reverse-engineering/palace/source-fixture.json",
+    "baseline": "docs/reverse-engineering/palace/baseline/4275.png"
+  }
+}

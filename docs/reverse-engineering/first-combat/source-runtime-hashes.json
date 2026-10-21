@@ -1,0 +1,42 @@
+[
+  {
+    "path": "local-resources/moyu/source-index/as/scripts/__Packages/HuanShouClass.as",
+    "sha256": "272527ee87e7cbb21c6a3e9f65410266a65e10a3477a44c43b1bda821d6fcc46"
+  },
+  {
+    "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/HuanShouClass.pcode",
+    "sha256": "12fb4f2f0ca7d12bdf4464c95eaa48feb2c58d551d64b9a71d97aa0486334dbc"
+  },
+  {
+    "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_2/DoAction.as",
+    "sha256": "d264465931de5e06c416ed5f7e987ee6e282300ea774de2dddea82113a71e7fb"
+  },
+  {
+    "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_2/DoAction.pcode",
+    "sha256": "902632a0b5430104ec2103ddcbc7cb8c6d9fe2b44e8af14b7a818917b0cdf482"
+  },
+  {
+    "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4581/frame_1/DoAction.as",
+    "sha256": "9127469f6c6ff3c9d2c32eb99e37bf471704c5b85c4f975f7f9a3f2a5339bdef"
+  },
+  {
+    "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4581/frame_1/DoAction.pcode",
+    "sha256": "a17e1eba997d5a861273e20dde6b178a150f3a18a4b7f232f2e27f828b79d4ae"
+  },
+  {
+    "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+    "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+  },
+  {
+    "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+    "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+  },
+  {
+    "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2210_任务系统/frame_1/DoAction.as",
+    "sha256": "7304f43ad32ce00dc93b936db83a388a6c2865bc1ae3436278f21c30d1136974"
+  },
+  {
+    "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2210_任务系统/frame_1/DoAction_2.as",
+    "sha256": "64c09f75449f03ebde494b8121c0caab11cf57ec8679f36ac2b6c8093f451573"
+  }
+]

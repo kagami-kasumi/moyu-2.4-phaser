@@ -1,0 +1,5 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {functionRange} from './lib/as2-data.mjs';
+const base='local-resources/moyu/source-index/',files=[... [1,9,10].map(n=>'DefineSprite_4536/frame_'+n+'/DoAction'),'DefineSprite_4312/frame_1/DoAction'],read=f=>fs.readFileSync(base+'as/scripts/'+f+'.as','utf8'),functions={};
+for(const n of ['jumpMap','jumpToMap','allowJumpMap','afterJumpMap'])functions[n]=functionRange(read(files[0]),'this.'+n+' = function').text;
+const frames=Object.fromEntries(files.slice(1,3).map(f=>[f,read(f)])),hashes=files.flatMap(f=>['as','pcode'].map(ext=>{const path=base+ext+'/scripts/'+f+'.'+ext;return {path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')};}));
+const npc=read(files[3]);const out='docs/reverse-engineering/city-second/source-functions.json';if(fs.existsSync(out))throw Error('Baseline exists');fs.writeFileSync(out,JSON.stringify({frames,functions,npc:npc.slice(npc.indexOf('      case 151:'),npc.indexOf('      case 154:')),initial:read(files[0]).split('\n').filter(l=>/intoV|intoTime|intoWait|homeCity =|卡萨诺城获得幻境 =/.test(l)),hashes},null,2)+'\n');

@@ -1,5 +1,8 @@
 import {incomingDamage} from './incoming-damage-rules.ts';
 export interface CombatantNumbers {attackFire:number;burst:number;jook:number;reduceDamage:number;defense:number;wind:number;fire:number;water:number;soil:number}
+export type IncomingEffect={type:'reflect';attack:number}|{type:'frost';duration:number};
+/** Optional live port preserves synchronous reflection/level-up writes between damage fields. */
+export interface IncomingHitPort {readLife:()=>number;writeLife:(life:number)=>void;effect:(effect:IncomingEffect)=>void}
 export interface WorldHit {
  kind:'pet'|'monster'; alive:boolean; attack:number; life:number; maxLife:number;
  defender:CombatantNumbers; from:CombatantNumbers; roleFire:number;
@@ -8,10 +11,11 @@ export interface WorldHit {
 /** Pure, ordered numeric outcome. random is AS random(count), 0..count-1.
  * Reflection is emitted, not recursively executed: the original can call
  * enemy.byAttack with a null enemy and has no recursion/target safety guard. */
-export function worldIncomingHit(x:WorldHit,random:(count:number)=>number){
+export function worldIncomingHit(x:WorldHit,random:(count:number)=>number,port?:IncomingHitPort){
  const writes:number[]=[],effects:({type:'reflect';attack:number}|{type:'frost';duration:number})[]=[];
  let life=x.life;
- const write=(value:number)=>{writes.push(value);if(!Number.isNaN(value))life=value>x.maxLife?x.maxLife:value<0?0:value;};
+ const write=(value:number)=>{writes.push(value);if(!Number.isNaN(value)){if(port){port.writeLife(value);life=port.readLife();}else life=value>x.maxLife?x.maxLife:value<0?0:value;}};
+ const effect=(event:IncomingEffect)=>{effects.push(event);port?.effect(event);if(port)life=port.readLife();};
  if(!x.alive||Number.isNaN(x.attack))return {returnedAttack:false as number|false,life,writes,effects,miss:false,critical:false,xpCharges:0};
  // Monster compares against the role even when a pet delivers the attack.
  // Pet uses role fire as its defender, rather than the pet's own fire.
@@ -24,8 +28,8 @@ export function worldIncomingHit(x:WorldHit,random:(count:number)=>number){
  if(!result.miss&&result.positive){
   write(life-result.returnedAttack);
   if(x.kind==='pet'&&random(100)<5){
-   if(x.bellSkill===1)effects.push({type:'reflect',attack:result.returnedAttack});
-   else if(x.bellSkill===2)effects.push({type:'frost',duration:3});
+   if(x.bellSkill===1)effect({type:'reflect',attack:result.returnedAttack});
+   else if(x.bellSkill===2)effect({type:'frost',duration:3});
   }
  }
  for(const field of ['wind','fire','water','soil'] as const){const value=x.from[field];if(!Number.isNaN(value)&&value>0)write(life-value);}

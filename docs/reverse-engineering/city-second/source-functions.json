@@ -1,0 +1,54 @@
+{
+  "frames": {
+    "DefineSprite_4536/frame_9/DoAction": "this.allowJumpMap(\"卡萨诺城一\");\r\nthis.entry1.toMap = \"卡萨诺城郊区\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.entry2.toMap = \"卡萨诺城二\";\r\nthis.entry2.toEntry = \"entry1\";\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"药剂师\"),155,280);\r\nthis.npc02.appear(getNpc(\"杂货商\"),320,310);\r\nthis.npc03.appear(getNpc(\"装备打造师\"),490,350);\r\nhomeCity = \"卡萨诺城二\";\r\n_global.playBackSound(\"back.mp3\");\r\n",
+    "DefineSprite_4536/frame_10/DoAction": "this.allowJumpMap(\"卡萨诺城二\");\r\nthis.entry1.toMap = \"卡萨诺城一\";\r\nthis.entry1.toEntry = \"entry2\";\r\nthis.entry1._visible = true;\r\nthis.entry2.toMap = \"沼泽郊区\";\r\nthis.entry2.toEntry = \"entry2\";\r\nthis.entry3.toMap = \"皇宫\";\r\nthis.entry3.toEntry = \"entry2\";\r\nthis.entry4.toMap = \"卡萨诺城三\";\r\nthis.entry4.toEntry = \"entry1\";\r\nthis.entry3._visible = true;\r\nthis.dangerous(false);\r\nthis.npc01.appear(getNpc(\"卡萨诺城指挥官\"),265,285);\r\nthis.npc02.appear(getNpc(\"军团管理员\"),130,320);\r\nthis.npc03.appear(getNpc(\"城堡管理员\"),390,300);\r\nthis.npc04.appear(getNpc(\"挑战者\"),510,350);\r\nhomeCity = nowMap;\r\n_global.playBackSound(\"back.mp3\");\r\nif(Math.random() < _root.intoV && getTimer() - _root.intoTime > _root.intoWait)\r\n{\r\n   _root.intoTime = getTimer();\r\n   nextMap = \"卡萨诺幻境\";\r\n   nextEntry = \"entry1\";\r\n   gotoAndStop(\"卡萨诺幻境\");\r\n}\r\nif(卡萨诺城获得幻境 != true)\r\n{\r\n   _parent.createThing({type:\"卡萨诺幻境\"});\r\n   卡萨诺城获得幻境 = true;\r\n}\r\n"
+  },
+  "functions": {
+    "jumpMap": "{\r\n   var _loc2_;\r\n   _loc2_ = 1;\r\n   while(_loc2_ <= 6)\r\n   {\r\n      if(this[\"entry\" + _loc2_].hitTest(this.role._x,this.role._y,false) == true && this[\"entry\" + _loc2_]._visible == true)\r\n      {\r\n         this.jumpToMap(this[\"entry\" + _loc2_]);\r\n         return true;\r\n      }\r\n      _loc2_ = _loc2_ + 1;\r\n   }\r\n   return false;\r\n}",
+    "jumpToMap": "{\r\n   if(entry._alpha == 0)\r\n   {\r\n      return false;\r\n   }\r\n   entry1._visible = true;\r\n   entry2._visible = true;\r\n   entry3._visible = true;\r\n   entry4._visible = true;\r\n   entry5._visible = true;\r\n   entry6._visible = true;\r\n   switch(entry.toMap)\r\n   {\r\n      case \"沼泽郊区\":\r\n         if(_parent.task.getTask(\"接应国王\").isComplete != true)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r前方有魔族军团，没有国王命令不能进入\");\r\n            return false;\r\n         }\r\n         break;\r\n      case \"冰封走廊\":\r\n         if(role.levels < 70)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r前方有魔族军团，70级前不能进入\");\r\n            return false;\r\n         }\r\n         break;\r\n      case \"失落高地一\":\r\n         if(role.levels < 100)\r\n         {\r\n            _global.msg.open(\"\\r\\r\\r100级前不能进入\");\r\n            return false;\r\n         }\r\n   }\r\n   if(entry)\r\n   {\r\n      this.nextMap = entry.toMap;\r\n      this.nextEntry = entry.toEntry;\r\n      this.role.myTarget = undefined;\r\n      this.huanShou1.myTarget = undefined;\r\n      this.huanShou2.myTarget = undefined;\r\n      this.huanShou3.myTarget = undefined;\r\n      this.gotoAndStop(this.nextMap);\r\n      return true;\r\n   }\r\n   return false;\r\n}",
+    "allowJumpMap": "{\r\n   if(this.nextMap == toMap)\r\n   {\r\n      this.goods.clearGoods();\r\n      this._parent.closeAllPanel();\r\n      this._parent.warning.close();\r\n      this.nowMap = this.nextMap;\r\n      this.afterJumpMap(this.nowMap);\r\n      return true;\r\n   }\r\n   this.nextMap = this.nowMap;\r\n   this.gotoAndStop(this.nowMap);\r\n   return false;\r\n}",
+    "afterJumpMap": "{\r\n   var _loc4_;\r\n   var _loc3_;\r\n   if(nextEntry != undefined)\r\n   {\r\n      _loc4_ = this[nextEntry]._x;\r\n      _loc3_ = this[nextEntry]._y;\r\n      this.role._x = _loc4_;\r\n      this.role._y = _loc3_;\r\n      this.huanShou1._x = _loc4_ - 15;\r\n      this.huanShou1._y = _loc3_ - 15;\r\n      this.huanShou2._x = _loc4_ + 5;\r\n      this.huanShou2._y = _loc3_ + 5;\r\n      this.huanShou3._x = _loc4_ + 20;\r\n      this.huanShou3._y = _loc3_ + 20;\r\n   }\r\n   this.nextMap = \"\";\r\n   this.nextEntry = \"\";\r\n   _global.ownMap = false;\r\n   this.hideMonster();\r\n   this.hideNPC();\r\n   if(nowMap != \"冰宫郊区\")\r\n   {\r\n      this.冰柱._visible = false;\r\n   }\r\n   return true;\r\n}"
+  },
+  "npc": "      case 151:\r\n         words = \"我是亚特兰蒂斯里的军团管理员。\";\r\n         answer = [{txt:\"我的军团信息\",cmd:152},{txt:\"进入我的仓库\",cmd:153},{txt:\"关于军团\",cmd:154},{txt:\"打包灵魂晶石\",cmd:155},{txt:\"打包幻魔之心\",cmd:157},{txt:\"打包魔魂之心\",cmd:159},{txt:\"路过...    \",cmd:-1}];\r\n         break;\r\n      case 152:\r\n         closeDialog();\r\n         _parent._parent.legion.open();\r\n         nextCmd = myID.cmd;\r\n         return undefined;\r\n      case 153:\r\n         closeDialog();\r\n         _parent._parent.wareHouse.openPanel();\r\n         _parent._parent.backPack.openPanel();\r\n         nextCmd = myID.cmd;\r\n         return undefined;\r\n",
+  "initial": [
+    "homeCity = \"\";\r",
+    "卡萨诺城获得幻境 = false;\r",
+    "_root.intoV = 0.05;\r",
+    "_root.intoTime = getTimer();\r",
+    "_root.intoWait = 300000;\r"
+  ],
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_9/DoAction.as",
+      "sha256": "7b8e4c303277ccc9b64f2c3e664f5133113e6203ad7d5f8364efaf64a83b19cc"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_9/DoAction.pcode",
+      "sha256": "f8df01a2a88a42b7efcac8b766e4546f21c86233222e3330ef6077b12d706289"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_10/DoAction.as",
+      "sha256": "2f86c548636f7183d73526893e71d4adbc145bc7ebe1ad1e8e85dc9a6e701296"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_10/DoAction.pcode",
+      "sha256": "bf5f96a89e405971042bdefecd828d2d4351948db5134566499b677e5dad4737"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    }
+  ]
+}

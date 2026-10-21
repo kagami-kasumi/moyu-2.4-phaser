@@ -1,0 +1,130 @@
+{
+  "catalog": [
+    {
+      "type": "药品",
+      "name": "小型生命药",
+      "salePrice": 10
+    },
+    {
+      "type": "药品",
+      "name": "小型魔力药",
+      "salePrice": 10
+    },
+    {
+      "type": "药品",
+      "name": "中型生命药",
+      "salePrice": 30
+    },
+    {
+      "type": "药品",
+      "name": "中型魔力药",
+      "salePrice": 30
+    },
+    {
+      "type": "药品",
+      "name": "大型生命药",
+      "salePrice": 80
+    },
+    {
+      "type": "药品",
+      "name": "大型魔力药",
+      "salePrice": 80
+    },
+    {
+      "type": "药品",
+      "name": "超级药",
+      "salePrice": 150
+    }
+  ],
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction.as",
+      "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction.pcode",
+      "sha256": "3eaec722a433ca4e60dccff025806c7688b47d5537152b3f811da0a9e37a0e5f"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction_2.as",
+      "sha256": "1a012171824e8a572b89a7b56f2f328795400e97788972047cf591160ecc922a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction_2.pcode",
+      "sha256": "9b1d5d9fc4594be98c6b22188f270d61104de77d5a971e699622cb1a6a89ae5e"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2089_幻兽商店/frame_1/DoAction.as",
+      "sha256": "cf183f72a7bba44a8c57a777b0c122dabff2b6a6ba5989c5dbabc910e4464d5b"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2089_幻兽商店/frame_1/DoAction.pcode",
+      "sha256": "1c8707ce22c7dcaf3ec9cafa3929c7b65f2e13adaa038464491b7dcf6b5dd47a"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4312/frame_1/DoAction.as",
+      "sha256": "1a006e3ce15b66f7d49eea49beb1cb4e1b3647b8760c0e7626dd0ea1a8774f67"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4312/frame_1/DoAction.pcode",
+      "sha256": "9a828796685f9accfd7ba384f2150a3a8135b934a671a6a6415355383c842a8d"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_1/DoAction.as",
+      "sha256": "b1e4c53793fb0119cf1f17b9dd3ebf0fd03254903413831f65f24887d45e0a24"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_1/DoAction.pcode",
+      "sha256": "f1b7cbf43f84e44e8a6347c29d9598fc74fb1a20ba8655530ad78a5db6486d86"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_9/DoAction.as",
+      "sha256": "7b8e4c303277ccc9b64f2c3e664f5133113e6203ad7d5f8364efaf64a83b19cc"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_9/DoAction.pcode",
+      "sha256": "f8df01a2a88a42b7efcac8b766e4546f21c86233222e3330ef6077b12d706289"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_31/DoAction.as",
+      "sha256": "16522da6b6d4720bf29064212567c98d7c5efa37c4c68e2c271620c9c35aae80"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_31/DoAction.pcode",
+      "sha256": "fbe2f44e7424d98defd4ba49ca91cb01bba9142ba3433f7b00d7b455c2f6290c"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_39/DoAction.as",
+      "sha256": "1a25086092b4a7cce9d5f71a8bb180f33bdaf104b7f38eb47ebe60463590ab56"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_39/DoAction.pcode",
+      "sha256": "e69438c4a1dd6a25d3d70cba858242a5778afa36dc7833008267134b07540df4"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4536/frame_53/DoAction.as",
+      "sha256": "87b62ab7b720b1bf6042773561a79b65959775cd14e53e9bf244ab86967dd6aa"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4536/frame_53/DoAction.pcode",
+      "sha256": "8fd7b74ebc26d2080dd3731d4c716246a3a3614b16948dd67476e6f9ee1a7773"
+    }
+  ],
+  "binding": {
+    "depth": 1448,
+    "characterId": 2089,
+    "matrix": [
+      1,
+      0,
+      0,
+      1,
+      466.95,
+      736.8
+    ],
+    "ratio": 8,
+    "name": "drugShop"
+  },
+  "xml": [
+    "<item type=\"PlaceObject2Tag\" characterId=\"2089\" clipDepth=\"0\" depth=\"1448\" forceWriteAsLong=\"true\" name=\"drugShop\" placeFlagHasCharacter=\"true\" placeFlagHasClipActions=\"false\" placeFlagHasClipDepth=\"false\" placeFlagHasColorTransform=\"false\" placeFlagHasMatrix=\"true\" placeFlagHasName=\"true\" placeFlagHasRatio=\"true\" placeFlagMove=\"false\" ratio=\"8\">"
+  ]
+}

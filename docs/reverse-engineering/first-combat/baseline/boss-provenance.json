@@ -1,0 +1,80 @@
+{
+  "tool": "FFDec 26.0.0",
+  "source": "魔域2.4.swf",
+  "format": "shape:png",
+  "selectid": "3151,3152,3154,3156,3158,3160,3162,3164,3166,3169,3171,3173,3175,3177,3180,3182,3184,3186",
+  "files": [
+    {
+      "file": "3151.png",
+      "sha256": "e687b93d9f042bc76744e507659f401f84cda7af3969dbd173e8f93c64d3e13b"
+    },
+    {
+      "file": "3152.png",
+      "sha256": "6cd8d1bb04aa90ea006cb6b54de9c6f50950ed1b345374d1d0fe26cd174d16cc"
+    },
+    {
+      "file": "3154.png",
+      "sha256": "2aa914ecbc7acace4eaf88ff11b9bc51cb617643c7964f266967eda1f5dfb8fe"
+    },
+    {
+      "file": "3156.png",
+      "sha256": "180cf01079404b0f021fd920c78fa71168a4c3fc16f602c37de5a84e21af8612"
+    },
+    {
+      "file": "3158.png",
+      "sha256": "d73173cd1c42f34f0b58fdb646e4e8ee5086475a6c60645b4d689e793e6693c4"
+    },
+    {
+      "file": "3160.png",
+      "sha256": "79f650d846dd8c22254f66e58d9e15bb52ae9686183eefa8375c1cb681cfe2cc"
+    },
+    {
+      "file": "3162.png",
+      "sha256": "ca1e5dfd12ee49318a196a0c1df66dde01de5616ddf0cb01db1514867e820137"
+    },
+    {
+      "file": "3164.png",
+      "sha256": "f73c1e1cf9730281f6fe61a3887927c9c7b65a527e68c70666591dd54236d33f"
+    },
+    {
+      "file": "3166.png",
+      "sha256": "a404a27a99dd56d8cb5e006add86fb303a1b4bf49791dbe94cdc2a26606cbc6e"
+    },
+    {
+      "file": "3169.png",
+      "sha256": "276d0237ca1e525db8d203db29c33db7e63740a67e50c384f49156e668ddb2ab"
+    },
+    {
+      "file": "3171.png",
+      "sha256": "fa6951d742db00bf743ed864ce29ade3536d39da8ced2bf6bf7e0a9e516d5b8a"
+    },
+    {
+      "file": "3173.png",
+      "sha256": "d959f23fb1263f95bf89abf9e402657509071548b81e0947e5b27163f45d2291"
+    },
+    {
+      "file": "3175.png",
+      "sha256": "0ee72385b4376b31c079b3ffc0d360246e24b8df080e8aea179ac9292ceb0e1b"
+    },
+    {
+      "file": "3177.png",
+      "sha256": "bc4bdbe9280a1958e68bd9137f58c417ca8427832b189ce4fc29b07242dce188"
+    },
+    {
+      "file": "3180.png",
+      "sha256": "6100a4addac98414aba2264e310694ac6d894c0f3eb102cd126f974dccf3cb79"
+    },
+    {
+      "file": "3182.png",
+      "sha256": "3acae237ee3e8cc4aa5b05975a2bbf9f5fc4e1362055087b92fef95d5187b4e9"
+    },
+    {
+      "file": "3184.png",
+      "sha256": "e7feccc7d9f01f4beea793e08faef1dcba4c824a94f00496e3d6ac8755652f2a"
+    },
+    {
+      "file": "3186.png",
+      "sha256": "bf7f35c641725e263a9f64c29f2a45d098c3ebe5d8a465c9f11f9165b7c8e016"
+    }
+  ]
+}

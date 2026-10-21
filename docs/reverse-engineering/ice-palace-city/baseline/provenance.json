@@ -1,0 +1,103 @@
+{
+  "tool": "FFDec 26.0.0",
+  "sourceSha256": "f3c5fadfa7100946226a6fae218cde141c96736657f270767a247917bb8c5bf9",
+  "command": "ffdec-cli -onerror abort -selectid 2696,2704,3502,3503,3505,3507,3509,3511,3513,3515,3518,3520,3522,3524,3527,3529,3531,3533,4255,4259,4269,4283,4449,4461 -format shape:png -export shape local-resources/moyu/ice-palace-city-088-reference 魔域2.4.swf",
+  "files": [
+    {
+      "file": "2696.png",
+      "sha256": "5654629ac433f15d5e1ffd033db0ac4173fd8ac0e8dce7440944203066b80fd2"
+    },
+    {
+      "file": "2704.png",
+      "sha256": "e3f5eb83611911f4f58425e701fc2bf44dd395e68aee5a189f682f8f328a4413"
+    },
+    {
+      "file": "3502.png",
+      "sha256": "11ff098dcf7c63ca196b5c59db3e5bd8c7371cc68b0178d26faa1f63b996fc89"
+    },
+    {
+      "file": "3503.png",
+      "sha256": "aa88d7ad6ecb77a69bf903148316771ef51533bdaac5c91d8f84753f166d8a00"
+    },
+    {
+      "file": "3505.png",
+      "sha256": "4e2355f522b30fa1117c04a2effff10b538aa0f426fcb00cc5966c1e48452492"
+    },
+    {
+      "file": "3507.png",
+      "sha256": "8d274bc191a4a01d62140f0f32d651052f11eab91a968761b067be551fd237d5"
+    },
+    {
+      "file": "3509.png",
+      "sha256": "b45b6ab83452411cc1b89c2554f0dd00f9e60b6776700b278651dac8405aab77"
+    },
+    {
+      "file": "3511.png",
+      "sha256": "ea61d55bc451321ec9edbf7e1e821267693704445f6010fb99ab4b4ee316341a"
+    },
+    {
+      "file": "3513.png",
+      "sha256": "b38a8464912e0166ace272753d8580d6dbace57be8d52864271f874c5d4b2471"
+    },
+    {
+      "file": "3515.png",
+      "sha256": "41deeb52b473818c7f9a4c7d93aa303715b38519318bf8006d638c97a62fd4ae"
+    },
+    {
+      "file": "3518.png",
+      "sha256": "1d54b1fd1c887848d0405889fd1afd04cf25664fd66b955ef8131e405127be77"
+    },
+    {
+      "file": "3520.png",
+      "sha256": "f6068d02793644a9ae850db963b89eaef025ae7e0010694b8ed1bb89dd3af6e3"
+    },
+    {
+      "file": "3522.png",
+      "sha256": "7330f4c0d7822c105cc3148448443efea6006f4a496fd41e192be7e9b5e78541"
+    },
+    {
+      "file": "3524.png",
+      "sha256": "073d6c399a4879310f1ff289174bf72e49a5f6e1ff9a2e409ffd2363587ea69a"
+    },
+    {
+      "file": "3527.png",
+      "sha256": "9ac24a4ea11834b4f8bda4efb3a209cacb77007e4ac8e7a322c5411a69c1bd21"
+    },
+    {
+      "file": "3529.png",
+      "sha256": "a692de8493b11bd9270e6f86804ab684ad4552c534f274efb5fd97be9fe4822d"
+    },
+    {
+      "file": "3531.png",
+      "sha256": "b5e038b7e4a322525d253dc86de637f61b3d930926f80ac9b82d8a17ca1e8977"
+    },
+    {
+      "file": "3533.png",
+      "sha256": "e647a7bd67fdc5a5d51e0347afdcabe2c7a374540278bf5199726ba3f8cf48c2"
+    },
+    {
+      "file": "4255.png",
+      "sha256": "662ead29dc8f1218aeae5aa37c2f6a9b7bdf6a93566b8a695c7bd93edd5b5763"
+    },
+    {
+      "file": "4259.png",
+      "sha256": "4dd1fd49cb69052163c1f301d883166aede252563b61605bc196dd87756d5047"
+    },
+    {
+      "file": "4269.png",
+      "sha256": "665354e08691bb3822405a03caa1cb4e47f8e5d9ed18ecd05842d015c2d3f421"
+    },
+    {
+      "file": "4283.png",
+      "sha256": "62cd7052f074d0aec2eafecfce29cec3c2b6803eec90484c54990766041105b8"
+    },
+    {
+      "file": "4449.png",
+      "sha256": "e53282907ed33f9321cecb665e5e0489ec9b53e9d8759747773a9982a3f0ad64"
+    },
+    {
+      "file": "4461.png",
+      "sha256": "e957c818e60a30734b109c85ba897ba680d0bf236e42fb4101b2b0d8ff8bf16b"
+    }
+  ]
+}

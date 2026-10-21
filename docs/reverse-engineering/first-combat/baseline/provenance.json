@@ -1,0 +1,136 @@
+{
+  "tool": "FFDec 26.0.0",
+  "source": "魔域2.4.swf",
+  "format": "shape:png",
+  "selectid": "2808,2922,2924,2926,2928,2930,2932,2934,2936,2938,2940,2942,3108,3109,3111,3113,3115,3117,3119,3121,3123,3125,3128,3130,3132,3134,3137,3139,3141,3143,3145,4321",
+  "files": [
+    {
+      "file": "2808.png",
+      "sha256": "8481987f5efa2faf8fe07c1ceb86beedef61c79dbb070662d4213acccf18d263"
+    },
+    {
+      "file": "2922.png",
+      "sha256": "d0cb2184473aacbbe4e6b60d6c9f94bac0b3d6016e23d8c3300b277c15d36689"
+    },
+    {
+      "file": "2924.png",
+      "sha256": "7a787357e4cd3224c14456403b8101e742a2f3751483eb616bb46ff5bb4ca6cb"
+    },
+    {
+      "file": "2926.png",
+      "sha256": "b6e87572cc6ca5951de88715a5c268f8344ca2f7a322ff111339192d2fb2e13a"
+    },
+    {
+      "file": "2928.png",
+      "sha256": "8944c9aa27c8364171f7f40144a810067e93d0997993b683f66dee5074a4db15"
+    },
+    {
+      "file": "2930.png",
+      "sha256": "69a76dc0cf3493f42f890cb9088d505635523e7920896641a594e159754c995a"
+    },
+    {
+      "file": "2932.png",
+      "sha256": "66773adc24596046e8cc904dc8341763d09c006f233c3892e729b379c8e75779"
+    },
+    {
+      "file": "2934.png",
+      "sha256": "fbf99d1bad3614bd545656d861b6d6a5b94c8e123e2a8655dd3b97d73f686c0a"
+    },
+    {
+      "file": "2936.png",
+      "sha256": "46a4c4674e85e399427b565525340d8586e1a6d86ae932f2c7bb07f92534af05"
+    },
+    {
+      "file": "2938.png",
+      "sha256": "b645524f055b43090f7b52be4514c9f11f85399f5419f340703e703ce8e59731"
+    },
+    {
+      "file": "2940.png",
+      "sha256": "e1c4fb00dff8238074e79a6b29c864cda41bfe6e75324d0fd70ebd6b8b80036f"
+    },
+    {
+      "file": "2942.png",
+      "sha256": "013180bcf0d301e6fc51816fa5e11400c5797f28359fff3b7e8d7f500b287f0f"
+    },
+    {
+      "file": "3108.png",
+      "sha256": "4dbeb518a690ff85ae67aec3d06b14c4e590be751062ccac7408a00ff246aba6"
+    },
+    {
+      "file": "3109.png",
+      "sha256": "ab12ae2ed6686885aa56a80bbdc8c3c31c9c44f85cb543a94c44ebd9a3c9564f"
+    },
+    {
+      "file": "3111.png",
+      "sha256": "f799e635bdadb7384f5c84a607a1e42cd159c61ae88a7062d2daa770d668bfce"
+    },
+    {
+      "file": "3113.png",
+      "sha256": "385cd608be6b25027e4cb356a4176f2788176323f24b249a93100ad628ff66b7"
+    },
+    {
+      "file": "3115.png",
+      "sha256": "85ce6d2073c168e3577d1984e583ccd860b6401d25c3d37d30d87925c2af4f27"
+    },
+    {
+      "file": "3117.png",
+      "sha256": "c4b6d1358976d15fc8c4fd31856318d8b56f07f43ce5a141e05f4631b600ffc4"
+    },
+    {
+      "file": "3119.png",
+      "sha256": "59ed9bc126ea2e0dd1ccc33a2ec669c3370d6cc1f29bae799b1904726426f906"
+    },
+    {
+      "file": "3121.png",
+      "sha256": "8d87ee7a329af0ea1e2838a3e9a8ce7a9325b0bfe2cb5f98aac36d1890d00158"
+    },
+    {
+      "file": "3123.png",
+      "sha256": "6392c5bb81148d400a307cda676aa2a2330c99742975d426115e8347f4d08c9a"
+    },
+    {
+      "file": "3125.png",
+      "sha256": "bcfefae99a673f30fe06c821f97203c437c59479972551d8783d197ea7057027"
+    },
+    {
+      "file": "3128.png",
+      "sha256": "3871c324329a285ee849dba956a4df8fd48fe5bb6be94251093782a15f843b67"
+    },
+    {
+      "file": "3130.png",
+      "sha256": "3409a9580f228e5bb3c68d8f04db11b86d63184fa9861bd76a6152572eab839d"
+    },
+    {
+      "file": "3132.png",
+      "sha256": "9001d0e337d3f57f097fc2de002f210ed42620b57402d2e66615d59c7d2a5500"
+    },
+    {
+      "file": "3134.png",
+      "sha256": "046e3525725be640b0ce725578d52e018c4c7da03d864e92e42c3fa48deea640"
+    },
+    {
+      "file": "3137.png",
+      "sha256": "94393b9c8d1a64a2954aba2d5bce86c2fa7d24b9d01142f19f5e7e645101b07e"
+    },
+    {
+      "file": "3139.png",
+      "sha256": "e9f3ac5d90acea4f83fc084b1a0687e3c0ed7bd866eea8f94d676d990a08b830"
+    },
+    {
+      "file": "3141.png",
+      "sha256": "a89e0ec257206b2fcdca66f134923562aae678011a585386faedb306fb331c7c"
+    },
+    {
+      "file": "3143.png",
+      "sha256": "d2d6cb53afb02a58e4dc2f4ee321971b20e23bd115de949ca0ec31dfb4542f00"
+    },
+    {
+      "file": "3145.png",
+      "sha256": "a275436788088f1018e3d200c93d7957d838257d28f89088f50f9718ebbf4ecb"
+    },
+    {
+      "file": "4321.png",
+      "sha256": "01d16489211eb9f4aa71e8115964a6c96e9a0c5aac781185f8a45ae1e6a0bf1f"
+    }
+  ]
+}

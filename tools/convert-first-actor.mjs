@@ -10,8 +10,8 @@ export async function convert(out='public/assets/first-actor',profession='warrio
   const manifest={version:1,sourceSha256:SOURCE_HASH,stage:{width:580,height:500},fps:15,parentMatrix:parent,
     timing:{basis:'source frame ticks; nominal 1000/15 ms, not measured wall time',phaseOrder:['Activities','timeline-frame-action','render'],attackEndFrame:11,effect:'next Activities after end marker; no damage simulation'},
     crop:'untrimmed source bitmap rectangle; offset [0,0]; registration follows matrix chain',collision:null,actions:{}};
-  if(profession==='mage'){manifest.profession='mage';manifest.timing={basis:'source frame ticks; nominal 1000/15 ms, no nested clock or action tags',phaseOrder:['Activities','timeline-frame-action','render'],effect:'movement only; no attack available'};}
-  for(const [name,id,left,right] of profession==='mage'?[['idle',2893,1,2],['run',2917,5,6]]:[['idle',2986,15,16],['run',3007,17,18],['attack',3031,19,20]]) {
+  if(profession==='mage'){manifest.profession='mage';manifest.timing={basis:'source frame ticks; nominal 1000/15 ms, no nested clock or action tags',phaseOrder:['Activities','timeline-frame-action','render'],attackEndFrame:11,effect:'base fireball effect on next Activities after frame 11'};}
+  for(const [name,id,left,right] of profession==='mage'?[['idle',2893,1,2],['run',2917,5,6],['attack',2943,9,10]]:[['idle',2986,15,16],['run',3007,17,18],['attack',3031,19,20]]) {
     const frames=placements(source,id),action={spriteId:id,selectorFrames:{left,right},matrices:{left:selectors[left-1].layers[0].matrix,right:selectors[right-1].layers[0].matrix},frames:[]};
     for(const [i,frame] of frames.entries()) {
       const base=shape(source,frame.layers[0].characterId); assert(base.fill.bitmapId);assert.deepEqual(base.fill.matrix,[20,0,0,20,0,0]);

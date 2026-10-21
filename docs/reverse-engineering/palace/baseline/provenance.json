@@ -1,0 +1,35 @@
+{
+  "tool": "FFDec 26.0.0",
+  "command": "ffdec-cli -onerror abort -selectid 2800,4331,4299,4301,4263,4267 -format shape:png -export shape local-resources/moyu/palace-061-reference 魔域2.4.swf",
+  "files": [
+    {
+      "file": "baseline/2800.png",
+      "sha256": "be22550289d18906620833df23866796002c28da43db35d775a01667347bac48"
+    },
+    {
+      "file": "baseline/4331.png",
+      "sha256": "ed0f9804ce6b4394bfe495afc458ebd1c45ddcbf8a161e8e5b85c0833f6d3aca"
+    },
+    {
+      "file": "baseline/4299.png",
+      "sha256": "dd011e316b0507902901197c08059f306a541dfed81a0706d1c0ec9c3a4a1fd1"
+    },
+    {
+      "file": "baseline/4301.png",
+      "sha256": "b5f9cc5dd3469ac5a0c3781713a2c5ab797bfbaa57f460eaf25992a89ff4f746"
+    },
+    {
+      "file": "baseline/4263.png",
+      "sha256": "e39e7605056d563315ef8c9f4b464dcacb520ddace4b4e78f2280f50c35cddc9"
+    },
+    {
+      "file": "baseline/4267.png",
+      "sha256": "dd2437c3e3a649405aa319ce072736a87270316a8e21cfe86ca62b7d635e2a1e"
+    },
+    {
+      "file": "baseline/4275.png",
+      "sha256": "574875979d4d53edb3447e7b15ab144deea2790f89de33467522c73014736133"
+    }
+  ],
+  "supplement": "ffdec-cli -onerror abort -selectid 4275 -format shape:png -export shape local-resources/moyu/palace-king-061-reference 魔域2.4.swf"
+}

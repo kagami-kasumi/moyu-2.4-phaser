@@ -1,0 +1,12 @@
+import type {Journey} from '../domain/journey.ts';
+import type {BellSlot} from '../domain/bell-fusion.ts';
+import {BELL_TYPES} from '../domain/pet-bells.ts';
+const node=(tag:string,text='')=>{const n=document.createElement(tag);n.textContent=text;return n;};
+export class BellFusionView {
+ private panel=node('section');private previous='';
+ constructor(private j:Journey){const b=node('button','铃铛融合');b.id='bell-fusion-button';document.getElementById('inventory')!.append(b);this.panel.id='bell-fusion-panel';this.panel.hidden=true;this.panel.setAttribute('aria-label','铃铛融合');document.querySelector('main')!.append(this.panel);b.onclick=()=>{j.fusion?.close();j.sockets?.close();j.reward?.close();j.bellFusion?.show();this.render();};}
+ render(){const j=this.j,s=j.bellFusion;if(!s){this.panel.hidden=true;return;}this.panel.hidden=!s.open;const key=JSON.stringify([s.open,s.revision,s.item1,s.item2,s.reserved,s.feedback,s.reward.bag]);if(key===this.previous)return;this.previous=key;const rev=s.revision,button=(text:string,action:()=>void)=>{const b=node('button',text);b.onclick=()=>{action();this.render();};return b;};this.panel.replaceChildren(button('关闭铃铛融合',()=>s.close()),node('h2','铃铛融合'),node('p','两枚同品质铃铛融合。同类累加纯度；技能仅保存展示，战斗触发尚未开放。'));
+  for(const [i,slot]of (['item1','item2'] as BellSlot[]).entries()){const item=s[slot],label=i===0?'主':'副',row=node('div');row.dataset.bellFusionSlot=slot;row.append(node('p',`${label}铃铛：${item?`${item.type} · 品质 ${item.grade} · 纯度 ${item.pure} · 技能 ${item.skill} · 售价 ${item.salePrice}`:s.reserved.includes(slot)?'未知旧档物品（保留）':'空'}`));if(item){row.append(node('p',[1,2,3].map(n=>`属性${n} ${item['attributeType'+n]??0} / ${item['attributeVal'+n]??0}`).join(' · ')),button('取回'+label+'铃铛',()=>s.take(slot,rev,{x:j.x,y:j.y},(x,y)=>j.groundContains(x,y))));}if(!s.reserved.includes(slot)){const select=document.createElement('select');select.setAttribute('aria-label','选择融合'+label+'铃铛');select.add(new Option('从背包放入或替换',''));const bag=[...s.reward.bag];bag.forEach((v,n)=>{if(v&&BELL_TYPES.includes(v.type))select.add(new Option(`${v.type} · 品质 ${v.grade}（背包${n+1}）`,String(n)));});select.onchange=()=>{const n=Number(select.value),v=bag[n];if(select.value!==''&&v)s.select(slot,n,v,rev,{x:j.x,y:j.y},(x,y)=>j.groundContains(x,y));this.render();};row.append(select);}this.panel.append(row);}
+  this.panel.append(node('p',s.plan()),button('确认铃铛融合',()=>s.fuse(rev)));const feedback=node('p',s.feedback);feedback.id='bell-fusion-feedback';feedback.setAttribute('role','status');this.panel.append(feedback);
+ }
+}

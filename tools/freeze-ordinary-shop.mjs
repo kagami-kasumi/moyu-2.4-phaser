@@ -1,0 +1,12 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import vm from 'node:vm';
+import {functionRange} from './lib/as2-data.mjs';import {source,timeline} from './lib/first-slice.mjs';
+const base='local-resources/moyu/source-index/',files=['frame_9/DoAction','frame_9/DoAction_2','DefineSprite_2089_幻兽商店/frame_1/DoAction','DefineSprite_167_输入数量/frame_1/DoAction','DefineSprite_4312/frame_1/DoAction','DefineSprite_4536/frame_1/DoAction','__Packages/ThingMC','__Packages/RoleMC'];
+const texts=files.map(f=>fs.readFileSync(base+'as/scripts/'+f+'.as','utf8'));
+const catalog=vm.runInNewContext('['+texts[1].match(/this.shop.saleThings = new Array\(([^\r\n]+)\);/)[1]+']');
+const functions={factory:functionRange(texts[0],'this.createThing =').text,shop:texts[2],quantity:texts[3]};
+const hashes=files.flatMap(f=>['as','pcode'].map(format=>{const path=base+format+'/scripts/'+f+'.'+format;return {path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')};}));
+const bindings=timeline(source(),0)[8].layers.filter(p=>['shop','buyNumber'].includes(p.name));
+const xml=fs.readFileSync(base+'source.xml','utf8').match(/<item[^>]*name="shop"[^>]*>/g);
+fs.mkdirSync('docs/reverse-engineering/ordinary-shop',{recursive:true});
+fs.writeFileSync('docs/reverse-engineering/ordinary-shop/source-functions.json',JSON.stringify({catalog,functions,hashes,bindings,xml},null,2)+'\n');
+fs.writeFileSync('src/content/ordinary-shop-data.ts','// Verified frame_9/DoAction_2.as:199; store prices, not factory templates.\nexport const ORDINARY_GOODS='+JSON.stringify(catalog,null,2)+' as const;\n');

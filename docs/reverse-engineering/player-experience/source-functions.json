@@ -1,0 +1,111 @@
+{
+  "evidence": "verified",
+  "functions": {
+    "expUp": "{\r\n      var _loc3_ = 1;\r\n      if(this.roleGod == true)\r\n      {\r\n         _loc3_ = 5;\r\n      }\r\n      this.xxx_nowExp += val;\r\n      var _loc4_ = false;\r\n      while(this.xxx_nowExp >= this.maxExp)\r\n      {\r\n         this.xxx_nowExp -= this.maxExp;\r\n         this.levels += 1;\r\n         _loc4_ = true;\r\n         if(this.levels < 15)\r\n         {\r\n            this.maxExp = Math.floor(this.levels * 10) * _loc3_;\r\n         }\r\n         else if(this.levels < 30)\r\n         {\r\n            this.maxExp = Math.floor(this.levels * 20) * _loc3_;\r\n         }\r\n         else if(this.levels < 60)\r\n         {\r\n            this.maxExp = Math.floor(this.levels * 60) * _loc3_;\r\n         }\r\n         else if(this.levels < 90)\r\n         {\r\n            this.maxExp = Math.floor(this.levels * 100) * _loc3_;\r\n         }\r\n         else if(this.levels < 100)\r\n         {\r\n            this.maxExp = Math.floor(this.levels * 150) * _loc3_;\r\n         }\r\n         else if(this.levels < 110)\r\n         {\r\n            this.maxExp = 20000 * _loc3_;\r\n         }\r\n         else if(this.levels < 120)\r\n         {\r\n            this.maxExp = 25000 * _loc3_;\r\n         }\r\n         else if(this.levels < 130)\r\n         {\r\n            this.maxExp = 30000 * _loc3_;\r\n         }\r\n         else if(this.levels < 140)\r\n         {\r\n            this.maxExp = 35000 * _loc3_;\r\n         }\r\n         else if(this.levels < 150)\r\n         {\r\n            this.maxExp = 50000 * _loc3_;\r\n         }\r\n      }\r\n      if(_loc4_)\r\n      {\r\n         this.flashAttribute();\r\n         _global.playSound(\"升级.wav\");\r\n         this.升级光环.gotoAndPlay(2);\r\n         this.life = this.maxLife;\r\n         this.mp = this.maxMp;\r\n         this._parent._parent.friend.levelsUp(this.levels);\r\n      }\r\n      else\r\n      {\r\n         this.life += 0;\r\n         this.changeDepth();\r\n      }\r\n   }",
+    "levelsSet": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > this.xxx_maxLevels)\r\n      {\r\n         return;\r\n      }\r\n      this.不要作弊468 = this.setSecreteCode(val);\r\n   }",
+    "levelsGet": "{\r\n      return this.getSecreteCode(this.不要作弊468);\r\n   }",
+    "capSet": "{\r\n      if(isNaN(val))\r\n      {\r\n         return;\r\n      }\r\n      if(val > 150)\r\n      {\r\n         val = 150;\r\n      }\r\n      this.不要作弊469 = this.setSecreteCode(val);\r\n   }",
+    "capGet": "{\r\n      return this.getSecreteCode(this.不要作弊469);\r\n   }",
+    "maxGet": "{\r\n      return this.xxx_maxLevels;\r\n   }",
+    "maxSet": "{\r\n      trace(\"maxLevels无效代码\");\r\n   }",
+    "open": "{\r\n   this.setMainHuanShou();\r\n   this.openPanel();\r\n}",
+    "target": "{\r\n   if(target.type)\r\n   {\r\n      this.mainHuanShou = target;\r\n      this.mainHuanShouView._visible = true;\r\n      this.mainHuanShouView.gotoAndStop(this.mainHuanShou.type);\r\n      this.roleUse.nowState = false;\r\n      return true;\r\n   }\r\n   this.mainHuanShou = undefined;\r\n   this.mainHuanShouView._visible = false;\r\n   this.roleUse.nowState = true;\r\n   return false;\r\n}",
+    "confirm": "{\r\n   if(this.roleUse.nowState == true)\r\n   {\r\n      battlePanel = _parent.rolePanel;\r\n   }\r\n   else if(this.battleHuanShou(this.mainHuanShou) == false)\r\n   {\r\n      _global.sysMsg.addMsg(\"请先把幻兽出征。\");\r\n      return false;\r\n   }\r\n   if(this._parent.backPack.accountThing({type:\"经验球\"}) >= 1)\r\n   {\r\n      if(this.battlePanel.setThing({type:\"经验球\"}) == true)\r\n      {\r\n         this._parent.backPack.useThing({type:\"经验球\"},1);\r\n      }\r\n      return true;\r\n   }\r\n   _global.sysMsg.addMsg(\"你的物品栏里没有足够的经验球\");\r\n   return false;\r\n}",
+    "use": "{\r\n   if(this.role.life == 0)\r\n   {\r\n      _global.sysMsg.addMsg(\"死亡状态，不能使用经验球\");\r\n      return false;\r\n   }\r\n   if(this.role.levels < this.role.maxLevels)\r\n   {\r\n      this.role.expUp(exp);\r\n      return true;\r\n   }\r\n   _global.sysMsg.addMsg(\"人物已经达到最高等级了，不能获得经验和使用经验球\");\r\n   return false;\r\n}",
+    "setThing": "{\r\n   if(target.type == \"经验球\" && this.useExpball(2000))\r\n   {\r\n      if(target.number > 1)\r\n      {\r\n         target.number -= 1;\r\n         return false;\r\n      }\r\n      return true;\r\n   }\r\n   if(target.type == \"转世圣水\")\r\n   {\r\n      if(this.role.life == 0)\r\n      {\r\n         _global.sysMsg.addMsg(\"死亡状态，不能使用此物品！\");\r\n         return false;\r\n      }\r\n      return role.upGod();\r\n   }\r\n   if(target.type == \"超级经验球\")\r\n   {\r\n      if(this.role.expBallNum < this.role.levels)\r\n      {\r\n         this.role.expBallNum++;\r\n         this.role.moreExpFire += 2;\r\n         this.role.moreExpLife += 2;\r\n         this.role.moreExpMp += 2;\r\n         this.role.moreExpAttack += 2;\r\n         this.role.moreExpDefense += 2;\r\n         this.role.flashAttribute();\r\n         _global.sysMsg.addMsg(\"使用超级经验球，人物战斗力+2、攻击力+2％、防御力+2％、生命值+2％、魔力值+2％\");\r\n         _global.sysMsg.addMsg(\"第\" + this.role.expBallNum + \"次使用超级经验球。人物\" + this.role.levels + \"级最多可以使用\" + this.role.levels + \"次超级经验球。\");\r\n      }\r\n      else\r\n      {\r\n         _global.sysMsg.addMsg(\"人物当前等级：\" + this.role.levels + \"，你已经使用过\" + this.role.expBallNum + \"次超级经验球了，不能再使用。\");\r\n      }\r\n      if(target.number > 1)\r\n      {\r\n         target.number -= 1;\r\n         return false;\r\n      }\r\n      return true;\r\n   }\r\n   if(target.type == \"能量药水\")\r\n   {\r\n      if(_root.XPPower.maxPower < _root.XPPower.maxTopPower)\r\n      {\r\n         _root.XPPower.maxPower += 1;\r\n         _root.XPPower.isFull = false;\r\n         _global.sysMsg.addMsg(\"XP能量格上限增加至\" + _root.XPPower.maxPower);\r\n         if(target.number > 1)\r\n         {\r\n            target.number -= 1;\r\n            return false;\r\n         }\r\n         return true;\r\n      }\r\n      _global.sysMsg.addMsg(\"XP能量格上限已经达到\" + _root.XPPower.maxTopPower + \"，不能继续使用些药品了\");\r\n      return false;\r\n   }\r\n   if(target.type == \"药品\" && this.role.life > 0)\r\n   {\r\n      if(!isNaN(target.hpVal))\r\n      {\r\n         this.role.life += target.hpVal;\r\n      }\r\n      if(!isNaN(target.mpVal))\r\n      {\r\n         this.role.mp += target.mpVal;\r\n      }\r\n      return true;\r\n   }\r\n   var _loc6_;\r\n   if(target.type == \"生命之源\" && this.role.life > 0)\r\n   {\r\n      _loc6_ = this.role.maxLife - this.role.life;\r\n      if(this.role.lifeSourse >= _loc6_)\r\n      {\r\n         this.role.lifeSourse -= _loc6_;\r\n         this.role.life = this.role.maxLife;\r\n      }\r\n      else\r\n      {\r\n         this.role.life += this.role.lifeSourse;\r\n         this.role.lifeSourse = 0;\r\n      }\r\n      return false;\r\n   }\r\n   var _loc5_;\r\n   if(target.type == \"魔力源泉\" && this.role.life > 0)\r\n   {\r\n      _loc5_ = this.role.maxMp - this.role.mp;\r\n      if(this.role.mpSourse >= _loc5_)\r\n      {\r\n         this.role.mpSourse -= _loc5_;\r\n         this.role.mp = this.role.maxMp;\r\n      }\r\n      else\r\n      {\r\n         this.role.mp += this.role.mpSourse;\r\n         this.role.mpSourse = 0;\r\n      }\r\n      return false;\r\n   }\r\n   return false;\r\n}",
+    "roleInit": "{\r\n      this.moreMinAttack = this.skillAttack + this.moreExpAttack;\r\n      this.moreMaxAttack = this.skillAttack + this.moreExpAttack;\r\n      this.moreDefense = this.skillDefense + this.moreExpDefense;\r\n      this.moreLife = this.moreExpLife;\r\n      this.moreMp = this.moreExpMp;\r\n      this.moreExp = 0;\r\n      this.reduceDamage = 0;\r\n      this.wind = 0;\r\n      this.soil = 0;\r\n      this.fire = 0;\r\n      this.water = 0;\r\n      this.renew = 0;\r\n      this.xxx_burst = this.skillBurst + this.baseBurst;\r\n      this.xxx_jook = this.skillJook + this.baseJook;\r\n      if(isNaN(this.godFire))\r\n      {\r\n         this.godFire = 0;\r\n      }\r\n      this.attackFire = this.militaryRankFire + this.chawFire + this.titleLevel * 2 + this.moreExpFire + this.skillAddFire + this.godFire;\r\n      this.titleFire = this.titleLevel * 2;\r\n   }",
+    "roleStats": "{\r\n      this.init();\r\n      var _loc4_ = this._parent._parent.equipment;\r\n      if(_loc4_ != undefined)\r\n      {\r\n         this.xxx_burst += _loc4_.burst;\r\n         this.xxx_jook += _loc4_.jook;\r\n         this.moreMinAttack += _loc4_.moreMinAttack;\r\n         this.moreMaxAttack += _loc4_.moreMaxAttack;\r\n         this.moreDefense += _loc4_.moreDefense;\r\n         this.reduceDamage += _loc4_.reduceDamage;\r\n         this.moreExp += _loc4_.moreExp;\r\n         this.moreLife += _loc4_.moreLife;\r\n         this.moreMp += _loc4_.moreMp;\r\n         this.wind += _loc4_.wind;\r\n         this.soil += _loc4_.soil;\r\n         this.fire += _loc4_.fire;\r\n         this.water += _loc4_.water;\r\n         this.renew += _loc4_.renew;\r\n         this.attackFire += _loc4_.attackFire;\r\n      }\r\n      this.xxx_maxLife = this.rateLife * (this.levels + 5) + this.skillLife;\r\n      this.maxMp = this.rateMp * (this.levels + 5) + this.skillMp;\r\n      this.minAttack = this.rateMinAttack * (this.levels + 5);\r\n      this.maxAttack = this.rateMaxAttack * (this.levels + 5);\r\n      this.defense = this.rateDefense * (this.levels + 5);\r\n      if(_loc4_ != undefined)\r\n      {\r\n         this.xxx_maxLife += _loc4_.maxLife;\r\n         this.maxMp += _loc4_.maxMp;\r\n         this.minAttack += _loc4_.minAttack;\r\n         this.maxAttack += _loc4_.maxAttack;\r\n         this.defense += _loc4_.defense;\r\n      }\r\n      this.xxx_maxLife = Math.round(this.maxLife * (1 + this.moreLife * 0.01));\r\n      this.maxMp = Math.round(this.maxMp * (1 + this.moreMp * 0.01));\r\n      this.minAttack = Math.round(this.minAttack * (1 + this.moreMinAttack * 0.01));\r\n      this.maxAttack = Math.round(this.maxAttack * (1 + this.moreMaxAttack * 0.01));\r\n      this.defense = Math.round(this.defense * (1 + this.moreDefense * 0.01));\r\n      this.attackFire += this.levels;\r\n      var _loc3_;\r\n      _loc3_ = 1;\r\n      var _loc2_;\r\n      while(_loc3_ <= 3)\r\n      {\r\n         _loc2_ = this._parent._parent[\"battleHuanShouPanel\" + _loc3_];\r\n         if(_loc2_.isOpen)\r\n         {\r\n            if(_loc2_.huanShou.inOne)\r\n            {\r\n               this.minAttack += _loc2_.minAttack;\r\n               this.maxAttack += _loc2_.maxAttack;\r\n               this.defense += _loc2_.defense;\r\n            }\r\n            this.attackFire += _loc2_.attackFire;\r\n         }\r\n         _loc3_ = _loc3_ + 1;\r\n      }\r\n      this._parent._parent.equipment.flashView();\r\n      this._parent._parent.roleAtrribute.flashView();\r\n      this._parent._parent.fireDetail.flashView();\r\n      this._parent._parent.rolePanel.flashView();\r\n      return true;\r\n   }"
+  },
+  "locations": {
+    "expUp": {
+      "file": "__Packages/RoleMC.as",
+      "marker": "function expUp(val)"
+    },
+    "levelsSet": {
+      "file": "__Packages/RoleMC.as",
+      "marker": "function set levels(val)"
+    },
+    "levelsGet": {
+      "file": "__Packages/RoleMC.as",
+      "marker": "function get levels()"
+    },
+    "capSet": {
+      "file": "__Packages/RoleMC.as",
+      "marker": "function set xxx_maxLevels(val)"
+    },
+    "capGet": {
+      "file": "__Packages/RoleMC.as",
+      "marker": "function get xxx_maxLevels()"
+    },
+    "maxGet": {
+      "file": "__Packages/RoleMC.as",
+      "marker": "function get maxLevels()"
+    },
+    "maxSet": {
+      "file": "__Packages/RoleMC.as",
+      "marker": "function set maxLevels(val)"
+    },
+    "open": {
+      "file": "DefineSprite_2181_使用经验球/frame_1/DoAction.as",
+      "marker": "this.open = function()"
+    },
+    "target": {
+      "file": "DefineSprite_2181_使用经验球/frame_1/DoAction.as",
+      "marker": "this.setMainHuanShou = function(target)"
+    },
+    "confirm": {
+      "file": "DefineSprite_2181_使用经验球/frame_1/DoAction.as",
+      "marker": "this.useExpball = function()"
+    },
+    "use": {
+      "file": "DefineSprite_4591/frame_1/DoAction.as",
+      "marker": "this.useExpball = function(exp)"
+    },
+    "setThing": {
+      "file": "DefineSprite_4591/frame_1/DoAction.as",
+      "marker": "this.setThing = function(target)"
+    }
+  },
+  "hashes": [
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/__Packages/RoleMC.as",
+      "sha256": "ffe6f75ae7967f9ce79ebe2f3895178d786683a56fd0d6f321f60b85b22a8ace"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/__Packages/RoleMC.pcode",
+      "sha256": "b80c765117ef67690b0e32f9be649cbbda86287c44b3496b3879b5692ce0753c"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_2181_使用经验球/frame_1/DoAction.as",
+      "sha256": "29e1db9cbcc07fd0f75ccf6ef6ac7b83afac8bbbb7797aa3c170e3edca90c093"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_2181_使用经验球/frame_1/DoAction.pcode",
+      "sha256": "8dec5d454a1a198a221c5bc9c193e214df02dfc24ba64a2830353afd6be80020"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineSprite_4591/frame_1/DoAction.as",
+      "sha256": "ce7dad0658cf0235e70de605c1d6cdc008eb1487918d96377dab2e0a9a7129ec"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineSprite_4591/frame_1/DoAction.pcode",
+      "sha256": "e28b68ce8b8b631f989ab91242a73ffdb10ee810f096ab3ce16bdf825f2a18aa"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/DefineButton2_2174/BUTTONCONDACTION on(release).as",
+      "sha256": "0d25f739b6aa25810fb73053f43a2a36e3f1a32975c4b7812a13860df1f86b4e"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/DefineButton2_2174/BUTTONCONDACTION on(release).pcode",
+      "sha256": "d01d9e93c4356d1dfac95f6fa6b61b78a4dbef2f412abff868a533e77e085d99"
+    },
+    {
+      "path": "local-resources/moyu/source-index/as/scripts/frame_9/DoAction.as",
+      "sha256": "2d64d13f0d7c5a63599943713b704bbf808e1b90176e73af5d47ba0253634745"
+    },
+    {
+      "path": "local-resources/moyu/source-index/pcode/scripts/frame_9/DoAction.pcode",
+      "sha256": "3eaec722a433ca4e60dccff025806c7688b47d5537152b3f811da0a9e37a0e5f"
+    }
+  ]
+}

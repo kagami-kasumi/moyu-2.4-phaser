@@ -42,7 +42,7 @@ test('all 653 templates instantiate concrete keys; all 911 identities and opaque
  // Unknown source keys and inactive systems are not deleted by saving the playable projection.
  const extra=persistentState({...source,unknownSource:[,undefined,-0]},extensions);const next=captureSave(game,extra);
  assert.deepEqual((restorePreservedValue(next.source) as Record<string,unknown>).unknownSource,[,undefined,-0]);
- assert.deepEqual((restorePreservedValue(next.source) as Record<string,unknown>).XPPower_nowPower,source.XPPower_nowPower);
+ assert.deepEqual((restorePreservedValue(next.source) as Record<string,unknown>).XPPower_nowPower,game.combatLedger!.nowPower);
 });
 
 test('new source seeds include capacities, original equipment ordering, NPC defaults, every template domain and owned live mutations',()=>{
