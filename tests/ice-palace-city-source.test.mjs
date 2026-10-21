@@ -55,3 +55,18 @@ test('all thirteen ordinary reward branches and SuperHS thresholds preserve orig
  }
 });
 
+
+test('city first grant, untouched pharmacy stock, four NPC identities and strict intrusion order match frame90',()=>{
+ const json=p=>JSON.parse(fs.readFileSync(p)),maps=json('public/assets/first-slice/manifest.json'),actor=json('public/assets/first-actor/manifest.json');
+ for(const elapsed of [0,300000,300001])for(const chance of [.05,.5])for(const draw of [0,.049999,.05,.5,.999])for(const granted of [false,true])for(const stock of [0,2,7]){
+  const gifts=[],npcs=[],original={entry1:{},entry2:{},entry3:{},npc01:{appear:(...args)=>npcs.push(args)},npc02:{appear:(...args)=>npcs.push(args)},npc03:{appear:(...args)=>npcs.push(args)},npc04:{appear:(...args)=>npcs.push(args)},allowJumpMap(){},dangerous(){},gotoAndStop(){}};let calls=0,jumped=false;
+  const context=vm.createContext({_parent:{createThing:item=>gifts.push(item.type)},gotoAndStop:()=>{jumped=true;},getNpc:n=>n,getTimer:()=>elapsed,nowMap:'冰宫',homeCity:'南城一',drugShop:stock,冰宫获得幻境:granted,_root:{intoV:chance,intoTime:0,intoWait:300000},_global:{playBackSound(){}},Math:{random:()=>{calls++;return draw;}}});
+  new vm.Script('(function(){'+fixture.sources['DefineSprite_4536/frame_90/DoAction']+'})').runInContext(context).call(original);
+  const j=new Journey(maps,new Actor(actor),undefined,()=>.999);j.start('冰宫');j.firstQuest.king={isDoing:false,isComplete:true,number:1};j.ice.task.isComplete=true;j.vitals.level=100;for(const [m,e]of [['city','entry1'],['citySecond','entry1'],['swampOutskirts','entry2'],['swampCity','entry1'],['southOutskirts','entry2'],['southCity','entry1'],['southSecond','entry1'],['borderOutskirts','entry2'],['borderCity','entry1'],['iceCorridor','entry1'],['frostOutskirts','entry1']])assert(j.arrive(m,e,m));j.pharmacy.openNumber=stock;j.cityVisit.icePalaceMirageGranted=granted;j.reward.bag.fill(null);j.initialState.intoV=chance;j.mirageElapsed=elapsed;let actualCalls=0;j.mirageRandom=()=>{actualCalls++;return draw;};assert(j.arrive('icePalaceCity','entry1','icePalaceCity'));
+  assert.equal(actualCalls,calls);assert.equal(calls,1);assert.equal(j.cityVisit.homeCity,context.homeCity);assert.equal(j.cityVisit.icePalaceMirageGranted,context.冰宫获得幻境);assert.equal(j.pharmacy.openNumber,context.drugShop);assert.deepEqual(j.reward.bag.filter(Boolean).map(i=>i.type),gifts);assert.equal(j.map,jumped?'icePalaceMirage':'icePalaceCity');assert.deepEqual(npcs,[['药剂师',235,220],['冰宫指挥官',300,330],['白衣圣兽师',470,330],['挑战者',375,330]]);
+  assert.equal(original.entry1.toMap,'冰宫郊区');assert.equal(original.entry2.toMap,'港口');
+ }
+ assert(fixture.sources['DefineSprite_4536/frame_1/DoAction'].includes('nTitle:"巧匠",name:"",cmd:10100'));
+ const portraits=fixture.timelines['4308'];for(const map of ['icePalaceCity'])for(const npc of NPCS[map]){const frame=Object.entries(portraits.labels).find(([,name])=>name===npc.title)?.[0];assert(frame,npc.title);assert.equal(Number(portraits.frames[Number(frame)-1][0].characterId),npc.shape);}
+ assert.deepEqual(NPCS.icePalaceCity.map(n=>[n.title,n.x,n.y]),[['药剂师',235,220],['冰宫指挥官',300,330],['白衣圣兽师',470,330],['挑战者',375,330]]);
+});
